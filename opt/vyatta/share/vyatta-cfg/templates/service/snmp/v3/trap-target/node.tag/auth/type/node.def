@@ -1,0 +1,6 @@
+type: txt
+help: Define used protocol (default: md5)
+val_help: md5; Message Digest 5 (default)
+val_help: sha; Secure Hash Algorithm
+allowed: echo "md5 sha"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(md5|sha)\'   --value \'$VAR(@)\'"; "Invalid value"

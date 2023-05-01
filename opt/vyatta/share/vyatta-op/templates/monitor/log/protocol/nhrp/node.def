@@ -1,0 +1,2 @@
+help: Monitor log for NHRP
+run: journalctl --follow --no-hostname --boot /usr/lib/frr/nhrpd

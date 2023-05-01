@@ -1,0 +1,3 @@
+help: Disable BGP bestpath IPv4 IPv6
+allowed: echo "<x.x.x.x/x> <h:h:h:h:h:h:h:h/h>"
+run: vtysh -c "no debug bgp ${@:5}"

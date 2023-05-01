@@ -1,0 +1,2 @@
+help: Clear all peers
+run: vtysh -c "clear bgp l2vpn evpn *"

@@ -1,0 +1,3 @@
+help: Show specific IS-IS neighbor adjacency
+allowed: echo "system-id"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

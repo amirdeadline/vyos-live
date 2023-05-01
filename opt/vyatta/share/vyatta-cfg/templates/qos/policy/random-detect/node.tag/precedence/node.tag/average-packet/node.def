@@ -1,0 +1,4 @@
+type: txt
+help: Average packet size (bytes) (default: 1024)
+val_help: u32:16-10240; Average packet size in bytes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-100\"  --value \'$VAR(@)\'"; "Average packet size must be between 16 and 10240"

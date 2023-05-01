@@ -1,0 +1,4 @@
+type: txt
+help: Interval to send keepalive messages
+val_help: u32:1-65535; Interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65535\"  --value \'$VAR(@)\'"; "Invalid value"

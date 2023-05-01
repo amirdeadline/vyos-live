@@ -1,0 +1,3 @@
+help: Specify Link state ID as IPv4 address notation
+allowed: echo "<x.x.x.x>"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

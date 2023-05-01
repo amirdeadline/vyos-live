@@ -1,0 +1,3 @@
+help: Clear IPoE server session by Session ID
+allowed: ${vyos_completion_dir}/list_ipoe.py --selector="sid"
+run: ${vyos_op_scripts_dir}/ipoe-control.py --action="terminate" --selector="sid" --target="$5"

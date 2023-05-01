@@ -1,0 +1,2 @@
+help: LDP interface information
+run: vtysh -c "show mpls ldp interface"

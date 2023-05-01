@@ -1,0 +1,3 @@
+type: txt
+help: Defines the clear text key for privacy protocol
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'.{8,}\'   --value \'$VAR(@)\'"; "Key must contain 8 or more characters"

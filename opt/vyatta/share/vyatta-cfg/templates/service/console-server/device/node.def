@@ -1,0 +1,7 @@
+tag:
+type: txt
+help: System serial interface name (ttyS or ttyUSB)
+val_help: ttySxxx; Regular serial interface
+val_help: usbxbxpx; USB based serial interface
+allowed: sh -c "ls -1 /dev | grep ttyS" && echo " " && sh -c "if [ -d /dev/serial/by-bus ]; then ls -1 /dev/serial/by-bus; fi"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ttyS\\d+|usb\\d+b.*p.*)\'   --value \'$VAR(@)\'"; "Invalid value"

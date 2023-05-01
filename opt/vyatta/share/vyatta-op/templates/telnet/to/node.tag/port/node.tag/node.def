@@ -1,0 +1,3 @@
+help: Telnet to a host:port
+allowed: echo "<0-65535>"
+run: /usr/bin/telnet $3 $5

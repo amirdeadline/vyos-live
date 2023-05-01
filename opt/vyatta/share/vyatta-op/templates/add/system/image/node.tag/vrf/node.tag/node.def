@@ -1,0 +1,3 @@
+help: Download image via specified VRF
+allowed: /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo
+run: sudo ${vyatta_sbindir}/install-image --url "${4}" --vrf "${6}"

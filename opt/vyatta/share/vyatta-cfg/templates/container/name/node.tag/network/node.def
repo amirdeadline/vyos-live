@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Attach user defined network to container
+allowed: /bin/cli-shell-api listNodes container network

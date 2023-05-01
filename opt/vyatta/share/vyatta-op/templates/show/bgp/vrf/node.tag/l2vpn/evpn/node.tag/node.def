@@ -1,0 +1,3 @@
+help: Network in the BGP routing table to display
+allowed: echo "<x.x.x.x> <x.x.x.x/x> <h:h:h:h:h:h:h:h> <h:h:h:h:h:h:h:h/x>"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

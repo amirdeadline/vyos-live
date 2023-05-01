@@ -1,0 +1,2 @@
+help: Show all endpoints for the specified interface
+run: sudo wg show "$4" endpoints

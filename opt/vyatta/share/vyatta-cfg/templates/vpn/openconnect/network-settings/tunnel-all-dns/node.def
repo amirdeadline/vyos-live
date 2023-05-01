@@ -1,0 +1,8 @@
+type: txt
+help: If the tunnel-all-dns option is set to yes, tunnel all DNS
+			queries via the VPN. This is the default when a default route
+			is set. (default: no)
+val_help: yes; Enable tunneling of all DNS traffic
+val_help: no; Disable tunneling of all DNS traffic (default)
+allowed: echo "yes no"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(yes|no)\'   --value \'$VAR(@)\'"; "Invalid value"

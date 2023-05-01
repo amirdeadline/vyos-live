@@ -1,0 +1,2 @@
+help: Monitor last lines of IPoE server log
+run: journalctl --no-hostname --boot --follow --unit accel-ppp@ipoe.service

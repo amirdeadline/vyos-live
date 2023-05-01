@@ -1,0 +1,4 @@
+type: txt
+help: System host name (default: vyos)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[A-Za-z0-9][-.A-Za-z0-9]*[A-Za-z0-9]\'   --value \'$VAR(@)\'"; "Invalid value"
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/host_name.py"

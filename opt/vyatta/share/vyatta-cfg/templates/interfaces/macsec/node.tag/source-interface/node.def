@@ -1,0 +1,4 @@
+type: txt
+help: Physical interface the traffic will go through
+val_help: interface; Physical interface used for traffic forwarding
+allowed: sh -c "${vyos_completion_dir}/list_interfaces --type ethernet"

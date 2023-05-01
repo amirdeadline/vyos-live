@@ -1,0 +1,2 @@
+help: Restart PPPoE server process
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pppoe" --action="restart"

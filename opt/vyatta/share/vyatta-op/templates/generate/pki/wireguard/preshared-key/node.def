@@ -1,0 +1,2 @@
+help: Generate WireGuard pre-shared key
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --wireguard --psk

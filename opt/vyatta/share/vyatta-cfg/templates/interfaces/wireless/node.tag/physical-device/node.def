@@ -1,0 +1,4 @@
+type: txt
+help: Wireless physical device (default: phy0)
+allowed: sh -c "${vyos_completion_dir}/list_wireless_phys.sh"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/wireless-phy \"  --value \'$VAR(@)\'"; "Invalid value"

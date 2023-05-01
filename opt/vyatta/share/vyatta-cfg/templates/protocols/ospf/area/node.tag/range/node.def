@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Summarize routes matching a prefix (border routers only)
+val_help: ipv4net; Area range prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

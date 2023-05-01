@@ -1,0 +1,7 @@
+type: txt
+help: Source addresses seen in the last second/minute/hour
+val_help: second; Source addresses seen COUNT times in the last second
+val_help: minute; Source addresses seen COUNT times in the last minute
+val_help: hour; Source addresses seen COUNT times in the last hour
+allowed: echo "second minute hour"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(second|minute|hour)\'   --value \'$VAR(@)\'"; "Invalid value"

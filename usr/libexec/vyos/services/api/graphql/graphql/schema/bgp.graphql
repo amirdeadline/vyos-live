@@ -1,0 +1,27 @@
+
+enum FamilyBgp {
+    inet
+    inet6
+}
+
+input ShowNeighborsBgpInput {
+    key: String
+    family: FamilyBgp!
+    peer: String = null
+    vrf: String = null
+}
+
+type ShowNeighborsBgp {
+    result: Generic
+}
+
+type ShowNeighborsBgpResult {
+    data: ShowNeighborsBgp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowNeighborsBgp(data: ShowNeighborsBgpInput) : ShowNeighborsBgpResult @genopquery
+}

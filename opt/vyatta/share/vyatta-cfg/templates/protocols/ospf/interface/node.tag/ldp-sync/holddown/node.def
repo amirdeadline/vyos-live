@@ -1,0 +1,4 @@
+type: txt
+help: Hold down timer for LDP-IGP cost restoration
+val_help: u32:0-10000; Time to wait in seconds for LDP-IGP synchronization to occur before restoring interface cost
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-10000\"  --value \'$VAR(@)\'"; "Invalid value"

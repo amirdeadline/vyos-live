@@ -1,0 +1,3 @@
+help: Monitor specific types of NDP protocols
+allowed: echo "rs ra ns na"
+run: sudo ndptool monitor --ifname=$4 --msg-type=$6

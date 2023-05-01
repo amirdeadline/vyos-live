@@ -1,0 +1,3 @@
+help: Remote address where the client will connect to
+allowed: echo "<fqdn>" && ${vyos_completion_dir}/list_local_ips.sh --both
+run: ${vyos_op_scripts_dir}/ikev2_profile_generator.py --os windows --connection "$5" --remote "$7"

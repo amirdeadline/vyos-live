@@ -1,0 +1,2 @@
+help: Show webproxy blacklist categories
+run: ${vyos_completion_dir}/list_webproxy_category.sh

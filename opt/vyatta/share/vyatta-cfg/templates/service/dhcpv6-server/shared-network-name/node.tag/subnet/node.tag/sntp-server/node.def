@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: IPv6 address of an SNTP server for client to use
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

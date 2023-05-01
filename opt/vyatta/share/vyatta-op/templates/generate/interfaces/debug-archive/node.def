@@ -1,0 +1,2 @@
+help: Generate interfaces debug-archive
+run: ${vyos_op_scripts_dir}/generate_interfaces_debug_archive.py

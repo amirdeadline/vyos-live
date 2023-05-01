@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Add a BGP autonomous system path filter
+val_help: txt; AS path list name

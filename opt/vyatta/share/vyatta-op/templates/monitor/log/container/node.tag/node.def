@@ -1,0 +1,3 @@
+help: Monitor last lines of container logs
+allowed: /bin/cli-shell-api listActiveNodes container name | sed -e "s/'//g" && echo
+run: sudo podman logs --follow --names "$4"

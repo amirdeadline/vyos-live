@@ -1,0 +1,2 @@
+help: Generate CA certificate
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --ca "noname"

@@ -1,0 +1,2 @@
+help: Show active VPN server sessions
+run: ${vyos_op_scripts_dir}/show_vpn_ra.py

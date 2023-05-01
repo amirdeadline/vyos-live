@@ -1,0 +1,3 @@
+help: Re-generate SSH client keypair
+allowed: echo "<filename>"
+run: ssh-keygen -t rsa -f "$4" -N ""

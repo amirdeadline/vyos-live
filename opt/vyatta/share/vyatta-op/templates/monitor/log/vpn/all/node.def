@@ -1,0 +1,2 @@
+help: Monitor last lines of ALL VPNs
+run: journalctl --no-hostname --boot --follow --unit strongswan.service --unit accel-ppp@*.service --unit ocserv.service

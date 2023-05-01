@@ -1,0 +1,2 @@
+help: Show eXpress Data Path statistics
+run: sudo ${vyos_op_scripts_dir}/show_xdp_stats.sh ethernet "$4"

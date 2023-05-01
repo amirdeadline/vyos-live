@@ -1,0 +1,4 @@
+type: txt
+help: DHCP unique identifier (DUID) to be sent by dhcpv6 client
+val_help: duid; DHCP unique identifier (DUID)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-duid \"  --value \'$VAR(@)\'"; "Invalid value"

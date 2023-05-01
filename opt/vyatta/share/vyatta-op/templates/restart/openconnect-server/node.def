@@ -1,0 +1,2 @@
+help: Restart openconnect server process
+run: ${vyos_op_scripts_dir}/openconnect-control.py --action="restart"

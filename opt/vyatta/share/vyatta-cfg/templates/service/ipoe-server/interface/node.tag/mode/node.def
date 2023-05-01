@@ -1,0 +1,6 @@
+type: txt
+help: Client connectivity mode (default: l2)
+val_help: l2; Client located on same interface as server (default)
+val_help: l3; Client located behind a router
+allowed: echo "l2 l3"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(l2|l3)\'   --value \'$VAR(@)\'"; "Invalid value"

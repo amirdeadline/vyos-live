@@ -1,0 +1,4 @@
+type: txt
+help: Number of sessions
+val_help: u32:1-999999; Number of sessions
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-999999\"  --value \'$VAR(@)\'"; "Invalid number of delayed sessions"

@@ -1,0 +1,2 @@
+help: Start background monitoring
+run: ${vyatta_bindir}/vyatta-monitor-background ${3^^} ${3}

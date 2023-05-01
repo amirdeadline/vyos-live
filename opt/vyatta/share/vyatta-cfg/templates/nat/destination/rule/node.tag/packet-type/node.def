@@ -1,0 +1,8 @@
+type: txt
+help: Packet type
+val_help: broadcast; Match broadcast packet type
+val_help: host; Match host packet type, addressed to local host
+val_help: multicast; Match multicast packet type
+val_help: other; Match packet addressed to another host
+allowed: echo "broadcast host multicast other"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(broadcast|host|multicast|other)\'   --value \'$VAR(@)\'"; "Invalid value"

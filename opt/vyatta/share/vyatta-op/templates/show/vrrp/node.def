@@ -1,0 +1,2 @@
+help: Show VRRP (Virtual Router Redundancy Protocol) information
+run: sudo ${vyos_op_scripts_dir}/vrrp.py --summary

@@ -1,0 +1,2 @@
+help: Show log for static route
+run: journalctl --boot /usr/lib/frr/staticd

@@ -1,0 +1,6 @@
+type: txt
+help: Specifies the flow label to use in outgoing packets
+val_help: inherit; Copy field from original header
+val_help: 0x0-0x0fffff; Tunnel key, or hex value
+allowed: echo "inherit"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'((0x){0,1}(0?[0-9A-Fa-f]{1,5})|inherit)\'   --value \'$VAR(@)\'"; "Must be 'inherit' or a number"

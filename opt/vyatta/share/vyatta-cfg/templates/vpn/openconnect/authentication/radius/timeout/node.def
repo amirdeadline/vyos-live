@@ -1,0 +1,4 @@
+type: txt
+help: Session timeout (default: 2)
+val_help: u32:1-240; Session timeout in seconds (default: 2)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-240\"  --value \'$VAR(@)\'"; "Timeout must be between 1 and 240 seconds"

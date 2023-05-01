@@ -1,0 +1,7 @@
+type: txt
+help: Expect password as result of a challenge response protocol
+			(default: enable)
+val_help: disable; Disable challenge-response
+val_help: enable; Enable chalenge-response (default)
+allowed: echo "disable enable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(disable|enable)\'   --value \'$VAR(@)\'"; "Invalid value"

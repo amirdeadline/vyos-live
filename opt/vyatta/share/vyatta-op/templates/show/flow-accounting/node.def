@@ -1,0 +1,2 @@
+help: Show flow accounting statistics
+run: ${vyos_op_scripts_dir}/flow_accounting_op.py --action show

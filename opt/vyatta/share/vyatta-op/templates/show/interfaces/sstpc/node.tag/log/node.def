@@ -1,0 +1,2 @@
+help: Show specified SSTP client interface log
+run: journalctl --no-hostname --boot --follow --unit "ppp@$4".service

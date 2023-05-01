@@ -1,0 +1,4 @@
+type: txt
+help: Minimum interval between unsolicited multicast RAs
+val_help: u32:3-1350; Minimum interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 3-1350\"  --value \'$VAR(@)\'"; "Minimum interval must be between 3 and 1350 seconds"

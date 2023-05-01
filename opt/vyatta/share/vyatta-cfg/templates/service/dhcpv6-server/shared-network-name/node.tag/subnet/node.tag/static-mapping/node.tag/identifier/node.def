@@ -1,0 +1,4 @@
+type: txt
+help: Client identifier (DUID) for this static mapping
+val_help: h[[:h]...]; DUID: colon-separated hex list (as used by isc-dhcp option dhcpv6.client-id)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([0-9A-Fa-f]{1,2}[:])*([0-9A-Fa-f]{1,2})\'   --value \'$VAR(@)\'"; "Invalid DUID, must be in the format h[[:h]...]"

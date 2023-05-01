@@ -1,0 +1,4 @@
+type: txt
+help: Minimum  threshold for random detection
+val_help: u32:0-4096; Maximum Threshold in packets
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4096\"  --value \'$VAR(@)\'"; "Threshold must be between 0 and 4096"

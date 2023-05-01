@@ -1,0 +1,5 @@
+type: u32
+default: 1000
+syntax:expression: $VAR(@) >= 500; "Interval should be higher than 500ms"
+help: Interval for ICMP packets (ms)
+val_help: u32:500-100000000; Interval time (ms)

@@ -1,0 +1,4 @@
+type: txt
+help: A Network Entity Title for this process (ISO only)
+val_help: XX.XXXX. ... .XXX.XX; Network entity title (NET)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-fA-F0-9]{2}(\\.[a-fA-F0-9]{4}){3,9}\\.[a-fA-F0-9]{2}\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: UDP generic timeout in seconds (default: 30)
+val_help: u32:1-21474836; UDP generic timeout in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-21474836\"  --value \'$VAR(@)\'"; "Invalid value"

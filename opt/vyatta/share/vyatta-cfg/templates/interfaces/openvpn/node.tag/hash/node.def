@@ -1,0 +1,9 @@
+type: txt
+help: Hashing Algorithm
+val_help: md5; MD5 algorithm
+val_help: sha1; SHA-1 algorithm
+val_help: sha256; SHA-256 algorithm
+val_help: sha384; SHA-384 algorithm
+val_help: sha512; SHA-512 algorithm
+allowed: echo "md5 sha1 sha256 sha384 sha512"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(md5|sha1|sha256|sha384|sha512)\'   --value \'$VAR(@)\'"; "Invalid value"

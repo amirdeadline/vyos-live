@@ -1,0 +1,4 @@
+type: txt
+help: Prefix-list to apply to output packets
+val_help: txt; Prefix-list to apply to output packets
+allowed: /bin/cli-shell-api listNodes policy prefix-list

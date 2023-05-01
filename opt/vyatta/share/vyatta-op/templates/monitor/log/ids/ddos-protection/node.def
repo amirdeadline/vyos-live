@@ -1,0 +1,2 @@
+help: Monitor last lines of DDOS protection
+run: journalctl --no-hostname --follow --boot --unit fastnetmon.service

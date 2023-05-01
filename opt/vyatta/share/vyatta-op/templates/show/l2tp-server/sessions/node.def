@@ -1,0 +1,2 @@
+help: Show active L2TP server sessions
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="l2tp" --action="show sessions"

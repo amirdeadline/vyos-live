@@ -1,0 +1,2 @@
+help: Neighbor must send this exact capability, otherwise a role
+			missmatch notification will be sent

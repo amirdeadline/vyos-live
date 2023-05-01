@@ -1,0 +1,4 @@
+type: txt
+help: Summary-default cost of an NSSA area
+val_help: u32:0-16777215; Summary default cost
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-16777215\"  --value \'$VAR(@)\'"; "Invalid value"

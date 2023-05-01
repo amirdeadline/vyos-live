@@ -1,0 +1,5 @@
+type: txt
+help: Multicast group address for VXLAN interface
+val_help: ipv4; Multicast IPv4 group address
+val_help: ipv6; Multicast IPv6 group address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-multicast \" --exec \"${vyos_validators_dir}/ipv6-multicast \"  --value \'$VAR(@)\'"; "Multicast IPv4/IPv6 address required"

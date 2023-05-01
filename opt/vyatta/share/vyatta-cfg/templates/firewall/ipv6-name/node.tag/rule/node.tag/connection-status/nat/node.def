@@ -1,0 +1,6 @@
+type: txt
+help: NAT connection status
+val_help: destination; Match connections that are subject to destination NAT
+val_help: source; Match connections that are subject to source NAT
+allowed: echo "destination source"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'^(destination|source)$\'   --value \'$VAR(@)\'"; "Invalid value"

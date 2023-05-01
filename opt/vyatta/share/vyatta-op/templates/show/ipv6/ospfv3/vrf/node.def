@@ -1,0 +1,3 @@
+help: Specify the VRF
+allowed: echo "all" && /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

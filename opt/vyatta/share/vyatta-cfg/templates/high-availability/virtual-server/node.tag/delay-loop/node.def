@@ -1,0 +1,4 @@
+type: txt
+help: Interval between health-checks (in seconds) (default: 10)
+val_help: u32:1-600; Interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-3600\"  --value \'$VAR(@)\'"; "Invalid value"

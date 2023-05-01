@@ -1,0 +1,2 @@
+help: Reset specified user current remote access IPsec VPN session(s)
+run: sudo ${vyos_op_scripts_dir}/ipsec.py reset_ra --user="$6"

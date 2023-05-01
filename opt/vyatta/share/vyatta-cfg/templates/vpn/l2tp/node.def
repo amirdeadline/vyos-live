@@ -1,0 +1,3 @@
+priority: 902
+help: L2TP Virtual Private Network (VPN)
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/vpn_l2tp.py"

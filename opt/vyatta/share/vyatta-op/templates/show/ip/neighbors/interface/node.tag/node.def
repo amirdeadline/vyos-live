@@ -1,0 +1,3 @@
+help: Show IPv4 neighbor table for specified interface
+allowed: ${vyos_completion_dir}/list_interfaces --broadcast
+run: ${vyos_op_scripts_dir}/neighbor.py show --family inet --interface "$5"

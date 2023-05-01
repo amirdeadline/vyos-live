@@ -1,0 +1,2 @@
+help: Show log for PPPoE server
+run: journalctl --no-hostname --boot --unit accel-ppp@pppoe.service

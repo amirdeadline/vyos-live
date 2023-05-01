@@ -1,0 +1,2 @@
+help: Show active IPoE server sessions
+run: ${vyos_op_scripts_dir}/ipoe-control.py --action="show_sessions"

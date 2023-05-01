@@ -1,0 +1,2 @@
+help: Display detail of configured dampening parameters
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

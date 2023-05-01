@@ -1,0 +1,2 @@
+help: Show system uptime and load averages
+run: ${vyos_op_scripts_dir}/uptime.py show

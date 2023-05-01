@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Specify IPv4 and IPv6 networks which are going to be excluded
+			from protection
+val_help: ipv4net; IPv4 prefix(es) to exclude
+val_help: ipv6net; IPv6 prefix(es) to exclude
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

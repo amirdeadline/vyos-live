@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Management IP Address
+val_help: ipv4; IPv4 Management Address
+val_help: ipv6; IPv6 Management Address
+allowed: sh -c "${vyos_completion_dir}/list_local_ips.sh --both"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \"  --value \'$VAR(@)\'"; "Invalid value"

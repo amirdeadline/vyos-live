@@ -1,0 +1,2 @@
+help: Debug Hello message
+run: vtysh -c "no debug ospf6 ${@:5}"

@@ -1,0 +1,2 @@
+help: Show IS-IS routing protocol for given VRF
+allowed: echo "all" && /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo

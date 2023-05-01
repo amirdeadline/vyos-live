@@ -1,0 +1,19 @@
+
+input ShowSessionsOpenconnectInput {
+    key: String
+}
+
+type ShowSessionsOpenconnect {
+    result: Generic
+}
+
+type ShowSessionsOpenconnectResult {
+    data: ShowSessionsOpenconnect
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowSessionsOpenconnect(data: ShowSessionsOpenconnectInput) : ShowSessionsOpenconnectResult @genopquery
+}

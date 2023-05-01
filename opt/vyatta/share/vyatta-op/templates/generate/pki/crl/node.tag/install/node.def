@@ -1,0 +1,2 @@
+help: Commands for installing generated CRL into running configuration
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --crl "$4" --install

@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: IP addresses allowed to traverse the peer
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

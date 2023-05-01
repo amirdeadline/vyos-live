@@ -1,0 +1,4 @@
+type: txt
+help: Maximum number of TCP half-open connections (default: 512)
+val_help: u32:1-2147483647; Generic connection timeout in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-2147483647\"  --value \'$VAR(@)\'"; "Invalid value"

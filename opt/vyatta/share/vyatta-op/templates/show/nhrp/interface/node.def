@@ -1,0 +1,2 @@
+help: Show NHRP interface connection information
+run: ${vyos_op_scripts_dir}/nhrp.py show_interface

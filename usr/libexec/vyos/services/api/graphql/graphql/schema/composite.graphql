@@ -1,0 +1,18 @@
+
+input SystemStatusInput {
+    key: String
+}
+
+type SystemStatus {
+    result: Generic
+}
+
+type SystemStatusResult {
+    data: SystemStatus
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    SystemStatus(data: SystemStatusInput) : SystemStatusResult @compositequery
+}

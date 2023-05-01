@@ -1,0 +1,2 @@
+help: Show available container networks
+run: sudo ${vyos_op_scripts_dir}/container.py show_network

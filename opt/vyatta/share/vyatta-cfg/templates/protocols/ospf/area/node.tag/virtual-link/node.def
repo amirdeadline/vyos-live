@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Virtual link
+val_help: ipv4; OSPF area in dotted decimal notation
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\" --exec \"${vyos_validators_dir}/ip-address \"  --value \'$VAR(@)\'"; "Invalid value"

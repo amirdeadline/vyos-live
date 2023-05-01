@@ -1,0 +1,2 @@
+help: Virtual Routing and Forwarding (VRF)
+allowed: /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo

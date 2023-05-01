@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Network name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]{1,11}\'   --value \'$VAR(@)\'"; "Network name cannot be longer than 11 characters"

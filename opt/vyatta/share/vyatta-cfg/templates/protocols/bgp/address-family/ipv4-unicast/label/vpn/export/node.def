@@ -1,0 +1,6 @@
+type: txt
+help: For routes leaked from current address-family to VPN
+val_help: auto; Automatically assign a label
+val_help: u32:0-1048575; Label Value
+allowed: echo "auto"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(auto)\' --exec \"${vyos_validators_dir}/numeric --range 0-1048575\"  --value \'$VAR(@)\'"; "Invalid value"

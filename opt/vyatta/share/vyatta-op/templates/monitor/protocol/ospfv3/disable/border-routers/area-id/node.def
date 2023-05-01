@@ -1,0 +1,2 @@
+help: Disable debug border routers in specific Area
+run: vtysh -c "no debug ospf6 ${@:5}"

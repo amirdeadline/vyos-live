@@ -1,0 +1,6 @@
+type: u32
+default: 60
+syntax:expression: $VAR(@) >= 0 && $VAR(@) <= 600; "success count must be between 1 and 60"
+help: Success count to reuse the fabric link
+val_help: u32:1-600; Success count
+

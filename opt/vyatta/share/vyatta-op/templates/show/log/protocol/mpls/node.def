@@ -1,0 +1,2 @@
+help: Show log for MPLS
+run: journalctl --boot /usr/lib/frr/ldpd

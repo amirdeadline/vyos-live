@@ -1,0 +1,4 @@
+type: txt
+help: Username used for authentication
+val_help: txt; Username
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:ascii:]]{1,128}\'   --value \'$VAR(@)\'"; "Username is limited to ASCII characters only, with a total length of 128"

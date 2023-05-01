@@ -1,0 +1,11 @@
+multi:
+type: txt
+help: Protocols for which local conntrack entries will be synced
+val_help: tcp; Sync Transmission Control Protocol entries
+val_help: udp; Sync User Datagram Protocol entries
+val_help: icmp; Sync Internet Control Message Protocol entries
+val_help: icmp6; Sync IPv6 Internet Control Message Protocol entries
+val_help: sctp; Sync Stream Control Transmission Protocol entries
+val_help: dccp; Sync Datagram Congestion Control Protocol entries
+allowed: echo "tcp udp icmp icmp6 sctp dccp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(tcp|udp|icmp|icmp6|sctp|dccp)\'   --value \'$VAR(@)\'"; "Allowed protocols: tcp udp icmp or sctp"

@@ -1,0 +1,7 @@
+tag:
+type: txt
+priority: 461
+help: MACsec Interface (802.1ae)
+val_help: macsecN; MACsec interface name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'macsec[0-9]+\'   --value \'$VAR(@)\'"; "MACsec interface must be named macsecN"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/interfaces-macsec.py"

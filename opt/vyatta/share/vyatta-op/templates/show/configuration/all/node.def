@@ -1,0 +1,2 @@
+help: Show running configuration (including default values)
+run: cli-shell-api showCfg --show-show-defaults --show-active-only --show-hide-secrets

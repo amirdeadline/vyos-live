@@ -1,0 +1,2 @@
+help: PIM interfaces information
+run: vtysh -c "show ip pim interface"

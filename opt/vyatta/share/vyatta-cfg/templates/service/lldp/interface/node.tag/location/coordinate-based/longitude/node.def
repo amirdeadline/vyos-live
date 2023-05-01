@@ -1,0 +1,4 @@
+type: txt
+help: Longitude
+val_help: <longitude>; Longitude (example "122.267255W")
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(\\d+)(\\.\\d+)?[eEwW]\'   --value \'$VAR(@)\'"; "Longiture should be a number followed by E or W"

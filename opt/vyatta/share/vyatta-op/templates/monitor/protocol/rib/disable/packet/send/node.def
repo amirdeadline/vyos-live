@@ -1,0 +1,2 @@
+help: Disable send packet debugging
+run: vtysh -c "no debug zebra ${@:5}"

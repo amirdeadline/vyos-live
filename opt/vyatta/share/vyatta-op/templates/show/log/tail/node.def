@@ -1,0 +1,2 @@
+help: Show last 10 lines of /var/log/messages file
+run: tail -n 10 /var/log/messages

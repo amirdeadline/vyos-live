@@ -1,0 +1,2 @@
+help: Monitor last lines of Simple Network Monitoring Protocol (SNMP)
+run: journalctl --no-hostname --boot --follow --unit snmpd.service

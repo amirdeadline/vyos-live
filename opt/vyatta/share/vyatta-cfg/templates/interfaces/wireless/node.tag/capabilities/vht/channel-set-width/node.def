@@ -1,0 +1,8 @@
+type: txt
+help: VHT operating Channel width
+val_help: 0; 20 or 40 MHz channel width
+val_help: 1; 80 MHz channel width
+val_help: 2; 160 MHz channel width
+val_help: 3; 80+80 MHz channel width
+allowed: echo "0 1 2 3"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-3\"  --value \'$VAR(@)\'"; "Invalid value"

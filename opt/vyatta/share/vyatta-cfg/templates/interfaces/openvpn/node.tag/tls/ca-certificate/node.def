@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Certificate Authority chain in PKI configuration
+val_help: txt; Name of CA in PKI configuration
+allowed: /bin/cli-shell-api listNodes pki ca

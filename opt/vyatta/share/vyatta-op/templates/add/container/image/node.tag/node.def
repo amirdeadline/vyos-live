@@ -1,0 +1,2 @@
+help: Pull a new image for container
+run: sudo ${vyos_op_scripts_dir}/container.py add_image --name "${4}"

@@ -1,0 +1,2 @@
+help: Show log for Secure Shell (SSH)
+run: journalctl --no-hostname --boot --unit ssh.service

@@ -1,0 +1,5 @@
+type: txt
+help: Specifies the clients subnet mask as per RFC 950. If unset,
+			subnet declaration is used.
+val_help: u32:0-32; DHCP client prefix length must be 0 to 32
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-32\"  --value \'$VAR(@)\'"; "DHCP client prefix length must be 0 to 32"

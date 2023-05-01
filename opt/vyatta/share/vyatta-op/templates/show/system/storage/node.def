@@ -1,0 +1,2 @@
+help: Show filesystem usage
+run: ${vyos_op_scripts_dir}/storage.py show

@@ -1,0 +1,4 @@
+type: txt
+help: Secure Connectivity Association Key Name
+val_help: txt; 1..32-bytes (8..256 bit) hex-string (2..64 hex-digits)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[A-Fa-f0-9]{2,64}\'   --value \'$VAR(@)\'"; "Invalid value"

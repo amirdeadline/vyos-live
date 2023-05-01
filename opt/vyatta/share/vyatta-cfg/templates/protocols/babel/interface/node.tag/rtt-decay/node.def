@@ -1,0 +1,5 @@
+type: txt
+help: Decay factor for exponential moving average of RTT samples
+			(default: 42)
+val_help: u32:1-256; Decay factor, in units of 1/256
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-256\"  --value \'$VAR(@)\'"; "Invalid value"

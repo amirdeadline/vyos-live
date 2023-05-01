@@ -1,0 +1,4 @@
+type: txt
+help: Serial port baud rate
+allowed: echo "300 1200 2400 4800 9600 19200 38400 57600 115200"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(300|1200|2400|4800|9600|19200|38400|57600|115200)\'   --value \'$VAR(@)\'"; "Invalid value"

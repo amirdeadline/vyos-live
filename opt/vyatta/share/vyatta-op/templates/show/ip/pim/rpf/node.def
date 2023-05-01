@@ -1,0 +1,2 @@
+help: PIM cached source rpf information
+run: vtysh -c "show ip pim rpf"

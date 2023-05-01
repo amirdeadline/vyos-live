@@ -1,0 +1,4 @@
+type: txt
+help: Priority for IPsec policy (lowest value more preferable)
+val_help: u32:1-100; Priority for IPsec policy (lowest value more preferable)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-100\"  --value \'$VAR(@)\'"; "Invalid value"

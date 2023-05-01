@@ -1,0 +1,4 @@
+type: txt
+help: Authentication mode
+val_help: pre-shared-secret; Use a pre-shared secret key
+allowed: echo "pre-shared-secret"

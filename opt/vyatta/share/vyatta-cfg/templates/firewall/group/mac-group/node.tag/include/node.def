@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Include another mac-group
+allowed: /bin/cli-shell-api listNodes firewall group mac-group

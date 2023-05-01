@@ -1,0 +1,5 @@
+type: u32
+syntax:expression: $VAR(@) >= 0 && $VAR(@) <= 100; "Packetloss %"
+help: Average packetloss in last 5 minutes
+val_help: u32:1-100; Packetloss %
+

@@ -1,0 +1,2 @@
+help: Enable timestamps with each Hello and IHU message in order to
+			compute RTT values

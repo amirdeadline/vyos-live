@@ -1,0 +1,4 @@
+type: txt
+help: PPPoE RFC2516 host-uniq tag
+val_help: txt; Host-uniq tag as byte string in HEX
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([a-fA-F0-9][a-fA-F0-9]){1,18}\'   --value \'$VAR(@)\'"; "Host-uniq must be specified as hex-adecimal byte-string (even number of HEX characters)"

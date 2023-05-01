@@ -1,0 +1,7 @@
+type: txt
+help: Configure circuit type for interface
+val_help: level-1; Level-1 only adjacencies are formed
+val_help: level-1-2; Level-1-2 adjacencies are formed
+val_help: level-2-only; Level-2 only adjacencies are formed
+allowed: echo "level-1 level-1-2 level-2-only"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(level-1|level-1-2|level-2-only)\'   --value \'$VAR(@)\'"; "Invalid value"

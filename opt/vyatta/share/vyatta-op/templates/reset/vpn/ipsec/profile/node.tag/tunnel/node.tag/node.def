@@ -1,0 +1,3 @@
+help: Reset a specific tunnel for given DMVPN profile
+allowed: sudo ${vyos_completion_dir}/list_ipsec_profile_tunnels.py --profile ${COMP_WORDS[4]}
+run: sudo ${vyos_op_scripts_dir}/ipsec.py reset_profile_all --profile="$5" --tunnel="$7"

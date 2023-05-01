@@ -1,0 +1,2 @@
+help: Re-generate SSH host keys and restart SSH server
+run: sudo ${vyos_op_scripts_dir}/generate_ssh_server_key.py

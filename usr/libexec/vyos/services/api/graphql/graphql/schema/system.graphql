@@ -1,0 +1,19 @@
+
+input ShowUpdateSystemInput {
+    key: String
+}
+
+type ShowUpdateSystem {
+    result: Generic
+}
+
+type ShowUpdateSystemResult {
+    data: ShowUpdateSystem
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowUpdateSystem(data: ShowUpdateSystemInput) : ShowUpdateSystemResult @genopquery
+}

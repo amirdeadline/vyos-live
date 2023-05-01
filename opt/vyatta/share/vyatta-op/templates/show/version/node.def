@@ -1,0 +1,2 @@
+help: Show system version information
+run: sudo ${vyos_op_scripts_dir}/version.py show

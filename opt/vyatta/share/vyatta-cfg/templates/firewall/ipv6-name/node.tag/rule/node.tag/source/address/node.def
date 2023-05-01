@@ -1,0 +1,9 @@
+type: txt
+help: IP address, subnet, or range
+val_help: ipv6; IP address to match
+val_help: ipv6net; Subnet to match
+val_help: ipv6range; IP range to match
+val_help: !ipv6; Match everything except the specified address
+val_help: !ipv6net; Match everything except the specified prefix
+val_help: !ipv6range; Match everything except the specified range
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6 \" --exec \"${vyos_validators_dir}/ipv6-exclude \" --exec \"${vyos_validators_dir}/ipv6-range \" --exec \"${vyos_validators_dir}/ipv6-range-exclude \"  --value \'$VAR(@)\'"; "Invalid value"

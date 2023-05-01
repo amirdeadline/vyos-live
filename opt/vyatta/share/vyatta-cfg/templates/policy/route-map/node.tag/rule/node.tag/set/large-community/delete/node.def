@@ -1,0 +1,4 @@
+type: txt
+help: Remove communities defined in a list from a prefix
+val_help: txt; Community-list
+allowed: /bin/cli-shell-api listNodes policy large-community-list

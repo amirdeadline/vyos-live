@@ -1,0 +1,38 @@
+
+input ShowInterfaceNhrpInput {
+    key: String
+}
+
+type ShowInterfaceNhrp {
+    result: Generic
+}
+
+type ShowInterfaceNhrpResult {
+    data: ShowInterfaceNhrp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowInterfaceNhrp(data: ShowInterfaceNhrpInput) : ShowInterfaceNhrpResult @genopquery
+}
+
+input ShowTunnelNhrpInput {
+    key: String
+}
+
+type ShowTunnelNhrp {
+    result: Generic
+}
+
+type ShowTunnelNhrpResult {
+    data: ShowTunnelNhrp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowTunnelNhrp(data: ShowTunnelNhrpInput) : ShowTunnelNhrpResult @genopquery
+}

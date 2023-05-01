@@ -1,0 +1,2 @@
+help: IGMP interfaces information
+run: vtysh -c "show ip igmp interface"

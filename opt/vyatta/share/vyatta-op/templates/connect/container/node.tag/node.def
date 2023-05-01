@@ -1,0 +1,3 @@
+help: Attach to a running container
+allowed: /bin/cli-shell-api listActiveNodes container name | sed -e "s/'//g" && echo
+run: sudo podman exec --interactive --tty "$3" /bin/sh

@@ -1,0 +1,2 @@
+help: Lifetime is decremented by the number of seconds since the last
+			RA - use in conjunction with a DHCPv6-PD prefix

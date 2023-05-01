@@ -1,0 +1,2 @@
+help: Visually identify specified ethernet interface
+run: echo "Blinking interface $4 for 30 seconds."; ethtool --identify "$4" 30

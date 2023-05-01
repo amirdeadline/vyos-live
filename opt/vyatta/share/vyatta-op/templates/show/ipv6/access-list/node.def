@@ -1,0 +1,2 @@
+help: Show all IPv6 access-lists
+run: vtysh -c "show ipv6 access-list"

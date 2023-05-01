@@ -1,0 +1,3 @@
+help: Hosts use the administered (stateful) protocol for address
+			autoconfiguration in addition to any addresses autoconfigured
+			using SLAAC

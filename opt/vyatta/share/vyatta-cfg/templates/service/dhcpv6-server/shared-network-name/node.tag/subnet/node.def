@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: IPv6 DHCP subnet for this shared network
+val_help: ipv6net; IPv6 address and prefix length
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

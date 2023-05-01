@@ -1,0 +1,2 @@
+help: Allows for the transmission of all characters inside a syslog
+			message

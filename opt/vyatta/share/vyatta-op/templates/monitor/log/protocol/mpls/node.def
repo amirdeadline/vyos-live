@@ -1,0 +1,2 @@
+help: Monitor log for MPLS
+run: journalctl --follow --no-hostname --boot /usr/lib/frr/ldpd

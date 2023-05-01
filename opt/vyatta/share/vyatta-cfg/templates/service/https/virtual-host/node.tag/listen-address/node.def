@@ -1,0 +1,7 @@
+type: txt
+help: Address to listen for HTTPS requests
+val_help: ipv4; HTTPS IPv4 address
+val_help: ipv6; HTTPS IPv6 address
+val_help: '*'; any
+allowed: sh -c "${vyos_completion_dir}/list_local_ips.sh --both"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'\\*\' --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

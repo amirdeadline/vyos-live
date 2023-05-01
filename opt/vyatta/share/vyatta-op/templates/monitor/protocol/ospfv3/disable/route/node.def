@@ -1,0 +1,2 @@
+help: Disable OSPFv3 route table calculation debugging
+run: vtysh -c "no debug ospf6 ${@:5}"

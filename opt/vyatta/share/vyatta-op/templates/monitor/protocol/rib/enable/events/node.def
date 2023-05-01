@@ -1,0 +1,2 @@
+help: Enable RIB events debugging
+run: vtysh -c "debug zebra ${@:5}"

@@ -1,0 +1,4 @@
+type: txt
+help: Maximum number of entries to keep in the cache (default: 8192)
+allowed: echo "1024 2048 4096 8192 16384 32768"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(1024|2048|4096|8192|16384|32768)\'   --value \'$VAR(@)\'"; "Invalid value"

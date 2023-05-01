@@ -1,0 +1,2 @@
+help: Show detailed VRRP state information
+run: sudo ${vyos_op_scripts_dir}/vrrp.py --data

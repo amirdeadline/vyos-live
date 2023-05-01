@@ -1,0 +1,4 @@
+type: txt
+help: TX ring buffer
+val_help: u32:80-16384; ring buffer size
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 80-16384\"  --value \'$VAR(@)\'"; "Invalid value"

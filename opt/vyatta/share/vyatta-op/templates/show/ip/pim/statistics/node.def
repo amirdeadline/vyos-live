@@ -1,0 +1,2 @@
+help: PIM statistics
+run: vtysh -c "show ip pim statistics"

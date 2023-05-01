@@ -1,0 +1,52 @@
+
+enum FamilyRoute {
+    inet
+    inet6
+}
+
+input ShowRouteInput {
+    key: String
+    family: FamilyRoute!
+    net: String = null
+    table: Int = null
+    protocol: String = null
+    vrf: String = null
+    tag: String = null
+}
+
+type ShowRoute {
+    result: Generic
+}
+
+type ShowRouteResult {
+    data: ShowRoute
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowRoute(data: ShowRouteInput) : ShowRouteResult @genopquery
+}
+
+input ShowSummaryRouteInput {
+    key: String
+    family: FamilyRoute!
+    table: Int = null
+    vrf: String = null
+}
+
+type ShowSummaryRoute {
+    result: Generic
+}
+
+type ShowSummaryRouteResult {
+    data: ShowSummaryRoute
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowSummaryRoute(data: ShowSummaryRouteInput) : ShowSummaryRouteResult @genopquery
+}

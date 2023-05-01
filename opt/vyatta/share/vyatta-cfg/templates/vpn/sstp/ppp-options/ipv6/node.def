@@ -1,0 +1,8 @@
+type: txt
+help: IPv6 (IPCP6) negotiation algorithm (default: deny)
+val_help: deny; Do not negotiate IPv6 (default)
+val_help: allow; Negotiate IPv6 only if client requests
+val_help: prefer; Ask client for IPv6 negotiation, do not fail if it rejects
+val_help: require; Require IPv6 negotiation
+allowed: echo "deny allow prefer require"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(deny|allow|prefer|require)\'   --value \'$VAR(@)\'"; "invalid value"

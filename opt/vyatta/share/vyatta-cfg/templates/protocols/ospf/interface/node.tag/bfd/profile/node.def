@@ -1,0 +1,4 @@
+type: txt
+help: Use settings from BFD profile
+val_help: txt; BFD profile name
+allowed: /bin/cli-shell-api listNodes protocols bfd profile

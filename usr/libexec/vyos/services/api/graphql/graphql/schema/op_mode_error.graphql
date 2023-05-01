@@ -1,0 +1,47 @@
+
+interface OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+
+type CommitInProgress implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+type DataUnavailable implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+type IncorrectValue implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+type InsufficientResources implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+type InternalError implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+type PermissionDenied implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+type UnconfiguredSubsystem implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}
+type UnsupportedOperation implements OpModeError {
+    name: String!
+    message: String!
+    vyos_code: Int!
+}

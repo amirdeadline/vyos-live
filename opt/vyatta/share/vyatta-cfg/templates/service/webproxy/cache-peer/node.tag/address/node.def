@@ -1,0 +1,5 @@
+type: txt
+help: Hostname or IP address of peer
+val_help: ipv4; Squid cache-peer IPv4 address
+val_help: hostname; Squid cache-peer hostname
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid FQDN or IP address"

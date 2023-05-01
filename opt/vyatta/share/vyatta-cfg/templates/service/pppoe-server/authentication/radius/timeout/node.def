@@ -1,0 +1,5 @@
+type: txt
+help: Timeout in seconds to wait response from RADIUS server (default:
+			3)
+val_help: u32:1-60; Timeout in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-60\"  --value \'$VAR(@)\'"; "Timeout must be between 1 and 60 seconds"

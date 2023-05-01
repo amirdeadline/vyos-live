@@ -1,0 +1,3 @@
+help: Show DHCPv6 client log on specific interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: journalctl --no-hostname --boot --unit "dhcp6c@$6.service"

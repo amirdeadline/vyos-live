@@ -1,0 +1,7 @@
+type: txt
+help: BGP origin code to match
+val_help: egp; Exterior gateway protocol origin
+val_help: igp; Interior gateway protocol origin
+val_help: incomplete; Incomplete origin
+allowed: echo "egp igp incomplete"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(egp|igp|incomplete)\'   --value \'$VAR(@)\'"; "Invalid value"

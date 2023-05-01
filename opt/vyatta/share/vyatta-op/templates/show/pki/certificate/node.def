@@ -1,0 +1,2 @@
+help: Show x509 certificates
+run: sudo ${vyos_op_scripts_dir}/pki.py --action show --certificate "all"

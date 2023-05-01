@@ -1,0 +1,2 @@
+help: Restart the IGMP proxy process
+run: sudo systemctl restart igmpproxy.service

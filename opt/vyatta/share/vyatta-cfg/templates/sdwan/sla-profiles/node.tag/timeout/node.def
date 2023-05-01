@@ -1,0 +1,4 @@
+type: u32
+default: 1000
+help: Timeout for ICMP packets (ms)
+val_help: u32:1-10000; Timeout time (ms)

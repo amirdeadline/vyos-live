@@ -1,0 +1,3 @@
+help: Show Bidirectional Forwarding Detection (BFD) peer status
+allowed: vtysh -c "show bfd peers" | awk '/[:blank:]*peer/ { printf "%s\n", $2 }'
+run: vtysh -c "show bfd peers" | sed -n "/peer $4 /,/^$/p"

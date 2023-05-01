@@ -1,0 +1,9 @@
+type: txt
+help: Policy to handle incoming DHCPv4 packets which already contain
+			relay agent options (default: forward)
+val_help: append; append own relay options to packet
+val_help: replace; replace existing agent option field
+val_help: forward; forward packet unchanged (default)
+val_help: discard; discard packet (default action if giaddr not set in packet)
+allowed: echo "append replace forward discard"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(append|replace|forward|discard)\'   --value \'$VAR(@)\'"; "Invalid value"

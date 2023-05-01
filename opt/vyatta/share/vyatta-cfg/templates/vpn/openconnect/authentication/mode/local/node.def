@@ -1,0 +1,7 @@
+type: txt
+help: Use local username/password configuration (OTP supported)
+val_help: password; Password-only local authentication
+val_help: otp; OTP-only local authentication
+val_help: password-otp; Password (first) + OTP local authentication
+allowed: echo "otp password password-otp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(password|otp|password-otp)\'   --value \'$VAR(@)\'"; "Invalid authentication mode. Must be one of: password, otp or password-otp "

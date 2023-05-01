@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Group that a client is allowed to select (from a list). Maps to
+			RADIUS Class attribute.
+val_help: txt; Group string. The group may be followed by a user-friendly name in brackets: group1[First Group]

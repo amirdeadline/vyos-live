@@ -1,0 +1,7 @@
+type: txt
+help: Connection uniqueness enforcement policy
+val_help: never; Never enforce connection uniqueness
+val_help: keep; Reject new connection attempts if the same user already has an active connection
+val_help: replace; Delete any existing connection if a new one for the same user gets established
+allowed: echo "never keep replace"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(never|keep|replace)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Clear BGP statistics or status for vrf
+allowed: /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo

@@ -1,0 +1,6 @@
+type: txt
+help: Volume access mode ro/rw (default: rw)
+val_help: ro; Volume mounted into the container as read-only
+val_help: rw; Volume mounted into the container as read-write (default)
+allowed: echo "ro rw"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ro|rw)\'   --value \'$VAR(@)\'"; "Invalid value"

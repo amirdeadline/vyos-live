@@ -1,0 +1,2 @@
+help: Open Shortest Path First (OSPFv2)
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

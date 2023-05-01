@@ -1,0 +1,7 @@
+type: txt
+help: Specifies the type of notification between inform and trap
+			(default: inform)
+val_help: inform; Use INFORM (default)
+val_help: trap; Use TRAP
+allowed: echo "inform trap"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(inform|trap)\'   --value \'$VAR(@)\'"; "Invalid value"

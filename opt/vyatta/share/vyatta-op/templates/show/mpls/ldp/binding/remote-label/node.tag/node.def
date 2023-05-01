@@ -1,0 +1,2 @@
+help: Match remotely assigned label value
+run: vtysh -c "show mpls ldp binding remote-label $6"

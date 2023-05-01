@@ -1,0 +1,3 @@
+help: This instructs opennhrp to reply with authorative answers on
+			NHRP Resolution Requests destined to addresses in this
+			interface

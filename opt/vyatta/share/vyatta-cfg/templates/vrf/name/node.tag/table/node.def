@@ -1,0 +1,4 @@
+type: txt
+help: Routing table associated with this instance
+val_help: u32:100-65535; Routing table ID
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 100-65535\"  --value \'$VAR(@)\'"; "VRF routing table must be in range from 100 to 65535"

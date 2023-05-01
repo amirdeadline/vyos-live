@@ -1,0 +1,2 @@
+help: Show network namespace information
+run: ip netns ls

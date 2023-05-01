@@ -1,0 +1,3 @@
+help: IPv6 Router Discovery on specified interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: /usr/bin/rdisc6 "$4"

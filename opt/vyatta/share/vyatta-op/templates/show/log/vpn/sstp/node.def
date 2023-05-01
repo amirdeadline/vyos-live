@@ -1,0 +1,2 @@
+help: Show log for SSTP
+run: journalctl --no-hostname --boot --unit accel-ppp@sstp.service

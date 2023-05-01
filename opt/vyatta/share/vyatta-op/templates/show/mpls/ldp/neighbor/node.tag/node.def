@@ -1,0 +1,3 @@
+help: LDP neighbor
+allowed: echo "<x.x.x.x> <h:h:h:h:h:h:h:h>" && vtysh -c "show mpls ldp neighbor" | awk '{print $2}' | egrep -v "ID"
+run: vtysh -c "show mpls ldp neighbor $5"

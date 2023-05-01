@@ -1,0 +1,2 @@
+help: Show log for SSTP client
+run: journalctl --no-hostname --boot --unit "ppp@sstpc*.service"

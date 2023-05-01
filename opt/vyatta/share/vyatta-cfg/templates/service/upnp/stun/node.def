@@ -1,0 +1,2 @@
+help: Enable STUN probe support (can be used with NAT 1:1 support for
+			WAN interfaces)

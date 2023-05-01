@@ -1,0 +1,4 @@
+type: txt
+help: Stable IP address of the advertising router (default: 0.0.0.0)
+val_help: ipv4; Stable IP address of the advertising router
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show WWAN module RF signal info
+run: sudo ${vyos_op_scripts_dir}/show_wwan.py --interface=$4 --signal

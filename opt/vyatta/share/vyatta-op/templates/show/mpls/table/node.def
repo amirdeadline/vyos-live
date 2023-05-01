@@ -1,0 +1,2 @@
+help: Show MPLS table
+run: vtysh -c "show mpls table"

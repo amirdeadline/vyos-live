@@ -1,0 +1,6 @@
+type: txt
+help: Specifies the MII link monitoring frequency in milliseconds
+			(default: 100)
+val_help: u32:0; Disable MII link monitoring
+val_help: u32:50-1000; MII link monitoring frequency in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-0 --range 50-1000\"  --value \'$VAR(@)\'"; "Invalid value"

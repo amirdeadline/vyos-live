@@ -1,0 +1,2 @@
+help: IPv6 Neighbor Discovery on specified interface
+allowed: ${vyos_completion_dir}/list_interfaces

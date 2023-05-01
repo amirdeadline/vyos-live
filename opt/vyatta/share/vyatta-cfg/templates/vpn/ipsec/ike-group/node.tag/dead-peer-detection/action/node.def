@@ -1,0 +1,7 @@
+type: txt
+help: Keep-alive failure action (default: clear)
+val_help: hold; Attempt to re-negotiate the connection when matching traffic is seen
+val_help: clear; Remove the connection immediately (default)
+val_help: restart; Attempt to re-negotiate the connection immediately
+allowed: echo "hold clear restart"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(hold|clear|restart)\'   --value \'$VAR(@)\'"; "Invalid value"

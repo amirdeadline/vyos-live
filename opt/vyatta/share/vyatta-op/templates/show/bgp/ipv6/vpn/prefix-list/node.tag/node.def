@@ -1,0 +1,2 @@
+help: Display routes conforming to the prefix-list
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

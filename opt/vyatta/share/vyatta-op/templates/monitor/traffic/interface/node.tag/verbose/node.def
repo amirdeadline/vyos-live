@@ -1,0 +1,2 @@
+help: Provide more detailed packets for each monitored traffic
+run: sudo tcpdump -vvv -ne -i $4

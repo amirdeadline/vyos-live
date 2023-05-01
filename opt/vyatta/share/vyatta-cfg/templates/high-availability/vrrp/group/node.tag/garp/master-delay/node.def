@@ -1,0 +1,5 @@
+type: txt
+help: Delay for second set of gratuitous ARPs after transition to
+			master (default: 5)
+val_help: u32:1-1000; Delay in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-1000\"  --value \'$VAR(@)\'"; "Invalid value"

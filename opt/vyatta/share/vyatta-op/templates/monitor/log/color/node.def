@@ -1,0 +1,2 @@
+help: Output log in a colored fashion
+run: grc journalctl --no-hostname --follow --boot

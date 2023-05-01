@@ -1,0 +1,4 @@
+type: txt
+help: Interval in minutes between updates (default: 60) (default: 60)
+val_help: u32:1-1440; Update interval in minutes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-1440\"  --value \'$VAR(@)\'"; "Invalid value"

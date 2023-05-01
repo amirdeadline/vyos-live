@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: peer alias
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[^ ]{1,100}\'   --value \'$VAR(@)\'"; "peer alias too long (limit 100 characters)"

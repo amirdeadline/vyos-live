@@ -1,0 +1,8 @@
+tag:
+type: txt
+help: Serial console device name
+val_help: ttySN; TTY device name, regular serial port
+val_help: usbNbXpY; TTY device name, USB based
+val_help: hvcN; Xen console
+allowed: sh -c "ls -1 /dev | grep -e ttyS -e hvc" && echo " " && sh -c "if [ -d /dev/serial/by-bus ]; then ls -1 /dev/serial/by-bus; fi"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ttyS[0-9]+|hvc[0-9]+|usb[0-9]+b.*)\'   --value \'$VAR(@)\'"; "Invalid value"

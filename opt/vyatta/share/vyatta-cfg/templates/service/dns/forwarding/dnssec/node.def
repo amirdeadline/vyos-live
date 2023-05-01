@@ -1,0 +1,9 @@
+type: txt
+help: DNSSEC mode (default: process-no-validate)
+val_help: off; No DNSSEC processing whatsoever!
+val_help: process-no-validate; Respond with DNSSEC records to clients that ask for it. No validation done at all! (default)
+val_help: process; Respond with DNSSEC records to clients that ask for it. Validation for clients that request it.
+val_help: log-fail; Similar behaviour to process, but validate RRSIGs on responses and log bogus responses.
+val_help: validate; Full blown DNSSEC validation. Send SERVFAIL to clients on bogus responses.
+allowed: echo "off process-no-validate process log-fail validate"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(off|process-no-validate|process|log-fail|validate)\'   --value \'$VAR(@)\'"; "Invalid value"

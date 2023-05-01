@@ -1,0 +1,8 @@
+multi:
+type: txt
+help: Supported channel set width
+val_help: ht20; Supported channel set width both 20 MHz only
+val_help: ht40+; Supported channel set width both 20 MHz and 40 MHz with secondary channel above primary channel
+val_help: ht40-; Supported channel set width both 20 MHz and 40 MHz with secondary channel below primary channel
+allowed: echo "ht20 ht40+ ht40-"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ht20|ht40\\+|ht40-)\'   --value \'$VAR(@)\'"; "Invalid value"

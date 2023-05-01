@@ -1,0 +1,2 @@
+help: PIM RP (Rendevous Point) information
+run: vtysh -c "show ip pim rp-info"

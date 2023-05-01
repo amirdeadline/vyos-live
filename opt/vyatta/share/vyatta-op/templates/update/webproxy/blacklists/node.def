@@ -1,0 +1,2 @@
+help: Update the webproxy blacklist database
+run: sudo ${vyos_op_scripts_dir}/webproxy_update_blacklist.sh --update-blacklist

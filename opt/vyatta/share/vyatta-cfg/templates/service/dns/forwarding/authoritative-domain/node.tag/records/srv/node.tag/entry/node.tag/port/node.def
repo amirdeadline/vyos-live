@@ -1,0 +1,4 @@
+type: txt
+help: Port number
+val_help: u32:0-65535; TCP/UDP port number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65536\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,5 @@
+type: txt
+help: Hash used when discovering file on master server (default:
+			sha256) (default: sha256)
+allowed: echo "md5 sha1 sha224 sha256 sha384 sha512"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(md5|sha1|sha224|sha256|sha384|sha512)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Initiator request virtual-address from peer
+val_help: ipv4; Request IPv4 address from peer
+val_help: ipv6; Request IPv6 address from peer

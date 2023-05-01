@@ -1,0 +1,4 @@
+type: txt
+help: Certificate in PKI configuration
+val_help: txt; Name of certificate in PKI configuration
+allowed: /bin/cli-shell-api listNodes pki certificate

@@ -1,0 +1,4 @@
+type: txt
+help: Traffic class (Tclass) (default: inherit)
+val_help: 0x0-0x0fffff; Traffic class, 'inherit' or hex value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(0x){0,1}(0?[0-9A-Fa-f]{1,2})\'   --value \'$VAR(@)\'"; "Must be 'inherit' or a number"

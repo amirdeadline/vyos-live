@@ -1,0 +1,5 @@
+type: txt
+help: Server from which the initial boot file is to be loaded
+val_help: ipv4; Bootfile server IPv4 address
+val_help: hostname; Bootfile server FQDN
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid value"

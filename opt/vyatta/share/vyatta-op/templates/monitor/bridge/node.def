@@ -1,0 +1,2 @@
+help: Monitoring bridge database generated objects and address changes
+run: sudo bridge monitor all

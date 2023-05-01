@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Virtual Local Area Network (VLAN) ID
+val_help: u32:0-4094; Virtual Local Area Network (VLAN) ID
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4094\"  --value \'$VAR(@)\'"; "VLAN ID must be between 0 and 4094"

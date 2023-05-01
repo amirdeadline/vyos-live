@@ -1,0 +1,4 @@
+type: txt
+help: Hash size for connection tracking table (default: 32768)
+val_help: u32:1-50000000; Size of hash to use for connection tracking table
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-50000000\"  --value \'$VAR(@)\'"; "Invalid value"

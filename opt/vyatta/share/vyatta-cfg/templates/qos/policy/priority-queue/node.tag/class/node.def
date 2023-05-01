@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Class Handle
+val_help: u32:1-7; Priority
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-7\"  --value \'$VAR(@)\'"; "Class handle must be between 1 and 7"

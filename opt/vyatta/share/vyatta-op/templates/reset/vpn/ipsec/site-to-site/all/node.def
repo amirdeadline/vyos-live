@@ -1,0 +1,2 @@
+help: Reset all site-to-site IPSec VPN sessions
+run: sudo ${vyos_op_scripts_dir}/ipsec.py reset_all_peers

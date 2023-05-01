@@ -1,0 +1,4 @@
+type: txt
+help: Half-life time for dampening
+val_help: u32:1-45; Half-life penalty in minutes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-45\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,3 @@
+help: Show specified L2TPv3 interface information
+allowed: /bin/cli-shell-api listActiveNodes interfaces l2tpv3 | sed -e "s/'//g" && echo
+run: ${vyos_op_scripts_dir}/interfaces.py show --intf_name="$4" --intf_type=l2tpv3

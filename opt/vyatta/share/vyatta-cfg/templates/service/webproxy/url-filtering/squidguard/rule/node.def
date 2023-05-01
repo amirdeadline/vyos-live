@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: URL filter rule for a source-group
+val_help: u32:1-1024; Rule Number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-1024\"  --value \'$VAR(@)\'"; "SquidGuard rule must between 1-1024"

@@ -1,0 +1,3 @@
+help: Restart Intermediate System to Intermediate System (IS-IS)
+			routing daemon
+run: sudo ${vyos_op_scripts_dir}/restart_frr.py --action restart --daemon isisd

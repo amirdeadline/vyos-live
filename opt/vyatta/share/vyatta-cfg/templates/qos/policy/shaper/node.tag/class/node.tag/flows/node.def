@@ -1,0 +1,5 @@
+type: txt
+help: Number of flows into which the incoming packets are classified
+			(default: 1024)
+val_help: u32:1-65536; Number of flows
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65536\"  --value \'$VAR(@)\'"; "Interval must be in range 1 to 65536"

@@ -1,0 +1,3 @@
+type: txt
+help: BGP as-path-list to match
+allowed: /bin/cli-shell-api listNodes policy as-path-list

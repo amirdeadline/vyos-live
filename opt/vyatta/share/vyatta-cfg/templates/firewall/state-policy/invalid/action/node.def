@@ -1,0 +1,7 @@
+type: txt
+help: Action for packets
+val_help: accept; Action to accept
+val_help: drop; Action to drop
+val_help: reject; Action to reject
+allowed: echo "accept drop reject"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(accept|drop|reject)\'   --value \'$VAR(@)\'"; "Invalid value"

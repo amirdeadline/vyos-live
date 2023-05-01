@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: IP address pool
+val_help: txt; Predefined IP pool name
+val_help: dhcp; Forward requests for virtual IP addresses to a DHCP server
+val_help: radius; Forward requests for virtual IP addresses to a RADIUS server
+allowed: echo "dhcp radius" && echo " " && /bin/cli-shell-api listNodes vpn ipsec remote-access pool

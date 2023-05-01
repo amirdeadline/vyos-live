@@ -1,0 +1,4 @@
+type: txt
+help: Authenticated session time to live in minutes (default: 60)
+val_help: n; Authenticated session timeout
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-600\"  --value \'$VAR(@)\'"; "Invalid value"

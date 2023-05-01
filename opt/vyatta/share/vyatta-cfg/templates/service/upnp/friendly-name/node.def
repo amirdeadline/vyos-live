@@ -1,0 +1,3 @@
+type: txt
+help: Name of this service
+val_help: txt; Friendly name

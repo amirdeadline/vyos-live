@@ -1,0 +1,6 @@
+type: txt
+help: Tune system performance
+val_help: throughput; Tune for maximum network throughput
+val_help: latency; Tune for low network latency
+allowed: echo "throughput latency"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(throughput|latency)\'   --value \'$VAR(@)\'"; "Invalid value"

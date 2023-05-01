@@ -1,0 +1,30 @@
+
+mutation ResetNeighbor ($key: String, $family: FamilyNeighbor!, $interface: String = null, $address: String = null) {
+  ResetNeighbor (data: { key: $key, family: $family, interface: $interface, address: $address }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowNeighbor ($key: String, $family: FamilyNeighbor!, $interface: String = null, $state: StateNeighbor!) {
+  ShowNeighbor (data: { key: $key, family: $family, interface: $interface, state: $state }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

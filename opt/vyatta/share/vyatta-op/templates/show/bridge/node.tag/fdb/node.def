@@ -1,0 +1,2 @@
+help: Show the forwarding database of the bridge
+run: ${vyos_op_scripts_dir}/bridge.py show_fdb --interface=$3

@@ -1,0 +1,2 @@
+help: Reconfigure console keyboard layout
+run: sudo dpkg-reconfigure -f dialog keyboard-configuration && sudo systemctl restart keyboard-setup

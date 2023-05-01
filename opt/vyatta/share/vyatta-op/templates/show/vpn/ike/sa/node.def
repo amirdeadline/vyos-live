@@ -1,0 +1,2 @@
+help: Show all currently active IKE Security Associations (SA)
+run: sudo ${vyos_op_scripts_dir}/vpn_ike_sa.py

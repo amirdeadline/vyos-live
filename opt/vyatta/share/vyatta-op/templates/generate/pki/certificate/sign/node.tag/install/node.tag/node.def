@@ -1,0 +1,4 @@
+help: Commands for installing generated signed certificate into
+			running configuration
+allowed: echo "<certificate name>"
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --certificate "$7" --sign "$5" --install

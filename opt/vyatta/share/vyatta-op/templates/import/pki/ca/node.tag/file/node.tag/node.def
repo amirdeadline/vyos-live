@@ -1,0 +1,2 @@
+help: Path to CA certificate file
+run: sudo ${vyos_op_scripts_dir}/pki.py --action import --ca "$4" --filename "$6"

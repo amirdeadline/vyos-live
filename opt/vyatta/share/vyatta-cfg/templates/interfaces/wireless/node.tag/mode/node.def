@@ -1,0 +1,9 @@
+type: txt
+help: Wireless radio mode (default: g)
+val_help: a; 802.11a - 54 Mbits/sec
+val_help: b; 802.11b - 11 Mbits/sec
+val_help: g; 802.11g - 54 Mbits/sec (default)
+val_help: n; 802.11n - 600 Mbits/sec
+val_help: ac; 802.11ac - 1300 Mbits/sec
+allowed: echo "a b g n ac"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(a|b|g|n|ac)\'   --value \'$VAR(@)\'"; "Invalid value"

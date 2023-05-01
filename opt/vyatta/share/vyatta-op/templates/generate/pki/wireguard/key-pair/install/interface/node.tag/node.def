@@ -1,0 +1,3 @@
+help: WireGuard Interface used in install command
+allowed: /bin/cli-shell-api listActiveNodes interfaces wireguard | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --wireguard --key --interface "$7" --install

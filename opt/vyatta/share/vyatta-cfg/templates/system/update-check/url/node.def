@@ -1,0 +1,4 @@
+type: txt
+help: Remote URL
+val_help: url; Remote URL
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'^https?:\\/\\/?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*(\\:[0-9]+)*(\\/.*)?\'   --value \'$VAR(@)\'"; "Incorrect URL format"

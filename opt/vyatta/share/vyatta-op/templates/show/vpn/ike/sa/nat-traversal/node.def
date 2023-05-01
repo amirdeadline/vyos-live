@@ -1,0 +1,3 @@
+help: Show all currently active IKE Security Associations (SA) that
+			are using NAT Traversal
+run: sudo ${vyos_op_scripts_dir}/vpn_ike_sa.py --nat="yes"

@@ -1,0 +1,4 @@
+type: txt
+help: Transmission power reduction in dBm
+val_help: u32:0-255; TX power reduction in dBm
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "dBm value must be between 0 and 255"

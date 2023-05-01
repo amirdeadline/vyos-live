@@ -1,0 +1,2 @@
+help: Monitor last lines of MACsec
+run: journalctl --no-hostname --boot --follow --unit "wpa_supplicant-macsec@*.service"

@@ -1,0 +1,7 @@
+type: txt
+help: Check type (default: icmp)
+val_help: arp; Check target by ARP
+val_help: icmp; Check target by ICMP (default)
+val_help: tcp; Check target by TCP
+allowed: echo "arp icmp tcp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(arp|icmp|tcp)\'   --value \'$VAR(@)\'"; "Invalid value"

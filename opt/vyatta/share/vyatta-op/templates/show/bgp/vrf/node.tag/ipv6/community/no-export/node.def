@@ -1,0 +1,2 @@
+help: Do not export to next AS (well-known community)
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

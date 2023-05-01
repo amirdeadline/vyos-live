@@ -1,0 +1,4 @@
+help: Show IPv4 OSPF opaque-link database of specified IP address for
+			specified advertised router
+allowed: echo "<x.x.x.x>"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

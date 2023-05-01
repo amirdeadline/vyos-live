@@ -1,0 +1,6 @@
+type: txt
+help: Action to take on entries matching this rule
+val_help: permit; Permit matching entries
+val_help: deny; Deny matching entries
+allowed: echo "permit deny"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(permit|deny)\'   --value \'$VAR(@)\'"; "Invalid value"

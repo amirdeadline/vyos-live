@@ -1,0 +1,2 @@
+help: Show specified bonding interface information
+run: ${vyos_op_scripts_dir}/show-bond.py --slaves

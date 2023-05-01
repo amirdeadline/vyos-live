@@ -1,0 +1,5 @@
+type: txt
+help: Specifies the maximum number of bytes to capture for each packet
+			(default: 128)
+val_help: u32:128-750; Packet length in bytes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 128-750\"  --value \'$VAR(@)\'"; "Invalid value"

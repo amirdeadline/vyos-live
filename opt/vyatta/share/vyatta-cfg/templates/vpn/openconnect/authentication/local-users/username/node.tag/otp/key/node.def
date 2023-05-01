@@ -1,0 +1,4 @@
+type: txt
+help: Token Key Secret key for the token algorithm (see RFC 4226)
+val_help: txt; OTP key in hex-encoded format
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-fA-F0-9]{20,10000}\'   --value \'$VAR(@)\'"; "Key name must only include hex characters and be at least 20 characters long"

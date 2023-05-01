@@ -1,0 +1,5 @@
+type: txt
+help: Dead Peer Detection keep-alive timeout (IKEv1 only) (default:
+			120)
+val_help: u32:2-86400; Keep-alive timeout in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 2-86400\"  --value \'$VAR(@)\'"; "Invalid value"

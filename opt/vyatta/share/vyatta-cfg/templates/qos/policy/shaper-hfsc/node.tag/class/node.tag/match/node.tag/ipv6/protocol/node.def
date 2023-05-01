@@ -1,0 +1,5 @@
+type: txt
+help: Protocol
+val_help: txt; Protocol name
+allowed: sh -c "${vyos_completion_dir}/list_protocols.sh"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-protocol \"  --value \'$VAR(@)\'"; "Invalid value"

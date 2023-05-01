@@ -1,0 +1,3 @@
+type: txt
+help: Override the default ENTRYPOINT from the image
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[ !#-%&(-~]+\'   --value \'$VAR(@)\'"; "Entrypoint must be ascii characters, use &quot; and &apos for double and single quotes respectively"

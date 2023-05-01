@@ -1,0 +1,3 @@
+type: txt
+help: If the groupconfig option is set, then config-per-user will be
+			overriden, and all configuration will be read from RADIUS.

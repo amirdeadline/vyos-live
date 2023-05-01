@@ -1,0 +1,2 @@
+help: Show the list of configured views
+run: ${vyos_op_scripts_dir}/snmp_v3.py --view

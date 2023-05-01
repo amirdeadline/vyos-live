@@ -1,0 +1,4 @@
+type: txt
+help: Maximum average matching rate
+val_help: txt; integer/unit (Example: 5/minute)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'\\d+/(second|minute|hour|day)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,7 @@
+type: txt
+help: Policy for handling IPv6 packets with routing extension header
+			(default: disable)
+val_help: enable; Enable processing of IPv6 packets with routing header type 2
+val_help: disable; Disable processing of IPv6 packets with routing header (default)
+allowed: echo "enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

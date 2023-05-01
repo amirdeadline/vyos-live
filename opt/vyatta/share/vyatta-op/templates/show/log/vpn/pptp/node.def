@@ -1,0 +1,2 @@
+help: Show log for PPTP
+run: journalctl --no-hostname --boot --unit accel-ppp@pptp.service

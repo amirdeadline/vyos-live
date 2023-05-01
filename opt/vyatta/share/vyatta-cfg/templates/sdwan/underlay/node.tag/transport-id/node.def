@@ -1,0 +1,3 @@
+type: u32
+help: SDWAN Underlay domain Transport ID,
+val_help: 0 for Internet, 1-200 for custom transport

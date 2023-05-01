@@ -1,0 +1,2 @@
+help: Lookup host information for hostname|IPv4 address
+run: /usr/bin/host $4

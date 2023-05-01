@@ -1,0 +1,3 @@
+help: Show S.M.A.R.T. device information
+allowed: ls /dev | egrep '([hsv]d[a-z]|nvme[0-9]+n[0-9])$'
+run: sudo smartctl -a "/dev/$5" | sed 1,3d

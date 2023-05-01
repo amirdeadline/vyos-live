@@ -1,0 +1,2 @@
+help: Show summary of the specified wireless interface information
+run: sudo ${vyos_op_scripts_dir}/show_wireless.py --scan "$4"

@@ -1,0 +1,2 @@
+help: Show log for Network Time Protocol (NTP)
+run: journalctl --no-hostname --boot --unit chrony.service

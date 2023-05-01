@@ -1,0 +1,4 @@
+type: txt
+help: Length in bits of prefixes to be delegated
+val_help: u32:32-64; Delagated prefix length (32-64)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 32-64\"  --value \'$VAR(@)\'"; "Delegated prefix length must be between 32 and 64"

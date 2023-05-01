@@ -1,0 +1,2 @@
+help: Show VPN connections
+run: sudo ${vyos_op_scripts_dir}/ipsec.py show_connections

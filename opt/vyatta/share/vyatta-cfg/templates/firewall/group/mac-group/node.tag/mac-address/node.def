@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Mac-group member
+val_help: macaddr; MAC address to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/mac-address \"  --value \'$VAR(@)\'"; "Invalid value"

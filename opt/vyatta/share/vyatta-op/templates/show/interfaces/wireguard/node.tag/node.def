@@ -1,0 +1,3 @@
+help: Show specified WireGuard interface information
+allowed: ${vyos_completion_dir}/list_interfaces --type wireguard
+run: ${vyos_op_scripts_dir}/interfaces.py show --intf_name="$4" --intf_type=wireguard

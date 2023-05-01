@@ -1,0 +1,2 @@
+help: Restart VRRP (Virtual Router Redundancy Protocol) process
+run: sudo systemctl restart keepalived.service

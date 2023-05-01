@@ -1,0 +1,5 @@
+type: txt
+help: Maximum packet size to send to a DHCPv4/BOOTP server (default:
+			576)
+val_help: u32:64-1400; Maximum packet size
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 64-1400\"  --value \'$VAR(@)\'"; "max-size must be a value between 64 and 1400"

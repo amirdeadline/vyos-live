@@ -1,0 +1,2 @@
+help: Show MPLS pseudowire interfaces
+run: vtysh -c "show mpls pseudowires"

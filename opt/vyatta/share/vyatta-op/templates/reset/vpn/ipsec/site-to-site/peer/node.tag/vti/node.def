@@ -1,0 +1,2 @@
+help: Reset the VTI tunnel for given peer
+run: sudo ${vyos_op_scripts_dir}/ipsec.py reset_peer --peer="$6" --tunnel="vti"

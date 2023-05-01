@@ -1,0 +1,2 @@
+help: Monitor last lines of DHCPv6 client
+run: journalctl --no-hostname --follow --boot --unit "dhcp6c@*.service"

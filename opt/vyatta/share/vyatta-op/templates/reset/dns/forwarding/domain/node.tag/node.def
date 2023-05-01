@@ -1,0 +1,2 @@
+help: Reset DNS forwarding cache for a domain
+run: sudo ${vyos_op_scripts_dir}/dns_forwarding_reset.py $5

@@ -1,0 +1,3 @@
+help: Show IP community-lists
+allowed: /bin/cli-shell-api listActiveNodes policy community-list | sed -e "s/'//g" && echo
+run: vtysh -c "show bgp community-list $4 detail"

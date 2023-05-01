@@ -1,0 +1,2 @@
+help: Update GeoIP database and firewall sets
+run: sudo ${vyos_libexec_dir}/geoip-update.py --force

@@ -1,0 +1,7 @@
+type: txt
+help: Enables clients to share the same network or each client has its
+			own vlan (default: shared)
+val_help: shared; Multiple clients share the same network (default)
+val_help: vlan; One VLAN per client
+allowed: echo "shared vlan"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(shared|vlan)\'   --value \'$VAR(@)\'"; "Invalid value"

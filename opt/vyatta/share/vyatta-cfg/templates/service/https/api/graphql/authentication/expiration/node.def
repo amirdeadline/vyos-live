@@ -1,0 +1,4 @@
+type: txt
+help: Token time to expire in seconds (default: 3600)
+val_help: u32:60-31536000; Token lifetime in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 60-31536000\"  --value \'$VAR(@)\'"; "Invalid value"

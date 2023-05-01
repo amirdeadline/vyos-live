@@ -1,0 +1,2 @@
+help: Show log for BFD
+run: journalctl --boot /usr/lib/frr/bfdd

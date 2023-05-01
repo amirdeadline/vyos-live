@@ -1,0 +1,2 @@
+help: Duration of single time interval
+run: sudo ${vyos_op_scripts_dir}/generate_system_login_user.py --username "$5" --rate_limit "$9"

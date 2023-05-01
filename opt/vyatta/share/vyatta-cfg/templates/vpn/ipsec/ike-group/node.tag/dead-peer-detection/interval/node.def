@@ -1,0 +1,4 @@
+type: txt
+help: Keep-alive interval (default: 30)
+val_help: u32:2-86400; Keep-alive interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 2-86400\"  --value \'$VAR(@)\'"; "Invalid value"

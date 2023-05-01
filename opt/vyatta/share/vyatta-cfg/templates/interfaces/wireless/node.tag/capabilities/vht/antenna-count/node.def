@@ -1,0 +1,4 @@
+type: txt
+help: Number of antennas on this card
+val_help: u32:1-8; Number of antennas for this card
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-8\"  --value \'$VAR(@)\'"; "Invalid value"

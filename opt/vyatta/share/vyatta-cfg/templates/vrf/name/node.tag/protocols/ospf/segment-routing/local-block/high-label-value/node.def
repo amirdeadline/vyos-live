@@ -1,0 +1,4 @@
+type: txt
+help: MPLS label upper bound
+val_help: u32:16-1048575; Label value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 16-1048575\"  --value \'$VAR(@)\'"; "Invalid value"

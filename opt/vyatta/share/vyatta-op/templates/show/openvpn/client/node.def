@@ -1,0 +1,2 @@
+help: Show tunnel status for OpenVPN client interfaces
+run: sudo ${vyos_op_scripts_dir}/openvpn.py show --mode client

@@ -1,0 +1,3 @@
+help: Reset OpenVPN process on interface
+allowed: sudo ${vyos_completion_dir}/list_interfaces --type openvpn
+run: sudo ${vyos_op_scripts_dir}/openvpn.py reset --interface $4

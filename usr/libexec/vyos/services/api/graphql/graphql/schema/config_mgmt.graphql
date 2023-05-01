@@ -1,0 +1,80 @@
+
+input ShowCommitDiffConfigMgmtInput {
+    key: String
+    rev: Int!
+    rev2: Int = null
+    commands: Boolean = false
+}
+
+type ShowCommitDiffConfigMgmt {
+    result: Generic
+}
+
+type ShowCommitDiffConfigMgmtResult {
+    data: ShowCommitDiffConfigMgmt
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowCommitDiffConfigMgmt(data: ShowCommitDiffConfigMgmtInput) : ShowCommitDiffConfigMgmtResult @genopquery
+}
+
+input ShowCommitFileConfigMgmtInput {
+    key: String
+    rev: Int!
+}
+
+type ShowCommitFileConfigMgmt {
+    result: Generic
+}
+
+type ShowCommitFileConfigMgmtResult {
+    data: ShowCommitFileConfigMgmt
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowCommitFileConfigMgmt(data: ShowCommitFileConfigMgmtInput) : ShowCommitFileConfigMgmtResult @genopquery
+}
+
+input ShowCommitLogConfigMgmtInput {
+    key: String
+}
+
+type ShowCommitLogConfigMgmt {
+    result: Generic
+}
+
+type ShowCommitLogConfigMgmtResult {
+    data: ShowCommitLogConfigMgmt
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowCommitLogConfigMgmt(data: ShowCommitLogConfigMgmtInput) : ShowCommitLogConfigMgmtResult @genopquery
+}
+
+input ShowCommitLogBriefConfigMgmtInput {
+    key: String
+}
+
+type ShowCommitLogBriefConfigMgmt {
+    result: Generic
+}
+
+type ShowCommitLogBriefConfigMgmtResult {
+    data: ShowCommitLogBriefConfigMgmt
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowCommitLogBriefConfigMgmt(data: ShowCommitLogBriefConfigMgmtInput) : ShowCommitLogBriefConfigMgmtResult @genopquery
+}

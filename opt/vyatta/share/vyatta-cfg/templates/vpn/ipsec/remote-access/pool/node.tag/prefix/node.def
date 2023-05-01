@@ -1,0 +1,5 @@
+type: txt
+help: Local IPv4 or IPv6 pool prefix
+val_help: ipv4net; Local IPv4 pool prefix
+val_help: ipv6net; Local IPv6 pool prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

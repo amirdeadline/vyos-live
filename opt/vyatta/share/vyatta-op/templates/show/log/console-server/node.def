@@ -1,0 +1,2 @@
+help: Show log for serial console server
+run: journalctl --no-hostname --boot --follow --unit conserver-server.service

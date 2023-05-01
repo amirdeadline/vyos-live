@@ -1,0 +1,2 @@
+help: Monitor last lines of Linux Kernel log
+run: journalctl --no-hostname --boot --follow --dmesg

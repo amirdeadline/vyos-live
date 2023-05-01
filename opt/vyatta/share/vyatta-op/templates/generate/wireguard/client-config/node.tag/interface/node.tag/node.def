@@ -1,0 +1,2 @@
+help: Local interface used for connection
+allowed: ${vyos_completion_dir}/list_interfaces --type wireguard

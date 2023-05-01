@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Direction for processing traffic
+allowed: echo "in out"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(in|out)\'   --value \'$VAR(@)\'"; "Invalid value"

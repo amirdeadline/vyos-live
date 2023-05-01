@@ -1,0 +1,6 @@
+type: txt
+help: Subnet mask pushed to dynamic clients. If not set the server
+			subnet mask will be used. Only used with topology subnet or
+			device type tap. Not used with bridged interfaces.
+val_help: ipv4; IPv4 subnet mask
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

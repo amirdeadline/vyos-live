@@ -1,0 +1,4 @@
+type: txt
+help: Number of the maximum number of hops to the BGP peer
+val_help: u32:1-254; Number of hops
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-254\"  --value \'$VAR(@)\'"; "Invalid value"

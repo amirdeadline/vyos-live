@@ -1,0 +1,2 @@
+help: Measure time taken by SPF Calculation
+run: vtysh -c "no debug ospf6 ${@:5}"

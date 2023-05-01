@@ -1,0 +1,10 @@
+type: txt
+help: Rule action
+val_help: accept; Accept matching entries
+val_help: jump; Jump to another chain
+val_help: reject; Reject matching entries
+val_help: return; Return from the current chain and continue at the next rule of the last chain
+val_help: drop; Drop matching entries
+val_help: queue; Enqueue packet to userspace
+allowed: echo "accept jump reject return drop queue"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(accept|jump|reject|return|drop|queue)\'   --value \'$VAR(@)\'"; "Invalid value"

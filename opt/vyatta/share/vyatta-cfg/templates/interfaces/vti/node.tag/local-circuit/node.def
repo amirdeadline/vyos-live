@@ -1,0 +1,4 @@
+type: txt
+help: Local Circuit ID
+val_help: txt; Local Circuit ID
+allowed: /bin/cli-shell-api listNodes sdwan underlay

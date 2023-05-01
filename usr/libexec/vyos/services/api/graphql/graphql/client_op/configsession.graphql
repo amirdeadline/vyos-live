@@ -1,0 +1,70 @@
+
+query ShowConfig ($key: String, $path: [String!]!, $configFormat: String = null) {
+  ShowConfig (data: { key: $key, path: $path, configFormat: $configFormat }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}
+
+query Show ($key: String, $path: [String!]!) {
+  Show (data: { key: $key, path: $path }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}
+
+query ShowUserInfo ($key: String, $user: String!) {
+  ShowUserInfo (data: { key: $key, user: $user }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}
+
+mutation SaveConfigFile ($key: String, $fileName: String = null) {
+  SaveConfigFile (data: { key: $key, fileName: $fileName }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}
+
+mutation LoadConfigFile ($key: String, $fileName: String!) {
+  LoadConfigFile (data: { key: $key, fileName: $fileName }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}
+
+mutation AddSystemImage ($key: String, $location: String!) {
+  AddSystemImage (data: { key: $key, location: $location }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}
+
+mutation DeleteSystemImage ($key: String, $name: String!) {
+  DeleteSystemImage (data: { key: $key, name: $name }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}

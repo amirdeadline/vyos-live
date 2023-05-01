@@ -1,0 +1,2 @@
+help: Show system CPUs summary
+run: ${vyos_op_scripts_dir}/cpu.py show_summary

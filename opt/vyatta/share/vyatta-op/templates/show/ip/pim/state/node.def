@@ -1,0 +1,2 @@
+help: PIM state information
+run: vtysh -c "show ip pim state"

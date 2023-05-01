@@ -1,0 +1,2 @@
+help: Restart IPv6 Open Shortest Path First (OSPFv3) routing daemon
+run: sudo ${vyos_op_scripts_dir}/restart_frr.py --action restart --daemon ospf6d

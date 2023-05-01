@@ -1,0 +1,10 @@
+multi:
+type: txt
+help: Cipher suite for WPA multicast and broadcast packets
+val_help: GCMP-256; AES in Galois/counter mode with 256-bit key
+val_help: GCMP; AES in Galois/counter mode with 128-bit key
+val_help: CCMP-256; AES in Counter mode with CBC-MAC with 256-bit key
+val_help: CCMP; AES in Counter mode with CBC-MAC [RFC 3610, IEEE 802.11i/D7.0] (supported on all WPA2 APs)
+val_help: TKIP; Temporal Key Integrity Protocol [IEEE 802.11i/D7.0]
+allowed: echo "GCMP-256 GCMP CCMP-256 CCMP TKIP"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(GCMP-256|GCMP|CCMP-256|CCMP|TKIP)\'   --value \'$VAR(@)\'"; "Invalid group cipher selection"

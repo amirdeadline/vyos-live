@@ -1,0 +1,7 @@
+type: txt
+help: Topology for clients (default: net30)
+val_help: net30; net30 topology (default)
+val_help: point-to-point; Point-to-point topology
+val_help: subnet; Subnet topology
+allowed: echo "net30 point-to-point subnet"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(subnet|point-to-point|net30)\'   --value \'$VAR(@)\'"; "Invalid value"

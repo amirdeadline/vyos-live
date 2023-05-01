@@ -1,0 +1,2 @@
+help: Generate iOS profile for specified remote-access connection name
+allowed: /bin/cli-shell-api listActiveNodes vpn ipsec remote-access connection | sed -e "s/'//g" && echo

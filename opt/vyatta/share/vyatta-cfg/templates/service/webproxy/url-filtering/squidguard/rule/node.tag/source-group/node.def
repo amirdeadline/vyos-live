@@ -1,0 +1,4 @@
+type: txt
+help: Source-group for this rule
+val_help: group; Source group identifier for this rule
+allowed: /bin/cli-shell-api listNodes service webproxy url-filtering squidguard source-group

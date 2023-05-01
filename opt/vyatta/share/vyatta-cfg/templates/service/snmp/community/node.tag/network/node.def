@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Subnet of SNMP client(s) allowed to contact system (default:
+			0.0.0.0/0, ::/0)
+val_help: ipv4net; IP address and prefix length
+val_help: ipv6net; IPv6 address and prefix length
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

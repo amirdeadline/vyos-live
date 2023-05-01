@@ -1,0 +1,6 @@
+type: txt
+help: Set Hop Count field of the IP header for outgoing packets
+			(default: 64)
+val_help: u32:0; Unspecified (by this router)
+val_help: u32:1-255; Value should represent current diameter of the Internet
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "Hop count must be between 0 and 255"

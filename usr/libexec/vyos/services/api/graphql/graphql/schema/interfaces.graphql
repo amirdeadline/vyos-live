@@ -1,0 +1,115 @@
+
+input ClearCountersInterfacesInput {
+    key: String
+    intf_name: String = null
+    intf_type: String = null
+    vif: Boolean = false
+    vrrp: Boolean = false
+}
+
+type ClearCountersInterfaces {
+    result: Generic
+}
+
+type ClearCountersInterfacesResult {
+    data: ClearCountersInterfaces
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    ClearCountersInterfaces(data: ClearCountersInterfacesInput) : ClearCountersInterfacesResult @genopmutation
+}
+
+input ResetCountersInterfacesInput {
+    key: String
+    intf_name: String = null
+    intf_type: String = null
+    vif: Boolean = false
+    vrrp: Boolean = false
+}
+
+type ResetCountersInterfaces {
+    result: Generic
+}
+
+type ResetCountersInterfacesResult {
+    data: ResetCountersInterfaces
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    ResetCountersInterfaces(data: ResetCountersInterfacesInput) : ResetCountersInterfacesResult @genopmutation
+}
+
+input ShowInterfacesInput {
+    key: String
+    intf_name: String = null
+    intf_type: String = null
+    vif: Boolean = false
+    vrrp: Boolean = false
+}
+
+type ShowInterfaces {
+    result: Generic
+}
+
+type ShowInterfacesResult {
+    data: ShowInterfaces
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowInterfaces(data: ShowInterfacesInput) : ShowInterfacesResult @genopquery
+}
+
+input ShowCountersInterfacesInput {
+    key: String
+    intf_name: String = null
+    intf_type: String = null
+    vif: Boolean = false
+    vrrp: Boolean = false
+}
+
+type ShowCountersInterfaces {
+    result: Generic
+}
+
+type ShowCountersInterfacesResult {
+    data: ShowCountersInterfaces
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowCountersInterfaces(data: ShowCountersInterfacesInput) : ShowCountersInterfacesResult @genopquery
+}
+
+input ShowSummaryInterfacesInput {
+    key: String
+    intf_name: String = null
+    intf_type: String = null
+    vif: Boolean = false
+    vrrp: Boolean = false
+}
+
+type ShowSummaryInterfaces {
+    result: Generic
+}
+
+type ShowSummaryInterfacesResult {
+    data: ShowSummaryInterfaces
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowSummaryInterfaces(data: ShowSummaryInterfacesInput) : ShowSummaryInterfacesResult @genopquery
+}

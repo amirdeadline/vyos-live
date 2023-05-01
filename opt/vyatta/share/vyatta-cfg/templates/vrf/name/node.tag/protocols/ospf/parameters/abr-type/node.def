@@ -1,0 +1,8 @@
+type: txt
+help: OSPF ABR type (default: cisco)
+val_help: cisco; Cisco ABR type (default)
+val_help: ibm; IBM ABR type
+val_help: shortcut; Shortcut ABR type
+val_help: standard; Standard ABR type
+allowed: echo "cisco ibm shortcut standard"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(cisco|ibm|shortcut|standard)\'   --value \'$VAR(@)\'"; "Invalid value"

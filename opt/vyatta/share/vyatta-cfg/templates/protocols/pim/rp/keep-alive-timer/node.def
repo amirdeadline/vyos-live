@@ -1,0 +1,4 @@
+type: txt
+help: Keep alive Timer
+val_help: u32:31-60000; Keep alive Timer in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 31-60000\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Packet scheduling quantum
+val_help: u32:1-4294967295; Packet scheduling quantum (bytes)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-4294967295\"  --value \'$VAR(@)\'"; "Quantum must be in range 1 to 4294967295"

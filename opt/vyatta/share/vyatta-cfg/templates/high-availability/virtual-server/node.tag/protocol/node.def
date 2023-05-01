@@ -1,0 +1,6 @@
+type: txt
+help: Protocol for port checks (default: tcp)
+val_help: tcp; TCP (default)
+val_help: udp; UDP
+allowed: echo "tcp udp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(tcp|udp)\'   --value \'$VAR(@)\'"; "Invalid value"

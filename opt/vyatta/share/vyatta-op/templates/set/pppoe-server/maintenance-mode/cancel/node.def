@@ -1,0 +1,2 @@
+help: Cancel maintenance mode
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pppoe" --action="shutdown cancel"

@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Tunnel for NHRP
+val_help: tunN; NHRP tunnel name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'tun[0-9]+\'   --value \'$VAR(@)\'"; "Invalid value"

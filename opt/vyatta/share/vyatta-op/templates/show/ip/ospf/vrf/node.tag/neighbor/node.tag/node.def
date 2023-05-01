@@ -1,0 +1,4 @@
+help: Show IPv4 OSPF neighbor information for specified IP address or
+			interface
+allowed: echo "<x.x.x.x>" && ${vyos_completion_dir}/list_interfaces
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

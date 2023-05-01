@@ -1,0 +1,4 @@
+type: txt
+help: Metric for this range
+val_help: u32:0-16777215; Metric for this range
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-16777215\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,6 @@
+type: txt
+help: IGMP version
+val_help: 2; IGMP version 2
+val_help: 3; IGMP version 3
+allowed: echo "2 3"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 2-3\"  --value \'$VAR(@)\'"; "Invalid value"

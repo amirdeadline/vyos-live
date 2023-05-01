@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: IPv4 listen-address for WebProxy
+val_help: ipv4; IPv4 address listen on
+allowed: sh -c "${vyos_completion_dir}/list_local_ips.sh --ipv4"

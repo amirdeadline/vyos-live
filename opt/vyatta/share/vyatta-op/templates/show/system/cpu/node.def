@@ -1,0 +1,2 @@
+help: Show CPU information
+run: ${vyos_op_scripts_dir}/cpu.py show

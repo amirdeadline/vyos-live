@@ -1,0 +1,4 @@
+type: txt
+help: Service name, only connect to access concentrators advertising
+			this
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Service name must be alphanumeric only"

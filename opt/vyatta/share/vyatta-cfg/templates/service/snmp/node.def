@@ -1,0 +1,3 @@
+priority: 900
+help: Simple Network Management Protocol (SNMP)
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/snmp.py"

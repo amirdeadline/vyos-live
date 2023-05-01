@@ -1,0 +1,20 @@
+
+input ShowVrfInput {
+    key: String
+    name: String = null
+}
+
+type ShowVrf {
+    result: Generic
+}
+
+type ShowVrfResult {
+    data: ShowVrf
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowVrf(data: ShowVrfInput) : ShowVrfResult @genopquery
+}

@@ -1,0 +1,19 @@
+
+input ShowStorageInput {
+    key: String
+}
+
+type ShowStorage {
+    result: Generic
+}
+
+type ShowStorageResult {
+    data: ShowStorage
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowStorage(data: ShowStorageInput) : ShowStorageResult @genopquery
+}

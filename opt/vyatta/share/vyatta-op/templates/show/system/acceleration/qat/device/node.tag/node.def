@@ -1,0 +1,2 @@
+help: Show QAT information for a given acceleration device
+allowed: ${vyos_op_scripts_dir}/show_acceleration.py --dev_list

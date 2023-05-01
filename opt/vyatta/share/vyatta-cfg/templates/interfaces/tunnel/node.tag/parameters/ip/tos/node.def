@@ -1,0 +1,5 @@
+type: txt
+help: Specifies TOS value to use in outgoing packets (default:
+			inherit)
+val_help: u32:0-99; Type of Service (TOS)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-99\"  --value \'$VAR(@)\'"; "TOS must be between 0 and 99"

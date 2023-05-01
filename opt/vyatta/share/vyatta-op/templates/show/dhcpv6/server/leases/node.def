@@ -1,0 +1,2 @@
+help: Show DHCPv6 server leases
+run: sudo ${vyos_op_scripts_dir}/dhcp.py show_server_leases --family inet6

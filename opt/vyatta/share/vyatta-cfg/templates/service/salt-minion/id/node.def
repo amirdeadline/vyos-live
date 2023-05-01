@@ -1,0 +1,2 @@
+type: txt
+help: Explicitly declare ID for this minion to use (default: hostname)

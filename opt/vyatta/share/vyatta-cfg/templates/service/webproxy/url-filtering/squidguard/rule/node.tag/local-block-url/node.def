@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Local URL to block
+val_help: url; Local URL to block (without "http://")

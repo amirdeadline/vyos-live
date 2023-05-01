@@ -1,0 +1,3 @@
+type: txt
+help: Outbound interface of NAT66 traffic
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

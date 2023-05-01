@@ -1,0 +1,4 @@
+type: txt
+help: Set window of concurrently valid codes (default: 3)
+val_help: u32:1-21; Window size
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-21\"  --value \'$VAR(@)\'"; "Window of concurrently valid codes must be between 1 and 21"

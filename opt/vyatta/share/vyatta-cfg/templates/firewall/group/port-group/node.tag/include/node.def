@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Include another port-group
+allowed: /bin/cli-shell-api listNodes firewall group port-group

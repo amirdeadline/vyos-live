@@ -1,0 +1,2 @@
+help: Ethernet Segment (Type-4) route
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

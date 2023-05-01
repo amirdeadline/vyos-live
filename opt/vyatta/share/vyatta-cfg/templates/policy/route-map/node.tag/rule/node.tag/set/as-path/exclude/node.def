@@ -1,0 +1,4 @@
+type: txt
+help: Remove/exclude from the as-path attribute
+val_help: u32; AS number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/as-number-list \"  --value \'$VAR(@)\'"; "Invalid value"

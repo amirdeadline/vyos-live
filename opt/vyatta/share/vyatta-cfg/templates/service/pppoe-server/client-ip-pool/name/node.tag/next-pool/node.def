@@ -1,0 +1,4 @@
+type: txt
+help: Next pool name
+val_help: txt; Name of IP pool
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9.]+\'   --value \'$VAR(@)\'"; "Invalid value"

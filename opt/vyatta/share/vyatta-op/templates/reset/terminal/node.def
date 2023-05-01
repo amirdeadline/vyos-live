@@ -1,0 +1,2 @@
+help: Reset terminal
+run: /usr/bin/reset

@@ -1,0 +1,4 @@
+type: txt
+help: VRRP password
+val_help: txt; Password string (up to 8 characters)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'.{1,8}\'   --value \'$VAR(@)\'"; "Password must not be longer than 8 characters"

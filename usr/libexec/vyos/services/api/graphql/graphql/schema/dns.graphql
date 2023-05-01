@@ -1,0 +1,19 @@
+
+input ShowForwardingStatisticsDnsInput {
+    key: String
+}
+
+type ShowForwardingStatisticsDns {
+    result: Generic
+}
+
+type ShowForwardingStatisticsDnsResult {
+    data: ShowForwardingStatisticsDns
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowForwardingStatisticsDns(data: ShowForwardingStatisticsDnsInput) : ShowForwardingStatisticsDnsResult @genopquery
+}

@@ -1,0 +1,2 @@
+help: Show DNS forwarding statistics
+run: sudo ${vyos_op_scripts_dir}/dns.py show_forwarding_statistics

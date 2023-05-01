@@ -1,0 +1,7 @@
+type: txt
+help: IS-IS level number
+val_help: level-1; Act as a station router
+val_help: level-1-2; Act as both a station and an area router
+val_help: level-2; Act as an area router
+allowed: echo "level-1 level-1-2 level-2"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(level-1|level-1-2|level-2)\'   --value \'$VAR(@)\'"; "Invalid value"

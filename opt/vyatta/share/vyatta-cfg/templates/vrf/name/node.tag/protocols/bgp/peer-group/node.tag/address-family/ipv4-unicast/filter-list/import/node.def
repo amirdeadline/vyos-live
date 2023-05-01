@@ -1,0 +1,3 @@
+type: txt
+help: As-path-list to filter incoming route updates from this peer
+allowed: /bin/cli-shell-api listNodes policy as-path-list

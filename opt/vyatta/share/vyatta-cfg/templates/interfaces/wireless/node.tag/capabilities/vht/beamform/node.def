@@ -1,0 +1,9 @@
+multi:
+type: txt
+help: Beamforming capabilities
+val_help: single-user-beamformer; Support for operation as single user beamformer
+val_help: single-user-beamformee; Support for operation as single user beamformee
+val_help: multi-user-beamformer; Support for operation as multi user beamformer
+val_help: multi-user-beamformee; Support for operation as multi user beamformee
+allowed: echo "single-user-beamformer single-user-beamformee multi-user-beamformer multi-user-beamformee"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(single-user-beamformer|single-user-beamformee|multi-user-beamformer|multi-user-beamformee)\'   --value \'$VAR(@)\'"; "Invalid value"

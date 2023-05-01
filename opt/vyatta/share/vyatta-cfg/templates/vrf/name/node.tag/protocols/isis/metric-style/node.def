@@ -1,0 +1,7 @@
+type: txt
+help: Use old-style (ISO 10589) or new-style packet formats
+val_help: narrow; Use old style of TLVs with narrow metric
+val_help: transition; Send and accept both styles of TLVs during transition
+val_help: wide; Use new style of TLVs to carry wider metric
+allowed: echo "narrow transition wide"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(narrow|transition|wide)\'   --value \'$VAR(@)\'"; "Invalid value"

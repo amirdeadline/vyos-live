@@ -1,0 +1,7 @@
+type: txt
+help: Configure NSSA-ABR (default: candidate)
+val_help: always; Always translate LSA types
+val_help: candidate; Translate for election (default)
+val_help: never; Never translate LSA types
+allowed: echo "always candidate never"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(always|candidate|never)\'   --value \'$VAR(@)\'"; "Invalid value"

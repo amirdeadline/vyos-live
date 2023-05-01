@@ -1,0 +1,10 @@
+multi:
+type: txt
+help: Local IP addresses for service to listen on
+val_help: <interface>; Monitor interface address
+val_help: ipv4; IPv4 address to listen for incoming connections
+val_help: ipv4net; IPv4 prefix to listen for incoming connections
+val_help: ipv6; IPv6 address to listen for incoming connections
+val_help: ipv6net; IPv6 prefix to listen for incoming connections
+allowed: sh -c "${vyos_completion_dir}/list_local_ips.sh --both" && echo " " && sh -c "${vyos_completion_dir}/list_interfaces"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(bond|br|dum|en|ersp|eth|gnv|ifb|lan|l2tp|l2tpeth|macsec|peth|ppp|pppoe|pptp|sstp|tun|veth|vti|vtun|vxlan|wg|wlan|wwan)[0-9]+(.\\d+)?|lo\' --exec \"${vyos_validators_dir}/file-path --lookup-path /sys/class/net --directory \" --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv6-address \" --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

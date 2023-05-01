@@ -1,0 +1,4 @@
+type: txt
+help: Security Association packet count to expire
+val_help: u32:1000-26843545600000; SA life in packets
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1000-26843545600000\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Time with no received IGP events before considering IGP stable
+val_help: u32:0-60000; Time with no received IGP events before considering IGP stable in ms
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-60000\"  --value \'$VAR(@)\'"; "Invalid value"

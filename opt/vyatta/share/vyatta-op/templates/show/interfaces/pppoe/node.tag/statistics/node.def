@@ -1,0 +1,3 @@
+help: Show specified PPPoE interface statistics
+allowed: /bin/cli-shell-api listActiveNodes interfaces pppoe | sed -e "s/'//g" && echo
+run: if [ -d "/sys/class/net/$4" ]; then /usr/sbin/pppstats "$4"; fi

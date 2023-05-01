@@ -1,0 +1,3 @@
+type: txt
+help: Script to run before PPPoE session interface comes up
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/script \"  --value \'$VAR(@)\'"; "Invalid value"

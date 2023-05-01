@@ -1,0 +1,2 @@
+help: Enable RIP MPLS LSP debugging
+run: vtysh -c "debug zebra ${@:5}"

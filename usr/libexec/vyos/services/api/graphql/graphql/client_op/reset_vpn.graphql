@@ -1,0 +1,15 @@
+
+mutation ResetConnResetVpn ($key: String, $protocol: String!, $username: String = null, $interface: String = null) {
+  ResetConnResetVpn (data: { key: $key, protocol: $protocol, username: $username, interface: $interface }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

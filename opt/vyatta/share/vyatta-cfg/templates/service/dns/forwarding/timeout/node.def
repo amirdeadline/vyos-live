@@ -1,0 +1,5 @@
+type: txt
+help: Number of milliseconds to wait for a remote authoritative server
+			to respond (default: 1500)
+val_help: u32:10-60000; Network timeout in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 10-60000\"  --value \'$VAR(@)\'"; "Invalid value"

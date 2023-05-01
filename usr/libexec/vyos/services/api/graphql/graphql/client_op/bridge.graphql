@@ -1,0 +1,60 @@
+
+query ShowBridge ($key: String) {
+  ShowBridge (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowFdbBridge ($key: String, $interface: String!) {
+  ShowFdbBridge (data: { key: $key, interface: $interface }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowMdbBridge ($key: String, $interface: String!) {
+  ShowMdbBridge (data: { key: $key, interface: $interface }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowVlanBridge ($key: String) {
+  ShowVlanBridge (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

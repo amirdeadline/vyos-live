@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Zone-policy
+val_help: txt; Zone name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9][\\w\\-\\.]*\'   --value \'$VAR(@)\'"; "Invalid value"

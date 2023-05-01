@@ -1,0 +1,6 @@
+type: txt
+help: Server authentication mode (default: x509)
+val_help: pre-shared-secret; Use a pre-shared secret key
+val_help: x509; Use x.509 certificate (default)
+allowed: echo "pre-shared-secret x509"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(pre-shared-secret|x509)\'   --value \'$VAR(@)\'"; "Invalid value"

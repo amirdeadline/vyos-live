@@ -1,0 +1,2 @@
+help: Show neighbor capability information
+run: vtysh -c "show mpls ldp neighbor $5 capabilities"

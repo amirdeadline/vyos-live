@@ -1,0 +1,3 @@
+type: txt
+help: File containing the secret key shared with remote DNS server
+val_help: filename; File in /config/auth directory

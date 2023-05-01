@@ -1,0 +1,3 @@
+help: Deny new connections and stop serving PPPoE after disconnecting
+			the last session
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pppoe" --action="shutdown soft"

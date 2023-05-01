@@ -1,0 +1,20 @@
+
+input ShowVersionInput {
+    key: String
+    funny: Boolean = false
+}
+
+type ShowVersion {
+    result: Generic
+}
+
+type ShowVersionResult {
+    data: ShowVersion
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowVersion(data: ShowVersionInput) : ShowVersionResult @genopquery
+}

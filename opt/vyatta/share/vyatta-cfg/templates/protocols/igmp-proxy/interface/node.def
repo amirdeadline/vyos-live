@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Interface for IGMP proxy
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

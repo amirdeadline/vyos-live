@@ -1,0 +1,3 @@
+help: Show flow accounting statistics for specified interface/host
+allowed: echo "<x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: ${vyos_op_scripts_dir}/flow_accounting_op.py --action show --interface $4 --host $6

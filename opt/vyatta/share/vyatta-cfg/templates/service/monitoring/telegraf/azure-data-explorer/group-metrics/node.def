@@ -1,0 +1,7 @@
+type: txt
+help: Type of metrics grouping when push to Azure Data Explorer
+			(default: table-per-metric)
+val_help: single-table; Metrics stores in one table
+val_help: table-per-metric; One table per gorups of metric by the metric name (default)
+allowed: echo "single-table table-per-metric"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(single-table|table-per-metric)\'   --value \'$VAR(@)\'"; "Invalid value"

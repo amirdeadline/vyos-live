@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: sFlow destination server
+val_help: ipv4; IPv4 server to export sFlow
+val_help: ipv6; IPv6 server to export sFlow
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

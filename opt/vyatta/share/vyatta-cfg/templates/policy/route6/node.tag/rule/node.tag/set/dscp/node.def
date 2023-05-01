@@ -1,0 +1,4 @@
+type: txt
+help: Packet Differentiated Services Codepoint (DSCP)
+val_help: u32:0-63; DSCP number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-63\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: NAS-IP-Address attribute sent to RADIUS
+val_help: ipv4; NAS-IP-Address attribute
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

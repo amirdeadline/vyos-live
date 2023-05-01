@@ -1,0 +1,11 @@
+multi:
+type: txt
+help: Container capabilities/permissions
+val_help: net-admin; Network operations (interface, firewall, routing tables)
+val_help: net-bind-service; Bind a socket to privileged ports (port numbers less than 1024)
+val_help: net-raw; Permission to create raw network sockets
+val_help: setpcap; Capability sets (from bounded or inherited set)
+val_help: sys-admin; Administation operations (quotactl, mount, sethostname, setdomainame)
+val_help: sys-time; Permission to set system clock
+allowed: echo "net-admin net-bind-service net-raw setpcap sys-admin sys-time"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(net-admin|net-bind-service|net-raw|setpcap|sys-admin|sys-time)\'   --value \'$VAR(@)\'"; "Invalid value"

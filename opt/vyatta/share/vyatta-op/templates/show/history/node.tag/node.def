@@ -1,0 +1,3 @@
+help: Show last N commands in history
+allowed: echo "<NUMBER>"
+run: HISTTIMEFORMAT='%FT%T%z ' HISTFILE="$HOME/.bash_history" \set -o history; history $3

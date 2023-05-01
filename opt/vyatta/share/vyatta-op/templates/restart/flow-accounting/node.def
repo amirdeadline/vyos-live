@@ -1,0 +1,2 @@
+help: Restart (net)flow accounting process
+run: sudo ${vyos_op_scripts_dir}/flow_accounting_op.py --action restart

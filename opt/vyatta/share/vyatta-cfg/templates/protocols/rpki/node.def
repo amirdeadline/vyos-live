@@ -1,0 +1,2 @@
+help: BGP prefix origin validation
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/protocols_rpki.py"

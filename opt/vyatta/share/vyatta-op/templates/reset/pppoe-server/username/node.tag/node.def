@@ -1,0 +1,2 @@
+help: Terminate specified users
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pppoe" --action="terminate username $4"

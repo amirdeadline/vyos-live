@@ -1,0 +1,2 @@
+help: Show PPTP server statistics
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pptp" --action="show stat"

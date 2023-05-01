@@ -1,0 +1,4 @@
+type: txt
+help: Maximum number of Echo-Requests may be sent without valid reply
+			(default: 3)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --positive\"  --value \'$VAR(@)\'"; "Invalid value"

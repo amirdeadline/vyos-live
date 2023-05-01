@@ -1,0 +1,7 @@
+type: txt
+help: IPv4 or IPv6 address of a local interface to use for VPN
+val_help: ipv4; IPv4 address of a local interface for VPN
+val_help: ipv6; IPv6 address of a local interface for VPN
+val_help: any; Allow any IPv4 address present on the system to be used for VPN
+allowed: echo "any" && echo " " && sh -c "${vyos_completion_dir}/list_local_ips.sh --both"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(any)\' --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

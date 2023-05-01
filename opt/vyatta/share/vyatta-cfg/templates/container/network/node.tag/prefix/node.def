@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Prefix which allocated to that network
+val_help: ipv4net; IPv4 network prefix
+val_help: ipv6net; IPv6 network prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,3 @@
+type: txt
+help: Maximum Transmission Unit (MTU) - default 1492 (default: 1492)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 128-16384\"  --value \'$VAR(@)\'"; "Invalid value"

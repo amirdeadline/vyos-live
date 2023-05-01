@@ -1,0 +1,2 @@
+help: Show detailed interface information
+run: if [ -f "/proc/net/bonding/$4" ]; then cat "/proc/net/bonding/$4"; else echo "Interface $4 does not exist!"; fi

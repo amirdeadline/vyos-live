@@ -1,0 +1,5 @@
+type: txt
+help: Lifetime associated with the default router in units of seconds
+val_help: u32:4-9000; Router Lifetime in seconds
+val_help: 0; Not a default router
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-0 --range 4-9000\"  --value \'$VAR(@)\'"; "Default router livetime bust be 0 or between 4 and 9000"

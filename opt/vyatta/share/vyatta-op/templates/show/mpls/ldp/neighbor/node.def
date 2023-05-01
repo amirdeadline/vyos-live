@@ -1,0 +1,2 @@
+help: LDP neighbor information
+run: vtysh -c "show mpls ldp neighbor"

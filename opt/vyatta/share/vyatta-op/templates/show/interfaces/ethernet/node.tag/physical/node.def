@@ -1,0 +1,3 @@
+help: Show physical device information for specified ethernet
+			interface
+run: ethtool "$4"; ethtool --show-ring "$4"; ethtool --driver "$4"

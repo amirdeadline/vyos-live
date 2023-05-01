@@ -1,0 +1,5 @@
+type: txt
+help: Port range (REQUIRE)
+val_help: <port>; single port
+val_help: <portN>-<portM>; Port range (use '-' as delimiter)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/port-range \"  --value \'$VAR(@)\'"; "Invalid value"

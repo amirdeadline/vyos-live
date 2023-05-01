@@ -1,0 +1,2 @@
+help: Send route-refresh unless using 'soft-reconfiguration inbound'
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

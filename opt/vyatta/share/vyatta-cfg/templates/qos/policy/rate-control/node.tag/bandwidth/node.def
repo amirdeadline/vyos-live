@@ -1,0 +1,10 @@
+type: txt
+help: Available bandwidth for this policy
+val_help: <number>; Bits per second
+val_help: <number>bit; Bits per second
+val_help: <number>kbit; Kilobits per second
+val_help: <number>mbit; Megabits per second
+val_help: <number>gbit; Gigabits per second
+val_help: <number>tbit; Terabits per second
+val_help: <number>%; Percentage of interface link speed
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(\\d+(bit|kbit|mbit|gbit|tbit)?|(100|\\d(\\d)?)%)\' --exec \"${vyos_validators_dir}/numeric --positive\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,6 @@
+type: txt
+help: Network type
+val_help: broadcast; Broadcast network type
+val_help: point-to-point; Point-to-point network type
+allowed: echo "broadcast point-to-point"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(broadcast|point-to-point)\'   --value \'$VAR(@)\'"; "Must be broadcast or point-to-point"

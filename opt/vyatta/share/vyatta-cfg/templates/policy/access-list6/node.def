@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: IPv6 access-list filter
+val_help: txt; Name of IPv6 access-list

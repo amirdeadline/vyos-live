@@ -1,0 +1,4 @@
+type: txt
+help: Enable receiving PPDU using STBC (Space Time Block Coding)
+val_help: [1-4]+; Number of spacial streams that can use RX STBC
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[1-4]+\'   --value \'$VAR(@)\'"; "Invalid capability item"

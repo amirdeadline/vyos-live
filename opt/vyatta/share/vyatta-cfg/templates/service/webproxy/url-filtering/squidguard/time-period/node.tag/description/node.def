@@ -1,0 +1,4 @@
+type: txt
+help: Description
+val_help: txt; Description
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:ascii:]]{0,256}\'   --value \'$VAR(@)\'"; "Description too long (limit 256 characters)"

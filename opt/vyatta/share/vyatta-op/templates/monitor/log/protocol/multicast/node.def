@@ -1,0 +1,2 @@
+help: Monitor log for Multicast protocol
+run: journalctl --follow --no-hostname --boot /usr/lib/frr/pimd

@@ -1,0 +1,3 @@
+help: Show status of RAID set
+allowed: ${vyos_completion_dir}/list_raidset.sh
+run: sudo ${vyos_op_scripts_dir}/show_raid.sh $3

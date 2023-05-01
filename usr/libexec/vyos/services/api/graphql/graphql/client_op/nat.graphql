@@ -1,0 +1,45 @@
+
+query ShowRulesNat ($key: String, $direction: DirectionNat!, $family: FamilyNat!) {
+  ShowRulesNat (data: { key: $key, direction: $direction, family: $family }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowStatisticsNat ($key: String, $direction: DirectionNat!, $family: FamilyNat!) {
+  ShowStatisticsNat (data: { key: $key, direction: $direction, family: $family }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowTranslationsNat ($key: String, $direction: DirectionNat!, $family: FamilyNat!, $address: String = null, $verbose: Boolean = false) {
+  ShowTranslationsNat (data: { key: $key, direction: $direction, family: $family, address: $address, verbose: $verbose }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

@@ -1,0 +1,117 @@
+
+input AddImageContainerInput {
+    key: String
+    name: String!
+}
+
+type AddImageContainer {
+    result: Generic
+}
+
+type AddImageContainerResult {
+    data: AddImageContainer
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    AddImageContainer(data: AddImageContainerInput) : AddImageContainerResult @genopmutation
+}
+
+input DeleteImageContainerInput {
+    key: String
+    name: String!
+}
+
+type DeleteImageContainer {
+    result: Generic
+}
+
+type DeleteImageContainerResult {
+    data: DeleteImageContainer
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    DeleteImageContainer(data: DeleteImageContainerInput) : DeleteImageContainerResult @genopmutation
+}
+
+input RestartContainerInput {
+    key: String
+    name: String!
+}
+
+type RestartContainer {
+    result: Generic
+}
+
+type RestartContainerResult {
+    data: RestartContainer
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    RestartContainer(data: RestartContainerInput) : RestartContainerResult @genopmutation
+}
+
+input ShowContainerContainerInput {
+    key: String
+}
+
+type ShowContainerContainer {
+    result: Generic
+}
+
+type ShowContainerContainerResult {
+    data: ShowContainerContainer
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowContainerContainer(data: ShowContainerContainerInput) : ShowContainerContainerResult @genopquery
+}
+
+input ShowImageContainerInput {
+    key: String
+}
+
+type ShowImageContainer {
+    result: Generic
+}
+
+type ShowImageContainerResult {
+    data: ShowImageContainer
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowImageContainer(data: ShowImageContainerInput) : ShowImageContainerResult @genopquery
+}
+
+input ShowNetworkContainerInput {
+    key: String
+}
+
+type ShowNetworkContainer {
+    result: Generic
+}
+
+type ShowNetworkContainerResult {
+    data: ShowNetworkContainer
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowNetworkContainer(data: ShowNetworkContainerInput) : ShowNetworkContainerResult @genopquery
+}

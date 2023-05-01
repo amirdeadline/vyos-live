@@ -1,0 +1,21 @@
+
+input ShowNeighborsLldpInput {
+    key: String
+    interface: String = null
+    detail: Boolean = false
+}
+
+type ShowNeighborsLldp {
+    result: Generic
+}
+
+type ShowNeighborsLldpResult {
+    data: ShowNeighborsLldp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowNeighborsLldp(data: ShowNeighborsLldpInput) : ShowNeighborsLldpResult @genopquery
+}

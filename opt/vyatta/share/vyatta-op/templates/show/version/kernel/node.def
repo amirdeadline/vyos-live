@@ -1,0 +1,2 @@
+help: Show Linux Kernel version information
+run: uname -r

@@ -1,0 +1,5 @@
+type: txt
+help: Indicate country in which device is operating
+val_help: txt; ISO/IEC 3166-1 Country Code
+allowed: echo "us eu jp de uk cn es fr ru"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-z][a-z]\'   --value \'$VAR(@)\'"; "Invalid ISO/IEC 3166-1 Country Code"

@@ -1,0 +1,75 @@
+
+mutation ClearCountersInterfaces ($key: String, $intf_name: String = null, $intf_type: String = null, $vif: Boolean = false, $vrrp: Boolean = false) {
+  ClearCountersInterfaces (data: { key: $key, intf_name: $intf_name, intf_type: $intf_type, vif: $vif, vrrp: $vrrp }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+mutation ResetCountersInterfaces ($key: String, $intf_name: String = null, $intf_type: String = null, $vif: Boolean = false, $vrrp: Boolean = false) {
+  ResetCountersInterfaces (data: { key: $key, intf_name: $intf_name, intf_type: $intf_type, vif: $vif, vrrp: $vrrp }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowInterfaces ($key: String, $intf_name: String = null, $intf_type: String = null, $vif: Boolean = false, $vrrp: Boolean = false) {
+  ShowInterfaces (data: { key: $key, intf_name: $intf_name, intf_type: $intf_type, vif: $vif, vrrp: $vrrp }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowCountersInterfaces ($key: String, $intf_name: String = null, $intf_type: String = null, $vif: Boolean = false, $vrrp: Boolean = false) {
+  ShowCountersInterfaces (data: { key: $key, intf_name: $intf_name, intf_type: $intf_type, vif: $vif, vrrp: $vrrp }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowSummaryInterfaces ($key: String, $intf_name: String = null, $intf_type: String = null, $vif: Boolean = false, $vrrp: Boolean = false) {
+  ShowSummaryInterfaces (data: { key: $key, intf_name: $intf_name, intf_type: $intf_type, vif: $vif, vrrp: $vrrp }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

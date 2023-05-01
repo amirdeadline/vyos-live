@@ -1,0 +1,2 @@
+help: Enable detailed debugging
+run: vtysh -c "debug zebra ${@:5}"

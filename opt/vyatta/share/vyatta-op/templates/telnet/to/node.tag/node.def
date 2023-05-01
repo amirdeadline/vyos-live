@@ -1,0 +1,3 @@
+help: Telnet to a host
+allowed: echo "<hostname> <x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: /usr/bin/telnet $3

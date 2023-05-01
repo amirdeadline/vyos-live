@@ -1,0 +1,22 @@
+
+input ResetConnResetVpnInput {
+    key: String
+    protocol: String!
+    username: String = null
+    interface: String = null
+}
+
+type ResetConnResetVpn {
+    result: Generic
+}
+
+type ResetConnResetVpnResult {
+    data: ResetConnResetVpn
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    ResetConnResetVpn(data: ResetConnResetVpnInput) : ResetConnResetVpnResult @genopmutation
+}

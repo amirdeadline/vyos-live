@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Log block category
+allowed: echo "all" && echo " " && sh -c "${vyos_completion_dir}/list_webproxy_category.sh"

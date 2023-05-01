@@ -1,0 +1,3 @@
+help: Path to Dockerfile
+allowed: echo "<filename>"
+run: sudo podman build --net host --layers --force-rm --tag "$4" $6

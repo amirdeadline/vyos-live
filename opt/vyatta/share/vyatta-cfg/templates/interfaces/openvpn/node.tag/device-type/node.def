@@ -1,0 +1,6 @@
+type: txt
+help: OpenVPN interface device-type (default: tun)
+val_help: tun; TUN device, required for OSI layer 3 (default)
+val_help: tap; TAP device, required for OSI layer 2
+allowed: echo "tun tap"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(tun|tap)\'   --value \'$VAR(@)\'"; "Invalid value"

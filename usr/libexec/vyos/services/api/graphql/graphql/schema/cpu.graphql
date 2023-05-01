@@ -1,0 +1,38 @@
+
+input ShowCpuInput {
+    key: String
+}
+
+type ShowCpu {
+    result: Generic
+}
+
+type ShowCpuResult {
+    data: ShowCpu
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowCpu(data: ShowCpuInput) : ShowCpuResult @genopquery
+}
+
+input ShowSummaryCpuInput {
+    key: String
+}
+
+type ShowSummaryCpu {
+    result: Generic
+}
+
+type ShowSummaryCpuResult {
+    data: ShowSummaryCpu
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowSummaryCpu(data: ShowSummaryCpuInput) : ShowSummaryCpuResult @genopquery
+}

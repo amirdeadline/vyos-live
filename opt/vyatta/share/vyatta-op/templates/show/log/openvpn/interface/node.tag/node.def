@@ -1,0 +1,3 @@
+help: Show OpenVPN log on specific interface
+allowed: /bin/cli-shell-api listActiveNodes interfaces openvpn | sed -e "s/'//g" && echo
+run: journalctl --no-hostname --boot --unit openvpn@$5.service

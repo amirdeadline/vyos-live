@@ -1,0 +1,3 @@
+help: Reboot at a specific date
+allowed: echo "<DD/MM/YYYY> <DD.MM.YYYY> <DD:MM:YYYY>"
+run: sudo ${vyos_op_scripts_dir}/powerctrl.py --yes --reboot $3 $5

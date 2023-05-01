@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Zone from which to filter traffic
+allowed: /bin/cli-shell-api listNodes zone-policy zone

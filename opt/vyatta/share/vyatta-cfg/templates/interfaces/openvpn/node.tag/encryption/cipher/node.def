@@ -1,0 +1,15 @@
+type: txt
+help: Standard Data Encryption Algorithm
+val_help: none; Disable encryption
+val_help: des; DES algorithm
+val_help: 3des; DES algorithm with triple encryption
+val_help: bf128; Blowfish algorithm with 128-bit key
+val_help: bf256; Blowfish algorithm with 256-bit key
+val_help: aes128; AES algorithm with 128-bit key CBC
+val_help: aes128gcm; AES algorithm with 128-bit key GCM
+val_help: aes192; AES algorithm with 192-bit key CBC
+val_help: aes192gcm; AES algorithm with 192-bit key GCM
+val_help: aes256; AES algorithm with 256-bit key CBC
+val_help: aes256gcm; AES algorithm with 256-bit key GCM
+allowed: echo "none des 3des bf128 bf256 aes128 aes128gcm aes192 aes192gcm aes256 aes256gcm"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(none|des|3des|bf128|bf256|aes128|aes128gcm|aes192|aes192gcm|aes256|aes256gcm)\'   --value \'$VAR(@)\'"; "Invalid value"

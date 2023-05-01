@@ -1,0 +1,3 @@
+type: txt
+help: IPv6 firewall ruleset
+allowed: /bin/cli-shell-api listNodes firewall ipv6-name

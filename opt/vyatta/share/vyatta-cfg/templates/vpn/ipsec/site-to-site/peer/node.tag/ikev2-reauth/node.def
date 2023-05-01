@@ -1,0 +1,8 @@
+type: txt
+help: Re-authentication of the remote peer during an IKE re-key (IKEv2
+			only)
+val_help: yes; Enable remote host re-autentication during an IKE re-key. Currently broken due to a strong swan bug
+val_help: no; Disable remote host re-authenticaton during an IKE re-key.
+val_help: inherit; Inherit the reauth configuration form your IKE-group
+allowed: echo "yes no inherit"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(yes|no|inherit)\'   --value \'$VAR(@)\'"; "Invalid value"

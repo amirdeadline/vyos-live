@@ -1,0 +1,3 @@
+help: Format this disk the same as another disk
+allowed: ${vyos_completion_dir}/list_disks.py --exclude ${COMP_WORDS[2]}
+run: sudo ${vyos_op_scripts_dir}/format_disk.py --target $3 --proto $5

@@ -1,0 +1,2 @@
+help: Show IPv4 policy chain
+run: sudo ${vyos_op_scripts_dir}/policy_route.py --action show_all

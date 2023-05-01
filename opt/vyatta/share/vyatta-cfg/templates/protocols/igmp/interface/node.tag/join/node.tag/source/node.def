@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Source address
+val_help: ipv4; Source address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

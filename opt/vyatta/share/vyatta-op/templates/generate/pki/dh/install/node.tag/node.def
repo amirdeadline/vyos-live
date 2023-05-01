@@ -1,0 +1,4 @@
+help: Commands for installing generated DH parameters into running
+			configuration
+allowed: echo "<DH name>"
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --dh "$5" --install

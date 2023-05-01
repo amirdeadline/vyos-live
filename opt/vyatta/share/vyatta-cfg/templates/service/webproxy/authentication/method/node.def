@@ -1,0 +1,5 @@
+type: txt
+help: Authentication Method
+val_help: ldap; Lightweight Directory Access Protocol
+allowed: echo "ldap"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ldap)\'   --value \'$VAR(@)\'"; "The only supported method currently is LDAP"

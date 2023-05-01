@@ -1,0 +1,3 @@
+help: Show contents of master log file for image
+allowed: compgen -f /lib/live/mount/persistence/boot/ | grep -v grub | sed -e s@/lib/live/mount/persistence/boot/@@
+run: less $_vyatta_less_options --prompt=".log, page %dt of %D" -- /lib/live/mount/persistence/boot/$4/rw/var/log/messages

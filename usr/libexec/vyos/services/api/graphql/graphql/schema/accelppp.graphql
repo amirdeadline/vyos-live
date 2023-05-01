@@ -1,0 +1,40 @@
+
+input ShowSessionsAccelpppInput {
+    key: String
+    protocol: String!
+}
+
+type ShowSessionsAccelppp {
+    result: Generic
+}
+
+type ShowSessionsAccelpppResult {
+    data: ShowSessionsAccelppp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowSessionsAccelppp(data: ShowSessionsAccelpppInput) : ShowSessionsAccelpppResult @genopquery
+}
+
+input ShowStatisticsAccelpppInput {
+    key: String
+    protocol: String!
+}
+
+type ShowStatisticsAccelppp {
+    result: Generic
+}
+
+type ShowStatisticsAccelpppResult {
+    data: ShowStatisticsAccelppp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowStatisticsAccelppp(data: ShowStatisticsAccelpppInput) : ShowStatisticsAccelpppResult @genopquery
+}

@@ -1,0 +1,3 @@
+type: txt
+help: Set jump target. Action jump must be defined to use this setting
+allowed: /bin/cli-shell-api listNodes firewall ipv6-name

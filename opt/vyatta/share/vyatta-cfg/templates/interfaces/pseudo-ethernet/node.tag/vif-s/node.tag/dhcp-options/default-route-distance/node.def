@@ -1,0 +1,4 @@
+type: txt
+help: Distance for installed default route (default: 210)
+val_help: u32:1-255; Distance for the default route from DHCP server
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-255\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Group Address range
+val_help: ipv4net; Group Address range RFC 3171
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

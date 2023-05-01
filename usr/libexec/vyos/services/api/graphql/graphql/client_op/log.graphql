@@ -1,0 +1,15 @@
+
+query ShowLog ($key: String, $boot: Boolean = false, $count: Int = null, $facility: String = null, $reverse: Boolean = false, $utc: Boolean = false, $unit: String = null) {
+  ShowLog (data: { key: $key, boot: $boot, count: $count, facility: $facility, reverse: $reverse, utc: $utc, unit: $unit }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

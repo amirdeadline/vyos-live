@@ -1,0 +1,2 @@
+help: Generate OpenVPN shared secret key
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --openvpn "noname"

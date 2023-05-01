@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: IP precedence
+val_help: u32:0-7; IP precedence value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-7\"  --value \'$VAR(@)\'"; "IP precedence value must be between 0 and 7"

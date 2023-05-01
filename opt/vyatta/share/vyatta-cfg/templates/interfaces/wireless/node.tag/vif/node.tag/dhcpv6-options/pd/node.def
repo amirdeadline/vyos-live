@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: DHCPv6 prefix delegation interface statement
+val_help: instance number; Prefix delegation instance (>= 0)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --non-negative\"  --value \'$VAR(@)\'"; "Invalid value"

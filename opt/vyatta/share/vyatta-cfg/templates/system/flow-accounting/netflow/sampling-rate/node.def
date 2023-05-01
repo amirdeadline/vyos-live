@@ -1,0 +1,4 @@
+type: txt
+help: NetFlow sampling-rate
+val_help: u32; Sampling rate (1 in N packets)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Invalid value"

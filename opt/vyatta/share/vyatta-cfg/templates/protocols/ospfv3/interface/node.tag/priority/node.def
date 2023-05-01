@@ -1,0 +1,4 @@
+type: txt
+help: Router priority (default: 1)
+val_help: u32:0-255; OSPF router priority cost
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "Invalid value"

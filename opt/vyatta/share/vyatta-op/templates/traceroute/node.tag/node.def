@@ -1,0 +1,3 @@
+help: Trace network path to node
+allowed: echo "<hostname> <x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: ${vyos_op_scripts_dir}/traceroute.py ${@:2}

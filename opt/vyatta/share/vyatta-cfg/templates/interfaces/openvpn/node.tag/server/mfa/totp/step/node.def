@@ -1,0 +1,4 @@
+type: txt
+help: Step value for totp in seconds (default: 30)
+val_help: 1-65535; Seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65535\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show log for Conntrack-sync
+run: journalctl --no-hostname --boot --unit conntrackd.service

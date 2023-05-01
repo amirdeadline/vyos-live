@@ -1,0 +1,60 @@
+
+query ShowCommitDiffConfigMgmt ($key: String, $rev: Int!, $rev2: Int = null, $commands: Boolean = false) {
+  ShowCommitDiffConfigMgmt (data: { key: $key, rev: $rev, rev2: $rev2, commands: $commands }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowCommitFileConfigMgmt ($key: String, $rev: Int!) {
+  ShowCommitFileConfigMgmt (data: { key: $key, rev: $rev }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowCommitLogConfigMgmt ($key: String) {
+  ShowCommitLogConfigMgmt (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowCommitLogBriefConfigMgmt ($key: String) {
+  ShowCommitLogBriefConfigMgmt (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

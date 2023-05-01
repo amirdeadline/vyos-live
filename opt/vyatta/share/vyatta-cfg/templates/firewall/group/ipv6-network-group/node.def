@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Firewall ipv6-network-group
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9][\\w\\-\\.]*\'   --value \'$VAR(@)\'"; "Invalid value"

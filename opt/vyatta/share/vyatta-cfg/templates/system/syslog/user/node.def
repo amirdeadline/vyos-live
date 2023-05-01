@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Logging to specific terminal of given user
+val_help: username; user login name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-z_][a-z0-9_-]{1,31}[$]?\'   --value \'$VAR(@)\'"; "illegal characters in user"

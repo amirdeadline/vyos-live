@@ -1,0 +1,4 @@
+help: Show specified Wireless Wire Area Network (WWAN) interface
+			information
+allowed: /bin/cli-shell-api listActiveNodes interfaces wwan | sed -e "s/'//g" && echo && cd /sys/class/net; ls -d wwan*
+run: ${vyos_op_scripts_dir}/interfaces.py show --intf_name="$4" --intf_type=wirelessmodem

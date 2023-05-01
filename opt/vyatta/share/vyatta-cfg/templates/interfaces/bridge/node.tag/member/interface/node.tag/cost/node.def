@@ -1,0 +1,4 @@
+type: txt
+help: Bridge port cost (default: 100)
+val_help: u32:1-65535; Path cost value for Spanning Tree Protocol
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65535\"  --value \'$VAR(@)\'"; "Path cost value must be between 1 and 65535"

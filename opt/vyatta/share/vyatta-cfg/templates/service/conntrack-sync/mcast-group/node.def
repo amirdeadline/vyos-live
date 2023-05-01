@@ -1,0 +1,4 @@
+type: txt
+help: Multicast group to use for syncing conntrack entries (default:
+			225.0.0.50)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-multicast \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Delegate IPv6 prefix from provider to this interface
+allowed: sh -c "${vyos_completion_dir}/list_interfaces --broadcast"

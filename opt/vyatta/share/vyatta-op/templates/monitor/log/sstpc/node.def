@@ -1,0 +1,2 @@
+help: Monitor last lines of SSTP client log
+run: journalctl --no-hostname --boot --follow --unit "ppp@sstpc*.service"

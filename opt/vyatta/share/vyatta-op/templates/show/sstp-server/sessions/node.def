@@ -1,0 +1,2 @@
+help: Show active SSTP server sessions
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="sstp" --action="show sessions"

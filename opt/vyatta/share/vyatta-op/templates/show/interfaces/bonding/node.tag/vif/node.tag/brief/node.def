@@ -1,0 +1,3 @@
+help: Show summary of specified virtual network interface (vif)
+			information
+run: ${vyos_op_scripts_dir}/interfaces.py show_summary --intf_name="$4.$6" --intf_type=bonding

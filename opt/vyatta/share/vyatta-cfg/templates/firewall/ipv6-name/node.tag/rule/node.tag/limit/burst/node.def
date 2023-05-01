@@ -1,0 +1,4 @@
+type: txt
+help: Maximum number of packets to allow in excess of rate
+val_help: u32:0-4294967295; Maximum number of packets to allow in excess of rate
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Invalid value"

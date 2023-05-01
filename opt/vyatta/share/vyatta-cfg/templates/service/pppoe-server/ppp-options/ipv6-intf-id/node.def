@@ -1,0 +1,6 @@
+type: txt
+help: Fixed or random interface identifier for IPv6
+val_help: random; Random interface identifier for IPv6
+val_help: x:x:x:x; specify interface identifier for IPv6
+allowed: echo "random"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(random|((\\d+){1,4}:){3}(\\d+){1,4})\'   --value \'$VAR(@)\'"; "Invalid value"

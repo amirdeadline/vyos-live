@@ -1,0 +1,2 @@
+help: WireGuard Interface used in install command
+allowed: /bin/cli-shell-api listActiveNodes interfaces wireguard | sed -e "s/'//g" && echo

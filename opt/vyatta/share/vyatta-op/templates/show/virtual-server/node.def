@@ -1,0 +1,2 @@
+help: Show virtual server information
+run: ${vyos_op_scripts_dir}/show_virtual_server.py

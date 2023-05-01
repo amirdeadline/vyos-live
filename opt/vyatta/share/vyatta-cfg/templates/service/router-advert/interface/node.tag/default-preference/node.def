@@ -1,0 +1,7 @@
+type: txt
+help: Preference associated with the default router, (default: medium)
+val_help: low; Default router has low preference
+val_help: medium; Default router has medium preference (default)
+val_help: high; Default router has high preference
+allowed: echo "low medium high"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(low|medium|high)\'   --value \'$VAR(@)\'"; "Default preference must be low, medium or high"

@@ -1,0 +1,4 @@
+type: txt
+help: Interval used to measure the delay (default: 100)
+val_help: u32; Interval in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Interval must be in range 0 to 4294967295"

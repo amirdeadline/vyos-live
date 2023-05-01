@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Protocol for which expect entries need to be synchronized
+allowed: echo "all ftp sip h323 nfs sqlnet"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(all|ftp|sip|h323|nfs|sqlnet)\'   --value \'$VAR(@)\'"; "Invalid protocol"

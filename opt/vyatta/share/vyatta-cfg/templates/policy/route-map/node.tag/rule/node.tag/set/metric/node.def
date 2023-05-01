@@ -1,0 +1,5 @@
+type: txt
+help: Destination routing protocol metric
+val_help: <+/-metric>; Add or subtract metric
+val_help: u32:0-4294967295; Metric value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --relative --\" --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Invalid value"

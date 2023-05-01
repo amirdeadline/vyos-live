@@ -1,0 +1,4 @@
+help: Enable/disable getting help using question mark (default
+			enabled)
+allowed: echo "enable disable"
+run: ${vyos_op_scripts_dir}/toggle_help_binding.sh $5

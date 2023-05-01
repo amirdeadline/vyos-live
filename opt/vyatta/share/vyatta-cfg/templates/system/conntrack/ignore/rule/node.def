@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Rule number
+val_help: u32:1-999999; Number of conntrack ignore rule
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-999999\"  --value \'$VAR(@)\'"; "Ignore rule number must be between 1 and 999999"

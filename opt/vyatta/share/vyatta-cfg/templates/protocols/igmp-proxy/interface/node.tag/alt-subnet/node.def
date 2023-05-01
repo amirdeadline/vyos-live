@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Unicast source networks allowed for multicast traffic to be
+			proxyed
+val_help: ipv4net; IPv4 network
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Clear multicast routing table
+run: vtysh -c "clear ip mroute"

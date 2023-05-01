@@ -1,0 +1,4 @@
+type: txt
+help: Authentication token for InfluxDB v2
+val_help: txt; Authentication token
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9-_]{86}==\'   --value \'$VAR(@)\'"; "Token must be 88 characters long and must contain only [a-zA-Z0-9-_] and '==' characters."

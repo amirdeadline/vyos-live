@@ -1,0 +1,6 @@
+type: txt
+help: Transport protocol used for port mapping (default: tcp)
+val_help: tcp; Use Transmission Control Protocol for given port (default)
+val_help: udp; Use User Datagram Protocol for given port
+allowed: echo "tcp udp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(tcp|udp)\'   --value \'$VAR(@)\'"; "Invalid value"

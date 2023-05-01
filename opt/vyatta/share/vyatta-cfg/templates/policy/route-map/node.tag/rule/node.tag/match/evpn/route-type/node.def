@@ -1,0 +1,7 @@
+type: txt
+help: Match route-type
+val_help: macip; mac-ip route
+val_help: multicast; IMET route
+val_help: prefix; Prefix route
+allowed: echo "macip multicast prefix"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(macip|multicast|prefix)\'   --value \'$VAR(@)\'"; "Invalid value"

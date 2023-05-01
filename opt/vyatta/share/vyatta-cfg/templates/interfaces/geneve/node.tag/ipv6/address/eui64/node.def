@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Prefix for IPv6 address with MAC-based EUI-64
+val_help: <h:h:h:h:h:h:h:h/64>; IPv6 /64 network
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-eui64-prefix \"  --value \'$VAR(@)\'"; "EUI64 prefix length must be 64"

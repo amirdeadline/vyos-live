@@ -1,0 +1,2 @@
+help: Clear interface information for a given L2TPv3 interface
+allowed: ${vyos_completion_dir}/list_interfaces --type l2tpeth

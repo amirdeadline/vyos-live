@@ -1,0 +1,7 @@
+type: txt
+help: control sessions count (default: replace)
+val_help: disable; Disables session control
+val_help: deny; Deny second session authorization
+val_help: replace; Terminate first session when second is authorized (default)
+allowed: echo "deny disable replace"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(deny|disable|replace)\'   --value \'$VAR(@)\'"; "Invalid value"

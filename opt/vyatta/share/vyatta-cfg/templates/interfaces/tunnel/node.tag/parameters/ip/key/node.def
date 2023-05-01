@@ -1,0 +1,4 @@
+type: txt
+help: Tunnel key (only GRE tunnels)
+val_help: u32; Tunnel key
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "key must be between 0-4294967295"

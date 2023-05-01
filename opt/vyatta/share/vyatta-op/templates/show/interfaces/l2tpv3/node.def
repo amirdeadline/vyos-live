@@ -1,0 +1,2 @@
+help: Show L2TPv3 interface information
+run: ${vyos_op_scripts_dir}/interfaces.py show_summary --intf_type=l2tpv3

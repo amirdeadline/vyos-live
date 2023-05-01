@@ -1,0 +1,4 @@
+type: txt
+help: Interval at which neighbor bridges are removed (default: 20)
+val_help: u32:1-40; Bridge maximum aging time in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-40\"  --value \'$VAR(@)\'"; "Bridge max aging value must be between 1 and 40 seconds"

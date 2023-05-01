@@ -1,0 +1,2 @@
+help: Clear contents of current master log file
+run: sudo journalctl --rotate --vacuum-time=1s

@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Virtual address (If you need additional IPv4 and IPv6 in same
+			group)
+val_help: ipv4; IP address
+val_help: ipv6; IPv6 address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-host \" --exec \"${vyos_validators_dir}/ipv6-host \"  --value \'$VAR(@)\'"; "Virtual address must be a valid IPv4 or IPv6 address with prefix length (e.g. 192.0.2.3/24 or 2001:db8:ff::10/64)"

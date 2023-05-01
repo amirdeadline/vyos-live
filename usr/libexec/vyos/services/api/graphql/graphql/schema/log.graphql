@@ -1,0 +1,25 @@
+
+input ShowLogInput {
+    key: String
+    boot: Boolean = false
+    count: Int = null
+    facility: String = null
+    reverse: Boolean = false
+    utc: Boolean = false
+    unit: String = null
+}
+
+type ShowLog {
+    result: Generic
+}
+
+type ShowLogResult {
+    data: ShowLog
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowLog(data: ShowLogInput) : ShowLogResult @genopquery
+}

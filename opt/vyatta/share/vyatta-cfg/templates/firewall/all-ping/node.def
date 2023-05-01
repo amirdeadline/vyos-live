@@ -1,0 +1,7 @@
+type: txt
+help: Policy for handling of all IPv4 ICMP echo requests (default:
+			enable)
+val_help: enable; Enable processing of all IPv4 ICMP echo requests (default)
+val_help: disable; Disable processing of all IPv4 ICMP echo requests
+allowed: echo "enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

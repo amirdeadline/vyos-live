@@ -1,0 +1,46 @@
+
+enum ModeOpenvpn {
+    client
+    server
+    site_to_site
+}
+
+input ResetOpenvpnInput {
+    key: String
+    interface: String!
+}
+
+type ResetOpenvpn {
+    result: Generic
+}
+
+type ResetOpenvpnResult {
+    data: ResetOpenvpn
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    ResetOpenvpn(data: ResetOpenvpnInput) : ResetOpenvpnResult @genopmutation
+}
+
+input ShowOpenvpnInput {
+    key: String
+    mode: ModeOpenvpn!
+}
+
+type ShowOpenvpn {
+    result: Generic
+}
+
+type ShowOpenvpnResult {
+    data: ShowOpenvpn
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowOpenvpn(data: ShowOpenvpnInput) : ShowOpenvpnResult @genopquery
+}

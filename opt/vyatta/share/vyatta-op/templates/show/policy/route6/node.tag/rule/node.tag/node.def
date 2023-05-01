@@ -1,0 +1,3 @@
+help: Show summary of IPv6 policy rules
+allowed: /bin/cli-shell-api listActiveNodes policy route6 ${COMP_WORDS[4]} rule | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/policy_route.py --action show --name $4 --rule $6 --ipv6

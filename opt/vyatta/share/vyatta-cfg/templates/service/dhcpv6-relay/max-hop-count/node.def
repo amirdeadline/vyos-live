@@ -1,0 +1,5 @@
+type: txt
+help: Maximum hop count for which requests will be processed (default:
+			10)
+val_help: u32:1-255; Hop count
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-255\"  --value \'$VAR(@)\'"; "max-hop-count must be a value between 1 and 255"

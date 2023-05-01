@@ -1,0 +1,2 @@
+help: Show log for OSPF for IPv6
+run: journalctl --boot /usr/lib/frr/ospf6d

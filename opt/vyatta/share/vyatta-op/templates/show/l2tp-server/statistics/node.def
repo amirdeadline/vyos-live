@@ -1,0 +1,2 @@
+help: Show L2TP server statistics
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="l2tp" --action="show stat"

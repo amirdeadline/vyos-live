@@ -1,0 +1,4 @@
+type: txt
+help: Upper limit of the queue (default: 10240)
+val_help: u32:2-10999; Queue size in packets
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 2-10999\"  --value \'$VAR(@)\'"; "Queue limit must greater than 1 and less than 11000"

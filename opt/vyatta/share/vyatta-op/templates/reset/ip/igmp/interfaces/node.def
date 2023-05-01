@@ -1,0 +1,2 @@
+help: Reset IGMP interfaces
+run: vtysh -c "clear ip igmp interfaces"

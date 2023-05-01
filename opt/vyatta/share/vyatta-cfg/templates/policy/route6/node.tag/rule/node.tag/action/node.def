@@ -1,0 +1,8 @@
+type: txt
+help: Rule action
+val_help: accept; Accept matching entries
+val_help: reject; Reject matching entries
+val_help: return; Return from the current chain and continue at the next rule of the last chain
+val_help: drop; Drop matching entries
+allowed: echo "accept reject return drop"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(accept|reject|return|drop)\'   --value \'$VAR(@)\'"; "Invalid value"

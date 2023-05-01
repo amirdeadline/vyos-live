@@ -1,0 +1,24 @@
+# device name to CLI path matching
+lo	loopback
+eth	ethernet
+lan	ethernet
+eno	ethernet
+ens	ethernet
+enp	ethernet
+enx	ethernet
+ifb	input
+peth	pseudo-ethernet
+br	bridge
+bond	bonding
+vtun	openvpn
+tun	tunnel
+vti	vti
+wlan	wireless
+wwan    wwan
+pppoe   pppoe
+dum     dummy
+l2tpeth l2tpv3
+vxlan   vxlan
+wg      wireguard
+gnv     geneve
+macsec  macsec

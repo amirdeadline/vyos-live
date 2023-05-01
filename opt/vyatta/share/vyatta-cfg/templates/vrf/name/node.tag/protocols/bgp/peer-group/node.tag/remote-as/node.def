@@ -1,0 +1,7 @@
+type: txt
+help: Neighbor BGP AS number
+val_help: u32:1-4294967294; Neighbor AS number
+val_help: external; Any AS different from the local AS
+val_help: internal; Neighbor AS number
+allowed: echo "external internal"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(external|internal)\' --exec \"${vyos_validators_dir}/numeric --range 1-4294967294\"  --value \'$VAR(@)\'"; "Invalid AS number"

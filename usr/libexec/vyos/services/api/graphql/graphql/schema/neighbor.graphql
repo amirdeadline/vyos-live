@@ -1,0 +1,56 @@
+
+enum FamilyNeighbor {
+    inet
+    inet6
+}
+
+enum StateNeighbor {
+    reachable
+    stale
+    failed
+    permanent
+}
+
+input ResetNeighborInput {
+    key: String
+    family: FamilyNeighbor!
+    interface: String = null
+    address: String = null
+}
+
+type ResetNeighbor {
+    result: Generic
+}
+
+type ResetNeighborResult {
+    data: ResetNeighbor
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Mutation {
+    ResetNeighbor(data: ResetNeighborInput) : ResetNeighborResult @genopmutation
+}
+
+input ShowNeighborInput {
+    key: String
+    family: FamilyNeighbor!
+    interface: String = null
+    state: StateNeighbor!
+}
+
+type ShowNeighbor {
+    result: Generic
+}
+
+type ShowNeighborResult {
+    data: ShowNeighbor
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowNeighbor(data: ShowNeighborInput) : ShowNeighborResult @genopquery
+}

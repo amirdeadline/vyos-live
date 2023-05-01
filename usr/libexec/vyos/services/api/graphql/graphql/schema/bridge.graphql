@@ -1,0 +1,78 @@
+
+input ShowBridgeInput {
+    key: String
+}
+
+type ShowBridge {
+    result: Generic
+}
+
+type ShowBridgeResult {
+    data: ShowBridge
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowBridge(data: ShowBridgeInput) : ShowBridgeResult @genopquery
+}
+
+input ShowFdbBridgeInput {
+    key: String
+    interface: String!
+}
+
+type ShowFdbBridge {
+    result: Generic
+}
+
+type ShowFdbBridgeResult {
+    data: ShowFdbBridge
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowFdbBridge(data: ShowFdbBridgeInput) : ShowFdbBridgeResult @genopquery
+}
+
+input ShowMdbBridgeInput {
+    key: String
+    interface: String!
+}
+
+type ShowMdbBridge {
+    result: Generic
+}
+
+type ShowMdbBridgeResult {
+    data: ShowMdbBridge
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowMdbBridge(data: ShowMdbBridgeInput) : ShowMdbBridgeResult @genopquery
+}
+
+input ShowVlanBridgeInput {
+    key: String
+}
+
+type ShowVlanBridge {
+    result: Generic
+}
+
+type ShowVlanBridgeResult {
+    data: ShowVlanBridge
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowVlanBridge(data: ShowVlanBridgeInput) : ShowVlanBridgeResult @genopquery
+}

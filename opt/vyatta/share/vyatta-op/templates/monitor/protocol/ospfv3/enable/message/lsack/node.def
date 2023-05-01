@@ -1,0 +1,2 @@
+help: Debug Link State Acknowledgement message
+run: vtysh -c "debug ospf6 ${@:5}"

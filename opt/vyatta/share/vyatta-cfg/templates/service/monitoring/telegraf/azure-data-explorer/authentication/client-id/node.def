@@ -1,0 +1,3 @@
+type: txt
+help: Application client id
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Client-id is limited to alphanumerical characters and can contain hyphen and underscores"

@@ -1,0 +1,2 @@
+help: Format a disk drive
+allowed: ${vyos_completion_dir}/list_disks.py

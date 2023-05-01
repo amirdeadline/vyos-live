@@ -1,0 +1,2 @@
+help: IGMP sources information
+run: vtysh -c "show ip igmp sources"

@@ -1,0 +1,3 @@
+type: txt
+help: Defines the encrypted key for privacy protocol
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[0-9a-f]*\'   --value \'$VAR(@)\'"; "Encrypted key must only contain hex digits"

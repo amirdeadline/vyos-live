@@ -1,0 +1,44 @@
+
+enum FamilyConntrack {
+    inet
+    inet6
+}
+
+input ShowConntrackInput {
+    key: String
+    family: FamilyConntrack!
+}
+
+type ShowConntrack {
+    result: Generic
+}
+
+type ShowConntrackResult {
+    data: ShowConntrack
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowConntrack(data: ShowConntrackInput) : ShowConntrackResult @genopquery
+}
+
+input ShowStatisticsConntrackInput {
+    key: String
+}
+
+type ShowStatisticsConntrack {
+    result: Generic
+}
+
+type ShowStatisticsConntrackResult {
+    data: ShowStatisticsConntrack
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowStatisticsConntrack(data: ShowStatisticsConntrackInput) : ShowStatisticsConntrackResult @genopquery
+}

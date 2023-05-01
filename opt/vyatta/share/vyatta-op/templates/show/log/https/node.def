@@ -1,0 +1,2 @@
+help: Show log for HTTPs
+run: journalctl --no-hostname --boot --unit nginx.service

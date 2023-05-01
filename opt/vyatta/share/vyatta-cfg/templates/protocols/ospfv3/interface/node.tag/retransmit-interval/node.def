@@ -1,0 +1,5 @@
+type: txt
+help: Interval between retransmitting lost link state advertisements
+			(default: 5)
+val_help: u32:1-65535; Retransmit interval (seconds)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65535\"  --value \'$VAR(@)\'"; "Invalid value"

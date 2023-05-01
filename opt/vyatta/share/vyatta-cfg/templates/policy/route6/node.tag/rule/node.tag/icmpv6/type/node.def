@@ -1,0 +1,45 @@
+type: txt
+help: ICMP type-name
+val_help: any; Any ICMP type/code
+val_help: echo-reply; ICMP type/code name
+val_help: pong; ICMP type/code name
+val_help: destination-unreachable; ICMP type/code name
+val_help: network-unreachable; ICMP type/code name
+val_help: host-unreachable; ICMP type/code name
+val_help: protocol-unreachable; ICMP type/code name
+val_help: port-unreachable; ICMP type/code name
+val_help: fragmentation-needed; ICMP type/code name
+val_help: source-route-failed; ICMP type/code name
+val_help: network-unknown; ICMP type/code name
+val_help: host-unknown; ICMP type/code name
+val_help: network-prohibited; ICMP type/code name
+val_help: host-prohibited; ICMP type/code name
+val_help: TOS-network-unreachable; ICMP type/code name
+val_help: TOS-host-unreachable; ICMP type/code name
+val_help: communication-prohibited; ICMP type/code name
+val_help: host-precedence-violation; ICMP type/code name
+val_help: precedence-cutoff; ICMP type/code name
+val_help: source-quench; ICMP type/code name
+val_help: redirect; ICMP type/code name
+val_help: network-redirect; ICMP type/code name
+val_help: host-redirect; ICMP type/code name
+val_help: TOS-network-redirect; ICMP type/code name
+val_help: TOS host-redirect; ICMP type/code name
+val_help: echo-request; ICMP type/code name
+val_help: ping; ICMP type/code name
+val_help: router-advertisement; ICMP type/code name
+val_help: router-solicitation; ICMP type/code name
+val_help: time-exceeded; ICMP type/code name
+val_help: ttl-exceeded; ICMP type/code name
+val_help: ttl-zero-during-transit; ICMP type/code name
+val_help: ttl-zero-during-reassembly; ICMP type/code name
+val_help: parameter-problem; ICMP type/code name
+val_help: ip-header-bad; ICMP type/code name
+val_help: required-option-missing; ICMP type/code name
+val_help: timestamp-request; ICMP type/code name
+val_help: timestamp-reply; ICMP type/code name
+val_help: address-mask-request; ICMP type/code name
+val_help: address-mask-reply; ICMP type/code name
+val_help: packet-too-big; ICMP type/code name
+allowed: echo "any echo-reply pong destination-unreachable network-unreachable host-unreachable protocol-unreachable port-unreachable fragmentation-needed source-route-failed network-unknown host-unknown network-prohibited host-prohibited TOS-network-unreachable TOS-host-unreachable communication-prohibited host-precedence-violation precedence-cutoff source-quench redirect network-redirect host-redirect TOS-network-redirect TOS host-redirect echo-request ping router-advertisement router-solicitation time-exceeded ttl-exceeded ttl-zero-during-transit ttl-zero-during-reassembly parameter-problem ip-header-bad required-option-missing timestamp-request timestamp-reply address-mask-request address-mask-reply packet-too-big"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(any|echo-reply|pong|destination-unreachable|network-unreachable|host-unreachable|protocol-unreachable|port-unreachable|fragmentation-needed|source-route-failed|network-unknown|host-unknown|network-prohibited|host-prohibited|TOS-network-unreachable|TOS-host-unreachable|communication-prohibited|host-precedence-violation|precedence-cutoff|source-quench|redirect|network-redirect|host-redirect|TOS-network-redirect|TOS host-redirect|echo-request|ping|router-advertisement|router-solicitation|time-exceeded|ttl-exceeded|ttl-zero-during-transit|ttl-zero-during-reassembly|parameter-problem|ip-header-bad|required-option-missing|timestamp-request|timestamp-reply|address-mask-request|address-mask-reply|packet-too-big)\' --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "Invalid value"

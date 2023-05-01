@@ -1,0 +1,11 @@
+type: txt
+help: Bonding mode (default: 802.3ad)
+val_help: 802.3ad; IEEE 802.3ad Dynamic link aggregation (default)
+val_help: active-backup; Fault tolerant: only one slave in the bond is active
+val_help: broadcast; Fault tolerant: transmits everything on all slave interfaces
+val_help: round-robin; Load balance: transmit packets in sequential order
+val_help: transmit-load-balance; Load balance: adapts based on transmit load and speed
+val_help: adaptive-load-balance; Load balance: adapts based on transmit and receive plus ARP
+val_help: xor-hash; Distribute based on MAC address
+allowed: echo "802.3ad active-backup broadcast round-robin transmit-load-balance adaptive-load-balance xor-hash"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(802.3ad|active-backup|broadcast|round-robin|transmit-load-balance|adaptive-load-balance|xor-hash)\'   --value \'$VAR(@)\'"; "mode must be 802.3ad, active-backup, broadcast, round-robin, transmit-load-balance, adaptive-load-balance, or xor"

@@ -1,0 +1,2 @@
+help: Display number of prefixes for all afi/safi
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

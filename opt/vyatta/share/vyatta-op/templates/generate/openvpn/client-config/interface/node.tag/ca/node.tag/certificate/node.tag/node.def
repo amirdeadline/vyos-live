@@ -1,0 +1,3 @@
+help: Cerificate used by client
+allowed: /bin/cli-shell-api listActiveNodes pki certificate | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/generate_ovpn_client_file.py --interface "$5" --ca "$7" --cert "$9"

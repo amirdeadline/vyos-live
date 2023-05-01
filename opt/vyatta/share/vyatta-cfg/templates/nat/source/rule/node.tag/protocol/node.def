@@ -1,0 +1,63 @@
+type: txt
+help: Protocol to NAT (default: all)
+val_help: all; All IP protocols (default)
+val_help: ip; Internet Protocol, pseudo protocol number
+val_help: hopopt; IPv6 Hop-by-Hop Option [RFC1883]
+val_help: icmp; internet control message protocol
+val_help: igmp; Internet Group Management
+val_help: ggp; gateway-gateway protocol
+val_help: ipencap; IP encapsulated in IP (officially IP)
+val_help: st; ST datagram mode
+val_help: tcp; transmission control protocol
+val_help: egp; exterior gateway protocol
+val_help: igp; any private interior gateway (Cisco)
+val_help: pup; PARC universal packet protocol
+val_help: udp; user datagram protocol
+val_help: tcp_udp; Both TCP and UDP
+val_help: hmp; host monitoring protocol
+val_help: xns-idp; Xerox NS IDP
+val_help: rdp; "reliable datagram" protocol
+val_help: iso-tp4; ISO Transport Protocol class 4 [RFC905]
+val_help: dccp; Datagram Congestion Control Prot. [RFC4340]
+val_help: xtp; Xpress Transfer Protocol
+val_help: ddp; Datagram Delivery Protocol
+val_help: idpr-cmtp; IDPR Control Message Transport
+val_help: Ipv6; Internet Protocol, version 6
+val_help: ipv6-route; Routing Header for IPv6
+val_help: ipv6-frag; Fragment Header for IPv6
+val_help: idrp; Inter-Domain Routing Protocol
+val_help: rsvp; Reservation Protocol
+val_help: gre; General Routing Encapsulation
+val_help: esp; Encap Security Payload [RFC2406]
+val_help: ah; Authentication Header [RFC2402]
+val_help: skip; SKIP
+val_help: ipv6-icmp; ICMP for IPv6
+val_help: ipv6-nonxt; No Next Header for IPv6
+val_help: ipv6-opts; Destination Options for IPv6
+val_help: rspf; Radio Shortest Path First (officially CPHB)
+val_help: vmtp; Versatile Message Transport
+val_help: eigrp; Enhanced Interior Routing Protocol (Cisco)
+val_help: ospf; Open Shortest Path First IGP
+val_help: ax.25; AX.25 frames
+val_help: ipip; IP-within-IP Encapsulation Protocol
+val_help: etherip; Ethernet-within-IP Encapsulation [RFC3378]
+val_help: encap; Yet Another IP encapsulation [RFC1241]
+val_help: 99; Any private encryption scheme
+val_help: pim; Protocol Independent Multicast
+val_help: ipcomp; IP Payload Compression Protocol
+val_help: vrrp; Virtual Router Redundancy Protocol [RFC5798]
+val_help: l2tp; Layer Two Tunneling Protocol [RFC2661]
+val_help: isis; IS-IS over IPv4
+val_help: sctp; Stream Control Transmission Protocol
+val_help: fc; Fibre Channel
+val_help: mobility-header; Mobility Support for IPv6 [RFC3775]
+val_help: udplite; UDP-Lite [RFC3828]
+val_help: mpls-in-ip; MPLS-in-IP [RFC4023]
+val_help: manet; MANET Protocols [RFC5498]
+val_help: hip; Host Identity Protocol
+val_help: shim6; Shim6 Protocol
+val_help: wesp; Wrapped Encapsulating Security Payload
+val_help: rohc; Robust Header Compression
+val_help: u32:0-255; IP protocol number
+allowed: echo "all ip hopopt icmp igmp ggp ipencap st tcp egp igp pup udp tcp_udp hmp xns-idp rdp iso-tp4 dccp xtp ddp idpr-cmtp ipv6 ipv6-route ipv6-frag idrp rsvp gre esp ah skip ipv6-icmp ipv6-nonxt ipv6-opts rspf vmtp eigrp ospf ax.25 ipip etherip encap 99 pim ipcomp vrrp l2tp isis sctp fc mobility-header udplite mpls-in-ip manet hip shim6 wesp rohc"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-protocol \"  --value \'$VAR(@)\'"; "Invalid value"

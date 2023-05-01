@@ -1,0 +1,6 @@
+type: txt
+help: Default-action for traffic coming into this zone (default: drop)
+val_help: drop; Drop silently (default)
+val_help: reject; Drop and notify source
+allowed: echo "drop reject"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(drop|reject)\'   --value \'$VAR(@)\'"; "Invalid value"

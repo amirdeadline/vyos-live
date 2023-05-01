@@ -1,0 +1,4 @@
+type: txt
+help: Minimum interval of transmitting control packets (default: 300)
+val_help: u32:10-60000; Interval in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 10-60000\"  --value \'$VAR(@)\'"; "Invalid value"

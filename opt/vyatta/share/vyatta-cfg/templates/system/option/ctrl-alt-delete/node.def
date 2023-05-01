@@ -1,0 +1,7 @@
+type: txt
+help: System action on Ctrl-Alt-Delete keystroke
+val_help: ignore; Ignore key sequence
+val_help: reboot; Reboot system
+val_help: poweroff; Poweroff system
+allowed: echo "ignore reboot poweroff"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ignore|reboot|poweroff)\'   --value \'$VAR(@)\'"; "Must be ignore, reboot, or poweroff"

@@ -1,0 +1,2 @@
+help: Intel QAT flows
+run: sudo ${vyos_op_scripts_dir}/show_acceleration.py --flow --dev $6

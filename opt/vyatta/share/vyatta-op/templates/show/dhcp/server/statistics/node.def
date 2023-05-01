@@ -1,0 +1,2 @@
+help: Show DHCP server statistics
+run: ${vyos_op_scripts_dir}/dhcp.py show_pool_statistics --family inet

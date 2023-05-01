@@ -1,0 +1,2 @@
+help: Show conntrack statistics
+run: sudo ${vyos_op_scripts_dir}/conntrack.py show_statistics

@@ -1,0 +1,75 @@
+
+enum DirectionNat {
+    source
+    destination
+}
+
+enum FamilyNat {
+    inet
+    inet6
+}
+
+input ShowRulesNatInput {
+    key: String
+    direction: DirectionNat!
+    family: FamilyNat!
+}
+
+type ShowRulesNat {
+    result: Generic
+}
+
+type ShowRulesNatResult {
+    data: ShowRulesNat
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowRulesNat(data: ShowRulesNatInput) : ShowRulesNatResult @genopquery
+}
+
+input ShowStatisticsNatInput {
+    key: String
+    direction: DirectionNat!
+    family: FamilyNat!
+}
+
+type ShowStatisticsNat {
+    result: Generic
+}
+
+type ShowStatisticsNatResult {
+    data: ShowStatisticsNat
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowStatisticsNat(data: ShowStatisticsNatInput) : ShowStatisticsNatResult @genopquery
+}
+
+input ShowTranslationsNatInput {
+    key: String
+    direction: DirectionNat!
+    family: FamilyNat!
+    address: String = null
+    verbose: Boolean = false
+}
+
+type ShowTranslationsNat {
+    result: Generic
+}
+
+type ShowTranslationsNatResult {
+    data: ShowTranslationsNat
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowTranslationsNat(data: ShowTranslationsNatInput) : ShowTranslationsNatResult @genopquery
+}

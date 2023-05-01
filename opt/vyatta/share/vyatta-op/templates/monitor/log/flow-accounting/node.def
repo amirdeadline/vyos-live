@@ -1,0 +1,2 @@
+help: Monitor last lines of flow-accounting log
+run: journalctl --no-hostname --boot --follow --unit uacctd.service

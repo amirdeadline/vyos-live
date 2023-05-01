@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: VLAN monitor for automatic creation of VLAN interfaces
+val_help: u32:1-4094; VLAN for automatic creation
+val_help: start-end; VLAN range for automatic creation (e.g. 1-4094)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 1-4094\"  --value \'$VAR(@)\'"; "VLAN IDs need to be in range 1-4094"

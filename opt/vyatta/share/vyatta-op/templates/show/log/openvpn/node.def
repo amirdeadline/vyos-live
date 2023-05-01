@@ -1,0 +1,2 @@
+help: Show log for OpenVPN
+run: journalctl --no-hostname --boot --unit openvpn@*.service

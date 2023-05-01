@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Local user account information
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9.]{1,100}\'   --value \'$VAR(@)\'"; "Username contains illegal characters or\nexceeds 100 character limitation."

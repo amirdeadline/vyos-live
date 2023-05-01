@@ -1,0 +1,2 @@
+help: Monitor last lines of Router Advertisement Daemon (radvd)
+run: journalctl --no-hostname --boot --follow --unit radvd.service

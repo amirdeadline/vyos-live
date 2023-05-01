@@ -1,0 +1,2 @@
+help: Debug receiving zebra
+run: vtysh -c "debug ospf6 ${@:5}"

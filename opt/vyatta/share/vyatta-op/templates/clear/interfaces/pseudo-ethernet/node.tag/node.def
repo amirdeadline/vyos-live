@@ -1,0 +1,3 @@
+help: Clear interface information for a given Pseudo-Ethernet
+			interface
+allowed: ${vyos_completion_dir}/list_interfaces --type pseudo-ethernet

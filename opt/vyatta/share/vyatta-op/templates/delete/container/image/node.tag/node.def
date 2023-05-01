@@ -1,0 +1,3 @@
+help: Delete container image
+allowed: sudo podman image ls -q
+run: sudo ${vyos_op_scripts_dir}/container.py delete_image --name "${4}"

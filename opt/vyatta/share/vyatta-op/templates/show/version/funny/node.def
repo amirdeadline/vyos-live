@@ -1,0 +1,2 @@
+help: Show system version and some fun stuff
+run: sudo ${vyos_op_scripts_dir}/version.py show --funny

@@ -1,0 +1,2 @@
+help: Show Shortest Path First tree information
+run: vtysh -c "show ipv6 ospf6 spf tree"

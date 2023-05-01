@@ -1,0 +1,4 @@
+type: txt
+help: Actions against the rule (REQUIRE)
+allowed: echo "allow deny"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(allow|deny)\'   --value \'$VAR(@)\'"; "Invalid value"

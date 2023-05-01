@@ -1,0 +1,2 @@
+help: Interface where the station is connected
+allowed: ${vyos_completion_dir}/list_interfaces

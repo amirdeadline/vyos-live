@@ -1,0 +1,4 @@
+type: txt
+help: Drop specified attributes from incoming UPDATE messages
+val_help: u32:1-255; Attribute number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-255\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,6 @@
+type: txt
+help: Related state
+val_help: enable; Enable
+val_help: disable; Disable
+allowed: echo "enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

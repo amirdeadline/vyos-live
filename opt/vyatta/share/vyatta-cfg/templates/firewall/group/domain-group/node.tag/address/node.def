@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Domain-group member
+val_help: txt; Domain address to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid value"

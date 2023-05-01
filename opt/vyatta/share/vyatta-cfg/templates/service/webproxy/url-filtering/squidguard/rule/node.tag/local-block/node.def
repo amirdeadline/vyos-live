@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Local site to block
+val_help: ipv4; IP address of site to block
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid value"

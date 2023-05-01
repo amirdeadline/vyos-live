@@ -1,0 +1,19 @@
+
+input ShowMemoryInput {
+    key: String
+}
+
+type ShowMemory {
+    result: Generic
+}
+
+type ShowMemoryResult {
+    data: ShowMemory
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowMemory(data: ShowMemoryInput) : ShowMemoryResult @genopquery
+}

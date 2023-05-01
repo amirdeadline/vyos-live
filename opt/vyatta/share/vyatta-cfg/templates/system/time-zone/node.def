@@ -1,0 +1,6 @@
+type: txt
+priority: 100
+help: Local time zone (default UTC)
+allowed: sh -c "timedatectl list-timezones"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/timezone --validate\"  --value \'$VAR(@)\'"; "Invalid value"
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/system-timezone.py"

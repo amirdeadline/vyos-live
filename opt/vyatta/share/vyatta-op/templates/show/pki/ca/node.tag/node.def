@@ -1,0 +1,3 @@
+help: Show x509 CA certificate by name
+allowed: /bin/cli-shell-api listActiveNodes pki ca | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/pki.py --action show --ca "$4"

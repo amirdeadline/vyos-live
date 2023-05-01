@@ -1,0 +1,10 @@
+
+query SystemStatus ($key: String) {
+  SystemStatus (data: { key: $key }) {
+    success
+    errors
+    data {
+      result
+    }
+  }
+}

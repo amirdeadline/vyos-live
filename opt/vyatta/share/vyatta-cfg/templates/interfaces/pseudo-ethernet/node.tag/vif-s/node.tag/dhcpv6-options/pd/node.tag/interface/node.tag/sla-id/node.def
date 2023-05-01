@@ -1,0 +1,4 @@
+type: txt
+help: Interface site-Level aggregator (SLA)
+val_help: u32:0-65535; Decimal integer which fits in the length of SLA IDs
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65535\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Server priority (default: 10)
+val_help: u32:1-999; Server priority (lower numbers are higher priority)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-999\"  --value \'$VAR(@)\'"; "Invalid value"

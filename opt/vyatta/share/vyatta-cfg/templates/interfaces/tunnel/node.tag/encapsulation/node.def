@@ -1,0 +1,14 @@
+type: txt
+help: Encapsulation of this tunnel interface
+val_help: erspan; Encapsulated Remote Switched Port Analyzer
+val_help: gre; Generic Routing Encapsulation (network layer)
+val_help: gretap; Generic Routing Encapsulation (datalink layer)
+val_help: ip6erspan; Encapsulated Remote Switched Port Analyzer over IPv6
+val_help: ip6gre; GRE over IPv6 (network layer)
+val_help: ip6gretap; GRE over IPv6 (datalink layer)
+val_help: ip6ip6; IPv6 in IPv6 encapsulation
+val_help: ipip; IPv4 in IPv4 encapsulation
+val_help: ipip6; IPv4 in IP6 encapsulation
+val_help: sit; Simple Internet Transition (IPv6 in IPv4)
+allowed: echo "erspan gre gretap ip6erspan ip6gre ip6gretap ip6ip6 ipip ipip6 sit"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(erspan|gre|gretap|ip6erspan|ip6gre|ip6gretap|ip6ip6|ipip|ipip6|sit)\'   --value \'$VAR(@)\'"; "Invalid encapsulation, must be one of: erspan, gre, gretap, ip6erspan, ip6gre, ip6gretap, ipip, sit, ipip6 or ip6ip6"

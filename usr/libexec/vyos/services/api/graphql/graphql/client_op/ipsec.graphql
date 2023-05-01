@@ -1,0 +1,120 @@
+
+mutation ResetAllPeersIpsec ($key: String) {
+  ResetAllPeersIpsec (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+mutation ResetPeerIpsec ($key: String, $peer: String!, $tunnel: String = null) {
+  ResetPeerIpsec (data: { key: $key, peer: $peer, tunnel: $tunnel }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+mutation ResetProfileAllIpsec ($key: String, $profile: String!, $tunnel: String!) {
+  ResetProfileAllIpsec (data: { key: $key, profile: $profile, tunnel: $tunnel }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+mutation ResetProfileDstIpsec ($key: String, $profile: String!, $tunnel: String!, $nbma_dst: String!) {
+  ResetProfileDstIpsec (data: { key: $key, profile: $profile, tunnel: $tunnel, nbma_dst: $nbma_dst }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+mutation ResetRaIpsec ($key: String, $username: String = null) {
+  ResetRaIpsec (data: { key: $key, username: $username }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowConnectionsIpsec ($key: String) {
+  ShowConnectionsIpsec (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowConnectionsSummaryIpsec ($key: String) {
+  ShowConnectionsSummaryIpsec (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowSaIpsec ($key: String) {
+  ShowSaIpsec (data: { key: $key }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

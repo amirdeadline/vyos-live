@@ -1,0 +1,2 @@
+type: txt
+help: Override system host-name sent to DHCP server

@@ -1,0 +1,2 @@
+help: Show summary of the specified ethernet interface information
+run: ${vyos_op_scripts_dir}/interfaces.py show_summary --intf_name="$4" --intf_type=ethernet

@@ -1,0 +1,20 @@
+
+input ShowZoneInput {
+    key: String
+    zone: String = null
+}
+
+type ShowZone {
+    result: Generic
+}
+
+type ShowZoneResult {
+    data: ShowZone
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowZone(data: ShowZoneInput) : ShowZoneResult @genopquery
+}

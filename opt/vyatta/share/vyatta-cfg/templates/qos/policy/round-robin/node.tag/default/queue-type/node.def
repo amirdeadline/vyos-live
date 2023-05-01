@@ -1,0 +1,9 @@
+type: txt
+help: Queue type for default traffic (default: fair-queue)
+val_help: drop-tail; First-In-First-Out (FIFO)
+val_help: fair-queue; Stochastic Fair Queue (SFQ) (default)
+val_help: fq-codel; Fair Queue Codel
+val_help: priority; Priority queuing
+val_help: random-detect; Random Early Detection (RED)
+allowed: echo "drop-tail fair-queue fq-codel priority random-detect"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(drop-tail|fair-queue|fq-codel|priority|random-detect)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,3 @@
+type: txt
+help: Base64 encoded private key
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[0-9a-zA-Z\\+/]{43}=\'   --value \'$VAR(@)\'"; "Key is not valid 44-character (32-bytes) base64"

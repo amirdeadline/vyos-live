@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Specify VLAN id which is allowed in this trunk interface
+val_help: <id>; VLAN id allowed to pass this interface
+val_help: <idN>-<idM>; VLAN id range allowed on this interface (use '-' as delimiter)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 1-4094\"  --value \'$VAR(@)\'"; "not a valid VLAN ID value or range"

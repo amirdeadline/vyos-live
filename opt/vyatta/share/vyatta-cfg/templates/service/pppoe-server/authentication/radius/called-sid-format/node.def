@@ -1,0 +1,6 @@
+type: txt
+help: Format of Called-Station-Id attribute
+val_help: ifname; NAS-Port-Id - should contain root interface name (NAS-Port-Id=eth1)
+val_help: ifname:mac; NAS-Port-Id - should contain root interface name and mac address (NAS-Port-Id=eth1:00:00:00:00:00:00)
+allowed: echo "ifname ifname:mac"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ifname|ifname:mac)\'   --value \'$VAR(@)\'"; "Invalid Called-Station-Id format"

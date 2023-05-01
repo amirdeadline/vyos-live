@@ -1,0 +1,3 @@
+help: Show interface prefix route specific information
+allowed: echo "<h:h:h:h:h:h:h:h> <h:h:h:h:h:h:h:h/x>"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

@@ -1,0 +1,3 @@
+type: txt
+help: Set HUB fqdn (nbma-address - fqdn)
+val_help: <fqdn>; Set the external HUB fqdn

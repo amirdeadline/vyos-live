@@ -1,0 +1,4 @@
+type: txt
+help: Remote database name
+val_help: txt; Remote database name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Database is limited to alphanumerical characters and can contain hyphen and underscores"

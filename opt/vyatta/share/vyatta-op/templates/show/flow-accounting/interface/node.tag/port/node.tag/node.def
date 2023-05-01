@@ -1,0 +1,3 @@
+help: Show flow accounting statistics for specified interface/port
+allowed: echo "1-65535"
+run: ${vyos_op_scripts_dir}/flow_accounting_op.py --action show --interface $4 --ports $6

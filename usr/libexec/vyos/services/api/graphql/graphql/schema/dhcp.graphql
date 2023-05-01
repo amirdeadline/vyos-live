@@ -1,0 +1,60 @@
+
+enum FamilyDhcp {
+    inet
+    inet6
+}
+
+enum StateDhcp {
+    all
+    active
+    free
+    expired
+    released
+    abandoned
+    reset
+    backup
+}
+
+input ShowPoolStatisticsDhcpInput {
+    key: String
+    family: FamilyDhcp!
+    pool: String = null
+}
+
+type ShowPoolStatisticsDhcp {
+    result: Generic
+}
+
+type ShowPoolStatisticsDhcpResult {
+    data: ShowPoolStatisticsDhcp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowPoolStatisticsDhcp(data: ShowPoolStatisticsDhcpInput) : ShowPoolStatisticsDhcpResult @genopquery
+}
+
+input ShowServerLeasesDhcpInput {
+    key: String
+    family: FamilyDhcp!
+    pool: String = null
+    sorted: String = null
+    state: StateDhcp!
+}
+
+type ShowServerLeasesDhcp {
+    result: Generic
+}
+
+type ShowServerLeasesDhcpResult {
+    data: ShowServerLeasesDhcp
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowServerLeasesDhcp(data: ShowServerLeasesDhcpInput) : ShowServerLeasesDhcpResult @genopquery
+}

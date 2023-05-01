@@ -1,0 +1,7 @@
+type: txt
+help: Protocol used for service VLAN (default: 802.1ad) (default:
+			802.1ad)
+val_help: 802.1ad; Provider Bridging (IEEE 802.1ad, Q-inQ), ethertype 0x88a8 (default)
+val_help: 802.1q; VLAN-tagged frame (IEEE 802.1q), ethertype 0x8100
+allowed: echo "802.1ad 802.1q"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(802.1q|802.1ad)\'   --value \'$VAR(@)\'"; "Ethertype must be 802.1ad or 802.1q"

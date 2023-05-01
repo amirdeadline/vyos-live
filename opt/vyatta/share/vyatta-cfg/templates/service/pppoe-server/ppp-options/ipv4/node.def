@@ -1,0 +1,8 @@
+type: txt
+help: IPv4 (IPCP) negotiation algorithm
+val_help: deny; Do not negotiate IPv4
+val_help: allow; Negotiate IPv4 only if client requests
+val_help: prefer; Ask client for IPv4 negotiation, do not fail if it rejects
+val_help: require; Require IPv4 negotiation
+allowed: echo "deny allow prefer require"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(deny|allow|prefer|require)\'   --value \'$VAR(@)\'"; "invalid value"

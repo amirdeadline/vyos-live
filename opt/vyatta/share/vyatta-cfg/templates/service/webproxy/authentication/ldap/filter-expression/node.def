@@ -1,0 +1,2 @@
+type: txt
+help: Filter expression to perform LDAP search with

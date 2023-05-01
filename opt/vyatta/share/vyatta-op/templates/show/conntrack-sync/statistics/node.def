@@ -1,0 +1,2 @@
+help: Show connection syncing statistics
+run: sudo ${vyos_op_scripts_dir}/conntrack_sync.py --show-statistics

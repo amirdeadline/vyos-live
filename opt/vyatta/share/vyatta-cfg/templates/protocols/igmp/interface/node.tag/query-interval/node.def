@@ -1,0 +1,4 @@
+type: txt
+help: IGMP host query interval
+val_help: u32:1-1800; Query interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-1800\"  --value \'$VAR(@)\'"; "Invalid value"

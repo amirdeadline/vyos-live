@@ -1,0 +1,15 @@
+tag:
+type: txt
+help: Filter routing info exchanged between routing protocol and zebra
+val_help: any; Any of the above protocols
+val_help: babel; Babel routing protocol
+val_help: bgp; Border Gateway Protocol
+val_help: connected; Connected routes (directly attached subnet or host)
+val_help: eigrp; Enhanced Interior Gateway Routing Protocol
+val_help: isis; Intermediate System to Intermediate System
+val_help: kernel; Kernel routes (not installed via the zebra RIB)
+val_help: ospf; Open Shortest Path First (OSPFv2)
+val_help: rip; Routing Information Protocol
+val_help: static; Statically configured routes
+allowed: echo "any babel bgp connected eigrp isis kernel ospf rip static table"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(any|babel|bgp|connected|eigrp|isis|kernel|ospf|rip|static|table)\'   --value \'$VAR(@)\'"; "Invalid value"

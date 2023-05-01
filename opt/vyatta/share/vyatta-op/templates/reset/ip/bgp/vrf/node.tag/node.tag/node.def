@@ -1,0 +1,3 @@
+help: Clear BGP neighbor IP address
+allowed: echo "<x.x.x.x>"
+run: vtysh -c "clear bgp vrf $5 $6"

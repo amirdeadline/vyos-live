@@ -1,0 +1,6 @@
+type: txt
+help: Authentication type (default: key)
+val_help: key; Use API keys (default)
+val_help: token; Use JWT token
+allowed: echo "key token"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(key|token)\'   --value \'$VAR(@)\'"; "Invalid value"

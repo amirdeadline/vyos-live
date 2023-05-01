@@ -1,0 +1,3 @@
+type: txt
+help: Diffie Hellman parameters (server only)
+allowed: /bin/cli-shell-api listNodes pki dh

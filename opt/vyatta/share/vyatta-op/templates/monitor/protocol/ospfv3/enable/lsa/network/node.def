@@ -1,0 +1,2 @@
+help: Display Network LSAs
+run: vtysh -c "debug ospf6 ${@:5}"

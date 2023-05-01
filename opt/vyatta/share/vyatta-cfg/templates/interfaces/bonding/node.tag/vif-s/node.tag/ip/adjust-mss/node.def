@@ -1,0 +1,6 @@
+type: txt
+help: Adjust TCP MSS value
+val_help: clamp-mss-to-pmtu; Automatically sets the MSS to the proper value
+val_help: u32:536-65535; TCP Maximum segment size in bytes
+allowed: echo "clamp-mss-to-pmtu"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(clamp-mss-to-pmtu)\' --exec \"${vyos_validators_dir}/numeric --range 536-65535\"  --value \'$VAR(@)\'"; "Invalid value"

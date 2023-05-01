@@ -1,0 +1,3 @@
+help: Should accept local VPN route if exported and imported into
+			different VRF (well-known community)
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

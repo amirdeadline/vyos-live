@@ -1,0 +1,15 @@
+
+query ShowNeighborsLldp ($key: String, $interface: String = null, $detail: Boolean = false) {
+  ShowNeighborsLldp (data: { key: $key, interface: $interface, detail: $detail }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

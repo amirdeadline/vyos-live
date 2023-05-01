@@ -1,0 +1,3 @@
+help: Display routes matching the community-list
+allowed: echo "1-500 name"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

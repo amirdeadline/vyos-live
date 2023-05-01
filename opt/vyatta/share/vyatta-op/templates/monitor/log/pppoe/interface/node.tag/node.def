@@ -1,0 +1,3 @@
+help: Monitor last lines of PPPoE log for specific interface
+allowed: /bin/cli-shell-api listActiveNodes interfaces pppoe | sed -e "s/'//g" && echo
+run: journalctl --no-hostname --boot --follow --unit "ppp@$5.service"

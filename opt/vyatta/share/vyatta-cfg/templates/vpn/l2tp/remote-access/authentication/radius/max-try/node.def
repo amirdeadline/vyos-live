@@ -1,0 +1,3 @@
+type: txt
+help: Maximum number of tries to send Access-Request/Accounting-
+			Request queries

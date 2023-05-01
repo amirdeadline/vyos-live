@@ -1,0 +1,2 @@
+help: Purge all entries from NHRP cache
+run: sudo opennhrpctl purge dev $5 || echo OpenNHRP is not running.

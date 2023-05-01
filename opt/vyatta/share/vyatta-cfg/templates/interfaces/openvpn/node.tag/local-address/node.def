@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Local IP address of tunnel (IPv4 or IPv6)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \"  --value \'$VAR(@)\'"; "Invalid value"

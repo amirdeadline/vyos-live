@@ -1,0 +1,3 @@
+help: Show bridge information for a given bridge interface
+allowed: ${vyos_completion_dir}/list_interfaces --type bridge
+run: bridge -c link show | grep "master $3"

@@ -1,0 +1,7 @@
+type: txt
+help: Forwarding method (default: nat)
+val_help: direct; Direct routing
+val_help: nat; NAT (default)
+val_help: tunnel; Tunneling
+allowed: echo "direct nat tunnel"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(direct|nat|tunnel)\'   --value \'$VAR(@)\'"; "Invalid value"

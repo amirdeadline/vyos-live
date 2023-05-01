@@ -1,0 +1,2 @@
+help: Kernel routes (not installed via the zebra RIB)
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

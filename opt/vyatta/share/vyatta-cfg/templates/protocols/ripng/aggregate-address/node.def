@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Aggregate RIPng route announcement
+val_help: ipv6net; Aggregate RIPng route announcement
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

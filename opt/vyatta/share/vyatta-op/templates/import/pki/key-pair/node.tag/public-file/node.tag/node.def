@@ -1,0 +1,2 @@
+help: Path to public key file
+run: sudo ${vyos_op_scripts_dir}/pki.py --action import --keypair "$4" --filename "$6"

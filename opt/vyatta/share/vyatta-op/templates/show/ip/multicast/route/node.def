@@ -1,0 +1,2 @@
+help: IP multicast routing table
+run: vtysh -c "show ip mroute"

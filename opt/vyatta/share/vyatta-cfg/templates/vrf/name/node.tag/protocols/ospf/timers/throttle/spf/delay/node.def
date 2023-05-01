@@ -1,0 +1,5 @@
+type: txt
+help: Delay from the first change received to SPF calculation
+			(default: 200)
+val_help: u32:0-600000; Delay in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-600000\"  --value \'$VAR(@)\'"; "Invalid value"

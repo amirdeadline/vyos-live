@@ -1,0 +1,2 @@
+help: Monitor last lines of PPPoE server log
+run: journalctl --no-hostname --boot --follow --unit accel-ppp@pppoe.service

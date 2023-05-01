@@ -1,0 +1,2 @@
+help: Showing BFD monitored static routes
+run: vtysh -c "show bfd static route"

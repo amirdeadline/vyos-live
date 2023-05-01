@@ -1,0 +1,3 @@
+type: txt
+help: Remote Circuit Name
+val_help: txt; Remote Circuit Name

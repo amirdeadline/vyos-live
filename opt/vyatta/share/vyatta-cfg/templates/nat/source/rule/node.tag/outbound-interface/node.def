@@ -1,0 +1,3 @@
+type: txt
+help: Outbound interface of NAT traffic
+allowed: echo "any" && echo " " && sh -c "${vyos_completion_dir}/list_interfaces"

@@ -1,0 +1,4 @@
+type: txt
+help: Gateway IP address
+val_help: ipv4; Default Gateway send to the client
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "invalid IPv4 address"

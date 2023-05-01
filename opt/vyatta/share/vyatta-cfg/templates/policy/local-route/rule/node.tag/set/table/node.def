@@ -1,0 +1,4 @@
+type: txt
+help: Routing table to forward packet with
+val_help: u32:1-200; Table number
+allowed: echo "main"

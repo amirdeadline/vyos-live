@@ -1,0 +1,4 @@
+help: Commands for installing generated key pair into running
+			configuration
+allowed: echo "<key name>"
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --keypair "$5" --install

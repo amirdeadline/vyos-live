@@ -1,0 +1,3 @@
+help: Bring up a connection-oriented network interface
+allowed: /bin/cli-shell-api listActiveNodes interfaces pppoe | sed -e "s/'//g" && echo && /bin/cli-shell-api listActiveNodes interfaces sstpc | sed -e "s/'//g" && echo && /bin/cli-shell-api listActiveNodes interfaces wwan | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/connect_disconnect.py --connect "$3"

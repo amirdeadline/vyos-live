@@ -1,0 +1,3 @@
+help: Interface used for install command
+allowed: /bin/cli-shell-api listActiveNodes interfaces wireguard ${COMP_WORDS[COMP_CWORD-2]} peer | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --wireguard --psk --interface "$7" --peer "$9" --install

@@ -1,0 +1,4 @@
+type: txt
+help: Delay before disconnecting idle session (in seconds)
+val_help: u32:0-86400; Idle timeout in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-86400\"  --value \'$VAR(@)\'"; "Timeout must be in range 0 to 86400"

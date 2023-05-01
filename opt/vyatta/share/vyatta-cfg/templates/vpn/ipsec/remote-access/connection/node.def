@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: IKEv2 VPN connection name
+val_help: txt; Connection name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z][0-9a-zA-Z_-]+\'   --value \'$VAR(@)\'"; "Profile name must be alphanumeric and can contain hyphen(s) and underscore(s)"

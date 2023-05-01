@@ -1,0 +1,2 @@
+help: Show log for flow-accounting
+run: journalctl --no-hostname --boot --unit uacctd.service

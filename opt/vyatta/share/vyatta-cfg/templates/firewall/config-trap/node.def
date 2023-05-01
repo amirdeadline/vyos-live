@@ -1,0 +1,7 @@
+type: txt
+help: SNMP trap generation on firewall configuration changes (default:
+			disable)
+val_help: enable; Enable sending SNMP trap on firewall configuration change
+val_help: disable; Disable sending SNMP trap on firewall configuration change (default)
+allowed: echo "enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

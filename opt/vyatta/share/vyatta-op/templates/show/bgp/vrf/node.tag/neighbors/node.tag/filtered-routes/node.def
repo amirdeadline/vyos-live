@@ -1,0 +1,2 @@
+help: Show filtered routes from BGP neighbor
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

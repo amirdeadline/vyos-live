@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Class matching rule name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[^-].*\'   --value \'$VAR(@)\'"; "Match queue name cannot start with hyphen (-)"

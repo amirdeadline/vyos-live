@@ -1,0 +1,3 @@
+help: Poweroff at a specific time
+allowed: echo "<HH:MM>"
+run: sudo ${vyos_op_scripts_dir}/powerctrl.py --yes --poweroff $3

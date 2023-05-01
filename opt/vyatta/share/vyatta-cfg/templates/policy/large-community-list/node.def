@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Add a BGP large community list entry
+val_help: txt; BGP large-community-list name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Should be an alphanumeric name"

@@ -1,0 +1,6 @@
+type: txt
+help: syslog communication protocol
+val_help: udp; send log messages to remote syslog server over udp
+val_help: tcp; send log messages to remote syslog server over tcp
+allowed: echo "udp tcp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(udp|tcp)\'   --value \'$VAR(@)\'"; "invalid protocol name"

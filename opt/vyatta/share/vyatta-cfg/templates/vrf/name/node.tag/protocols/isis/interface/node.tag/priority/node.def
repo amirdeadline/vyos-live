@@ -1,0 +1,4 @@
+type: txt
+help: Set priority for Designated Router election
+val_help: u32:0-127; Priority value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-127\"  --value \'$VAR(@)\'"; "Invalid value"

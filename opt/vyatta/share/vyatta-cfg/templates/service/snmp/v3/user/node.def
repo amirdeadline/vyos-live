@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Specifies the user with name username
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[^\\(\\)\\|\\-]+\'   --value \'$VAR(@)\'"; "Illegal characters in name"

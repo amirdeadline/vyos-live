@@ -1,0 +1,2 @@
+help: Show BGP routes matching the specified prefix list
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

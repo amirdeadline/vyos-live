@@ -1,0 +1,2 @@
+help: PIM cached nexthop rpf information
+run: vtysh -c "show ip pim nexthop"

@@ -1,0 +1,2 @@
+help: Examine console ports and configured baud rates
+run: /usr/bin/console -x

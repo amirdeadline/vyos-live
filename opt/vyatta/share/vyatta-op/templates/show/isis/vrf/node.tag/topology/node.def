@@ -1,0 +1,2 @@
+help: Show IS-IS paths to Intermediate Systems
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

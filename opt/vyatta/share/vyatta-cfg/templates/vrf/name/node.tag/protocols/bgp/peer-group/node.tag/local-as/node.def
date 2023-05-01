@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Specify alternate ASN for this BGP process
+val_help: u32:1-4294967294; Autonomous System Number (ASN)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-4294967294\"  --value \'$VAR(@)\'"; "Invalid value"

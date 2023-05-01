@@ -1,0 +1,4 @@
+type: txt
+help: Maximum Transmission Unit (MTU) (default: 1450)
+val_help: u32:1200-16000; Maximum Transmission Unit in byte
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1200-16000\"  --value \'$VAR(@)\'"; "MTU must be between 1200 and 16000"

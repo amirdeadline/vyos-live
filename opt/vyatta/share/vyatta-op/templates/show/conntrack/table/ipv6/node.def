@@ -1,0 +1,2 @@
+help: Show conntrack entries for IPv6 protocol
+run: sudo ${vyos_op_scripts_dir}/conntrack.py show --family inet6

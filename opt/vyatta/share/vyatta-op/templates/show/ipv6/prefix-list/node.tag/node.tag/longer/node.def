@@ -1,0 +1,2 @@
+help: Show longer match of select prefix from named IPv6 prefix-list
+run: vtysh -c "show ipv6 prefix-list $4 $5 longer"

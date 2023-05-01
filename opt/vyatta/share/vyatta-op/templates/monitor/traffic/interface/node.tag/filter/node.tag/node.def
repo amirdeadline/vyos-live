@@ -1,0 +1,2 @@
+help: Monitor traffic matching filter conditions
+run: sudo tcpdump -n -i $4 "${@:6}"

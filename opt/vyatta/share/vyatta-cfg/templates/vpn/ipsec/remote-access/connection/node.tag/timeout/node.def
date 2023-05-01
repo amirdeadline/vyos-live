@@ -1,0 +1,6 @@
+type: txt
+help: Timeout to close connection if no data is transmitted (default:
+			28800)
+val_help: u32:0; Disable inactivity checks
+val_help: u32:1-86400; Timeout in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-86400\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,3 @@
+help: Source interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: ${vyos_op_scripts_dir}/force_mtu_host.sh $4 $6

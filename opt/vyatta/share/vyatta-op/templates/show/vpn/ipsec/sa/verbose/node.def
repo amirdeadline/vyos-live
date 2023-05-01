@@ -1,0 +1,3 @@
+help: Show Verbose Detail on all active IPsec Security Associations
+			(SA)
+run: if systemctl is-active --quiet strongswan ; then sudo /usr/sbin/ipsec statusall ; else echo "IPsec process not running" ; fi

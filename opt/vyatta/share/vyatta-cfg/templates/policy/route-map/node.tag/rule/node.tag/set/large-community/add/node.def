@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Add large communities to a prefix ;
+val_help: <GA:LDP1:LDP2>; Community in format <0-4294967295:0-4294967295:0-4294967295>
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/bgp-large-community \"  --value \'$VAR(@)\'"; "Invalid value"

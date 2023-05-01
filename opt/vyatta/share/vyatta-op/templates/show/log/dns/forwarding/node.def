@@ -1,0 +1,2 @@
+help: Show log for DNS Forwarding
+run: journalctl --no-hostname --boot --unit pdns-recursor.service

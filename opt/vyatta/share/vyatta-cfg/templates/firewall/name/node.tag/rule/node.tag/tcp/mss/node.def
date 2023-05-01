@@ -1,0 +1,5 @@
+type: txt
+help: Maximum segment size (MSS)
+val_help: u32:1-16384; Maximum segment size
+val_help: <min>-<max>; TCP MSS range (use '-' as delimiter)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 1-16384\"  --value \'$VAR(@)\'"; "Invalid value"

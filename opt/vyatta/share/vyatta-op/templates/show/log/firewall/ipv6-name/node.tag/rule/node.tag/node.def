@@ -1,0 +1,3 @@
+help: Show log for a rule in the specified firewall
+allowed: /bin/cli-shell-api listActiveNodes firewall ipv6-name ${COMP_WORDS[4]} rule | sed -e "s/'//g" && echo
+run: cat $(printf "%s\n" /var/log/messages* | sort -nr) | grep -e "\[$5-$7-[ADR]\]"

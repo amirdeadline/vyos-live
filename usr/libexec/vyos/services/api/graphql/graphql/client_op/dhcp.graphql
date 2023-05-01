@@ -1,0 +1,30 @@
+
+query ShowPoolStatisticsDhcp ($key: String, $family: FamilyDhcp!, $pool: String = null) {
+  ShowPoolStatisticsDhcp (data: { key: $key, family: $family, pool: $pool }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}
+
+query ShowServerLeasesDhcp ($key: String, $family: FamilyDhcp!, $pool: String = null, $sorted: String = null, $state: StateDhcp!) {
+  ShowServerLeasesDhcp (data: { key: $key, family: $family, pool: $pool, sorted: $sorted, state: $state }) {
+    success
+    errors
+    op_mode_error {
+      name
+      message
+      vyos_code
+    }
+    data {
+      result
+    }
+  }
+}

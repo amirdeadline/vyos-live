@@ -1,0 +1,6 @@
+type: txt
+help: ESP mode (default: tunnel)
+val_help: tunnel; Tunnel mode (default)
+val_help: transport; Transport mode
+allowed: echo "tunnel transport"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(tunnel|transport)\'   --value \'$VAR(@)\'"; "Invalid value"

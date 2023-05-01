@@ -1,0 +1,3 @@
+help: IPv4/IPv6 neighbor to clear
+allowed: ${vyos_completion_dir}/list_bgp_neighbors.sh --both --vrf ${COMP_WORDS[3]}
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

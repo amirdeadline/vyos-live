@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Sync group member
+val_help: txt; VRRP group name
+allowed: /bin/cli-shell-api listNodes high-availability vrrp group

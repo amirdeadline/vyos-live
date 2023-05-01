@@ -1,0 +1,4 @@
+type: txt
+help: Time for time-period
+val_help: <hh:mm - hh:mm>; Time range in 24hr time
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(\\d\\d:\\d\\d)-(\\d\\d:\\d\\d)\'   --value \'$VAR(@)\'"; "Expected time format hh:mm - hh:mm in 24hr time"

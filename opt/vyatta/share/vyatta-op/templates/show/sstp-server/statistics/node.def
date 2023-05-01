@@ -1,0 +1,2 @@
+help: Show SSTP server statistics
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="sstp" --action="show stat"

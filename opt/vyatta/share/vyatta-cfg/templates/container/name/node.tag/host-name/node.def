@@ -1,0 +1,3 @@
+type: txt
+help: Container host name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[A-Za-z0-9][-.A-Za-z0-9]*[A-Za-z0-9]\'   --value \'$VAR(@)\'"; "Host-name must be alphanumeric and can contain hyphens"

@@ -1,0 +1,4 @@
+type: txt
+help: Maximum allowed clock slop in seconds (default: 180)
+val_help: 1-65535; Seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65535\"  --value \'$VAR(@)\'"; "Invalid value"

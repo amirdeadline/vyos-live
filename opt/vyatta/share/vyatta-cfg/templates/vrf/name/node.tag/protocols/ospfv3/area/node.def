@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: OSPFv3 Area
+val_help: u32; Area ID as a decimal value
+val_help: ipv4; Area ID in IP address forma
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\" --exec \"${vyos_validators_dir}/ip-address \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,6 @@
+type: txt
+help: Policy for check targets (default: any-available)
+val_help: all-available; All targets must be alive
+val_help: any-available; Any target must be alive (default)
+allowed: echo "any-available all-available"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(all-available|any-available)\'   --value \'$VAR(@)\'"; "Invalid value"

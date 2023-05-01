@@ -1,0 +1,9 @@
+type: txt
+help: Regular expression to match against a community-list
+val_help: <aa:nn>; Community number in AA:NN format
+val_help: local-AS; Well-known communities value NO_EXPORT_SUBCONFED 0xFFFFFF03
+val_help: no-advertise; Well-known communities value NO_ADVERTISE 0xFFFFFF02
+val_help: no-export; Well-known communities value NO_EXPORT 0xFFFFFF01
+val_help: internet; Well-known communities value 0
+val_help: additive; New value is appended to the existing value
+allowed: echo "local-AS no-advertise no-export internet additive"

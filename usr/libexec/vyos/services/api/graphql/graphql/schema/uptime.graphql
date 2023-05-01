@@ -1,0 +1,19 @@
+
+input ShowUptimeInput {
+    key: String
+}
+
+type ShowUptime {
+    result: Generic
+}
+
+type ShowUptimeResult {
+    data: ShowUptime
+    op_mode_error: OpModeError
+    success: Boolean!
+    errors: [String]
+}
+
+extend type Query {
+    ShowUptime(data: ShowUptimeInput) : ShowUptimeResult @genopquery
+}

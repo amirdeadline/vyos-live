@@ -1,0 +1,2 @@
+help: Show current login credentials
+run: ${vyos_op_scripts_dir}/show_current_user.sh
