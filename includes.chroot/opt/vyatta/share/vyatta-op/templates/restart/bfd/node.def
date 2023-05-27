@@ -1,0 +1,2 @@
+help: Restart Bidirectional Forwarding Detection (BFD) daemon
+run: sudo ${vyos_op_scripts_dir}/restart_frr.py --action restart --daemon bfdd

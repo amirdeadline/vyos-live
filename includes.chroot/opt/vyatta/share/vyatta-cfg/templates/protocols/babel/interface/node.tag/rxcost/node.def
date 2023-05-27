@@ -1,0 +1,4 @@
+type: txt
+help: Base receive cost for this interface
+val_help: u32:1-65534; Base receive cost
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65534\"  --value \'$VAR(@)\'"; "Invalid value"

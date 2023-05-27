@@ -1,0 +1,5 @@
+type: txt
+help: IEEE 802.1X/MACsec replay protection window
+val_help: u32:0; No replay window, strict check
+val_help: u32:1-4294967295; Number of packets that could be misordered
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Invalid value"

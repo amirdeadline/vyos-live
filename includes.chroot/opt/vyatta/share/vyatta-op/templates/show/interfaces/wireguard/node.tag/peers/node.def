@@ -1,0 +1,2 @@
+help: Show all peer IDs for the specified interface
+run: sudo wg show "$4" peers

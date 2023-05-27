@@ -1,0 +1,18 @@
+multi:
+type: txt
+help: Cipher algorithms ("cipher suite") used during SSL/TLS handshake
+			for all frontend servers (default: ecdhe-ecdsa-aes128-gcm-
+			sha256, ecdhe-rsa-aes128-gcm-sha256, ecdhe-ecdsa-aes256-gcm-
+			sha384, ecdhe-rsa-aes256-gcm-sha384, ecdhe-ecdsa-
+			chacha20-poly1305, ecdhe-rsa-chacha20-poly1305, dhe-rsa-
+			aes128-gcm-sha256, dhe-rsa-aes256-gcm-sha384)
+val_help: ecdhe-ecdsa-aes128-gcm-sha256; ecdhe-ecdsa-aes128-gcm-sha256
+val_help: ecdhe-rsa-aes128-gcm-sha256; ecdhe-rsa-aes128-gcm-sha256
+val_help: ecdhe-ecdsa-aes256-gcm-sha384; ecdhe-ecdsa-aes256-gcm-sha384
+val_help: ecdhe-rsa-aes256-gcm-sha384; ecdhe-rsa-aes256-gcm-sha384
+val_help: ecdhe-ecdsa-chacha20-poly1305; ecdhe-ecdsa-chacha20-poly1305
+val_help: ecdhe-rsa-chacha20-poly1305; ecdhe-rsa-chacha20-poly1305
+val_help: dhe-rsa-aes128-gcm-sha256; dhe-rsa-aes128-gcm-sha256
+val_help: dhe-rsa-aes256-gcm-sha384; dhe-rsa-aes256-gcm-sha384
+allowed: echo "ecdhe-ecdsa-aes128-gcm-sha256 ecdhe-rsa-aes128-gcm-sha256 ecdhe-ecdsa-aes256-gcm-sha384 ecdhe-rsa-aes256-gcm-sha384 ecdhe-ecdsa-chacha20-poly1305 ecdhe-rsa-chacha20-poly1305 dhe-rsa-aes128-gcm-sha256 dhe-rsa-aes256-gcm-sha384"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ecdhe-ecdsa-aes128-gcm-sha256|ecdhe-rsa-aes128-gcm-sha256|ecdhe-ecdsa-aes256-gcm-sha384|ecdhe-rsa-aes256-gcm-sha384|ecdhe-ecdsa-chacha20-poly1305|ecdhe-rsa-chacha20-poly1305|dhe-rsa-aes128-gcm-sha256|dhe-rsa-aes256-gcm-sha384)\'   --value \'$VAR(@)\'"; "Invalid value"

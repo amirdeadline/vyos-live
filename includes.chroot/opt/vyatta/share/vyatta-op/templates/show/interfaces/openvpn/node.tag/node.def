@@ -1,0 +1,3 @@
+help: Show OpenVPN interface information
+allowed: sudo ${vyos_completion_dir}/list_interfaces --type openvpn
+run: ${vyos_op_scripts_dir}/interfaces.py show --intf_name=$4

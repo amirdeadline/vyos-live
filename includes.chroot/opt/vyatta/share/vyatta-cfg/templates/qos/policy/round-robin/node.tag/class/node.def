@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Class ID
+val_help: u32:1-4095; Class Identifier
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-4095\"  --value \'$VAR(@)\'"; "Class identifier must be between 1 and 4095"

@@ -1,0 +1,7 @@
+type: txt
+help: Duplex mode (default: auto)
+val_help: auto; Auto negotiation (default)
+val_help: half; Half duplex
+val_help: full; Full duplex
+allowed: echo "auto half full"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(auto|half|full)\'   --value \'$VAR(@)\'"; "duplex must be auto, half or full"

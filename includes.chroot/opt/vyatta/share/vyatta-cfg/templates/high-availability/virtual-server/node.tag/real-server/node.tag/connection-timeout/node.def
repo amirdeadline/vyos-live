@@ -1,0 +1,4 @@
+type: txt
+help: Server connection timeout
+val_help: u32:1-86400; Connection timeout to remote server
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-86400\"  --value \'$VAR(@)\'"; "Invalid value"

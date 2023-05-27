@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: IPv4 firewall rule-set name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9][\\w\\-\\.]*\'   --value \'$VAR(@)\'"; "Invalid value"

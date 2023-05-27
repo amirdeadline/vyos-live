@@ -1,0 +1,2 @@
+help: Summary of all routes in the VRF
+run: ${vyos_op_scripts_dir}/route.py show_summary --family inet --vrf $5

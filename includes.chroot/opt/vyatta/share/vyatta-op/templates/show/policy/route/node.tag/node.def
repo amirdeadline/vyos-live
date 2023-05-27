@@ -1,0 +1,3 @@
+help: Show IPv4 policy chains
+allowed: /bin/cli-shell-api listActiveNodes policy route | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/policy_route.py --action show --name $4

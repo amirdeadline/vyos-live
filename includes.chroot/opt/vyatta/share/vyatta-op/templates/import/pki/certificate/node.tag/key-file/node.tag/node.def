@@ -1,0 +1,2 @@
+help: Path to private key file
+run: sudo ${vyos_op_scripts_dir}/pki.py --action import --certificate "$4" --key-filename "$6"

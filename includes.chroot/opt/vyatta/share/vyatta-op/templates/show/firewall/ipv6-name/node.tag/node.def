@@ -1,0 +1,3 @@
+help: Show IPv6 firewall chains
+allowed: /bin/cli-shell-api listActiveNodes firewall ipv6-name | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/firewall.py --action show --name $4 --ipv6

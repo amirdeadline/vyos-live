@@ -1,0 +1,8 @@
+type: txt
+help: Receive mode (default: private) (default: private)
+val_help: private; No communication with other pseudo-devices (default)
+val_help: vepa; Virtual Ethernet Port Aggregator reflective relay
+val_help: bridge; Simple bridge between pseudo-devices
+val_help: passthru; Promicious mode passthrough of underlying device
+allowed: echo "private vepa bridge passthru"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(private|vepa|bridge|passthru)\'   --value \'$VAR(@)\'"; "mode must be private, vepa, bridge or passthru"

@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Specifies the oid
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[0-9]+(\\.[0-9]+)*\'   --value \'$VAR(@)\'"; "OID must start from a number"

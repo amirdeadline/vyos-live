@@ -1,0 +1,3 @@
+help: Show all as-path-access-lists
+allowed: /bin/cli-shell-api listActiveNodes policy as-path-list | sed -e "s/'//g" && echo
+run: vtysh -c "show ip as-path-access-list $4"

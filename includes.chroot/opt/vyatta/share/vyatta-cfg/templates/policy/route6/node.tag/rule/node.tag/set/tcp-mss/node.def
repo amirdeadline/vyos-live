@@ -1,0 +1,4 @@
+type: txt
+help: TCP Maximum Segment Size
+val_help: u32:500-1460; Explicitly set TCP MSS value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 500-1460\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Monitor IPSec VPN 
+run: ${vyatta_bindir}/vyatta-monitor "VPN-IPSEC" ipsec charon

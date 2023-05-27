@@ -1,0 +1,5 @@
+type: txt
+help: Set Role as SDWAN Overlay
+val_help: txt; overlay, vpn
+allowed: echo 'overlay vpn'
+syntax:expression: $VAR(@) in "overlay", "vpn"; "Value must be overlay or vpn"

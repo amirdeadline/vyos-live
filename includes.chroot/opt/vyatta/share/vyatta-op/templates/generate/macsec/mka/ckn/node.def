@@ -1,0 +1,2 @@
+help: Generate MACsec connectivity association name (CKN) - 256bit
+run: /usr/bin/hexdump -n 32 -e '8/4 "%08x" 1 "\n"' /dev/random

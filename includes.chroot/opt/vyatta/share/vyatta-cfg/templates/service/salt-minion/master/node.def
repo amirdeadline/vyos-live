@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Hostname or IP address of the Salt master server
+val_help: ipv4; Salt server IPv4 address
+val_help: ipv6; Salt server IPv6 address
+val_help: hostname; Salt server FQDN address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid FQDN or IP address"

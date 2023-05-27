@@ -1,0 +1,3 @@
+type: txt
+help: RADIUS attribute that contains rate information (default:
+			Filter-Id)

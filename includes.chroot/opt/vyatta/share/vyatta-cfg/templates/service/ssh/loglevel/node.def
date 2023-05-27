@@ -1,0 +1,9 @@
+type: txt
+help: Log level (default: info)
+val_help: quiet; stay silent
+val_help: fatal; log fatals only
+val_help: error; log errors and fatals only
+val_help: info; default log level (default)
+val_help: verbose; enable logging of failed login attempts
+allowed: echo "quiet fatal error info verbose"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(quiet|fatal|error|info|verbose)\'   --value \'$VAR(@)\'"; "Invalid value"

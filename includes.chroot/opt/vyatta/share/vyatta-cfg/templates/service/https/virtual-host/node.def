@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Identifier for virtual host
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9-_.:]{1,255}\'   --value \'$VAR(@)\'"; "illegal characters in identifier or identifier longer than 255 characters"

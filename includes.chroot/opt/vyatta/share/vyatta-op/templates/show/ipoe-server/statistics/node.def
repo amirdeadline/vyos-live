@@ -1,0 +1,2 @@
+help: Show IPoE server statistics
+run: ${vyos_op_scripts_dir}/ipoe-control.py --action="show_stat"

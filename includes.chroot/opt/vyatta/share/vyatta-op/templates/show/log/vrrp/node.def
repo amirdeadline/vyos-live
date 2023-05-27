@@ -1,0 +1,2 @@
+help: Show log for Virtual Router Redundancy Protocol (VRRP)
+run: journalctl --no-hostname --boot --unit keepalived.service

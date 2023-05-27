@@ -1,0 +1,6 @@
+type: txt
+help: Authentication type
+val_help: plaintext-password; Simple password string
+val_help: ah; AH - IPSEC (not recommended)
+allowed: echo "plaintext-password ah"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(plaintext-password|ah)\'   --value \'$VAR(@)\'"; "Authentication type must be plaintext-password or ah"

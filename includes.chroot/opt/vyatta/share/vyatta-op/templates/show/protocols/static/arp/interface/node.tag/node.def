@@ -1,0 +1,4 @@
+help: Show Address Resolution Protocol (ARP) cache for specified
+			interface
+allowed: ${vyos_completion_dir}/list_interfaces --broadcast
+run: /usr/sbin/arp -e -n -i "$6"

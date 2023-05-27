@@ -1,0 +1,2 @@
+help: Show multi-factor authentication QR code
+run: ${vyos_op_scripts_dir}/show_openvpn_mfa.py --user="$6" --intf="$4" --action=qrcode

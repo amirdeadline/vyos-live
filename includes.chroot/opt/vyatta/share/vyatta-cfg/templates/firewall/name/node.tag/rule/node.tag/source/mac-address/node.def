@@ -1,0 +1,5 @@
+type: txt
+help: MAC address
+val_help: macaddr; MAC address to match
+val_help: !macaddr; Match everything except the specified MAC address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/mac-address \" --exec \"${vyos_validators_dir}/mac-address-exclude \"  --value \'$VAR(@)\'"; "Invalid value"

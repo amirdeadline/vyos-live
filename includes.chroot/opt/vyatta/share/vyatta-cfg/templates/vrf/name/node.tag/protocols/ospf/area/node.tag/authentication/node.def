@@ -1,0 +1,6 @@
+type: txt
+help: OSPF area authentication type
+val_help: plaintext-password; Use plain-text authentication
+val_help: md5; Use MD5 authentication
+allowed: echo "plaintext-password md5"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(plaintext-password|md5)\'   --value \'$VAR(@)\'"; "Invalid value"

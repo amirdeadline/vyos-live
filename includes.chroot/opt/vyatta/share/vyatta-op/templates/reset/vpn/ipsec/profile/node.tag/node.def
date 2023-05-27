@@ -1,0 +1,2 @@
+help: Reset a specific tunnel for given DMVPN profile
+allowed: /bin/cli-shell-api listActiveNodes vpn ipsec profile | sed -e "s/'//g" && echo

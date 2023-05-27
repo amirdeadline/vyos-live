@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Exactly URL match
+val_help: url; Exactly URL
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'^\\/[\\w\\-.\\/]+$\'   --value \'$VAR(@)\'"; "Incorrect URL format"

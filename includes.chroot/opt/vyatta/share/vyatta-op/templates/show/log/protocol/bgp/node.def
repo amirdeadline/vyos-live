@@ -1,0 +1,2 @@
+help: Show log for BGP
+run: journalctl --boot /usr/lib/frr/bgpd

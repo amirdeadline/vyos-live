@@ -1,0 +1,2 @@
+help: Username of public key owner
+allowed: echo "<username>"

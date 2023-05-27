@@ -1,0 +1,2 @@
+help: PIM upstream information
+run: vtysh -c "show ip pim upstream"

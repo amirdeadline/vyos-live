@@ -1,0 +1,2 @@
+help: Enable OSPFv3 route table calculation debugging
+run: vtysh -c "debug ospf6 ${@:5}"

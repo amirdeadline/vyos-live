@@ -1,0 +1,7 @@
+type: txt
+help: Channel number for diversity routing
+val_help: u32:1-254; Interfaces with a channel number interfere with interfering interfaces and interfaces with the same channel number
+val_help: interfering; Interfering interfaces are assumed to interfere with all other channels except non-interfering channels
+val_help: non-interfering; Non-interfering interfaces only interfere with themselves
+allowed: echo "interfering non-interfering"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(interfering|non-interfering)\' --exec \"${vyos_validators_dir}/numeric --range 1-254\"  --value \'$VAR(@)\'"; "Invalid value"

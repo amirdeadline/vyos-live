@@ -1,0 +1,5 @@
+type: txt
+help: Memory (RAM) available to this container (default: 512)
+val_help: u32:0; Unlimited
+val_help: u32:1-16384; Container memory in megabytes (MB)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-16384\"  --value \'$VAR(@)\'"; "Container memory must be in range 0 to 16384 MB"

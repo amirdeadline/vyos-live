@@ -1,0 +1,3 @@
+help: Show IP large-community-lists
+allowed: /bin/cli-shell-api listActiveNodes policy large-community-list | sed -e "s/'//g" && echo
+run: vtysh -c "show bgp large-community-list $4 detail"

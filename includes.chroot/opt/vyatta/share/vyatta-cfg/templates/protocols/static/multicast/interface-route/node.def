@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Multicast interface based route
+val_help: ipv4net; Network
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

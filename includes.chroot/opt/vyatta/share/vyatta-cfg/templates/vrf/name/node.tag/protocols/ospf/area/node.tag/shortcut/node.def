@@ -1,0 +1,7 @@
+type: txt
+help: Area shortcut mode
+val_help: default; Set default
+val_help: disable; Disable shortcutting mode
+val_help: enable; Enable shortcutting mode
+allowed: echo "default disable enable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(default|disable|enable)\'   --value \'$VAR(@)\'"; "Invalid value"

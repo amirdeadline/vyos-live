@@ -1,0 +1,7 @@
+type: txt
+help: IGMP interface role (default: downstream)
+val_help: upstream; Upstream interface (only 1 allowed)
+val_help: downstream; Downstream interface(s) (default)
+val_help: disabled; Disabled interface
+allowed: echo "upstream downstream disabled"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(upstream|downstream|disabled)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Network namespace name
+val_help: text; Network namespace name
+allowed: /bin/cli-shell-api listNodes netns name

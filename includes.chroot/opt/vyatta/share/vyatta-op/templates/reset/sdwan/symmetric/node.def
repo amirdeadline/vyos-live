@@ -1,0 +1,2 @@
+help: SLA Status for all Remote sites
+run: sudo sh -c "${vyos_conf_scripts_dir}/sdwan-symmetric.py reset"

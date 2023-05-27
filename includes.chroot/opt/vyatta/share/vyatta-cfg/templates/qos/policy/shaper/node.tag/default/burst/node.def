@@ -1,0 +1,4 @@
+type: txt
+help: Burst size for this class (default: 15k)
+val_help: <number>; Bytes
+val_help: <number><suffix>; Bytes with scaling suffix (kb, mb, gb)

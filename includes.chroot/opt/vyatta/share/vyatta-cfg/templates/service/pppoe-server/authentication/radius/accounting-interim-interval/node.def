@@ -1,0 +1,4 @@
+type: txt
+help: Interval in seconds to send accounting information
+val_help: u32:1-3600; Interval in seconds to send accounting information
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-3600\"  --value \'$VAR(@)\'"; "Interval value must be between 1 and 3600 seconds"

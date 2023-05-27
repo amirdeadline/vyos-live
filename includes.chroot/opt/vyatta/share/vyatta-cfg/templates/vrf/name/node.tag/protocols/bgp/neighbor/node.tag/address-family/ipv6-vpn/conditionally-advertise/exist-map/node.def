@@ -1,0 +1,6 @@
+type: txt
+help: Advertise routes only if prefixes in exist-map are installed in
+			BGP table
+val_help: txt; Route map name
+allowed: /bin/cli-shell-api listNodes policy route-map
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9.]+\'   --value \'$VAR(@)\'"; "Name of route-map can only contain alpha-numeric letters, hyphen and underscores"

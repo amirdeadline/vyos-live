@@ -1,0 +1,2 @@
+help: EAD (Type-1) route
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

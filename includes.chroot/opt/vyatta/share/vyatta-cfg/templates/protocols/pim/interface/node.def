@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: PIM interface
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

@@ -1,0 +1,2 @@
+help: Show audit logs
+run: cat /var/log/audit/audit.log

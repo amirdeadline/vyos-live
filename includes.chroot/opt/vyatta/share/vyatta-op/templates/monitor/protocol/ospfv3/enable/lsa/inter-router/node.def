@@ -1,0 +1,2 @@
+help: Display Inter-Router LSAs
+run: vtysh -c "debug ospf6 ${@:5}"

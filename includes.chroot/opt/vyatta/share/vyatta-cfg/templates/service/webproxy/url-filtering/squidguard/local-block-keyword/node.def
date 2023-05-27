@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Local keyword to block
+val_help: keyword; Keyword (or regex) to block

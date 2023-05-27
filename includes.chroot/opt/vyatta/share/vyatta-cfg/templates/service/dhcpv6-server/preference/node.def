@@ -1,0 +1,4 @@
+type: txt
+help: Preference of this DHCPv6 server compared with others
+val_help: u32:0-255; DHCPv6 server preference (0-255)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "Preference must be between 0 and 255"

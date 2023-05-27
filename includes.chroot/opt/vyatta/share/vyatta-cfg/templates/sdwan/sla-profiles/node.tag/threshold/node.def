@@ -1,0 +1,5 @@
+type: u32
+default: 3
+syntax:expression: $VAR(@) >= 0 && $VAR(@) <= 10; "Threshold must be between 1-10"
+help: threshold for Failure count
+val_help: u32:1-10; Threshold

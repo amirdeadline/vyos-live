@@ -1,0 +1,2 @@
+help: Username used for authentication
+allowed: echo "<username>"

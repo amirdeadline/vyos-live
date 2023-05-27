@@ -1,0 +1,3 @@
+help: Show Verbose Detail on all active IPsec Security Associations
+			(SA)
+run: if systemctl is-active --quiet strongswan ; then sudo ${vyos_op_scripts_dir}/ipsec.py show_sa_detail ; else echo "IPsec process not running" ; fi

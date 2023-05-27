@@ -1,0 +1,7 @@
+type: txt
+help: OpenVPN mode of operation
+val_help: site-to-site; Site-to-site mode
+val_help: client; Client in client-server mode
+val_help: server; Server in client-server mode
+allowed: echo "site-to-site client server"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(site-to-site|client|server)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show status of disk device
+allowed: ${vyos_completion_dir}/list_disks.py

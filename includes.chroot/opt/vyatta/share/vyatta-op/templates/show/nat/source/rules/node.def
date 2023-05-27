@@ -1,0 +1,2 @@
+help: Show configured source NAT rules
+run: sudo ${vyos_op_scripts_dir}/nat.py show_rules --direction source --family inet

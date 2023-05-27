@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: DSCP value
+val_help: u32:0-63; DSCP value to match
+val_help: <start-end>; DSCP range to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 0-63\"  --value \'$VAR(@)\'"; "Invalid value"

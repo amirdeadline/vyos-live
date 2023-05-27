@@ -1,0 +1,2 @@
+help: Generate random key for GCM-AES-128 encryption - 128bit
+run: /usr/bin/hexdump -n 16 -e '4/4 "%08x" 1 "\n"' /dev/random

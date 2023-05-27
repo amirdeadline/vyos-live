@@ -1,0 +1,2 @@
+help: Display As-External LSAs
+run: vtysh -c "no debug ospf6 ${@:5}"

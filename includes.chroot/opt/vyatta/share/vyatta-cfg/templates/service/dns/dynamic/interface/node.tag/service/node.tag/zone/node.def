@@ -1,0 +1,2 @@
+type: txt
+help: DNS zone to update (only available with CloudFlare)

@@ -1,0 +1,28 @@
+#!/usr/sbin/nft -f
+
+table ip delta_symmetric {
+    chain DELTA_PBR_PREROUTING {
+        type filter hook prerouting priority -150; policy accept;
+        iifname { {% for interface in interfaces['v-lan'].keys() %} {{ interface }},{% endfor %} } counter jump DELTA_PBR_LAN
+        {% for interface, config in interfaces.overlay.items() %}
+        iifname { {{ interface }} } counter jump DELTA_PBR_{{ interface }}
+        {% endfor %}
+        
+    }
+
+    chain DELTA_PBR_POSTROUTING {
+        type filter hook postrouting priority -150; policy accept;
+    }
+
+    chain DELTA_PBR_LAN {
+        {% for interface, config in interfaces.overlay.items() %}
+        ct mark {{ "{" + config['mark'] + "}" }} counter meta mark set {{ config['meta_marks'] }} return comment "TABLE-{interface}"
+        {% endfor %}
+    }
+
+    {% for interface, config in interfaces.overlay.items() %}
+    chain DELTA_PBR_{{ interface }} {
+        ct state {new} counter ct mark set {{ config['mark'] }} return comment "{{ interface }}-10"
+    }
+    {% endfor %}
+}

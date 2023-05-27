@@ -1,0 +1,3 @@
+help: IPv4/IPv6 address used by client
+allowed: echo "<x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: sudo ${vyos_op_scripts_dir}/wireguard_client.py --name "$4" --interface "$6" --server "$8" --address "${10}" --address "${12}"

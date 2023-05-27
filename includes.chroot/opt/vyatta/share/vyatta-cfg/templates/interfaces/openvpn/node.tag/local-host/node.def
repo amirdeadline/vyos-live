@@ -1,0 +1,5 @@
+type: txt
+help: Local IP address to accept connections (all if not set)
+val_help: ipv4; Local IPv4 address
+val_help: ipv6; Local IPv6 address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \"  --value \'$VAR(@)\'"; "Invalid value"

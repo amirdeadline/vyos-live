@@ -1,0 +1,5 @@
+type: txt
+help: Number of packets to queue inside the kernel before sending them
+			to userspace
+val_help: u32:0-65535; Number of packets to queue inside the kernel before sending them to userspace
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65535\"  --value \'$VAR(@)\'"; "Invalid value"

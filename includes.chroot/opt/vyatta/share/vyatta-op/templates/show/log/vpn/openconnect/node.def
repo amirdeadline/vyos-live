@@ -1,0 +1,2 @@
+help: Show log for OpenConnect
+run: journalctl --no-hostname --boot --unit ocserv.service

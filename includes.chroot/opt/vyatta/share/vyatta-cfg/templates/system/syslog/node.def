@@ -1,0 +1,3 @@
+priority: 400
+help: System logging
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/system-syslog.py"

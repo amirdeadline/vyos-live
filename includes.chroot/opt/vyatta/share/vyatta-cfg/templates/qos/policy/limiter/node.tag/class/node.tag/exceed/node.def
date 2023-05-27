@@ -1,0 +1,9 @@
+type: txt
+help: Default action for packets exceeding the limiter (default: drop)
+val_help: continue; Do not do anything, just continue with the next action in line
+val_help: drop; Drop the packet immediately (default)
+val_help: ok; Accept the packet
+val_help: reclassify; Treat the packet as non-matching to the filter this action is attached to and continue with the next filter in line (if any)
+val_help: pipe; Pass the packet to the next action in line
+allowed: echo "continue drop ok reclassify pipe"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(continue|drop|ok|reclassify|pipe)\'   --value \'$VAR(@)\'"; "Invalid value"

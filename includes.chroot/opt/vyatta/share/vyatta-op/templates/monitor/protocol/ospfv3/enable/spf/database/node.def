@@ -1,0 +1,2 @@
+help: Log number of LSAs at SPF Calculation time
+run: vtysh -c "debug ospf6 ${@:5}"

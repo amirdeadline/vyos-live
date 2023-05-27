@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Backend member
+val_help: txt; Name of reverse-proxy backend system
+allowed: /bin/cli-shell-api listNodes load-balancing reverse-proxy backend
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Backend name must be alphanumeric and can contain hyphen and underscores"

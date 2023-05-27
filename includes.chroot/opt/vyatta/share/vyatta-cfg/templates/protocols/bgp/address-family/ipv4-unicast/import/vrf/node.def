@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: VRF to import from
+val_help: txt; VRF instance name
+allowed: /bin/cli-shell-api listNodes vrf name

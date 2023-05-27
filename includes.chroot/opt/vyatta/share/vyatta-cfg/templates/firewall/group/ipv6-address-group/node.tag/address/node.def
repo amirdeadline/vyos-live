@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Address-group member
+val_help: ipv6; IPv6 address to match
+val_help: ipv6range; IPv6 range to match (e.g. 2002::1-2002::ff)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-address \" --exec \"${vyos_validators_dir}/ipv6-range \"  --value \'$VAR(@)\'"; "Invalid value"

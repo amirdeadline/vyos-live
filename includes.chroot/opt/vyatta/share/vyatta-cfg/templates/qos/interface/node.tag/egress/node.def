@@ -1,0 +1,5 @@
+type: txt
+help: Interface egress traffic policy
+val_help: txt; QoS policy to use
+allowed: /bin/cli-shell-api listNodes qos policy cake && echo " " && /bin/cli-shell-api listNodes qos policy drop-tail && echo " " && /bin/cli-shell-api listNodes qos policy fair-queue && echo " " && /bin/cli-shell-api listNodes qos policy fq-codel && echo " " && /bin/cli-shell-api listNodes qos policy network-emulator && echo " " && /bin/cli-shell-api listNodes qos policy priority-queue && echo " " && /bin/cli-shell-api listNodes qos policy random-detect && echo " " && /bin/cli-shell-api listNodes qos policy rate-control && echo " " && /bin/cli-shell-api listNodes qos policy round-robin && echo " " && /bin/cli-shell-api listNodes qos policy shaper && echo " " && /bin/cli-shell-api listNodes qos policy shaper-hfsc
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:alnum:]][-_[:alnum:]]*\'   --value \'$VAR(@)\'"; "Only alpha-numeric policy name allowed"

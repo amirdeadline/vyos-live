@@ -1,0 +1,6 @@
+type: txt
+help: Authentication mode for IPsec
+val_help: pre-shared-secret; Use pre-shared secret for IPsec authentication
+val_help: x509; Use X.509 certificate for IPsec authentication
+allowed: echo "pre-shared-secret x509"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(pre-shared-secret|x509)\'   --value \'$VAR(@)\'"; "Invalid value"

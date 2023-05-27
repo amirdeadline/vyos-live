@@ -1,0 +1,2 @@
+help: Set terminal pager to default (less)
+run: VYATTA_PAGER=${_vyatta_default_pager}

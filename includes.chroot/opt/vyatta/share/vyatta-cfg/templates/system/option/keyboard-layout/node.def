@@ -1,0 +1,14 @@
+type: txt
+help: System keyboard layout, type ISO2 (default: us)
+val_help: us; United States (default)
+val_help: uk; United Kingdom
+val_help: fr; France
+val_help: de; Germany
+val_help: es; Spain
+val_help: fi; Finland
+val_help: jp106; Japan
+val_help: no; Norway
+val_help: dk; Denmark
+val_help: dvorak; Dvorak
+allowed: echo "us uk fr de es fi jp106 no dk dvorak"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(us|uk|fr|de|es|fi|jp106|no|dk|dvorak)\'   --value \'$VAR(@)\'"; "Invalid keyboard layout"

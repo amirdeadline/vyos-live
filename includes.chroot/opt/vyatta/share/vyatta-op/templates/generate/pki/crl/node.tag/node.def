@@ -1,0 +1,3 @@
+help: Generate CRL for specified CA certificate
+allowed: /bin/cli-shell-api listActiveNodes pki ca | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --crl "$4"

@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Allowed mDNS services to be repeated
+val_help: txt; mDNS service
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_.a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Invalid value"

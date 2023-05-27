@@ -1,0 +1,6 @@
+type: txt
+help: IKE version
+val_help: ikev1; Use IKEv1 for key exchange
+val_help: ikev2; Use IKEv2 for key exchange
+allowed: echo "ikev1 ikev2"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ikev1|ikev2)\'   --value \'$VAR(@)\'"; "Invalid value"

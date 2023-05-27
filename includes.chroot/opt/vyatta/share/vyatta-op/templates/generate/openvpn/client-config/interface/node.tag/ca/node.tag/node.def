@@ -1,0 +1,2 @@
+help: CA certificate
+allowed: /bin/cli-shell-api listActiveNodes pki ca | sed -e "s/'//g" && echo

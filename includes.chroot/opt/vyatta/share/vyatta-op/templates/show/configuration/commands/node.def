@@ -1,0 +1,2 @@
+help:  Show running configuration as set commands
+run: cli-shell-api showCfg --show-active-only | vyos-config-to-commands

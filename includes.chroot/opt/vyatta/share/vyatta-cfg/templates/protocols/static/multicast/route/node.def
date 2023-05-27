@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: Configure static unicast route into MRIB for multicast RPF
+			lookup
+val_help: ipv4net; Network
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

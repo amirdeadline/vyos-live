@@ -1,0 +1,2 @@
+help: Do not announce this route with a zero second lifetime upon
+			shutdown

@@ -1,0 +1,3 @@
+multi:
+type: txt
+help: Server names: exact, wildcard, or regex

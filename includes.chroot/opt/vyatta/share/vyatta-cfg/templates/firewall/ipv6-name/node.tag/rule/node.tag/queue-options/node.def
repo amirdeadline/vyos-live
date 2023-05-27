@@ -1,0 +1,8 @@
+multi:
+type: txt
+help: Options used for queue target. Action queue must be defined to
+			use this setting
+val_help: bypass; Let packets go through if userspace application cannot back off
+val_help: fanout; Distribute packets between several queues
+allowed: echo "bypass fanout"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(bypass|fanout)\'   --value \'$VAR(@)\'"; "Invalid value"

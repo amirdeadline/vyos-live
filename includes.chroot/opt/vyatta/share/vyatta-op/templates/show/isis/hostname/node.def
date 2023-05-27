@@ -1,0 +1,2 @@
+help: Show IS-IS dynamic hostname mapping
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

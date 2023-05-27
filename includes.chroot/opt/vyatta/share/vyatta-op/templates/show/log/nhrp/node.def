@@ -1,0 +1,2 @@
+help: Show log for Next Hop Resolution Protocol (NHRP)
+run: journalctl --no-hostname --boot --unit opennhrp.service

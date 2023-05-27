@@ -1,0 +1,2 @@
+help: Poweroff the system
+run: sudo ${vyos_op_scripts_dir}/powerctrl.py --poweroff

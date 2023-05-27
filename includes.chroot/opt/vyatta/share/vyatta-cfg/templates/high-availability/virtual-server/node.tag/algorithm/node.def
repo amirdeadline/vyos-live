@@ -1,0 +1,12 @@
+type: txt
+help: Schedule algorithm (default - least-connection) (default: least-
+			connection)
+val_help: round-robin; Round robin
+val_help: weighted-round-robin; Weighted round robin
+val_help: least-connection; Least connection (default)
+val_help: weighted-least-connection; Weighted least connection
+val_help: source-hashing; Source hashing
+val_help: destination-hashing; Destination hashing
+val_help: locality-based-least-connection; Locality-Based least connection
+allowed: echo "round-robin weighted-round-robin least-connection weighted-least-connection source-hashing destination-hashing locality-based-least-connection"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(round-robin|weighted-round-robin|least-connection|weighted-least-connection|source-hashing|destination-hashing|locality-based-least-connection)\'   --value \'$VAR(@)\'"; "Invalid value"

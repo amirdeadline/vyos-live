@@ -1,0 +1,3 @@
+help: Reset all tunnels for given peer
+allowed: /bin/cli-shell-api listActiveNodes vpn ipsec site-to-site peer | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/sdwan-sla.py overlay "$4"

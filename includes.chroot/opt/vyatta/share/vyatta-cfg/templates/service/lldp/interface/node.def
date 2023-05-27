@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: Location data for interface
+val_help: all; Location data all interfaces
+val_help: txt; Location data for a specific interface
+allowed: echo "all" && echo " " && sh -c "${vyatta_sbindir}/vyatta-interfaces.pl --show all"

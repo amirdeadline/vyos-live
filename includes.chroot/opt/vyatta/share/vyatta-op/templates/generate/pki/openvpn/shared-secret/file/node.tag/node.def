@@ -1,0 +1,4 @@
+help: Write generated OpenVPN shared secret key into the specified
+			filename
+allowed: echo "<filename>"
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --openvpn "$6" --file

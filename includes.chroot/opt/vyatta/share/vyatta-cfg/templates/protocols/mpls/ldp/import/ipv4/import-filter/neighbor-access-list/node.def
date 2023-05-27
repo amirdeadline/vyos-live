@@ -1,0 +1,5 @@
+type: txt
+help: Access-list number for IPv4 neighbor selection to apply
+			filtering
+val_help: u32:1-2699; Access list number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-2699\"  --value \'$VAR(@)\'"; "Invalid value"

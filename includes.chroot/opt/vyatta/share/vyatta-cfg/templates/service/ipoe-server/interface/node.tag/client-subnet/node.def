@@ -1,0 +1,4 @@
+type: txt
+help: Client address pool
+val_help: ipv4net; IPv4 address and prefix length
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

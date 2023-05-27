@@ -1,0 +1,2 @@
+help: Password to use with authentication
+run: sudo ${vyatta_sbindir}/install-image --url "${4}" --vrf "${6}" --username "${8}" --password "${10}"

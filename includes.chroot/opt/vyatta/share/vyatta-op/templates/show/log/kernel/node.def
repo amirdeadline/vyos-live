@@ -1,0 +1,2 @@
+help: Show log for Linux Kernel
+run: journalctl --no-hostname --boot --dmesg

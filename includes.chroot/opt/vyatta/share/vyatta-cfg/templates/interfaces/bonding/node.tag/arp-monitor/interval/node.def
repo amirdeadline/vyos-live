@@ -1,0 +1,4 @@
+type: txt
+help: ARP link monitoring interval
+val_help: u32; Specifies the ARP link monitoring frequency in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Invalid value"

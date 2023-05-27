@@ -1,0 +1,3 @@
+type: txt
+help: Location information
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'.{1,255}\'   --value \'$VAR(@)\'"; "Location is limited to 255 characters or less"

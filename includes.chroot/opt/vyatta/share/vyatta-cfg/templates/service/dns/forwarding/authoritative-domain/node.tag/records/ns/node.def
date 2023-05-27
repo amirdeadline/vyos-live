@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: NS record
+val_help: txt; A DNS name relative to the root record
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([-_a-zA-Z0-9.]{1,63}|@)(?<!\\.)\'   --value \'$VAR(@)\'"; "Invalid value"

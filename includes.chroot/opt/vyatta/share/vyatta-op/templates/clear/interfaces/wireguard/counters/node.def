@@ -1,0 +1,2 @@
+help: Clear all Wireguard interface counters
+run: sudo ${vyos_op_scripts_dir}/interfaces.py clear_counters --intf_type "$3"

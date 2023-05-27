@@ -1,0 +1,2 @@
+help: Show log for ALL
+run: journalctl --no-hostname --boot --unit strongswan.service --unit accel-ppp@*.service --unit ocserv.service

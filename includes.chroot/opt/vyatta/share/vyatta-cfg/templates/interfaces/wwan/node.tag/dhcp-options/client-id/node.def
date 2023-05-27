@@ -1,0 +1,2 @@
+type: txt
+help: Identifier used by client to identify itself to the DHCP server

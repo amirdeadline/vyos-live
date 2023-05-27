@@ -1,0 +1,2 @@
+help: Restart SNMP service
+run: if cli-shell-api existsActive service snmp; then sudo systemctl restart snmpd.service; else echo "Service SNMP not configured"; fi

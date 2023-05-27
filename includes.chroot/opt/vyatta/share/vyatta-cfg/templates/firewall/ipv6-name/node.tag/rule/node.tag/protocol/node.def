@@ -1,0 +1,9 @@
+type: txt
+help: Protocol to match (protocol name, number, or "all")
+val_help: all; All IP protocols
+val_help: tcp_udp; Both TCP and UDP
+val_help: u32:0-255; IP protocol number
+val_help: <protocol>; IP protocol name
+val_help: !<protocol>; IP protocol name
+allowed: echo "all tcp_udp" && echo " " && sh -c "${vyos_completion_dir}/list_protocols.sh"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-protocol \"  --value \'$VAR(@)\'"; "Invalid value"

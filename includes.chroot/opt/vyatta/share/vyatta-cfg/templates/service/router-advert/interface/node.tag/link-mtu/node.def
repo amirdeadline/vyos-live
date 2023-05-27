@@ -1,0 +1,4 @@
+type: txt
+help: Link MTU value placed in RAs, exluded in RAs if unset
+val_help: u32:1280-9000; Link MTU value in RAs
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1280-9000\"  --value \'$VAR(@)\'"; "Link MTU must be between 1280 and 9000"

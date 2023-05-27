@@ -1,0 +1,5 @@
+type: txt
+help: The IP to which this rule applies (REQUIRE)
+val_help: ipv4; The IPv4 address to which this rule applies
+val_help: ipv4net; The IPv4 to which this rule applies
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv4-host \"  --value \'$VAR(@)\'"; "Invalid value"

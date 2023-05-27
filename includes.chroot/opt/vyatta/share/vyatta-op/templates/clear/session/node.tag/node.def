@@ -1,0 +1,3 @@
+help: Terminate TTY or PTS user session
+allowed: who | awk '{print $2}'
+run: sudo pkill -9 -t $3

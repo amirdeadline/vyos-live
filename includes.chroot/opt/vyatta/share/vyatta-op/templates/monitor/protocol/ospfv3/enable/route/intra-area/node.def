@@ -1,0 +1,2 @@
+help: Debug intra-area route calculation
+run: vtysh -c "debug ospf6 ${@:5}"

@@ -1,0 +1,4 @@
+type: txt
+help: TCP keepalive maximum probes
+val_help: u32:1-30; Maximum probes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-30\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,6 @@
+type: txt
+help: Token type (default: hotp-time)
+val_help: hotp-time; Time-based OTP algorithm (default)
+val_help: hotp-event; Event-based OTP algorithm
+allowed: echo "hotp-time hotp-event"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(hotp-time|hotp-event)\'   --value \'$VAR(@)\'"; "Invalid value"

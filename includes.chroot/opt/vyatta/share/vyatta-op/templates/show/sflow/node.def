@@ -1,0 +1,2 @@
+help: Show sFlow statistics
+run: sudo ${vyos_op_scripts_dir}/sflow.py show

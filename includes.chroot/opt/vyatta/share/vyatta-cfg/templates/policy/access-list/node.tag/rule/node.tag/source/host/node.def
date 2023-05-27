@@ -1,0 +1,4 @@
+type: txt
+help: Single host IP address to match
+val_help: ipv4; Host address to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

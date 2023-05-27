@@ -1,0 +1,3 @@
+multi:
+type: txt
+help: LDAP search expression for a user group

@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Remote host to connect to (dynamic if not set)
+val_help: ipv4; IPv4 address of remote host
+val_help: ipv6; IPv6 address of remote host
+val_help: txt; Hostname of remote host

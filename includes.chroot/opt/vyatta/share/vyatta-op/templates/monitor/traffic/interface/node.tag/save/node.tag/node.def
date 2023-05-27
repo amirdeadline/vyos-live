@@ -1,0 +1,2 @@
+help: Save traffic dump from an interface to a file
+run: sudo tcpdump -n -i $4 -w $6

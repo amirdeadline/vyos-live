@@ -1,0 +1,2 @@
+help: Show active OpenConnect server sessions
+run: ${vyos_op_scripts_dir}/openconnect.py show_sessions

@@ -1,0 +1,2 @@
+help: Restart DHCPv6 server
+run: if cli-shell-api existsActive service dhcpv6-server; then sudo systemctl restart isc-dhcp-server6.service; else echo "DHCPv6 server not configured"; fi

@@ -1,0 +1,7 @@
+type: txt
+help: Nexthop IP address
+val_help: ipv4; IP address
+val_help: unchanged; Set the BGP nexthop address as unchanged
+val_help: peer-address; Set the BGP nexthop address to the address of the peer
+allowed: echo "unchanged peer-address" && echo " " && sh -c "${vyos_completion_dir}/list_local_ips.sh --ipv4"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(unchanged|peer-address)\' --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

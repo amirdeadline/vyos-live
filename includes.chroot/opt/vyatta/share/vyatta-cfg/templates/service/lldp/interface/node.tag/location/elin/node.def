@@ -1,0 +1,4 @@
+type: txt
+help: ECS ELIN (Emergency location identifier number)
+val_help: u32:0-9999999999; Emergency Call Service ELIN number (between 10-25 numbers)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[0-9]{10,25}\'   --value \'$VAR(@)\'"; "ELIN number must be between 10-25 numbers"

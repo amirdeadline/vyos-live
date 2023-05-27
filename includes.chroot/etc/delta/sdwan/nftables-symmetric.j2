@@ -1,0 +1,10 @@
+table inet symmetric {
+    flowtable f {
+        hook ingress priority -180; devices = { { interfaces } };
+    }
+    chain y {
+        type filter hook forward priority 0; policy accept;
+        ip protocol tcp flow add @f
+        counter packets 0 bytes 0
+    }
+}

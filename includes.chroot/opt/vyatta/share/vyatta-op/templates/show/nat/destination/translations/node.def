@@ -1,0 +1,2 @@
+help: Show active destination NAT translations
+run: sudo ${vyos_op_scripts_dir}/nat.py show_translations --direction destination --family inet

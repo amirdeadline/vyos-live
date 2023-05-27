@@ -1,0 +1,2 @@
+help: Clear all BGP peering sessions for vrf
+run: vtysh -c "clear bgp vrf $5 *"

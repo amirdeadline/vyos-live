@@ -1,0 +1,2 @@
+help: Monitor last lines of PPTP
+run: journalctl --no-hostname --boot --follow --unit accel-ppp@pptp.service

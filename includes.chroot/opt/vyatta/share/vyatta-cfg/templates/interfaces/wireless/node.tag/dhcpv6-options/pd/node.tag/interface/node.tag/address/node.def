@@ -1,0 +1,4 @@
+type: txt
+help: Local interface address assigned to interface (default: EUI-64)
+val_help: >0; Used to form IPv6 interface address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --non-negative\"  --value \'$VAR(@)\'"; "Invalid value"

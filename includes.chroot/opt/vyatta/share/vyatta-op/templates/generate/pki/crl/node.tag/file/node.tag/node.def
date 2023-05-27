@@ -1,0 +1,3 @@
+help: Write generated CRL into the specified filename
+allowed: echo "<filename>"
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --crl "$4" --file

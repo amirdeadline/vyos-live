@@ -1,0 +1,2 @@
+help: Import OpenVPN shared secret key into PKI
+allowed: echo "<name>"

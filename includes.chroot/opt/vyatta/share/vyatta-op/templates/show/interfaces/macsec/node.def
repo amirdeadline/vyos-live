@@ -1,0 +1,3 @@
+help: Show MACsec interface information
+allowed: /bin/cli-shell-api listActiveNodes interfaces macsec | sed -e "s/'//g" && echo
+run: ip macsec show

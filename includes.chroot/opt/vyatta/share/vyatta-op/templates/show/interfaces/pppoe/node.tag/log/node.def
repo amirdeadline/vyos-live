@@ -1,0 +1,2 @@
+help: Show specified PPPoE interface log
+run: journalctl --no-hostname --boot --follow --unit "ppp@$4".service

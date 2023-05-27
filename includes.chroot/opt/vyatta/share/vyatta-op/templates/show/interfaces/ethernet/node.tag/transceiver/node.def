@@ -1,0 +1,2 @@
+help: Show transceiver information from modules (e.g SFP+, QSFP)
+run: ethtool --module-info "$4"

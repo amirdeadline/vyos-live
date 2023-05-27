@@ -1,0 +1,3 @@
+type: txt
+help: Redirect URL for filtered websites
+val_help: url; URL for redirect

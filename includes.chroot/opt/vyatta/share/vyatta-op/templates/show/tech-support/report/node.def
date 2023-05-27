@@ -1,0 +1,3 @@
+help: Show consolidated tech-support report (contains private
+			information)
+run: ${vyos_op_scripts_dir}/show_techsupport_report.py

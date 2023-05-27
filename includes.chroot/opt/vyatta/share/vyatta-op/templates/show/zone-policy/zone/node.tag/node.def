@@ -1,0 +1,3 @@
+help: Show summary of zone policy for a specific zone
+allowed: /bin/cli-shell-api listActiveNodes firewall zone | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/zone.py show --zone $4

@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: WEP encryption key
+val_help: txt; Wired Equivalent Privacy key
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([a-fA-F0-9]{10}|[a-fA-F0-9]{26}|[a-fA-F0-9]{32})\'   --value \'$VAR(@)\'"; "Invalid WEP key"

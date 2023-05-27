@@ -1,0 +1,2 @@
+help: Show OTP authentication secret in Hex (used in VyOS config)
+run: ${vyos_op_scripts_dir}/show_openconnect_otp.py --user="$4" --info="key-hex"

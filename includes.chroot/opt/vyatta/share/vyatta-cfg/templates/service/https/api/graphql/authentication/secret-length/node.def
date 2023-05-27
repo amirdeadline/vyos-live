@@ -1,0 +1,4 @@
+type: txt
+help: Length of shared secret in bytes (default: 32)
+val_help: u32:16-65535; Byte length of generated shared secret
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 16-65535\"  --value \'$VAR(@)\'"; "Invalid value"

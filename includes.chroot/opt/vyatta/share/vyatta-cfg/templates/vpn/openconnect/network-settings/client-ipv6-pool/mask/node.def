@@ -1,0 +1,4 @@
+type: txt
+help: Prefix length used for individual client (default: 64)
+val_help: u32:48-128; Client prefix length
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 48-128\"  --value \'$VAR(@)\'"; "Invalid value"

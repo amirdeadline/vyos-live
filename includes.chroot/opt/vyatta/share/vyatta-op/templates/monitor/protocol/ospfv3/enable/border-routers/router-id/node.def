@@ -1,0 +1,2 @@
+help: Debug specific border router
+run: vtysh -c "debug ospf6 ${@:5}"

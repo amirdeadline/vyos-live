@@ -1,0 +1,7 @@
+type: txt
+help: Coordinate datum type (default: WGS84)
+val_help: WGS84; WGS84 (default)
+val_help: NAD83; NAD83
+val_help: MLLW; NAD83/MLLW
+allowed: echo "WGS84 NAD83 MLLW"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(WGS84|NAD83|MLLW)\'   --value \'$VAR(@)\'"; "Datum should be WGS84, NAD83, or MLLW"

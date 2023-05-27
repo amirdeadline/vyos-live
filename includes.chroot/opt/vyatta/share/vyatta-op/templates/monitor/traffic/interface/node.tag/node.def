@@ -1,0 +1,3 @@
+help: Monitor traffic dump from an interface
+allowed: ${vyos_completion_dir}/list_dumpable_interfaces.py
+run: sudo tcpdump -i $4

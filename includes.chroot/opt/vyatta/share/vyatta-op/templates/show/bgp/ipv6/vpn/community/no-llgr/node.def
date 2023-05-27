@@ -1,0 +1,3 @@
+help: Removed because Long-lived Graceful Restart was not enabled for
+			VPN route (well-known community)
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

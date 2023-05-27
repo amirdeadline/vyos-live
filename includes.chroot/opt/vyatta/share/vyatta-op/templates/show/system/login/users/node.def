@@ -1,0 +1,2 @@
+help: Show user account information
+run: ${vyos_libexec_dir}/vyos-sudo.py ${vyos_op_scripts_dir}/show_users.py

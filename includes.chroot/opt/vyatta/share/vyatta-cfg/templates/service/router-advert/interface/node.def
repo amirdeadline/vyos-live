@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Interface to send RA on
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

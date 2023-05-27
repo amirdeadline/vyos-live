@@ -1,0 +1,2 @@
+help: Show system available updates
+run: ${vyos_op_scripts_dir}/system.py show_update

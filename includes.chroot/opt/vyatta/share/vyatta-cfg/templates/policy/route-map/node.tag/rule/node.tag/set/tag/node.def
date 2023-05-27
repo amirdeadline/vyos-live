@@ -1,0 +1,4 @@
+type: txt
+help: Tag value for routing protocol
+val_help: u32:1-65535; Tag value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-65535\"  --value \'$VAR(@)\'"; "Invalid value"

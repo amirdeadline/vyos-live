@@ -1,0 +1,7 @@
+type: txt
+help: Link Bandwidth attribute
+val_help: default-weight-for-missing; Assign low default weight (1) to paths not having link bandwidth
+val_help: ignore; Ignore link bandwidth (do regular ECMP, not weighted)
+val_help: skip-missing; Ignore paths without link bandwidth for ECMP (if other paths have it)
+allowed: echo "default-weight-for-missing ignore skip-missing"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(default-weight-for-missing|ignore|skip-missing)\'   --value \'$VAR(@)\'"; "Invalid value"

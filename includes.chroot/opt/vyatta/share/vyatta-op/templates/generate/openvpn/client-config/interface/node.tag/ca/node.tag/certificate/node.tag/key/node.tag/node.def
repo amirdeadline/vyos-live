@@ -1,0 +1,2 @@
+help: Certificate key used by client
+run: sudo ${vyos_op_scripts_dir}/generate_ovpn_client_file.py --interface "$5" --ca "$7" --cert "$9" --key "${11}"

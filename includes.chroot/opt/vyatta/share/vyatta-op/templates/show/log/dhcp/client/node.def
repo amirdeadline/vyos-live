@@ -1,0 +1,2 @@
+help: Show DHCP client logs
+run: journalctl --no-hostname --boot --unit "dhclient@*.service"

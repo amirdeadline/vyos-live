@@ -1,0 +1,3 @@
+help: Monitoring bridge database generated connection interface
+			changes
+run: sudo bridge monitor link

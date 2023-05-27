@@ -1,0 +1,4 @@
+type: txt
+help: Shaper multiplier (default: 1)
+val_help: <0.001-1000>; Shaper multiplier
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0.001-1000 --float\"  --value \'$VAR(@)\'"; "Multiplier needs to be between 0.001 and 1000"

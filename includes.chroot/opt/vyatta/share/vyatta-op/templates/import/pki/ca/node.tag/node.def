@@ -1,0 +1,2 @@
+help: Import CA certificate into PKI
+allowed: echo "<name>"

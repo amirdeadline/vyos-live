@@ -1,0 +1,4 @@
+type: txt
+help: Multiplicative factor used for diversity routing (default: 256)
+val_help: u32:1-256; Multiplicative factor, in units of 1/256
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-256\"  --value \'$VAR(@)\'"; "Invalid value"

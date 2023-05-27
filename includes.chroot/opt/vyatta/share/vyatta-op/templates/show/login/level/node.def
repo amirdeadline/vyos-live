@@ -1,0 +1,2 @@
+help: Show current login level
+run: if [ -n "$VYATTA_USER_LEVEL_DIR" ]; then basename $VYATTA_USER_LEVEL_DIR; fi

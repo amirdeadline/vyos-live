@@ -1,0 +1,2 @@
+help: Show PPPoE server statistics
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pppoe" --action="show stat"

@@ -1,0 +1,2 @@
+help: Duration of single time interval
+run: sudo ${vyos_op_scripts_dir}/generate_openconnect_otp_key.py --username "$4" --interval "${10}" --digits $8

@@ -1,0 +1,7 @@
+tag:
+type: txt
+help: Network Time Protocol (NTP) server
+val_help: ipv4; IP address of NTP server
+val_help: ipv6; IPv6 address of NTP server
+val_help: hostname; Fully qualified domain name of NTP server
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid value"

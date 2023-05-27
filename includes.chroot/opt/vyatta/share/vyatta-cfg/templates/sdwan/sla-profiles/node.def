@@ -1,0 +1,8 @@
+tag:
+type: txt
+priority: 110
+help: SLA Profiles
+val_help: txt; SLA Profile name
+delete: sudo sh -c "${vyos_conf_scripts_dir}/sdwan-sla.py delete"
+create: sudo sh -c "${vyos_conf_scripts_dir}/sdwan-sla.py"
+update: sudo sh -c "${vyos_conf_scripts_dir}/sdwan-sla.py"

@@ -1,0 +1,5 @@
+type: txt
+help: Suppress routing updates on an interface
+val_help: default; Default to suppress routing updates on all interfaces
+allowed: echo "default"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(default)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Network/netmask to match (requires inverse-mask be defined)
+val_help: ipv4net; Inverse-mask to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

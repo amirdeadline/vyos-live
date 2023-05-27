@@ -1,0 +1,5 @@
+type: txt
+help: Name of the single table [Only if set group-metrics single-
+			table]
+val_help: txt; Table name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Table is limited to alphanumerical characters and can contain hyphen and underscores"

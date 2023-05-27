@@ -1,0 +1,3 @@
+type: txt
+help: Name of PKI key-pair with remote public key
+allowed: /bin/cli-shell-api listNodes pki key-pair

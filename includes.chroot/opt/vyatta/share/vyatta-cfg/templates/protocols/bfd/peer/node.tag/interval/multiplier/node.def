@@ -1,0 +1,4 @@
+type: txt
+help: Multiplier to determine packet loss (default: 3)
+val_help: u32:2-255; Remote transmission interval will be multiplied by this value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 2-255\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Restart WebProxy service
+run: if cli-shell-api existsActive service webproxy; then sudo systemctl restart squid.service; else echo "Service WebProxy not configured"; fi

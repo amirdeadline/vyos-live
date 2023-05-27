@@ -1,0 +1,2 @@
+help: Summary of routes in a particular table
+run: ${vyos_op_scripts_dir}/route.py show_summary --family inet6 --table $6

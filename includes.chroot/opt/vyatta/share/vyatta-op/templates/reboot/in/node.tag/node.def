@@ -1,0 +1,3 @@
+help: Reboot in X minutes
+allowed: echo "<Minutes>"
+run: sudo ${vyos_op_scripts_dir}/powerctrl.py --yes --reboot_in $3 $4

@@ -1,0 +1,2 @@
+help: Show containers
+run: sudo ${vyos_op_scripts_dir}/container.py show_container

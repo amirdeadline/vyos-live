@@ -1,0 +1,2 @@
+help: Show all SNMP interfaces MIB information
+run: ${vyos_op_scripts_dir}/snmp_ifmib.py

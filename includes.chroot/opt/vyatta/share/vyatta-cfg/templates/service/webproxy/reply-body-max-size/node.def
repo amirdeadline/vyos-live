@@ -1,0 +1,4 @@
+type: txt
+help: Maximum reply body size in KB
+val_help: u32; Reply size in KB
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-100000\"  --value \'$VAR(@)\'"; "Invalid value"

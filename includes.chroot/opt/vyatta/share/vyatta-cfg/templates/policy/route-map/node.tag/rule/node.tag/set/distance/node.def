@@ -1,0 +1,4 @@
+type: txt
+help: Locally significant administrative distance
+val_help: u32:0-255; Distance value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "Invalid value"

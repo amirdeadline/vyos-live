@@ -1,0 +1,5 @@
+type: txt
+help: Neighbor TTL security
+val_help: u32:1-254; TTL
+val_help: disable; Disable neighbor TTL security
+allowed: echo "disable"

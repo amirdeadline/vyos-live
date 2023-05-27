@@ -1,0 +1,2 @@
+help: Show container image
+run: sudo ${vyos_op_scripts_dir}/container.py show_image

@@ -1,0 +1,2 @@
+help: Flush the ARP cache completely
+run: sudo ${vyos_op_scripts_dir}/neighbor.py reset --family inet

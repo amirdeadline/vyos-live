@@ -1,0 +1,2 @@
+help: Debug Unknown message
+run: vtysh -c "debug ospf6 ${@:5}"

@@ -1,0 +1,3 @@
+multi:
+type: txt
+help: Hostname registered with DDNS service

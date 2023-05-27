@@ -1,0 +1,2 @@
+help: Reset specified interface on L2TP VPN server
+run: sudo ${vyos_op_scripts_dir}/reset_vpn.py reset_conn --protocol="l2tp" --interface="$5"

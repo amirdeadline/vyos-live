@@ -1,0 +1,10 @@
+multi:
+type: txt
+priority: 400
+help: System Domain Name Servers (DNS)
+val_help: ipv4; Domain Name Server IPv4 address
+val_help: ipv6; Domain Name Server IPv6 address
+val_help: txt; Use Domain Name Server from DHCP interface
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(bond|br|dum|en|ersp|eth|gnv|ifb|lan|l2tp|l2tpeth|macsec|peth|ppp|pppoe|pptp|sstp|tun|veth|vti|vtun|vxlan|wg|wlan|wwan)[0-9]+(.\\d+)?|lo\' --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \" --exec \"${vyos_validators_dir}/file-path --lookup-path /sys/class/net --directory \"  --value \'$VAR(@)\'"; "Invalid value"
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/host_name.py"

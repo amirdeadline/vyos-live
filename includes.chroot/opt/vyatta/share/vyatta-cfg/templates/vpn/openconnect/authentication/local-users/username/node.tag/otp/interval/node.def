@@ -1,0 +1,4 @@
+type: txt
+help: Time tokens interval in seconds (default: 30)
+val_help: u32:5-86400; Time tokens interval in seconds.
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 5-86400\"  --value \'$VAR(@)\'"; "Time token interval must be between 5 and 86400 seconds"

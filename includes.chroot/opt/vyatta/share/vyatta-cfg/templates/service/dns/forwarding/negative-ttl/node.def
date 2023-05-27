@@ -1,0 +1,5 @@
+type: txt
+help: Maximum amount of time negative entries are cached (default:
+			3600)
+val_help: u32:0-7200; Seconds to cache NXDOMAIN entries
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-7200\"  --value \'$VAR(@)\'"; "Invalid value"

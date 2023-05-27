@@ -1,0 +1,3 @@
+help: Reset ARP cache for an IPv4 address
+allowed: echo "<x.x.x.x>"
+run: sudo ${vyos_op_scripts_dir}/neighbor.py reset --family inet --address "$5"

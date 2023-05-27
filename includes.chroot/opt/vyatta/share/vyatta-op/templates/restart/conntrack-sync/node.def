@@ -1,0 +1,2 @@
+help: Restart connection tracking synchronization service
+run: sudo ${vyos_op_scripts_dir}/conntrack_sync.py --restart

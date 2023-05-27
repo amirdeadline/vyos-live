@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Redistribute non-main Kernel Routing Table
+val_help: u32:1-200; Policy route table number
+allowed: /bin/cli-shell-api listNodes protocols static table

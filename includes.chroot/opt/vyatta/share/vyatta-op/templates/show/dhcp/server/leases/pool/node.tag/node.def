@@ -1,0 +1,3 @@
+help: Show DHCP server leases for a specific pool
+allowed: /bin/cli-shell-api listActiveNodes service dhcp-server shared-network-name | sed -e "s/'//g" && echo
+run: ${vyos_op_scripts_dir}/dhcp.py show_server_leases --family inet --pool $6

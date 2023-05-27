@@ -1,0 +1,6 @@
+type: txt
+help: Defines the protocol for privacy (default: des)
+val_help: des; Data Encryption Standard (default)
+val_help: aes; Advanced Encryption Standard
+allowed: echo "des aes"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(des|aes)\'   --value \'$VAR(@)\'"; "Invalid value"

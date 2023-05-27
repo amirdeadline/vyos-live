@@ -1,0 +1,2 @@
+help: Show interfaces where PPPoE server listens on
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pppoe" --action="pppoe interface show"

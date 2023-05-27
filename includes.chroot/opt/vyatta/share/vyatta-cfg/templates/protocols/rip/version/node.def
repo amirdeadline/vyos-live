@@ -1,0 +1,5 @@
+type: txt
+help: Limit RIP protocol version
+val_help: 1; Allow RIPv1 only
+val_help: 2; Allow RIPv2 only
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-2\"  --value \'$VAR(@)\'"; "Invalid value"

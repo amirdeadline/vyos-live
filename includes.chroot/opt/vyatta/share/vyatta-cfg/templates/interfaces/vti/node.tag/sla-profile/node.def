@@ -1,0 +1,4 @@
+type: txt
+help: SLA Profile name
+val_help: txt; SLA Profile name
+allowed: /bin/cli-shell-api listNodes sdwan sla-profiles

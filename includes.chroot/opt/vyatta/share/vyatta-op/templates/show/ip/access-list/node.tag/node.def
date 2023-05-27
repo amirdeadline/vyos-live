@@ -1,0 +1,3 @@
+help: Show all IP access-lists
+allowed: /bin/cli-shell-api listActiveNodes policy access-list | sed -e "s/'//g" && echo
+run: vtysh -c "show ip access-list $4"

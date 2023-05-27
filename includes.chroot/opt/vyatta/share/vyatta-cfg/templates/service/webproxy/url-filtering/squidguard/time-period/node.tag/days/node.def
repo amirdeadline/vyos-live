@@ -1,0 +1,15 @@
+tag:
+type: txt
+help: Time-period days
+val_help: Sun; Sunday
+val_help: Mon; Monday
+val_help: Tue; Tuesday
+val_help: Wed; Wednesday
+val_help: Thu; Thursday
+val_help: Fri; Friday
+val_help: Sat; Saturday
+val_help: weekdays; Monday through Friday
+val_help: weekend; Saturday and Sunday
+val_help: all; All days of the week
+allowed: echo "Sun Mon Tue Wed Thu Fri Sat weekdays weekend all"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(Sun|Mon|Tue|Wed|Thu|Fri|Sat|weekdays|weekend|all)\'   --value \'$VAR(@)\'"; "Invalid value"

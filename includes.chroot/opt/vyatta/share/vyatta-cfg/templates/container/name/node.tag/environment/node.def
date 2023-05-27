@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Add custom environment variables
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Environment variable name must be alphanumeric and can contain hyphen and underscores"

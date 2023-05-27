@@ -1,0 +1,8 @@
+type: txt
+help: Usage of the DF (don't Fragment) bit in outgoing packets
+			(default: unset)
+val_help: set; Always set DF (don't fragment) bit
+val_help: unset; Always unset DF (don't fragment) bit (default)
+val_help: inherit; Copy from the original IP header
+allowed: echo "set unset inherit"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(set|unset|inherit)\'   --value \'$VAR(@)\'"; "Invalid value"

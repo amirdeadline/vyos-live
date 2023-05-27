@@ -1,0 +1,10 @@
+multi:
+type: txt
+help: Authentication protocol for remote access peer SSTP VPN
+			(default: pap, chap, mschap, mschap-v2)
+val_help: pap; Authentication via PAP (Password Authentication Protocol)
+val_help: chap; Authentication via CHAP (Challenge Handshake Authentication Protocol)
+val_help: mschap; Authentication via MS-CHAP (Microsoft Challenge Handshake Authentication Protocol)
+val_help: mschap-v2; Authentication via MS-CHAPv2 (Microsoft Challenge Handshake Authentication Protocol, version 2)
+allowed: echo "pap chap mschap mschap-v2"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(pap|chap|mschap|mschap-v2)\'   --value \'$VAR(@)\'"; "Invalid value"

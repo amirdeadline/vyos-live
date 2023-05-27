@@ -1,0 +1,2 @@
+help: IGMP statistics
+run: vtysh -c "show ip igmp statistics"

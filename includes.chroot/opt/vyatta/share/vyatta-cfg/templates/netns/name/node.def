@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Network namespace name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9-_]{1,100}\'   --value \'$VAR(@)\'"; "Netns name must be alphanumeric and can contain hyphens and underscores."

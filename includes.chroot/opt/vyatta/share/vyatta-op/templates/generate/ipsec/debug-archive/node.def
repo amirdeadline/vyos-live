@@ -1,0 +1,2 @@
+help: Generate IPSec debug-archive
+run: sudo ${vyos_op_scripts_dir}/generate_ipsec_debug_archive.py

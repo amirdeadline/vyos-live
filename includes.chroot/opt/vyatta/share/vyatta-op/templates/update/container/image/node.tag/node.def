@@ -1,0 +1,3 @@
+help: Update container image
+allowed: /bin/cli-shell-api listActiveNodes container name | sed -e "s/'//g" && echo
+run: if cli-shell-api existsActive container name "$4"; then sudo podman pull $(cli-shell-api returnActiveValue container name "$4" image); else echo "Container $4 does not exist"; fi

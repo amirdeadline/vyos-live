@@ -1,0 +1,7 @@
+type: txt
+help: Split horizon parameters (default: default)
+val_help: default; Enable on wired interfaces, and disable on wireless interfaces (default)
+val_help: enable; Enable split horizon processing
+val_help: disable; Disable split horizon processing
+allowed: echo "default enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(default|enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

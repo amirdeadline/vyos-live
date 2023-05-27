@@ -1,0 +1,3 @@
+type: txt
+help: VTI tunnel interface associated with this configuration
+allowed: /bin/cli-shell-api listNodes interfaces vti

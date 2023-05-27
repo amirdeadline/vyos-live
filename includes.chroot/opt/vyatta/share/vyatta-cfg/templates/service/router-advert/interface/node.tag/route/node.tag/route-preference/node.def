@@ -1,0 +1,7 @@
+type: txt
+help: Preference associated with the route, (default: medium)
+val_help: low; Route has low preference
+val_help: medium; Route has medium preference (default)
+val_help: high; Route has high preference
+allowed: echo "low medium high"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(low|medium|high)\'   --value \'$VAR(@)\'"; "Route preference must be low, medium or high"

@@ -1,0 +1,4 @@
+type: txt
+help: Latitude
+val_help: <latitude>; Latitude (example "37.524449N")
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(\\d+)(\\.\\d+)?[nNsS]\'   --value \'$VAR(@)\'"; "Latitude should be a number followed by S or N"

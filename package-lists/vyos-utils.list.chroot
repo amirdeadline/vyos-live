@@ -1,0 +1,10 @@
+systemd-sysv
+systemd-bootchart
+ncurses-term
+kitty-terminfo
+redis-server
+python3-pip
+python3-dev
+virtualenv
+python3-redis
+git

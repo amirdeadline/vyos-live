@@ -1,0 +1,2 @@
+help: Show VPN debugging information
+run: sudo ${vyos_op_scripts_dir}/vpn_ipsec.py --action="vpn-debug" --name="all"

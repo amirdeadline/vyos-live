@@ -1,0 +1,4 @@
+type: txt
+help: VRF instance name
+val_help: txt; VRF instance name
+allowed: /bin/cli-shell-api listNodes vrf name

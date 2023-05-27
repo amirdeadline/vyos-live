@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: SSL safe port
+val_help: u32:1-65535; Port number. Ports included by default: 443
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-442 --range 444-65535\"  --value \'$VAR(@)\'"; "Invalid value"

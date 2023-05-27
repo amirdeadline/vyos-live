@@ -1,0 +1,4 @@
+type: txt
+help: Hoplimit (default: 64)
+val_help: u32:0-255; Hop limit
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "hop limit must be between 0-255"

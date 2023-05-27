@@ -1,0 +1,2 @@
+help: Show Dynamic DNS status
+run: sudo ${vyos_op_scripts_dir}/dynamic_dns.py --status

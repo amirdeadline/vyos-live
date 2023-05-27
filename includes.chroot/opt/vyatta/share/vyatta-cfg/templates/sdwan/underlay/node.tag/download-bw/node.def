@@ -1,0 +1,3 @@
+type: u32
+help: Circuit Download Bandwidth
+val_help: u32; Circui download Bandwidth in mbps

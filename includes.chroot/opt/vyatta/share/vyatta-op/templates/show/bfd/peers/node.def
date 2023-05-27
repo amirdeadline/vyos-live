@@ -1,0 +1,2 @@
+help: Show Bidirectional Forwarding Detection peers
+run: vtysh -c "show bfd peers"

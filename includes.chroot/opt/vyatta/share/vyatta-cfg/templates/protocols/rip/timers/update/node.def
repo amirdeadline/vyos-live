@@ -1,0 +1,4 @@
+type: txt
+help: Routing table update timer (default: 30)
+val_help: u32:5-2147483647; Routing table update timer in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 5-2147483647\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Smoothing half-life (default: 4)
+val_help: u32:0-65534; Seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65534\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Specify the index value of prefix segment/label ID
+val_help: u32:0-65535; The index segment/label ID value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65535\"  --value \'$VAR(@)\'"; "Invalid value"

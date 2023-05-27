@@ -1,0 +1,7 @@
+tag:
+type: txt
+priority: 460
+help: Virtual Extensible LAN (VXLAN) Interface
+val_help: vxlanN; VXLAN interface name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'vxlan[0-9]+\'   --value \'$VAR(@)\'"; "VXLAN interface must be named vxlanN"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/interfaces-vxlan.py"

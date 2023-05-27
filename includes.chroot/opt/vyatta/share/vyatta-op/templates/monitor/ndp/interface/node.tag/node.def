@@ -1,0 +1,3 @@
+help: Monitor ndp protocol on specified interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: sudo ndptool monitor --ifname=$4

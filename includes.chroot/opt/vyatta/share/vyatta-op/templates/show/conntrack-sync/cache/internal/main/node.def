@@ -1,0 +1,2 @@
+help: Show internal main connection tracking cache entries
+run: sudo ${vyos_op_scripts_dir}/conntrack_sync.py --show-internal

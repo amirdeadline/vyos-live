@@ -1,0 +1,9 @@
+type: txt
+help: Protocol to match (protocol name, number, or "all") (default:
+			all)
+val_help: all; All IP protocols (default)
+val_help: tcp_udp; Both TCP and UDP
+val_help: 0-255; IP protocol number
+val_help: !<protocol>; IP protocol number
+allowed: sh -c "cat /etc/protocols | sed -e '/^#.*/d' | awk '{ print $1 }'"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-protocol \"  --value \'$VAR(@)\'"; "Invalid value"

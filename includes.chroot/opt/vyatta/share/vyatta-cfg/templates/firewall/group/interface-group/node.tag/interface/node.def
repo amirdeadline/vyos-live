@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Interface-group member
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

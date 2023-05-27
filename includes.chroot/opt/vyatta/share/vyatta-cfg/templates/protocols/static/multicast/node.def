@@ -1,0 +1,2 @@
+help: Multicast static route
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/protocols_static_multicast.py"

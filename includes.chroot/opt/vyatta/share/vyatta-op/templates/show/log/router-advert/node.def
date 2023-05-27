@@ -1,0 +1,2 @@
+help: Show log for Router Advertisement Daemon (radvd)
+run: journalctl --no-hostname --boot --unit radvd.service

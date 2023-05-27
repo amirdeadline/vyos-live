@@ -1,0 +1,2 @@
+help: Station (MAC) address to wake up
+run: sudo /usr/sbin/etherwake -i "$3" "$5"

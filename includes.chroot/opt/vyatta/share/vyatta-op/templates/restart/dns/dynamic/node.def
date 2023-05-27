@@ -1,0 +1,2 @@
+help: Restart Dynamic DNS service
+run: sudo ${vyos_op_scripts_dir}/dynamic_dns.py --update

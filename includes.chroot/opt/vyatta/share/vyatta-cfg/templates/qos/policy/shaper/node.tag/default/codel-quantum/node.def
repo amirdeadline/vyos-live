@@ -1,0 +1,4 @@
+type: txt
+help: Deficit in the fair queuing algorithm (default: 1514)
+val_help: u32:0-1048576; Number of bytes used as 'deficit'
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-1048576\"  --value \'$VAR(@)\'"; "Interval must be in range 0 to 1048576"

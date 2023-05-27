@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Use IPv6 address as source address. Useful with VRRP.
+val_help: ipv6; IPv6 address to be advertized (must be configured on interface)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

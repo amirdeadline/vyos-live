@@ -1,0 +1,2 @@
+help: Cancel a pending reboot
+run: sudo ${vyos_op_scripts_dir}/powerctrl.py --cancel

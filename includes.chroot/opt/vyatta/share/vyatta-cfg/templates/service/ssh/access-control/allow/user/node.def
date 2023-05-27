@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Allow specific users to login
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9.]{1,100}\'   --value \'$VAR(@)\'"; "Illegal characters or more than 100 characters"

@@ -1,0 +1,8 @@
+type: txt
+help: Policy for source validation by reversed path, as specified in
+			RFC3704 (default: disable)
+val_help: strict; Enable Strict Reverse Path Forwarding as defined in RFC3704
+val_help: loose; Enable Loose Reverse Path Forwarding as defined in RFC3704
+val_help: disable; No source validation (default)
+allowed: echo "strict loose disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(strict|loose|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,5 @@
+type: txt
+help: Maximum duration needed to learn all the events related to a
+			single failure
+val_help: u32:0-60000; Maximum duration needed to learn all the events related to a single failure in ms
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-60000\"  --value \'$VAR(@)\'"; "Invalid value"

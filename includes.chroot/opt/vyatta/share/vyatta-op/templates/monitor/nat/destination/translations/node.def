@@ -1,0 +1,4 @@
+help: Monitor active destination NAT translations events
+run: LESSOPEN=cat
+     echo Type control-C to quit 
+     sudo /usr/sbin/conntrack --dst-nat --event

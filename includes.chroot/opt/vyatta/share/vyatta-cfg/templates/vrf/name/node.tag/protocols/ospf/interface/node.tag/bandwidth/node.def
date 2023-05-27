@@ -1,0 +1,4 @@
+type: txt
+help: Interface bandwidth (Mbit/s)
+val_help: u32:1-100000; Bandwidth in Megabit/sec (for calculating OSPF cost)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-100000\"  --value \'$VAR(@)\'"; "Invalid value"

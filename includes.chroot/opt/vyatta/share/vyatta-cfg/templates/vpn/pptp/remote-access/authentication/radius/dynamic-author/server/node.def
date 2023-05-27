@@ -1,0 +1,4 @@
+type: txt
+help: IP address for Dynamic Authorization Extension server (DM/CoA)
+val_help: ipv4; IPv4 address for aynamic authorization server
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

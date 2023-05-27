@@ -1,0 +1,7 @@
+type: txt
+help: SSL match options
+val_help: req-ssl-sni; SSL Server Name Indication (SNI) request match
+val_help: ssl-fc-sni; SSL frontend connection Server Name Indication match
+val_help: ssl-fc-sni-end; SSL frontend match end of connection Server Name Indication
+allowed: echo "req-ssl-sni ssl-fc-sni"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(req-ssl-sni|ssl-fc-sni|ssl-fc-sni-end)\'   --value \'$VAR(@)\'"; "Invalid value"

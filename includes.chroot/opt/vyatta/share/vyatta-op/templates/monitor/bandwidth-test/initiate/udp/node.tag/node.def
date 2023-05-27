@@ -1,0 +1,3 @@
+help: Initiate a bandwidth test to specified host (port UDP/5001)
+allowed: echo "<hostname> <x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: ${vyos_op_scripts_dir}/monitor_bandwidth_test.sh "$5" "-u"

@@ -1,0 +1,5 @@
+type: txt
+help: Help to communicate between IPv6-only client and IPv4-only
+			server
+val_help: ipv6net; IPv6 address and /96 only prefix length
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

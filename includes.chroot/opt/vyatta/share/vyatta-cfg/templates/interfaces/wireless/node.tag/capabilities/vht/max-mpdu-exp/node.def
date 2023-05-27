@@ -1,0 +1,5 @@
+type: txt
+help: Set the maximum length of A-MPDU pre-EOF padding that the
+			station can receive
+val_help: u32:0-7; Maximum length of A-MPDU pre-EOF padding = 2 pow(13 + x) -1 octets
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-7\"  --value \'$VAR(@)\'"; "Invalid value"

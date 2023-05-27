@@ -1,0 +1,2 @@
+help: Show Wireless Modem (WWAN) interface information
+run: ${vyos_op_scripts_dir}/interfaces.py show_summary --intf_type=wirelessmodem

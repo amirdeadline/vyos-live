@@ -1,0 +1,2 @@
+help: Displays the multicast group database for the bridge
+run: ${vyos_op_scripts_dir}/bridge.py show_mdb --interface=$3

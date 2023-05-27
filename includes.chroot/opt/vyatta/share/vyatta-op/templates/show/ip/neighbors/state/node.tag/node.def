@@ -1,0 +1,3 @@
+help: Show IPv4 neighbors with specified state
+allowed: echo "reachable stale failed permanent"
+run: ${vyos_op_scripts_dir}/neighbor.py show --family inet --state "$5"

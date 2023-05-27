@@ -1,0 +1,3 @@
+help: Show IS-IS link state database PDU
+allowed: echo "lsp-id detail"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

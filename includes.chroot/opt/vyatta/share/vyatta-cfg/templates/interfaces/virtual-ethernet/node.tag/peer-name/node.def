@@ -1,0 +1,5 @@
+type: txt
+help: Virtual ethernet peer interface name
+val_help: txt; Name of peer interface
+allowed: /bin/cli-shell-api listNodes interfaces virtual-ethernet
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'veth[0-9]+\'   --value \'$VAR(@)\'"; "Virutal Ethernet interface must be named vethN"

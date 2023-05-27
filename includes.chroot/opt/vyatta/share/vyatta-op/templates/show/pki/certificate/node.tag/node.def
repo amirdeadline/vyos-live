@@ -1,0 +1,3 @@
+help: Show x509 certificate by name
+allowed: /bin/cli-shell-api listActiveNodes pki certificate | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/pki.py --action show --certificate "$4"

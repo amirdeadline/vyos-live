@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Extension name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-z0-9\\.\\-\\_]+\'   --value \'$VAR(@)\'"; "Script extension contains invalid characters"

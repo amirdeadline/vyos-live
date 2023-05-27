@@ -1,0 +1,2 @@
+help: Monitor log for static route
+run: journalctl --follow --no-hostname --boot /usr/lib/frr/staticd

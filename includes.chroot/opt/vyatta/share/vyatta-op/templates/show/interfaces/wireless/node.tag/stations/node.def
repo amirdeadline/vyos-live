@@ -1,0 +1,2 @@
+help: Show specified Wireless interface information
+run: ${vyos_op_scripts_dir}/show_wireless.py --stations "$4"

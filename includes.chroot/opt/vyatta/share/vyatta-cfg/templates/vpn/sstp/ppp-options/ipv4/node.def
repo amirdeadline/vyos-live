@@ -1,0 +1,6 @@
+type: txt
+help: IPv4 negotiation algorithm (default: allow)
+val_help: deny; Do not negotiate IPv4
+val_help: allow; Negotiate IPv4 only if client requests (default)
+allowed: echo "deny allow"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(deny|allow)\'   --value \'$VAR(@)\'"; "invalid value"

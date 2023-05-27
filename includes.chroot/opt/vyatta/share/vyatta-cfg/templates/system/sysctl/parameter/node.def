@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: Sysctl key name
+val_help: txt; Sysctl key name
+allowed: sh -c "${vyos_completion_dir}/list_sysctl_parameters.sh"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/sysctl \"  --value \'$VAR(@)\'"; "Invalid value"

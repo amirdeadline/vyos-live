@@ -1,0 +1,2 @@
+help: Shows current configuration and device information
+run: sudo wg show "$4"

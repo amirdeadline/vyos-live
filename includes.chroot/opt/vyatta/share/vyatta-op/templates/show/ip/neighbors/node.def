@@ -1,0 +1,2 @@
+help: Show IPv4 neighbor (ARP) table
+run: ${vyos_op_scripts_dir}/neighbor.py show --family inet

@@ -1,0 +1,2 @@
+help: Restart the IPsec VPN process
+run: if systemctl is-active --quiet strongswan; then sudo systemctl restart strongswan ; echo "IPsec process restarted";  else echo "IPsec process not running" ; fi

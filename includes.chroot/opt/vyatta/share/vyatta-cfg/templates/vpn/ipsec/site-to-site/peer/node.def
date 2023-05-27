@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Connection name of the peer
+val_help: txt; Connection name of the peer
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9|@]+\'   --value \'$VAR(@)\'"; "Peer connection name must be alphanumeric and can contain hyphen and underscores"

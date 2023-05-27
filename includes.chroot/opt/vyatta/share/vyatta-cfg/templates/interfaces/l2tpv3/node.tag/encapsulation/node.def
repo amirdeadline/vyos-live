@@ -1,0 +1,6 @@
+type: txt
+help: Encapsulation type (default: udp)
+val_help: udp; UDP encapsulation (default)
+val_help: ip; IP encapsulation
+allowed: echo "udp ip"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(udp|ip)\'   --value \'$VAR(@)\'"; "Encapsulation must be UDP or IP"

@@ -1,0 +1,4 @@
+type: txt
+help: Time between scheduled hellos (default: 4000)
+val_help: u32:20-655340; Milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 20-655340\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,5 @@
+type: txt
+help: Queue target to use. Action queue must be defined to use this
+			setting
+val_help: u32:0-65535; Queue target
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 0-65535\"  --value \'$VAR(@)\'"; "Invalid value"

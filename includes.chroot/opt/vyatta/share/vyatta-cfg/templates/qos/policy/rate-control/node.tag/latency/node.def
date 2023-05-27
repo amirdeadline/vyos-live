@@ -1,0 +1,4 @@
+type: txt
+help: Maximum latency (default: 50)
+val_help: <number>; Time in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4096\"  --value \'$VAR(@)\'"; "Threshold must be between 0 and 4096"

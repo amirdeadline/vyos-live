@@ -1,0 +1,5 @@
+type: txt
+help: Number of NS messages to send while performing DAD (default: 1)
+val_help: u32:0; Disable Duplicate Address Dectection (DAD)
+val_help: u32:1-n; Number of NS messages to send while performing DAD
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --non-negative\"  --value \'$VAR(@)\'"; "Invalid value"

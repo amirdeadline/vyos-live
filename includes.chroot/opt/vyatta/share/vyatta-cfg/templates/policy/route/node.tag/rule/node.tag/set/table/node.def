@@ -1,0 +1,6 @@
+type: txt
+help: Routing table to forward packet with
+val_help: u32:1-200; Table number
+val_help: main; Main table
+allowed: echo "main" && echo " " && /bin/cli-shell-api listNodes protocols static table
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(main)\' --exec \"${vyos_validators_dir}/numeric --range 1-200\"  --value \'$VAR(@)\'"; "Invalid value"

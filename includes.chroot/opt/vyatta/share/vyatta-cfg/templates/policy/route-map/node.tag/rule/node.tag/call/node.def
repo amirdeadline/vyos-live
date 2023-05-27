@@ -1,0 +1,4 @@
+type: txt
+help: Call another route-map on match
+val_help: txt; Route map name
+allowed: /bin/cli-shell-api listNodes policy route-map

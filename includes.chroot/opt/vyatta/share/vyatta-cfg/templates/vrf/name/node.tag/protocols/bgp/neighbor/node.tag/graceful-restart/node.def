@@ -1,0 +1,7 @@
+type: txt
+help: BGP graceful restart functionality
+val_help: enable; Enable BGP graceful restart at peer level
+val_help: disable; Disable BGP graceful restart at peer level
+val_help: restart-helper; Enable BGP graceful restart helper only functionality
+allowed: echo "enable disable restart-helper"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable|restart-helper)\'   --value \'$VAR(@)\'"; "Invalid value"

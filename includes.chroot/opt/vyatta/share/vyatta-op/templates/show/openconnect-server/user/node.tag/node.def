@@ -1,0 +1,2 @@
+help: Show OpenConnect configured user settings
+allowed: sudo ${vyos_completion_dir}/list_openconnect_users.py

@@ -1,0 +1,2 @@
+help: Monitor last lines of SSTP
+run: journalctl --no-hostname --boot --follow --unit accel-ppp@sstp.service

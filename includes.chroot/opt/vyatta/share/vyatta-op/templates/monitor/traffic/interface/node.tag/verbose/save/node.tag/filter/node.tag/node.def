@@ -1,0 +1,2 @@
+help: Save a dump of traffic matching filter conditions to a file
+run: sudo tcpdump -vvv -ne -i $4 -w $6 "${@:8}"

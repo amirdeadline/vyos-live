@@ -1,0 +1,5 @@
+type: txt
+help: Timeout for Interim-Update packets, terminate session afterwards
+			(default: 3)
+val_help: u32:0-60; Timeout in seconds, 0 to keep active
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-60\"  --value \'$VAR(@)\'"; "Timeout must be between 0 and 60 seconds"

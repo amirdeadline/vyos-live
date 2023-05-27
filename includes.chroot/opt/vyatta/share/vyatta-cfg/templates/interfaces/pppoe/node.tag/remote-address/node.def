@@ -1,0 +1,4 @@
+type: txt
+help: IPv4 address of remote end of the PPPoE link
+val_help: ipv4; Address of remote end of the PPPoE link
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

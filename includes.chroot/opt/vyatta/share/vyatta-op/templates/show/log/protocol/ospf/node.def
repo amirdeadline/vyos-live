@@ -1,0 +1,2 @@
+help: Show log for OSPF
+run: journalctl --boot /usr/lib/frr/ospfd

@@ -1,0 +1,2 @@
+help: Show log for DHCP server
+run: journalctl --no-hostname --boot --unit isc-dhcp-server.service

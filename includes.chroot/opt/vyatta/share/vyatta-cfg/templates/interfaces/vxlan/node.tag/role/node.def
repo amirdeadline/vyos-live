@@ -1,0 +1,5 @@
+type: txt
+help: Set Role for SDWAN System
+val_help: txt; lan, vpn
+allowed: echo 'lan vpn'
+syntax:expression: $VAR(@) in "lan", "vpn"; "Value must be vpn or lan"

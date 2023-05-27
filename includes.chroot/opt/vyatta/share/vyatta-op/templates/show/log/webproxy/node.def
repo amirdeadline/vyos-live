@@ -1,0 +1,2 @@
+help: Show log for Webproxy
+run: journalctl --no-hostname --boot --unit squid.service

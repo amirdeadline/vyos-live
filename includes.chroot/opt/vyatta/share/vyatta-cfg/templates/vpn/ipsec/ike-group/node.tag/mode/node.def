@@ -1,0 +1,6 @@
+type: txt
+help: IKEv1 phase 1 mode (default: main)
+val_help: main; Use the main mode (recommended) (default)
+val_help: aggressive; Use the aggressive mode (insecure, not recommended)
+allowed: echo "main aggressive"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(main|aggressive)\'   --value \'$VAR(@)\'"; "Invalid value"

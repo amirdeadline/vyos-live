@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: mDNS browsing domains in addition to the default one
+val_help: txt; mDNS browsing domain
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid value"

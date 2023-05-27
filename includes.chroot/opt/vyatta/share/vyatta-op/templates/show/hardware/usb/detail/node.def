@@ -1,0 +1,2 @@
+help: Show detailed USB bus information
+run: /usr/bin/lsusb -v

@@ -1,0 +1,6 @@
+type: txt
+help: TLS negotiation role
+val_help: active; Initiate TLS negotiation actively
+val_help: passive; Wait for incoming TLS connection
+allowed: echo "active passive"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(active|passive)\'   --value \'$VAR(@)\'"; "Invalid value"

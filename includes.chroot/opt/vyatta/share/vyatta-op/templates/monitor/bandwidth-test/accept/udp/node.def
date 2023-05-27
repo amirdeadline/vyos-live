@@ -1,0 +1,2 @@
+help: Wait for bandwidth test connections (port UDP/5001)
+run: /usr/bin/iperf -V -s -u

@@ -1,0 +1,4 @@
+type: txt
+help: Default domain name
+val_help: domain; Domain to use for urls that do not contain a '.'
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[.][A-Za-z0-9][-.A-Za-z0-9]*\'   --value \'$VAR(@)\'"; "Must start append-domain with a '.'"

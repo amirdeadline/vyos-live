@@ -1,0 +1,2 @@
+help: PIM neighbor information
+run: vtysh -c "show ip pim neighbor"

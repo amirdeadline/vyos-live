@@ -1,0 +1,2 @@
+help: Clear interface counters for a given VXLAN interface
+run: sudo ${vyos_op_scripts_dir}/interfaces.py clear_counters --intf_name "$4"

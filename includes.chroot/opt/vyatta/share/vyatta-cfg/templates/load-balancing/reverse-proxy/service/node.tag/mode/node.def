@@ -1,0 +1,6 @@
+type: txt
+help: Proxy mode
+val_help: http; HTTP proxy mode
+val_help: tcp; TCP proxy mode
+allowed: echo "http tcp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(http|tcp)\'   --value \'$VAR(@)\'"; "invalid value"

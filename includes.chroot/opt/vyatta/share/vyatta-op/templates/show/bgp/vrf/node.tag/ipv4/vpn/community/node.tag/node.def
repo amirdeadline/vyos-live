@@ -1,0 +1,3 @@
+help: Community number where AA and NN are (0-65535)
+allowed: echo "AA:NN"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

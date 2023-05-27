@@ -1,0 +1,3 @@
+help: Show specified Bridge interface information
+allowed: /bin/cli-shell-api listActiveNodes interfaces bridge | sed -e "s/'//g" && echo
+run: ${vyos_op_scripts_dir}/interfaces.py show --intf_name="$4" --intf_type=bridge

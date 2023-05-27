@@ -1,0 +1,7 @@
+tag:
+type: txt
+priority: 310
+help: Bridge Interface
+val_help: brN; Bridge interface name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'br[0-9]+\'   --value \'$VAR(@)\'"; "Bridge interface must be named brN"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/interfaces-bridge.py"

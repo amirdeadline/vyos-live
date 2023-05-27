@@ -1,0 +1,2 @@
+help: Import key pair into PKI
+allowed: echo "<name>"

@@ -1,0 +1,4 @@
+type: txt
+help: Local tunnel identifier
+val_help: u32:1-429496729; L2TPv3 local tunnel identifier
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-429496729\"  --value \'$VAR(@)\'"; "Invalid value"

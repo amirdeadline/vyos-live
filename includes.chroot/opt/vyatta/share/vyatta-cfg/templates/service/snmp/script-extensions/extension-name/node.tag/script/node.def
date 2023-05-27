@@ -1,0 +1,4 @@
+type: txt
+help: Script location and name
+allowed: sh -c "ls /config/user-data"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-z0-9\\.\\-\\_\\/]+\'   --value \'$VAR(@)\'"; "Script extension contains invalid characters"

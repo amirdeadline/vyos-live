@@ -1,0 +1,3 @@
+help: Show logs from a given container
+allowed: /bin/cli-shell-api listActiveNodes container name | sed -e "s/'//g" && echo
+run: sudo podman logs --names "$4"

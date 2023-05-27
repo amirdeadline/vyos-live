@@ -1,0 +1,4 @@
+type: txt
+help: IGMP max query response time
+val_help: u32:10-250; Query response value in deci-seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 10-250\"  --value \'$VAR(@)\'"; "Invalid value"

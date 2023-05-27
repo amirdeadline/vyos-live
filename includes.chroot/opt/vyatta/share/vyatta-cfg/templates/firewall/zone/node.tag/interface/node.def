@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Interface associated with zone
+val_help: txt; Interface associated with zone
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

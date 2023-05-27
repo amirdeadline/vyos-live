@@ -1,0 +1,4 @@
+help: Enable Symmetric Forwarding
+priority: 9999
+delete: sudo sh -c "${vyos_conf_scripts_dir}/sdwan-symmetric.py delete"
+create: sudo sh -c "${vyos_conf_scripts_dir}/sdwan-symmetric.py"

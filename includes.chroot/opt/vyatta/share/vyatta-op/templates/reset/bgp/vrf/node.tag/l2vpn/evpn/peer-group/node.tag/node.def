@@ -1,0 +1,3 @@
+help: Reset all members of peer-group
+allowed: /bin/cli-shell-api listActiveNodes vrf name ${COMP_WORDS[4]} protocols bgp peer-group | sed -e "s/'//g" && echo
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

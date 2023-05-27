@@ -1,0 +1,5 @@
+type: txt
+help: IP address of tunnel endpoint
+val_help: ipv4; IPv4 address of remote tunnel endpoint
+val_help: ipv6; IPv6 address of remote tunnel endpoint
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \" --exec \"${vyos_validators_dir}/ipv6-link-local \"  --value \'$VAR(@)\'"; "Invalid value"

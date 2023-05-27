@@ -1,0 +1,79 @@
+#!/bin/sh
+
+echo I: Disabling services
+systemctl disable smartd.service
+systemctl disable isc-dhcp-server.service
+systemctl disable isc-dhcp-relay.service
+systemctl disable nfacctd.service
+systemctl disable pmacctd.service
+systemctl disable sfacctd.service
+systemctl disable uacctd.service
+systemctl disable ssh.service
+systemctl disable sshguard.service
+systemctl disable openvpn.service
+systemctl disable lldpd.service
+systemctl disable LCDd.service
+systemctl disable lcdproc.service
+systemctl disable conntrackd.service
+systemctl disable 'udp-broadcast-relay@*.service'
+systemctl disable pdns-recursor.service
+systemctl disable tftpd-hpa.service
+systemctl disable logd.service
+systemctl disable frr.service
+systemctl disable salt-minion.service
+systemctl disable certbot.service
+systemctl disable certbot.timer
+systemctl disable nginx.service
+systemctl disable wpa_supplicant.service
+systemctl disable squid.service
+systemctl disable heartbeat.service
+systemctl disable apt-daily.service
+systemctl disable apt-daily.timer
+systemctl disable apt-daily-upgrade.timer
+systemctl disable apt-daily-upgrade.service
+systemctl disable chrony.service
+systemctl disable igmpproxy.service
+systemctl disable wide-dhcpv6-client.service
+systemctl disable lm-sensors.service
+systemctl disable snmpd.service
+systemctl disable conserver-server.service
+systemctl disable dropbear.service
+systemctl disable fancontrol.service
+systemctl disable fastnetmon.service
+systemctl disable ddclient.service
+systemctl disable ocserv.service
+systemctl disable tuned.service
+systemctl disable radvd.service
+systemctl disable hostapd.service
+systemctl disable hsflowd.service
+systemctl disable keepalived.service
+systemctl disable ipvsadm.service
+systemctl disable telegraf.service
+systemctl disable ndppd.service
+systemctl disable ipsec.service
+systemctl disable strongswan.service
+systemctl disable strongswan-starter.service
+systemctl disable strongswan.service
+systemctl disable avahi-daemon.service
+systemctl disable atop-rotate.timer
+systemctl disable ModemManager.service
+systemctl disable dnsdist.service
+systemctl disable haproxy.service
+systemctl disable miniupnpd.service
+systemctl disable owamp-server.service
+systemctl disable twamp-server.service
+systemctl disable podman-auto-update.service
+systemctl disable podman-restart.service
+systemctl disable vyos-wan-load-balance.service
+systemctl disable nvmf-autoconnect.service
+systemctl disable sendmail.service
+
+echo I: Enabling services
+systemctl enable frr.service
+systemctl enable ssh-session-cleanup.service
+systemctl enable vyos-hostsd.service
+systemctl enable acpid.service
+systemctl enable vyos-configd.service
+
+echo I: Masking services
+systemctl mask systemd-journald-audit.socket

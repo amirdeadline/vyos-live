@@ -1,0 +1,2 @@
+help: Specifies that Registration Request should be sent to this peer
+			on startup

@@ -1,0 +1,4 @@
+type: txt
+help: Hello multiplier factor
+val_help: u32:1-10; Number of Hellos to send each second
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-10\"  --value \'$VAR(@)\'"; "Invalid value"

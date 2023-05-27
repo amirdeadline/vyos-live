@@ -1,0 +1,3 @@
+help: Show extended IP community-lists
+allowed: /bin/cli-shell-api listActiveNodes policy extcommunity-list | sed -e "s/'//g" && echo
+run: vtysh -c "show bgp extcommunity-list $4 detail"

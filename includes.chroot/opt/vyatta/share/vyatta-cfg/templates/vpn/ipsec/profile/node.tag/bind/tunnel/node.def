@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Tunnel interface associated with this profile
+val_help: txt; Associated interface to this profile
+allowed: /bin/cli-shell-api listNodes interfaces tunnel

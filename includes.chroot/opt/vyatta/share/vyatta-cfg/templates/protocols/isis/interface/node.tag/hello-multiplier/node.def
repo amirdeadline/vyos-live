@@ -1,0 +1,4 @@
+type: txt
+help: Set Hello interval
+val_help: u32:2-100; Set multiplier for Hello holding time
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 2-100\"  --value \'$VAR(@)\'"; "Invalid value"

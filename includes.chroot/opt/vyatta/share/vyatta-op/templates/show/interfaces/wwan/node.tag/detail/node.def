@@ -1,0 +1,2 @@
+help: Show WWAN module detailed information summary
+run: mmcli --modem ${4#wwan}

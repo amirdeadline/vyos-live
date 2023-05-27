@@ -1,0 +1,2 @@
+help: Show firewall group
+run: sudo ${vyos_op_scripts_dir}/firewall.py --action show_group

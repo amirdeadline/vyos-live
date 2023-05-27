@@ -1,0 +1,5 @@
+type: txt
+help: BGP connect timer for this neighbor
+val_help: u32:1-65535; Connect timer in seconds
+val_help: 0; Disable connect timer
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65535\"  --value \'$VAR(@)\'"; "Invalid value"

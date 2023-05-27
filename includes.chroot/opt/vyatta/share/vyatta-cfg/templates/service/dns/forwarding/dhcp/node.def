@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Interfaces whose DHCP client nameservers to forward requests to
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

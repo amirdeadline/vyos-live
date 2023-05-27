@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: IP address of SNMP client allowed to contact system
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

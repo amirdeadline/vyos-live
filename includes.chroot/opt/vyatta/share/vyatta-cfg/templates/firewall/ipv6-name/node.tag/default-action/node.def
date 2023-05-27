@@ -1,0 +1,9 @@
+type: txt
+help: Default-action for rule-set (default: drop)
+val_help: drop; Drop if no prior rules are hit (default)
+val_help: jump; Jump to another chain if no prior rules are hit
+val_help: reject; Drop and notify source if no prior rules are hit
+val_help: return; Return from the current chain and continue at the next rule of the last chain
+val_help: accept; Accept if no prior rules are hit
+allowed: echo "drop jump reject return accept"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(drop|jump|reject|return|accept)\'   --value \'$VAR(@)\'"; "Invalid value"

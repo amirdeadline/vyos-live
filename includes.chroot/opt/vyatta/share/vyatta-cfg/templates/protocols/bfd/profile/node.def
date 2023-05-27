@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Configure BFD profile used by individual peer
+val_help: txt; Name of BFD profile
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]{1,32}\'   --value \'$VAR(@)\'"; "Invalid value"

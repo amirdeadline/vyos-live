@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Payload size in bytes, including header and data not to match
+val_help: u32:1-65535; Packet length not to match
+val_help: <start-end>; Packet length range not to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 1-65535\"  --value \'$VAR(@)\'"; "Invalid value"

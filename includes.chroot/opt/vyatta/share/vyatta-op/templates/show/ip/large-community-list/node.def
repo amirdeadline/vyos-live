@@ -1,0 +1,2 @@
+help: Show IP large-community-lists
+run: vtysh -c "show bgp large-community-list"

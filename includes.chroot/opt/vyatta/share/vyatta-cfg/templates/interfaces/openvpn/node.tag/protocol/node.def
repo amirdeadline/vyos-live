@@ -1,0 +1,7 @@
+type: txt
+help: OpenVPN communication protocol (default: udp)
+val_help: udp; UDP (default)
+val_help: tcp-passive; TCP and accepts connections passively
+val_help: tcp-active; TCP and initiates connections actively
+allowed: echo "udp tcp-passive tcp-active"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(udp|tcp-passive|tcp-active)\'   --value \'$VAR(@)\'"; "Invalid value"

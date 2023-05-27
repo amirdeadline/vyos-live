@@ -1,0 +1,2 @@
+help: Show peer status of NTP daemon
+run: ${vyos_op_scripts_dir}/show_ntp.sh --sourcestats

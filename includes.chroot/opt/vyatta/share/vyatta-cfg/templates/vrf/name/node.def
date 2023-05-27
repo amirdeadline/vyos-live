@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Virtual Routing and Forwarding instance
+val_help: txt; VRF instance name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/vrf-name \"  --value \'$VAR(@)\'"; "VRF instance name must be 15 characters or less and can not\nbe named as regular network interfaces.\nA name must starts from a letter.\n"

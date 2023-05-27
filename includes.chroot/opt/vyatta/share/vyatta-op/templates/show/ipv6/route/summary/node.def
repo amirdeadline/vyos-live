@@ -1,0 +1,2 @@
+help: Summary of all routes
+run: ${vyos_op_scripts_dir}/route.py show_summary --family inet6

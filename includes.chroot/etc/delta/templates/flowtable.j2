@@ -1,0 +1,20 @@
+#!/usr/sbin/nft -f
+
+table inet symmetric {
+{% for vti in vti_interfaces %}
+    flowtable ft_{{ vti.ifname }} {
+        hook ingress priority 0; devices = { {{ vti.ifname }} };
+    }
+{% endfor %}
+
+    chain prerouting {
+        type filter hook prerouting priority 0; policy accept;
+        
+{% for vti in vti_interfaces %}
+        iif "{{ vti.ifname }}" ip protocol tcp flow add @ft_{{ vti.ifname }}
+        iif "{{ vti.ifname }}" ip protocol icmp flow add @ft_{{ vti.ifname }}
+{% endfor %}
+
+        counter packets 0 bytes 0
+    }
+}

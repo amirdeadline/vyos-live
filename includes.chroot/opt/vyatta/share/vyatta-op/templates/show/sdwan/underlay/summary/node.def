@@ -1,0 +1,2 @@
+help: SLA Status for all Remote sites
+run: sudo ${vyos_op_scripts_dir}/sdwan-sla.py underlay_summary

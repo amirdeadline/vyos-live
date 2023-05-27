@@ -1,0 +1,3 @@
+help: Reset specified OpenVPN client
+allowed: sudo ${vyos_completion_dir}/list_openvpn_clients.py --all
+run: echo kill $4 | socat - UNIX-CONNECT:/run/openvpn/openvpn-mgmt-intf > /dev/null

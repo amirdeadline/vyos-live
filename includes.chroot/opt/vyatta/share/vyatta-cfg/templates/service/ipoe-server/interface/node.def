@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Interface to listen dhcp or unclassified packets
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

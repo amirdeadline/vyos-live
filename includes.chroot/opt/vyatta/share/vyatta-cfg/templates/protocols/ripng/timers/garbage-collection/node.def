@@ -1,0 +1,4 @@
+type: txt
+help: Garbage collection timer (default: 120)
+val_help: u32:5-2147483647; Garbage colletion time
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 5-2147483647\"  --value \'$VAR(@)\'"; "Invalid value"

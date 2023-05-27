@@ -1,0 +1,6 @@
+type: txt
+help: Default action (default: allow)
+val_help: allow; Default filter action is allow)
+val_help: block; Default filter action is block
+allowed: echo "allow block"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(allow|block)\'   --value \'$VAR(@)\'"; "Invalid value"

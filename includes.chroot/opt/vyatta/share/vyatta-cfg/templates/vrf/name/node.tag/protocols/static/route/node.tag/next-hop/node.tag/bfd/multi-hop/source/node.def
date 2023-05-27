@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: Use source for BFD session
+val_help: ipv4; IPv4 source address
+val_help: ipv6; IPv6 source address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

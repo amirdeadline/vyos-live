@@ -1,0 +1,2 @@
+help: Restart DHCPv6 relay-agent
+run: sudo ${vyos_op_scripts_dir}/restart_dhcp_relay.py --ipv6

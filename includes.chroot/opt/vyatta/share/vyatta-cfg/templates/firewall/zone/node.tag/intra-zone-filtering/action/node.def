@@ -1,0 +1,6 @@
+type: txt
+help: Action for intra-zone traffic
+val_help: accept; Accept traffic
+val_help: drop; Drop silently
+allowed: echo "accept drop"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(accept|drop)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,12 @@
+[Unit]
+Description=SD-WAN SLA Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /etc/delta/sla/sdwan-sla-service.py & /usr/bin/python3 /etc/delta/sla/sdwan-sla.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

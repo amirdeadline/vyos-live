@@ -1,0 +1,5 @@
+type: txt
+help: Set Role for SDWAN System
+val_help: txt; v-lan, v-internet, v-private-underlay, v-overlay
+allowed: echo 'v-lan v-internet v-private-underlay v-overlay'
+syntax:expression: $VAR(@) in "v-lan", "v-internet", "v-private-underlay", "v-overlay"; "Value must be v-internet, v-private-underlay, v-lan, or v-overlay"

@@ -1,0 +1,12 @@
+type: txt
+help: SSH public key type
+val_help: ssh-dss; Digital Signature Algorithm (DSA) key support
+val_help: ssh-rsa; Key pair based on RSA algorithm
+val_help: ecdsa-sha2-nistp256; Elliptic Curve DSA with NIST P-256 curve
+val_help: ecdsa-sha2-nistp384; Elliptic Curve DSA with NIST P-384 curve
+val_help: ecdsa-sha2-nistp521; Elliptic Curve DSA with NIST P-521 curve
+val_help: ssh-ed25519; Edwards-curve DSA with elliptic curve 25519
+val_help: sk-ecdsa-sha2-nistp256@openssh.com; Elliptic Curve DSA security key
+val_help: sk-ssh-ed25519@openssh.com; Elliptic curve 25519 security key
+allowed: echo "ssh-dss ssh-rsa ecdsa-sha2-nistp256 ecdsa-sha2-nistp384 ecdsa-sha2-nistp521 ssh-ed25519 sk-ecdsa-sha2-nistp256@openssh.com sk-ssh-ed25519@openssh.com"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ssh-dss|ssh-rsa|ecdsa-sha2-nistp256|ecdsa-sha2-nistp384|ecdsa-sha2-nistp521|ssh-ed25519|sk-ecdsa-sha2-nistp256@openssh.com|sk-ssh-ed25519@openssh.com)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Search by Link state ID
+allowed: echo "<x.x.x.x>"

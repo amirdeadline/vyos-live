@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Set an HUB tunnel address
+val_help: ipv4net; Set the IP address and prefix length

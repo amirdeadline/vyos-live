@@ -1,0 +1,2 @@
+help: Enable receive packet debugging
+run: vtysh -c "debug ripng ${@:5}"

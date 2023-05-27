@@ -1,0 +1,2 @@
+help: Restart all routing daemons
+run: sudo ${vyos_op_scripts_dir}/restart_frr.py --action restart

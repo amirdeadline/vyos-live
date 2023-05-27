@@ -1,0 +1,3 @@
+type: txt
+help: Regular expression to match against an AS path
+val_help: txt; AS path regular expression (ex: "64501 64502")

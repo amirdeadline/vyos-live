@@ -1,0 +1,2 @@
+help:  Show available saved configurations
+run: ${vyos_op_scripts_dir}/show_configuration_files.sh

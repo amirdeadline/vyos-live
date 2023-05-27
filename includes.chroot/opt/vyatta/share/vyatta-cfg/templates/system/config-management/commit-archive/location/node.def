@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Commit archive location
+val_help: uri; Uniform Resource Identifier
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/url --file-transport \"  --value \'$VAR(@)\'"; "Invalid value"

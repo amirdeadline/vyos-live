@@ -1,0 +1,4 @@
+type: txt
+help: Priority for usage of excess bandwidth (default: 20)
+val_help: u32:0-7; Priority order for bandwidth pool
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-7\"  --value \'$VAR(@)\'"; "Priority must be between 0 and 7"

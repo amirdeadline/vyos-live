@@ -1,0 +1,3 @@
+type: txt
+help: Access concentrator name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9]{1,100}\'   --value \'$VAR(@)\'"; "Access-concentrator name must be alphanumerical only (max. 100 characters)"

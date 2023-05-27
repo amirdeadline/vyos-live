@@ -1,0 +1,4 @@
+help: Commands for installing generated CA certificate into running
+			configuration
+allowed: echo "<CA name>"
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --ca "$5" --install

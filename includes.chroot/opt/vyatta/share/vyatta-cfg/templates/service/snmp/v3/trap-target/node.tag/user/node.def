@@ -1,0 +1,3 @@
+type: txt
+help: Defines username for authentication
+allowed: /bin/cli-shell-api listNodes service snmp v3 user

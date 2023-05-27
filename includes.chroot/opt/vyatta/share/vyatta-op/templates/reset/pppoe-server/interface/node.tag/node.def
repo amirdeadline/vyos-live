@@ -1,0 +1,2 @@
+help: Terminate a PPP interface
+run: ${vyos_op_scripts_dir}/ppp-server-ctrl.py --proto="pppoe" --action="terminate if $4"

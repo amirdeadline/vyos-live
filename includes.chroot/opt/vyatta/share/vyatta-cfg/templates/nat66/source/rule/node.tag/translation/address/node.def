@@ -1,0 +1,7 @@
+type: txt
+help: IPv6 address to translate to
+val_help: ipv6; IPv6 address
+val_help: ipv6net; IPv6 prefix
+val_help: masquerade; NAT to the primary address of outbound-interface
+allowed: echo "masquerade"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(masquerade)\' --exec \"${vyos_validators_dir}/ipv6-address \" --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

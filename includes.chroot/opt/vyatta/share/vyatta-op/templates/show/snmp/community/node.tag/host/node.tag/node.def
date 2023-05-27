@@ -1,0 +1,2 @@
+help: Show status of SNMP on remote host
+run: ${vyos_op_scripts_dir}/snmp.py --community="$4" --host "$6"

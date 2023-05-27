@@ -1,0 +1,4 @@
+help: Show DHCP server leases with a specific state (can be multiple,
+			comma-separated)
+allowed: echo "abandoned active all backup expired free released reset"
+run: ${vyos_op_scripts_dir}/dhcp.py show_server_leases --family inet --state $6

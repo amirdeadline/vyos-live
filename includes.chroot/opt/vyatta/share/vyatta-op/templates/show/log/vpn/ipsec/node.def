@@ -1,0 +1,2 @@
+help: Show log for IPsec
+run: journalctl --no-hostname --boot --unit strongswan.service

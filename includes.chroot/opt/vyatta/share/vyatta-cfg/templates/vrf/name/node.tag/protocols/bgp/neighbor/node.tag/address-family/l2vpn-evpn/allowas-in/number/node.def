@@ -1,0 +1,4 @@
+type: txt
+help: Number of occurrences of AS number
+val_help: u32:1-10; Number of times AS is allowed in path
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-10\"  --value \'$VAR(@)\'"; "Invalid value"

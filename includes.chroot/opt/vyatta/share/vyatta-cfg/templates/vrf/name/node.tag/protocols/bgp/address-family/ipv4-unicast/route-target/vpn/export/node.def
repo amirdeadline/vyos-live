@@ -1,0 +1,4 @@
+type: txt
+help: Route Target export
+val_help: txt; Space separated route target list (A.B.C.D:MN|EF:OPQR|GHJK:MN)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/bgp-rd-rt --route-target-multi\"  --value \'$VAR(@)\'"; "Invalid value"

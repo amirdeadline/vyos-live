@@ -1,0 +1,2 @@
+help: Show NVMe device information
+run: sudo nvme list

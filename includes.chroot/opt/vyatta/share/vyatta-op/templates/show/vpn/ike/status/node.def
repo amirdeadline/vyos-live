@@ -1,0 +1,2 @@
+help: Show summary of IKE process information
+run: if systemctl is-active --quiet strongswan ; then systemctl status strongswan ; else echo "Process is not running" ; fi

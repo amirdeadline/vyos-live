@@ -1,0 +1,2 @@
+help: Show system version and versions of all packages
+run: echo "Package versions:"; dpkg -l | cat

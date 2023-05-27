@@ -1,0 +1,4 @@
+type: txt
+help: Pass phrase for cisco authentication
+val_help: txt; Pass phrase for cisco authentication
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[^[:space:]]{1,8}\'   --value \'$VAR(@)\'"; "Password should contain up to eight non-whitespace characters"

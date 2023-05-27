@@ -1,0 +1,2 @@
+help: Clear interface counters for all interfaces
+run: sudo ${vyos_op_scripts_dir}/interfaces.py clear_counters

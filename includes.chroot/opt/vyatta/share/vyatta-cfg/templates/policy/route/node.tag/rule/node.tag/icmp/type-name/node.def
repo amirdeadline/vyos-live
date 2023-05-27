@@ -1,0 +1,19 @@
+type: txt
+help: ICMP type-name
+val_help: echo-reply; ICMP type 0: echo-reply
+val_help: destination-unreachable; ICMP type 3: destination-unreachable
+val_help: source-quench; ICMP type 4: source-quench
+val_help: redirect; ICMP type 5: redirect
+val_help: echo-request; ICMP type 8: echo-request
+val_help: router-advertisement; ICMP type 9: router-advertisement
+val_help: router-solicitation; ICMP type 10: router-solicitation
+val_help: time-exceeded; ICMP type 11: time-exceeded
+val_help: parameter-problem; ICMP type 12: parameter-problem
+val_help: timestamp-request; ICMP type 13: timestamp-request
+val_help: timestamp-reply; ICMP type 14: timestamp-reply
+val_help: info-request; ICMP type 15: info-request
+val_help: info-reply; ICMP type 16: info-reply
+val_help: address-mask-request; ICMP type 17: address-mask-request
+val_help: address-mask-reply; ICMP type 18: address-mask-reply
+allowed: echo "echo-reply destination-unreachable source-quench redirect echo-request router-advertisement router-solicitation time-exceeded parameter-problem timestamp-request timestamp-reply info-request info-reply address-mask-request address-mask-reply"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(echo-reply|destination-unreachable|source-quench|redirect|echo-request|router-advertisement|router-solicitation|time-exceeded|parameter-problem|timestamp-request|timestamp-reply|info-request|info-reply|address-mask-request|address-mask-reply)\'   --value \'$VAR(@)\'"; "Invalid value"

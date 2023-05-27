@@ -1,0 +1,3 @@
+type: txt
+help: VRRP sync group
+allowed: /bin/cli-shell-api listNodes high-availability vrrp sync-group

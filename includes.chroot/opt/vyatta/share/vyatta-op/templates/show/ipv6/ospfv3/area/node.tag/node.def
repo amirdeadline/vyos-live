@@ -1,0 +1,3 @@
+help: Area ID (as an IPv4 notation)
+allowed: /bin/cli-shell-api listActiveNodes protocols ospfv3 area | sed -e "s/'//g" && echo
+run: vtysh -c "show ipv6 ospf6 area $5 spf tree"

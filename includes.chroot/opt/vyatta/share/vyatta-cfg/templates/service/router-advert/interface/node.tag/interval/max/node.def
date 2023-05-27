@@ -1,0 +1,5 @@
+type: txt
+help: Maximum interval between unsolicited multicast RAs (default:
+			600)
+val_help: u32:4-1800; Maximum interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 4-1800\"  --value \'$VAR(@)\'"; "Maximum interval must be between 4 and 1800 seconds"

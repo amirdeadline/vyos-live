@@ -1,0 +1,3 @@
+help: Show DHCP client log on specific interface
+allowed: ${vyos_completion_dir}/list_interfaces --broadcast
+run: journalctl --no-hostname --follow --boot --unit "dhclient@$6.service"

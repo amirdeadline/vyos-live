@@ -1,0 +1,2 @@
+help: Show OpenVPN interface users
+allowed: sudo ${vyos_completion_dir}/list_openvpn_users.py --interface ${COMP_WORDS[3]}

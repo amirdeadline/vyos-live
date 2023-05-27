@@ -1,0 +1,4 @@
+priority: 901
+help: Point to Point Tunneling Protocol (PPTP) Virtual Private Network
+			(VPN)
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/vpn_pptp.py"

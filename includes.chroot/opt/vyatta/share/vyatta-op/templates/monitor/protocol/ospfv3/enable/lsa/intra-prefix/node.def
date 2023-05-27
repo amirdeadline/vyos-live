@@ -1,0 +1,2 @@
+help: Display Intra-Area-Prefix LSAs
+run: vtysh -c "debug ospf6 ${@:5}"

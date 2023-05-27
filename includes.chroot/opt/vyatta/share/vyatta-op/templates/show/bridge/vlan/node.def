@@ -1,0 +1,2 @@
+help: View the VLAN filter settings of the bridge
+run: ${vyos_op_scripts_dir}/bridge.py show_vlan

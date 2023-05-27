@@ -1,0 +1,4 @@
+type: txt
+help: Service curve delay
+val_help: <number>; Time in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65535\"  --value \'$VAR(@)\'"; "Priority must be between 0 and 65535"

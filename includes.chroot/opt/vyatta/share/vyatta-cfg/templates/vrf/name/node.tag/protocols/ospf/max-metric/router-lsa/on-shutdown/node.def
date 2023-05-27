@@ -1,0 +1,4 @@
+type: txt
+help: Advertise stub-router prior to full shutdown of OSPF
+val_help: u32:5-100; Time (seconds) to advertise self as stub-router
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 5-100\"  --value \'$VAR(@)\'"; "Invalid value"

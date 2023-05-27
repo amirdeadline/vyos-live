@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Alias for this address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'.{1,63}\'   --value \'$VAR(@)\'"; "invalid alias hostname, needs to be between 1 and 63 charactes"

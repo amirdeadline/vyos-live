@@ -1,0 +1,2 @@
+help: Debug route memory use
+run: vtysh -c "debug ospf6 ${@:5}"

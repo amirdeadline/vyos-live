@@ -1,0 +1,16 @@
+type: txt
+help: Match protocol via which the route was learnt
+val_help: babel; Babel routing protocol (Babel)
+val_help: bgp; Border Gateway Protocol (BGP)
+val_help: connected; Connected routes (directly attached subnet or host)
+val_help: isis; Intermediate System to Intermediate System (IS-IS)
+val_help: kernel; Kernel routes
+val_help: ospf; Open Shortest Path First (OSPFv2)
+val_help: ospfv3; Open Shortest Path First (IPv6) (OSPFv3)
+val_help: rip; Routing Information Protocol (RIP)
+val_help: ripng; Routing Information Protocol next-generation (IPv6) (RIPng)
+val_help: static; Statically configured routes
+val_help: table; Non-main Kernel Routing Table
+val_help: vnc; Virtual Network Control (VNC)
+allowed: echo "babel bgp connected isis kernel ospf ospfv3 rip ripng static table vnc"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(babel|bgp|connected|isis|kernel|ospf|ospfv3|rip|ripng|static|table|vnc)\'   --value \'$VAR(@)\'"; "Invalid value"

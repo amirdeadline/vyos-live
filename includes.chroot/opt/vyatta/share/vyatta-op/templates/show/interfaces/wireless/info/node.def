@@ -1,0 +1,2 @@
+help: Show wireless interface configuration
+run: ${vyos_op_scripts_dir}/show_wireless.py --brief

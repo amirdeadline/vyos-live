@@ -1,0 +1,11 @@
+multi:
+type: txt
+help: Filter for outgoing routing update
+val_help: bgp; Filter BGP routes
+val_help: connected; Filter connected routes
+val_help: isis; Filter IS-IS routes
+val_help: kernel; Filter Kernel routes
+val_help: rip; Filter RIP routes
+val_help: static; Filter static routes
+allowed: echo "bgp connected kernel rip static"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(bgp|connected|isis|kernel|rip|static)\'   --value \'$VAR(@)\'"; "Must be bgp, connected, kernel, rip, or static"

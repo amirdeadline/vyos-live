@@ -1,0 +1,4 @@
+type: txt
+help: Maximum duration to suppress a stable route
+val_help: u32:1-255; Maximum suppress duration in minutes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-255\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Remote server to connect to
+val_help: ipv4; Server IPv4 address
+val_help: hostname; Server hostname/FQDN

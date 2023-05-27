@@ -1,0 +1,3 @@
+help: Show top N flows for specified interface
+allowed: echo "1-100"
+run: ${vyos_op_scripts_dir}/flow_accounting_op.py --action show --interface $4 --top $6

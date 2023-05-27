@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Allow members of a group to login
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-z_][a-z0-9_-]{1,31}[$]?\'   --value \'$VAR(@)\'"; "illegal characters or more than 32 characters"

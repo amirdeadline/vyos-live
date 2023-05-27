@@ -1,0 +1,4 @@
+type: txt
+help: VLAN ingress QoS
+val_help: txt; Format for qos mapping, e.g.: '0:1 1:6 7:6'
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[:0-7 ]+\'   --value \'$VAR(@)\'"; "QoS mapping should be in the format of '0:7 2:3' with numbers 0-9"

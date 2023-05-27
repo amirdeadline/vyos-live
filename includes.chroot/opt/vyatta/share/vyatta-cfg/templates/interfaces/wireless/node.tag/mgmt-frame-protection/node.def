@@ -1,0 +1,8 @@
+type: txt
+help: Management Frame Protection (MFP) according to IEEE 802.11w
+			(default: disabled)
+val_help: disabled; no MFP (default)
+val_help: optional; MFP optional
+val_help: required; MFP enforced
+allowed: echo "disabled optional required"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(disabled|optional|required)\'   --value \'$VAR(@)\'"; "Invalid value"

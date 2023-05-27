@@ -1,0 +1,85 @@
+system {
+    config-management {
+        commit-archive {
+            location ftp://delta:delta@192.168.172.2/
+        }
+        commit-revisions 100
+    }
+    conntrack {
+        modules {
+            ftp
+            h323
+            nfs
+            pptp
+            sip
+            sqlnet
+            tftp
+        }
+    }
+    console {
+        device ttyS0 {
+            speed 115200
+        }
+    }
+    host-name delta
+    login {
+        user amir {
+            authentication {
+                public-keys amirr@PC01 {
+                    key AAAAB3NzaC1yc2EAAAADAQABAAACAQDA+oPyRXaPkOhoeRfiFbLfq2VQa9COG40H2/LgN9S/zgSQARBIVSmVSEnzUeADMkxhiM4B/hcMcwv8pWQh62g22mnHWjGH+Rysvq5SHKPDNsBRHvdsVsc0iqiXzOoPJVVfl1jGPBrU7n2/a0clOx4vt7wg7dmPsB2TH2knia8icutYU1/s+2tDh6fJptluR9hGiusQTz1mnr1yrFEzMWg/aD39BbLzZpNwwKFuldXszyPOaQDOMPO6y5Hxi/90uObDziuUMyyeTGmjveCIQFVeAf9awzQzJ4ynoEH0YecppFrW6znAw0tWoDA/QC8jY+Hq4xPe8wZabZX3Jw/g/l9n0aaZDVOg/P0pHBOhR2mLByax0Vl5ZkVc/+XMgeZrQJd3yfN/PVeD1ZZ2NVFds1xeWbofF0zGTXQBMC/e9XrajRTI2KZdQhuWeAdRs8HPxAi2aA9N+SZvMQ9NqyDNzKsdIL34OmkLFd60dhx5r2C0NHE4ex8aHw==
+                    type ssh-rsa
+                }
+            }
+        }
+        user delta {
+            authentication {
+                encrypted-password $6$rounds=656000$oy1ol9AA/Efh.wYC$b0KAHrLNFnqnu14eQzQ5q61pAR1h7cvyF6OFxy6xWmUI/eXClg9GNR7W70iscQgo0sBRpADUNq2Va2r5utHtt.
+            }
+        }
+        user vyos {
+            authentication {
+                encrypted-password $6$QxPS.uk6mfo$9QBSo8u1FkH16gMyAVhus6fU3LOzvLR9Z9.82m3tiHFAxTtIkhaZSWssSgzt4v4dGAL8rhVQxTg0oAG9/q11h/
+                plaintext-password ""
+            }
+        }
+    }
+    name-server 8.8.8.8
+    name-server 4.2.2.4
+    syslog {
+        global {
+            facility all {
+                level info
+            }
+            facility protocols {
+                level debug
+            }
+        }
+    }
+}
+service {
+    lldp {
+        interface all {
+        }
+    }
+    ntp {
+        allow-client {
+            address 0.0.0.0/0
+            address ::/0
+        }
+        server time1.deltasase.com {
+        }
+        server time2.deltasase.com {
+        }
+        server time3.deltasase.com {
+        }
+    }
+    ssh {
+    }
+}
+interfaces {
+    ethernet eth0 {
+        address dhcp
+    }
+    loopback lo {
+    }
+}

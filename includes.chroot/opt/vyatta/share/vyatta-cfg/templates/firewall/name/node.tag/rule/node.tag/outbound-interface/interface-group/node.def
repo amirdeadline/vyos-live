@@ -1,0 +1,3 @@
+type: txt
+help: Match interface-group
+allowed: /bin/cli-shell-api listNodes firewall group interface-group

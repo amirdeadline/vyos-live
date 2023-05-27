@@ -1,0 +1,4 @@
+type: txt
+help: Override default router identifier
+val_help: ipv4; Router-ID in IP address format
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

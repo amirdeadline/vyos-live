@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Service entry
+val_help: u32:0-65535; Entry number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-65535\"  --value \'$VAR(@)\'"; "Invalid value"

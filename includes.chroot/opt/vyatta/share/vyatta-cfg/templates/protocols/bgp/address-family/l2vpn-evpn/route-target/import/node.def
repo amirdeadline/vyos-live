@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Route Target import
+val_help: txt; Route target (A.B.C.D:MN|EF:OPQR|GHJK:MN)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/bgp-rd-rt --route-target\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+type: txt
+help: Remote bucket (default: main)

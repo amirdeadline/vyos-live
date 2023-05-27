@@ -1,0 +1,9 @@
+type: txt
+help: IP address, subnet, or range
+val_help: ipv4; IPv4 address to match
+val_help: ipv4net; IPv4 prefix to match
+val_help: ipv4range; IPv4 address range to match
+val_help: !ipv4; Match everything except the specified address
+val_help: !ipv4net; Match everything except the specified prefix
+val_help: !ipv4range; Match everything except the specified range
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv4-range \" --exec \"${vyos_validators_dir}/ipv4-address-exclude \" --exec \"${vyos_validators_dir}/ipv4-prefix-exclude \" --exec \"${vyos_validators_dir}/ipv4-range-exclude \"  --value \'$VAR(@)\'"; "Invalid value"

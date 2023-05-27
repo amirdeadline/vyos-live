@@ -1,0 +1,2 @@
+help: Generate a key pair
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --keypair "noname"

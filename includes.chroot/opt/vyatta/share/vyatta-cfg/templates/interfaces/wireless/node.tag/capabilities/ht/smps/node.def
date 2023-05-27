@@ -1,0 +1,6 @@
+type: txt
+help: Spatial Multiplexing Power Save (SMPS) settings
+val_help: static; STATIC Spatial Multiplexing (SM) Power Save
+val_help: dynamic; DYNAMIC Spatial Multiplexing (SM) Power Save
+allowed: echo "static dynamic"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(static|dynamic)\'   --value \'$VAR(@)\'"; "Invalid value"

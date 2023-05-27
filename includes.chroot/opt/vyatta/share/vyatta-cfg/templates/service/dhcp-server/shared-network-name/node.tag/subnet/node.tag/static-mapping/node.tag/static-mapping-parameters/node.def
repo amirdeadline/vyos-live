@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Additional static-mapping parameters for DHCP server. Will be
+			placed inside the "host" block of the mapping. You must use
+			the syntax of dhcpd.conf in this text-field. Using this
+			without proper knowledge may result in a crashed DHCP server.
+			Check system log to look for errors.

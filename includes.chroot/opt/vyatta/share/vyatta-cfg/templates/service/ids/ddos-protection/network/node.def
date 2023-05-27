@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Specify IPv4 and IPv6 networks which belong to you
+val_help: ipv4net; Your IPv4 prefix(es)
+val_help: ipv6net; Your IPv6 prefix(es)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

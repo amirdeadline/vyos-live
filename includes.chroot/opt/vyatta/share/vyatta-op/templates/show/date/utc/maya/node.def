@@ -1,0 +1,2 @@
+help: Show UTC date in Maya calendar format
+run: ${vyos_op_scripts_dir}/maya_date.py $(date +%s)

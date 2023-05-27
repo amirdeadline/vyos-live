@@ -1,0 +1,6 @@
+type: txt
+help: Minimum time interval for refreshing gratuitous ARPs while
+			beeing master (default: 5)
+val_help: u32:0; No refresh
+val_help: u32:1-255; Interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-255\"  --value \'$VAR(@)\'"; "Invalid value"

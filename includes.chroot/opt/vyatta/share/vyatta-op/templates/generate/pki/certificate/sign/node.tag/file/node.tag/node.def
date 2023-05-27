@@ -1,0 +1,3 @@
+help: Write generated signed certificate into the specified filename
+allowed: echo "<filename>"
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --certificate "$7" --sign "$5" --file

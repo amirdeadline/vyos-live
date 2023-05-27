@@ -1,0 +1,4 @@
+type: txt
+help: Flows per second
+val_help: u32:0-4294967294; Flows per second
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967294\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,6 @@
+type: txt
+help: IP access-list to match
+val_help: u32:1-99; IP standard access list
+val_help: u32:100-199; IP extended access list
+val_help: u32:1300-1999; IP standard access list (expanded range)
+val_help: u32:2000-2699; IP extended access list (expanded range)

@@ -1,0 +1,5 @@
+type: txt
+help: Prefix-list to filter incoming route updates from this peer
+val_help: txt; Name of IPv6 prefix-list
+allowed: /bin/cli-shell-api listNodes policy prefix-list6
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Name of prefix-list6 can only contain alpha-numeric letters, hyphen and underscores"

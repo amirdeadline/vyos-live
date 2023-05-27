@@ -1,0 +1,159 @@
+List of executed migration scripts:
+/opt/vyatta/etc/config-migrate/migrate/config-management/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/conntrack/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/conntrack/2-to-3
+- op: set path: ['system', 'conntrack', 'modules', 'ftp'] value: None replace: True
+- op: set path: ['system', 'conntrack', 'modules', 'h323'] value: None replace: True
+- op: set path: ['system', 'conntrack', 'modules', 'nfs'] value: None replace: True
+- op: set path: ['system', 'conntrack', 'modules', 'pptp'] value: None replace: True
+- op: set path: ['system', 'conntrack', 'modules', 'sip'] value: None replace: True
+- op: set path: ['system', 'conntrack', 'modules', 'sqlnet'] value: None replace: True
+- op: set path: ['system', 'conntrack', 'modules', 'tftp'] value: None replace: True
+/opt/vyatta/etc/config-migrate/migrate/conntrack-sync/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/container/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/dhcp-relay/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/dhcp-server/4-to-5
+/opt/vyatta/etc/config-migrate/migrate/dhcp-server/5-to-6
+/opt/vyatta/etc/config-migrate/migrate/dhcpv6-server/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/dns-forwarding/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/dns-forwarding/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/dns-forwarding/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/dns-forwarding/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/firewall/5-to-6
+/opt/vyatta/etc/config-migrate/migrate/firewall/6-to-7
+/opt/vyatta/etc/config-migrate/migrate/firewall/7-to-8
+/opt/vyatta/etc/config-migrate/migrate/firewall/8-to-9
+/opt/vyatta/etc/config-migrate/migrate/firewall/9-to-10
+/opt/vyatta/etc/config-migrate/migrate/flow-accounting/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/https/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/https/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/https/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/https/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/ids/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/interfaces/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/interfaces/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/interfaces/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/interfaces/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/interfaces/4-to-5
+/opt/vyatta/etc/config-migrate/migrate/interfaces/5-to-6
+/opt/vyatta/etc/config-migrate/migrate/interfaces/6-to-7
+/opt/vyatta/etc/config-migrate/migrate/interfaces/7-to-8
+/opt/vyatta/etc/config-migrate/migrate/interfaces/8-to-9
+/opt/vyatta/etc/config-migrate/migrate/interfaces/9-to-10
+/opt/vyatta/etc/config-migrate/migrate/interfaces/10-to-11
+/opt/vyatta/etc/config-migrate/migrate/interfaces/11-to-12
+/opt/vyatta/etc/config-migrate/migrate/interfaces/12-to-13
+/opt/vyatta/etc/config-migrate/migrate/interfaces/13-to-14
+/opt/vyatta/etc/config-migrate/migrate/interfaces/14-to-15
+/opt/vyatta/etc/config-migrate/migrate/interfaces/15-to-16
+/opt/vyatta/etc/config-migrate/migrate/interfaces/16-to-17
+/opt/vyatta/etc/config-migrate/migrate/interfaces/17-to-18
+/opt/vyatta/etc/config-migrate/migrate/interfaces/18-to-19
+/opt/vyatta/etc/config-migrate/migrate/interfaces/19-to-20
+/opt/vyatta/etc/config-migrate/migrate/interfaces/20-to-21
+- op: set path: ['interfaces', 'ethernet', 'eth0', 'offload', 'gro'] value: None replace: True
+- op: set path: ['interfaces', 'ethernet', 'eth0', 'offload', 'gso'] value: None replace: True
+- op: set path: ['interfaces', 'ethernet', 'eth0', 'offload', 'sg'] value: None replace: True
+- op: set path: ['interfaces', 'ethernet', 'eth0', 'offload', 'tso'] value: None replace: True
+/opt/vyatta/etc/config-migrate/migrate/interfaces/21-to-22
+/opt/vyatta/etc/config-migrate/migrate/interfaces/22-to-23
+/opt/vyatta/etc/config-migrate/migrate/interfaces/23-to-24
+/opt/vyatta/etc/config-migrate/migrate/interfaces/24-to-25
+/opt/vyatta/etc/config-migrate/migrate/interfaces/25-to-26
+/opt/vyatta/etc/config-migrate/migrate/interfaces/26-to-27
+/opt/vyatta/etc/config-migrate/migrate/interfaces/27-to-28
+/opt/vyatta/etc/config-migrate/migrate/ipoe-server/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/ipsec/4-to-5
+/opt/vyatta/etc/config-migrate/migrate/ipsec/5-to-6
+/opt/vyatta/etc/config-migrate/migrate/ipsec/6-to-7
+/opt/vyatta/etc/config-migrate/migrate/ipsec/7-to-8
+/opt/vyatta/etc/config-migrate/migrate/ipsec/8-to-9
+/opt/vyatta/etc/config-migrate/migrate/ipsec/9-to-10
+/opt/vyatta/etc/config-migrate/migrate/ipsec/10-to-11
+/opt/vyatta/etc/config-migrate/migrate/ipsec/11-to-12
+/opt/vyatta/etc/config-migrate/migrate/isis/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/isis/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/isis/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/l2tp/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/l2tp/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/l2tp/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/l2tp/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/lldp/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/monitoring/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/nat/4-to-5
+/opt/vyatta/etc/config-migrate/migrate/nat66/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/ntp/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/ntp/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/openconnect/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/openconnect/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/ospf/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/ospf/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/policy/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/policy/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/policy/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/policy/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/policy/4-to-5
+/opt/vyatta/etc/config-migrate/migrate/pppoe-server/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/pppoe-server/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/pppoe-server/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/pppoe-server/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/pppoe-server/4-to-5
+/opt/vyatta/etc/config-migrate/migrate/pppoe-server/5-to-6
+/opt/vyatta/etc/config-migrate/migrate/pptp/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/pptp/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/qos/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/quagga/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/quagga/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/quagga/4-to-5
+/opt/vyatta/etc/config-migrate/migrate/quagga/5-to-6
+/opt/vyatta/etc/config-migrate/migrate/quagga/6-to-7
+/opt/vyatta/etc/config-migrate/migrate/quagga/7-to-8
+/opt/vyatta/etc/config-migrate/migrate/quagga/8-to-9
+/opt/vyatta/etc/config-migrate/migrate/quagga/9-to-10
+/opt/vyatta/etc/config-migrate/migrate/quagga/10-to-11
+/opt/vyatta/etc/config-migrate/migrate/bgp/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/bgp/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/bgp/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/bgp/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/rip/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/rpki/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/salt/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/snmp/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/snmp/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/snmp/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/ssh/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/ssh/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/sstp/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/sstp/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/sstp/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/sstp/3-to-4
+/opt/vyatta/etc/config-migrate/migrate/system/6-to-7
+/opt/vyatta/etc/config-migrate/migrate/system/7-to-8
+/opt/vyatta/etc/config-migrate/migrate/system/8-to-9
+/opt/vyatta/etc/config-migrate/migrate/system/10-to-11
+/opt/vyatta/etc/config-migrate/migrate/system/11-to-12
+/opt/vyatta/etc/config-migrate/migrate/system/12-to-13
+/opt/vyatta/etc/config-migrate/migrate/system/13-to-14
+/opt/vyatta/etc/config-migrate/migrate/system/14-to-15
+/opt/vyatta/etc/config-migrate/migrate/system/15-to-16
+/opt/vyatta/etc/config-migrate/migrate/system/16-to-17
+/opt/vyatta/etc/config-migrate/migrate/system/17-to-18
+/opt/vyatta/etc/config-migrate/migrate/system/18-to-19
+- op: set path: ['system', 'name-servers-dhcp'] value: eth0 replace: False
+- op: delete path: ['system', 'disable-dhcp-nameservers']
+/opt/vyatta/etc/config-migrate/migrate/system/19-to-20
+/opt/vyatta/etc/config-migrate/migrate/system/20-to-21
+- op: set path: ['system', 'name-server'] value: eth0 replace: False
+- op: delete path: ['system', 'name-servers-dhcp']
+/opt/vyatta/etc/config-migrate/migrate/system/21-to-22
+/opt/vyatta/etc/config-migrate/migrate/system/22-to-23
+/opt/vyatta/etc/config-migrate/migrate/system/23-to-24
+/opt/vyatta/etc/config-migrate/migrate/system/24-to-25
+/opt/vyatta/etc/config-migrate/migrate/system/25-to-26
+- op: rename old_path: ['system', 'syslog', 'global', 'facility', 'protocols'] new_path: ['system', 'syslog', 'global', 'facility', 'local7']
+/opt/vyatta/etc/config-migrate/migrate/vrf/0-to-1
+/opt/vyatta/etc/config-migrate/migrate/vrf/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/vrf/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/vrrp/1-to-2
+/opt/vyatta/etc/config-migrate/migrate/vrrp/2-to-3
+/opt/vyatta/etc/config-migrate/migrate/webproxy/1-to-2

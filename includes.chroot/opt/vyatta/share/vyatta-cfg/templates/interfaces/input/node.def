@@ -1,0 +1,7 @@
+tag:
+type: txt
+priority: 310
+help: Input Functional Block (IFB) interface name
+val_help: ifbN; Input interface name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'ifb[0-9]+\'   --value \'$VAR(@)\'"; "Input interface must be named ifbN"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/interfaces-input.py"

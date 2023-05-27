@@ -1,0 +1,4 @@
+type: txt
+help: Set jump target. Action jump must be defined in default-action
+			to use this setting
+allowed: /bin/cli-shell-api listNodes firewall name

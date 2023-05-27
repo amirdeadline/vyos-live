@@ -1,0 +1,10 @@
+tag:
+type: txt
+help: Local role for BGP neighbor (RFC9234)
+val_help: customer; Using Transit
+val_help: peer; Public/Private Peering
+val_help: provider; Providing Transit
+val_help: rs-client; RS Client
+val_help: rs-server; Route Server
+allowed: echo "customer peer provider rs-client rs-server"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(provider|rs-server|rs-client|customer|peer)\'   --value \'$VAR(@)\'"; "BGP local-role must be one of the following: customer, peer, provider, rs-client or rs-server"

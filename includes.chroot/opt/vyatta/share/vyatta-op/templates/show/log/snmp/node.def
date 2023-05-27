@@ -1,0 +1,2 @@
+help: Show log for Simple Network Monitoring Protocol (SNMP)
+run: journalctl --no-hostname --boot --unit snmpd.service

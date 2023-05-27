@@ -1,0 +1,5 @@
+type: txt
+help: Number of tries to send Access-Request/Accounting-Request
+			queries (default: 3)
+val_help: u32:1-20; Maximum tries
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-20\"  --value \'$VAR(@)\'"; "Maximum tries must be between 1 and 20"

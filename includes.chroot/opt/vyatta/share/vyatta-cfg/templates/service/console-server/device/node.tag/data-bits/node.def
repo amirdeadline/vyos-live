@@ -1,0 +1,4 @@
+type: txt
+help: Serial port data bits (default: 8)
+allowed: echo "7 8"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 7-8\"  --value \'$VAR(@)\'"; "Invalid value"

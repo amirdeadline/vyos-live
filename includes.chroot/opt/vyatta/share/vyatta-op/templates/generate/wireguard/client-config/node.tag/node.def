@@ -1,0 +1,2 @@
+help: Generate Client config QR code
+allowed: echo "<client-name>"

@@ -1,0 +1,2 @@
+help: Show linkstate Network information
+allowed: echo "<x.x.x.x>"

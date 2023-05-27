@@ -1,0 +1,2 @@
+help: Display LSAs of unknown origin
+run: vtysh -c "debug ospf6 ${@:5}"

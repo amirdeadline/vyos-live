@@ -1,0 +1,2 @@
+help: Show detailed GENEVE interface information
+run: ${vyos_op_scripts_dir}/interfaces.py show --intf_type=geneve

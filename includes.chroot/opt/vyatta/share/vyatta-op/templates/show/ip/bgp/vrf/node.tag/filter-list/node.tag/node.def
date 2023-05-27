@@ -1,0 +1,2 @@
+help: Display routes conforming to the filter-list
+allowed: vtysh -c 'show bgp as-path-access-list' | grep 'AS path access list' | awk '{print $NF}'

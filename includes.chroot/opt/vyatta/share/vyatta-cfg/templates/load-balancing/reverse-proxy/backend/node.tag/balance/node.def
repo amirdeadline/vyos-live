@@ -1,0 +1,7 @@
+type: txt
+help: Load-balancing algorithm (default: round-robin)
+val_help: source-address; Based on hash of source IP address
+val_help: round-robin; Round robin (default)
+val_help: least-connection; Least connection
+allowed: echo "source-address round-robin least-connection"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(source-address|round-robin|least-connection)\'   --value \'$VAR(@)\'"; "Invalid value"

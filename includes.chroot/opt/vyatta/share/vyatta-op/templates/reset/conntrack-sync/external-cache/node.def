@@ -1,0 +1,2 @@
+help: Reset external cache and request resync with other systems
+run: sudo ${vyos_op_scripts_dir}/conntrack_sync.py --reset-cache-external

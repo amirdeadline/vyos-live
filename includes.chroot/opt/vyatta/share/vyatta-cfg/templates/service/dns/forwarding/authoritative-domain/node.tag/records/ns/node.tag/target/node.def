@@ -1,0 +1,4 @@
+type: txt
+help: Target DNS server authoritative for subdomain
+val_help: nsXX.example.com; Absolute DNS name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9.]{1,63}(?<!\\.)\'   --value \'$VAR(@)\'"; "Invalid value"

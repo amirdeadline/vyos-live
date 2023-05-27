@@ -1,0 +1,4 @@
+help: Sign generated CA certificate with another specified CA
+			certificate
+allowed: /bin/cli-shell-api listActiveNodes pki ca | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/pki.py --action generate --ca "noname" --sign "$5"

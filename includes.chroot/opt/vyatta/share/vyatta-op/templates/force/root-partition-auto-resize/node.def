@@ -1,0 +1,2 @@
+help: Resize the VyOS partition
+run: sudo ${vyos_op_scripts_dir}/force_root-partition-auto-resize.sh

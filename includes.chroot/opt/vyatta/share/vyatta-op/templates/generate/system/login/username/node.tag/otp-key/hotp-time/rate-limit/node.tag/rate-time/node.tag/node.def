@@ -1,0 +1,2 @@
+help: The number of digits in the one-time password
+run: sudo ${vyos_op_scripts_dir}/generate_system_login_user.py --username "$5" --rate_limit "$9" --rate_time "${11}" 

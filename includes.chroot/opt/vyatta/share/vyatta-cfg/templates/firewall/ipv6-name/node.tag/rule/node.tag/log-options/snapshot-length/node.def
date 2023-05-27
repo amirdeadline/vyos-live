@@ -1,0 +1,4 @@
+type: txt
+help: Length of packet payload to include in netlink message
+val_help: u32:0-9000; Length of packet payload to include in netlink message
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-9000\"  --value \'$VAR(@)\'"; "Invalid value"

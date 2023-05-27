@@ -1,0 +1,4 @@
+type: txt
+help: Mirror egress traffic to destination interface
+val_help: txt; Destination interface name
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

@@ -1,0 +1,4 @@
+type: txt
+help: Time of day to stop matching rule
+val_help: txt; Enter time using using 24 hour notation - hh:mm:ss
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([0-2][0-9](\\:[0-5][0-9]){1,2})\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,3 @@
+type: txt
+help: BGP large-community-list to match
+allowed: /bin/cli-shell-api listNodes policy large-community-list

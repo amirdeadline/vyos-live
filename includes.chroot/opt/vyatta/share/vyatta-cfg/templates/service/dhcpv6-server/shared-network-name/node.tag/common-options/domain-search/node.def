@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Client Domain Name search list
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid domain name (RFC 1123 section 2).\nMay only contain letters, numbers, period, and underscore."

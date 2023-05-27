@@ -1,0 +1,7 @@
+type: txt
+help: Client authentication mode (default: eap-mschapv2)
+val_help: eap-tls; Use EAP-TLS authentication
+val_help: eap-mschapv2; Use EAP-MSCHAPv2 authentication (default)
+val_help: eap-radius; Use EAP-RADIUS authentication
+allowed: echo "eap-tls eap-mschapv2 eap-radius"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(eap-tls|eap-mschapv2|eap-radius)\'   --value \'$VAR(@)\'"; "Invalid value"

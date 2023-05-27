@@ -1,0 +1,2 @@
+help: Show zone policy information
+run: sudo ${vyos_op_scripts_dir}/zone.py show

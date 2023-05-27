@@ -1,0 +1,3 @@
+help: Profile name as seen under system profiles
+allowed: echo "<name>"
+run: ${vyos_op_scripts_dir}/ikev2_profile_generator.py --os ios --connection "$5" --remote "$7" --profile "$9"

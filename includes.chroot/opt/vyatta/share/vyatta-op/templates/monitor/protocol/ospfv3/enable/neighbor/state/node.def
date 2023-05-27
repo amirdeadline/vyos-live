@@ -1,0 +1,2 @@
+help: Debug OSPFv3 Neighbor State Change
+run: vtysh -c "debug ospf6 ${@:5}"

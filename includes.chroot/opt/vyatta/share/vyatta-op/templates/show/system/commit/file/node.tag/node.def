@@ -1,0 +1,2 @@
+help: Show commit revision file
+run: ${vyos_op_scripts_dir}/config_mgmt.py show_commit_file --rev "$5"

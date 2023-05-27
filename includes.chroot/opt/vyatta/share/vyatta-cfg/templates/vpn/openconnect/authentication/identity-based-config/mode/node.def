@@ -1,0 +1,7 @@
+type: txt
+help: Select per user or per group configuration file - ignored if
+			authentication group is configured
+val_help: user; Match configuration file on username
+val_help: group; Match RADIUS response class attribute as file name
+allowed: echo "user group"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(user|group)\'   --value \'$VAR(@)\'"; "Invalid mode, must be either user or group"

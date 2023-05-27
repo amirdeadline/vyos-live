@@ -1,0 +1,6 @@
+type: txt
+help: Local address to bind our peer listener to
+val_help: ipv4; Local IPv4 address used to connect to the peer
+val_help: ipv6; Local IPv6 address used to connect to the peer
+allowed: sh -c "${vyos_completion_dir}/list_local_ips.sh --both"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

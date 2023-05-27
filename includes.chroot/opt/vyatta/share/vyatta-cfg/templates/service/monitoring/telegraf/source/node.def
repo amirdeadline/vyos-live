@@ -1,0 +1,11 @@
+multi:
+type: txt
+help: Source parameters for monitoring (default: all)
+val_help: all; All parameters (default)
+val_help: hardware-utilization; Hardware-utilization parameters (CPU, disk, memory)
+val_help: logs; Logs parameters
+val_help: network; Network parameters (net, netstat, nftables)
+val_help: system; System parameters (system, processes, interrupts)
+val_help: telegraf; Telegraf internal statistics
+allowed: echo "all hardware-utilization logs network system telegraf"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(all|hardware-utilization|logs|network|system|telegraf)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: peer Cluster
+val_help: ipv4; Cluster Peer Loopback IP address
+syntax:expression: exec "${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \" --exec \"${vyos_validators_dir}/file-path --lookup-path /sys/class/net --directory \"  --value \'$VAR(@)\'"; "Invalid value"

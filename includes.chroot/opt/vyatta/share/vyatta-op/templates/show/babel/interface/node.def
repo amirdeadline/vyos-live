@@ -1,0 +1,2 @@
+help: Show Babel Interface information
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

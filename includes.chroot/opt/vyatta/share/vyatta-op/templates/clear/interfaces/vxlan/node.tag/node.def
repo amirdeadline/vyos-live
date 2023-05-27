@@ -1,0 +1,2 @@
+help: Clear interface information for a given VXLAN interface
+allowed: ${vyos_completion_dir}/list_interfaces --type vxlan

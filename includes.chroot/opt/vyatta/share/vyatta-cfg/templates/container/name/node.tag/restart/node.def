@@ -1,0 +1,7 @@
+type: txt
+help: Restart options for container (default: on-failure)
+val_help: no; Do not restart containers on exit
+val_help: on-failure; Restart containers when they exit with a non-zero exit code, retrying indefinitely (default)
+val_help: always; Restart containers when they exit, regardless of status, retrying indefinitely
+allowed: echo "no on-failure always"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(no|on-failure|always)\'   --value \'$VAR(@)\'"; "Invalid value"

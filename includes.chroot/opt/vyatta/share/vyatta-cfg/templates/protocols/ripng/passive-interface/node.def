@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Passive interface
+val_help: txt; Suppress routing updates on interface
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

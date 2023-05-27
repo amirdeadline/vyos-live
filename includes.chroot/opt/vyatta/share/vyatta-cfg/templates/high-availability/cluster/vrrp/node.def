@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: VRRP Group used for Cluster HA
+val_help: txt; VRRP Group ID
+allowed: /bin/cli-shell-api listNodes high-availability vrrp group

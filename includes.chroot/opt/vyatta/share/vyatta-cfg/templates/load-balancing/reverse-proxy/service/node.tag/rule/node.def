@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Proxy rule number
+val_help: u32:1-10000; Number for this proxy rule
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-10000\"  --value \'$VAR(@)\'"; "Proxy rule number must be between 1 and 10000"

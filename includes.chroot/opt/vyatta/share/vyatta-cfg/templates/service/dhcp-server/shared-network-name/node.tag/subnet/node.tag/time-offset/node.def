@@ -1,0 +1,5 @@
+type: txt
+help: Client subnet offset in seconds from Coordinated Universal Time
+			(UTC)
+val_help: [-]N; Time offset (number, may be negative)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'-?[0-9]+\'   --value \'$VAR(@)\'"; "Invalid time offset value"

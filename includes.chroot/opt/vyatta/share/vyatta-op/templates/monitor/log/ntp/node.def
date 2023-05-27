@@ -1,0 +1,2 @@
+help: Monitor last lines of Network Time Protocol (NTP) log
+run: journalctl --no-hostname --boot --follow --unit chrony.service

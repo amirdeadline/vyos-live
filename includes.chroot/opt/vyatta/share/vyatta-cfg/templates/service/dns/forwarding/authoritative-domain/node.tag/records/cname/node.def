@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: "CNAME" record
+val_help: txt; A DNS name relative to the root record
+val_help: @; Root record
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([-_a-zA-Z0-9.]{1,63}|@)(?<!\\.)\'   --value \'$VAR(@)\'"; "Invalid value"

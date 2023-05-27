@@ -1,0 +1,7 @@
+tag:
+type: txt
+priority: 380
+help: Tunnel interface
+val_help: tunN; Tunnel interface name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'tun[0-9]+\'   --value \'$VAR(@)\'"; "tunnel interface must be named tunN"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/interfaces-tunnel.py"

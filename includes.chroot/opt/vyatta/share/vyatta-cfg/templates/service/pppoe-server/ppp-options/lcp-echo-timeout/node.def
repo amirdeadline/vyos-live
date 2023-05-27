@@ -1,0 +1,5 @@
+type: txt
+help: Timeout in seconds to wait for any peer activity. If this option
+			specified it turns on adaptive lcp echo functionality and
+			"lcp-echo-failure" is not used. (default: 0)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --positive\"  --value \'$VAR(@)\'"; "Invalid value"

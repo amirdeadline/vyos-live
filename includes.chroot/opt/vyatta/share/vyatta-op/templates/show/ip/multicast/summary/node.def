@@ -1,0 +1,2 @@
+help: IP multicast information
+run: vtysh -c "show ip multicast"

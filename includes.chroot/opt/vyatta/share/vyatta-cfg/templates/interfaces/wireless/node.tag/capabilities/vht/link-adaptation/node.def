@@ -1,0 +1,6 @@
+type: txt
+help: VHT link adaptation capabilities
+val_help: unsolicited; Station provides only unsolicited VHT MFB
+val_help: both; Station can provide VHT MFB in response to VHT MRQ and unsolicited VHT MFB
+allowed: echo "unsolicited both"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(unsolicited|both)\'   --value \'$VAR(@)\'"; "Invalid capability item"

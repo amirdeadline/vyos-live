@@ -1,0 +1,2 @@
+help: Show log for IPoE server
+run: journalctl --no-hostname --boot --unit accel-ppp@ipoe.service

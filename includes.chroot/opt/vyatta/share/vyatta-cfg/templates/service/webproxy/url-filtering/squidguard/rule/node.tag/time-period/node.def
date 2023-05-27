@@ -1,0 +1,4 @@
+type: txt
+help: Time-period for this rule
+val_help: period; Time period for this rule
+allowed: /bin/cli-shell-api listNodes service webproxy url-filtering squidguard time-period

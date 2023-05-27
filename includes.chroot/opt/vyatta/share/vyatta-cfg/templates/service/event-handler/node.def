@@ -1,0 +1,2 @@
+help: Service event handler
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/service_event_handler.py"

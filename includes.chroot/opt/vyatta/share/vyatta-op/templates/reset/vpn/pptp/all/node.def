@@ -1,0 +1,2 @@
+help: Reset all PPTP server VPN sessions
+run: sudo ${vyos_op_scripts_dir}/reset_vpn.py reset_conn --protocol="pptp"

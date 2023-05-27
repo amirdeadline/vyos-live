@@ -1,0 +1,3 @@
+type: txt
+help: IPv6 prefix-list to match
+allowed: /bin/cli-shell-api listNodes policy prefix-list6

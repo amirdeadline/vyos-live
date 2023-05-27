@@ -1,0 +1,2 @@
+help: Show log for ISIS
+run: journalctl --boot /usr/lib/frr/isisd

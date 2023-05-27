@@ -1,0 +1,3 @@
+help: IP address/FQDN used for client connection
+allowed: echo "<hostname>" && ${vyos_completion_dir}/list_local_ips.sh --both
+run: sudo ${vyos_op_scripts_dir}/wireguard_client.py --name "$4" --interface "$6" --server "$8"

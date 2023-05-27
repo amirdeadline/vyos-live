@@ -1,0 +1,4 @@
+type: txt
+help: Acceptable minimum standing/persistent queue delay (default: 5)
+val_help: u32; Queue delay in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Delay must be in range 0 to 4294967295"

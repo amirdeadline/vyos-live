@@ -1,0 +1,2 @@
+help: Show users on various consoles
+run: /usr/bin/console -u

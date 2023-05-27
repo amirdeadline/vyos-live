@@ -1,0 +1,4 @@
+type: txt
+help: Use the last AS-number in the as-path
+val_help: u32:1-10; Number of times to insert
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-10\"  --value \'$VAR(@)\'"; "Invalid value"

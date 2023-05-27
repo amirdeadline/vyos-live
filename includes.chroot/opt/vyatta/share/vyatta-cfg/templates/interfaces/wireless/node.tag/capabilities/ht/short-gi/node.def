@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Short GI capabilities
+val_help: 20; Short GI for 20 MHz
+val_help: 40; Short GI for 40 MHz
+allowed: echo "20 40"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(20|40)\'   --value \'$VAR(@)\'"; "Invalid value"

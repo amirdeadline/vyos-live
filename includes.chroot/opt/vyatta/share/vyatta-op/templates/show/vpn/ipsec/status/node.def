@@ -1,0 +1,2 @@
+help: Show status of IPsec process
+run: if systemctl is-active --quiet strongswan >/dev/null ; then echo -e "IPsec Process Running: $(pgrep charon)\n$(sudo /usr/sbin/ipsec status)" ; else echo "IPsec process not running" ; fi

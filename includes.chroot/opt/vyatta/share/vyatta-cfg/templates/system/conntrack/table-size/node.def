@@ -1,0 +1,4 @@
+type: txt
+help: Size of connection tracking table (default: 262144)
+val_help: u32:1-50000000; Number of entries allowed in connection tracking table
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-50000000\"  --value \'$VAR(@)\'"; "Invalid value"

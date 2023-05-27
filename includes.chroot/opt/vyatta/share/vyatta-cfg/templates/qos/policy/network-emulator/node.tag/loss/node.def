@@ -1,0 +1,5 @@
+type: txt
+help: Add independent loss probability to the packets outgoing to
+			chosen network interface
+val_help: <number>; Percentage of packets affected
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-100\"  --value \'$VAR(@)\'"; "Must be between 0 and 100"

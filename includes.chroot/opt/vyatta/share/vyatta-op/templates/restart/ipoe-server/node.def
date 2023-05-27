@@ -1,0 +1,2 @@
+help: Restart IPoE (Internet Protocol over Ethernet) server process
+run: ${vyos_op_scripts_dir}/ipoe-control.py --action="restart"

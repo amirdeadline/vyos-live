@@ -1,0 +1,2 @@
+help: Import DH parameters into PKI
+allowed: echo "<name>"

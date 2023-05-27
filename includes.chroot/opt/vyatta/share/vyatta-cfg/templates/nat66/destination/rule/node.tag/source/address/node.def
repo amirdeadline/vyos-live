@@ -1,0 +1,7 @@
+type: txt
+help: IPv6 address or prefix to be translated
+val_help: ipv6; IPv6 address
+val_help: ipv6net; IPv6 prefix
+val_help: !ipv6; Match everything except the specified IPv6 address
+val_help: !ipv6net; Match everything except the specified IPv6 prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-address \" --exec \"${vyos_validators_dir}/ipv6-prefix \" --exec \"${vyos_validators_dir}/ipv6-address-exclude \" --exec \"${vyos_validators_dir}/ipv6-prefix-exclude \"  --value \'$VAR(@)\'"; "Invalid value"

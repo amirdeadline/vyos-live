@@ -1,0 +1,3 @@
+help: Show DHCPv6 server leases sorted by the specified key
+allowed: echo "end iaid_duid ip last_communication pool remaining state type"
+run: ${vyos_op_scripts_dir}/dhcp.py show_server_leases --family inet6 --sort $6

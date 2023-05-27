@@ -1,0 +1,2 @@
+help: Show multicast interfaces
+run: ${vyos_op_scripts_dir}/igmp-proxy.py show_interface

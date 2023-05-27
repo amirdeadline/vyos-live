@@ -1,0 +1,3 @@
+help: Show LLDP for specified interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: ${vyos_op_scripts_dir}/lldp.py show_neighbors --interface $5

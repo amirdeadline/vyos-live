@@ -1,0 +1,3 @@
+priority: 100
+help: Serial console configuration
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/system_console.py"

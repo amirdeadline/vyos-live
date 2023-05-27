@@ -1,0 +1,2 @@
+help: Show VRF (Virtual Routing and Forwarding) information
+run: ${vyos_op_scripts_dir}/vrf.py show

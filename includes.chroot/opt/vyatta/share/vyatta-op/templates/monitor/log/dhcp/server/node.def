@@ -1,0 +1,2 @@
+help: Monitor last lines of DHCP server
+run: journalctl --no-hostname --follow --boot --unit isc-dhcp-server.service

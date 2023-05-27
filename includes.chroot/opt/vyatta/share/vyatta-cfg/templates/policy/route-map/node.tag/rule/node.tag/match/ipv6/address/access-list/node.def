@@ -1,0 +1,4 @@
+type: txt
+help: IPv6 access-list to match
+val_help: txt; IPV6 access list name
+allowed: /bin/cli-shell-api listNodes policy access-list6

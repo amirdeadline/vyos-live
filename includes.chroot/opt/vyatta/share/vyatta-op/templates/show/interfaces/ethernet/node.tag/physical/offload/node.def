@@ -1,0 +1,2 @@
+help: Show physical device offloading capabilities
+run: ethtool --show-features "$4" | sed -e 1d -e '/fixed/d' -e 's/^\t*//g' -e 's/://' | column -t -s' '

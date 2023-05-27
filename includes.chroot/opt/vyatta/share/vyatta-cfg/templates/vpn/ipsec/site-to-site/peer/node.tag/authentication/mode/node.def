@@ -1,0 +1,7 @@
+type: txt
+help: Authentication mode
+val_help: pre-shared-secret; Use pre-shared secret key
+val_help: rsa; Use RSA key
+val_help: x509; Use x.509 certificate
+allowed: echo "pre-shared-secret rsa x509"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(pre-shared-secret|rsa|x509)\'   --value \'$VAR(@)\'"; "Invalid value"

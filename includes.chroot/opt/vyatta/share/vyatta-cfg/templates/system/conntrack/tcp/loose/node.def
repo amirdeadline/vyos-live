@@ -1,0 +1,7 @@
+type: txt
+help: Policy to track previously established connections (default:
+			enable)
+val_help: enable; Allow tracking of previously established connections (default)
+val_help: disable; Do not allow tracking of previously established connections
+allowed: echo "enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show detailed information
+run: vtysh -c "show mpls ldp neighbor detail"

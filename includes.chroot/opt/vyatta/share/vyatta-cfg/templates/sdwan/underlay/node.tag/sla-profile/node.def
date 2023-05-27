@@ -1,0 +1,7 @@
+type: txt
+help: SLA Profile name
+val_help: txt; SLA Profile name
+allowed: /bin/cli-shell-api listNodes sdwan sla-profiles
+create: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/sdwan-underlay.py create"
+update: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/sdwan-underlay.py update"
+delete: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/sdwan-underlay.py delete"

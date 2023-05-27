@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: VXLAN Network Identifier
+val_help: u32:1-16777215; VNI number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-16777215\"  --value \'$VAR(@)\'"; "Invalid value"

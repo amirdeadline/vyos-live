@@ -1,0 +1,2 @@
+help: Show conntrack-sync status
+run: sudo ${vyos_op_scripts_dir}/conntrack_sync.py --show-status

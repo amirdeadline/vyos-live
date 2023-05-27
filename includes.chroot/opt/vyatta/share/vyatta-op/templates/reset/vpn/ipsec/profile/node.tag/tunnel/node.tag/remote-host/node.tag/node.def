@@ -1,0 +1,3 @@
+help: Reset a specific tunnel for given DMVPN NBMA
+allowed: echo "<x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: sudo ${vyos_op_scripts_dir}/ipsec.py reset_profile_dst --profile="$5" --tunnel="$7" --nbma_dst="$9"

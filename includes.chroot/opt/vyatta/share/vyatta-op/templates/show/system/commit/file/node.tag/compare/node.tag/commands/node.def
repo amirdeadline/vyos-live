@@ -1,0 +1,2 @@
+help: Compare config file revision commands
+run: ${vyos_op_scripts_dir}/config_mgmt.py show_commit_diff --rev "$5" --rev2 "$7" --commands

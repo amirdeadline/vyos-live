@@ -1,0 +1,2 @@
+help: Send gratuitous ARP request on specified interface
+allowed: ${vyos_completion_dir}/list_interfaces --broadcast

@@ -1,0 +1,4 @@
+type: txt
+help: First IP address for DHCP lease range
+val_help: ipv4; IPv4 start address of pool
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

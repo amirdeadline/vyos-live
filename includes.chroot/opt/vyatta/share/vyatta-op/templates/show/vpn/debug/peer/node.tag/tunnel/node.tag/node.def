@@ -1,0 +1,2 @@
+help: Show debug information for peer tunnel
+run: sudo ${vyos_op_scripts_dir}/vpn_ipsec.py --action="vpn-debug" --name="$5" --tunnel="$7"

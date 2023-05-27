@@ -1,0 +1,7 @@
+type: txt
+help: Wireless device type for this interface (default: monitor)
+val_help: access-point; Access-point forwards packets between other nodes
+val_help: station; Connects to another access point
+val_help: monitor; Passively monitor all packets on the frequency/channel (default)
+allowed: echo "access-point station monitor"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(access-point|station|monitor)\'   --value \'$VAR(@)\'"; "Type must be access-point, station or monitor"

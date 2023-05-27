@@ -1,0 +1,2 @@
+help: Detailed information on TCP and BGP neighbor connections
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

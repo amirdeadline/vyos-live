@@ -1,0 +1,2 @@
+help: Show currently monitored services
+run: vtysh -c "show debugging"

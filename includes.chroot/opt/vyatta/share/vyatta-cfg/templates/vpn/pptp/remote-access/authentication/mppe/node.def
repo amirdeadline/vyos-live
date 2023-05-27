@@ -1,0 +1,8 @@
+type: txt
+help: Specifies mppe negotioation preference. (default require mppe
+			128-bit stateless
+val_help: deny; deny mppe
+val_help: prefer; ask client for mppe, if it rejects do not fail
+val_help: require; ask client for mppe, if it rejects drop connection
+allowed: echo "deny prefer require"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(deny|prefer|require)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Key/secret the token algorithm (see RFC4226)
+val_help: txt; Base32 encoded key/token
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z2-7]{26,10000}\'   --value \'$VAR(@)\'"; "Key must only include base32 characters and be at least 26 characters long"

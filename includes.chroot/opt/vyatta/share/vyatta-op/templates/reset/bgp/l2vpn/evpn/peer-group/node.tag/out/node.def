@@ -1,0 +1,2 @@
+help: Resend all outbound updates
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

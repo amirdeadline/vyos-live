@@ -1,0 +1,3 @@
+type: u32
+help: Max average Jitter in last 5 min (ms)
+val_help: Jitter in (ms)

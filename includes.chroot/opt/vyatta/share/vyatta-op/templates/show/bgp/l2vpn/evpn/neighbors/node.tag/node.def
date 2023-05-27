@@ -1,0 +1,3 @@
+help: Show detailed BGP neighbor information
+allowed: vtysh -c 'show bgp summary' | awk '{print $1'} | grep -e '^[0-9a-f]'
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

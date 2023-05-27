@@ -1,0 +1,8 @@
+tag:
+type: txt
+priority: 318
+help: Wireless (WiFi/WLAN) Network Interface
+val_help: wlanN; Wireless (WiFi/WLAN) interface name
+allowed: sh -c "cd /sys/class/net; if compgen -G "wlan*" > /dev/null; then ls -d wlan*; fi"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'wlan[0-9]+\'   --value \'$VAR(@)\'"; "Wireless interface must be named wlanN"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/interfaces-wireless.py"

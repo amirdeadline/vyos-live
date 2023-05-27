@@ -1,0 +1,15 @@
+type: txt
+help: Link speed (default: auto)
+val_help: auto; Auto negotiation (default)
+val_help: 10; 10 Mbit/sec
+val_help: 100; 100 Mbit/sec
+val_help: 1000; 1 Gbit/sec
+val_help: 2500; 2.5 Gbit/sec
+val_help: 5000; 5 Gbit/sec
+val_help: 10000; 10 Gbit/sec
+val_help: 25000; 25 Gbit/sec
+val_help: 40000; 40 Gbit/sec
+val_help: 50000; 50 Gbit/sec
+val_help: 100000; 100 Gbit/sec
+allowed: echo "auto 10 100 1000 2500 5000 10000 25000 40000 50000 100000"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(auto|10|100|1000|2500|5000|10000|25000|40000|50000|100000)\'   --value \'$VAR(@)\'"; "Speed must be auto, 10, 100, 1000, 2500, 5000, 10000, 25000, 40000, 50000 or 100000"

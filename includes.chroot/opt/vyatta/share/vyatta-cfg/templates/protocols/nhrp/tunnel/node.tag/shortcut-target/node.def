@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Defines an off-NBMA network prefix for which the GRE interface
+			will act as a gateway

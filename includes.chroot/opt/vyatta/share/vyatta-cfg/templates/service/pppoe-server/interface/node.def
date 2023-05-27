@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: interface(s) to listen on
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

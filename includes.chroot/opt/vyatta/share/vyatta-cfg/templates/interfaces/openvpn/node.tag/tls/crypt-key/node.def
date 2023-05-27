@@ -1,0 +1,3 @@
+type: txt
+help: Static key to use to authenticate control channel
+allowed: /bin/cli-shell-api listNodes pki openvpn shared-secret

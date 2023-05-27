@@ -1,0 +1,2 @@
+help: Add NTA (negative trust anchor) for this domain (must be set if
+			the domain does not support DNSSEC)

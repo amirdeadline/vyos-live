@@ -1,0 +1,3 @@
+help: Require stations to support HT PHY (reject association if they
+			do not)
+allowed: sh -c "echo If you reject non-HT, you also disable 802.11g"

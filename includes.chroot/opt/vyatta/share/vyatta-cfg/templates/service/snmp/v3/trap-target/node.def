@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: Defines SNMP target for inform or traps for IP
+val_help: ipv4; IP address of trap target
+val_help: ipv6; IPv6 address of trap target
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/ipv6-address \"  --value \'$VAR(@)\'"; "Invalid value"

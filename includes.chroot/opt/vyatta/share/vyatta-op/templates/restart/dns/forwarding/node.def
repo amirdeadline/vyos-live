@@ -1,0 +1,2 @@
+help: Restart DNS forwarding service
+run: sudo ${vyos_op_scripts_dir}/dns_forwarding_restart.sh

@@ -1,0 +1,4 @@
+type: txt
+help: Parity setting (default: none)
+allowed: echo "even odd none"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(even|odd|none)\'   --value \'$VAR(@)\'"; "Invalid value"

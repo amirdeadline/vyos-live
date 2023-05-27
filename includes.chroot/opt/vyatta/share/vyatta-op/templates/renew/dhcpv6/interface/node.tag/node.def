@@ -1,0 +1,3 @@
+help: Renew DHCPv6 client lease for specified interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: sudo systemctl restart "dhcp6c@$4.service"

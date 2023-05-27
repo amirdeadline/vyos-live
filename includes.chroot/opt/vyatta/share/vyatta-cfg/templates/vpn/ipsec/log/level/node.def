@@ -1,0 +1,6 @@
+type: txt
+help: Global IPsec logging Level (default: 0)
+val_help: 0; Very basic auditing logs (e.g., SA up/SA down) (default)
+val_help: 1; Generic control flow with errors, a good default to see whats going on
+val_help: 2; More detailed debugging control flow
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-2\"  --value \'$VAR(@)\'"; "Invalid value"

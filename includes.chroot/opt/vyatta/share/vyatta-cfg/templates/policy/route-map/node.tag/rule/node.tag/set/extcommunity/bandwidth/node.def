@@ -1,0 +1,7 @@
+type: txt
+help: Bandwidth value in Mbps
+val_help: u32:1-25600; Bandwidth value in Mbps
+val_help: cumulative; Cumulative bandwidth of all multipaths (outbound-only)
+val_help: num-multipaths; Internally computed bandwidth based on number of multipaths (outbound-only)
+allowed: echo "cumulative num-multipaths"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(cumulative|num-multipaths)\' --exec \"${vyos_validators_dir}/numeric --range 1-25600\"  --value \'$VAR(@)\'"; "Invalid value"

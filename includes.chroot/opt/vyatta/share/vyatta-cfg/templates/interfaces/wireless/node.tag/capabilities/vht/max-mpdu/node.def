@@ -1,0 +1,7 @@
+type: txt
+help: Increase Maximum MPDU length to 7991 or 11454 octets (otherwise:
+			3895 octets)
+val_help: 7991; ncrease Maximum MPDU length to 7991 octets
+val_help: 11454; ncrease Maximum MPDU length to 11454 octets
+allowed: echo "7991 11454"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(7991|11454)\'   --value \'$VAR(@)\'"; "Invalid value"

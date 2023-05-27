@@ -1,0 +1,7 @@
+type: txt
+help: Squid peer type (default parent) (default: parent)
+val_help: parent; Peer is a parent (default)
+val_help: sibling; Peer is a sibling
+val_help: multicast; Peer is a member of a multicast group
+allowed: echo "parent sibling multicast"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(parent|sibling|multicast)\'   --value \'$VAR(@)\'"; "Invalid value"

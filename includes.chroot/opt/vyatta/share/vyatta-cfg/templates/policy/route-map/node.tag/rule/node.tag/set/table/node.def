@@ -1,0 +1,4 @@
+type: txt
+help: Set prefixes to table
+val_help: u32:1-200; Table value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-200\"  --value \'$VAR(@)\'"; "Invalid value"

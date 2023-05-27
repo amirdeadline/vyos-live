@@ -1,0 +1,5 @@
+type: txt
+help: Regular expression to match against a large community list
+val_help: ASN:NN:NN; BGP large-community-list filter
+val_help: IP:NN:NN; BGP large-community-list filter (IPv4 address format)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/bgp-large-community-list \"  --value \'$VAR(@)\'"; "Malformed large-community-list"

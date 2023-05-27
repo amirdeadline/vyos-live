@@ -1,0 +1,2 @@
+help: Reset specified user on PPTP VPN server
+run: sudo ${vyos_op_scripts_dir}/reset_vpn.py reset_conn --protocol="pptp" --username="$5"

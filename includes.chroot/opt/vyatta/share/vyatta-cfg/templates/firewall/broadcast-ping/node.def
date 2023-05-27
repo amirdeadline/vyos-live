@@ -1,0 +1,7 @@
+type: txt
+help: Policy for handling broadcast IPv4 ICMP echo and timestamp
+			requests (default: disable)
+val_help: enable; Enable processing of broadcast IPv4 ICMP echo/timestamp requests
+val_help: disable; Disable processing of broadcast IPv4 ICMP echo/timestamp requests (default)
+allowed: echo "enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

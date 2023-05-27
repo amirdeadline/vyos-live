@@ -1,0 +1,6 @@
+type: txt
+help: Protocol version (default: 1)
+val_help: 1; ERSPAN Type II (default)
+val_help: 2; ERSPAN Type III
+allowed: echo "1 2"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-2\"  --value \'$VAR(@)\'"; "Invalid value"

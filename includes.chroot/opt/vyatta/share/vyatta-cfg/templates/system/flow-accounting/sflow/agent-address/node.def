@@ -1,0 +1,5 @@
+type: txt
+help: sFlow agent IPv4 address
+val_help: ipv4; sFlow IPv4 agent address
+allowed: echo "auto" && echo " " && sh -c "${vyos_completion_dir}/list_local_ips.sh --ipv4"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

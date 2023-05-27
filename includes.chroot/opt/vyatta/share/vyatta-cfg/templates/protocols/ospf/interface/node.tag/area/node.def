@@ -1,0 +1,6 @@
+type: txt
+help: Enable OSPF on this interface
+val_help: u32; OSPF area ID as decimal notation
+val_help: ipv4; OSPF area ID in IP address notation
+allowed: /bin/cli-shell-api listNodes protocols ospf area
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\" --exec \"${vyos_validators_dir}/ip-address \"  --value \'$VAR(@)\'"; "Invalid value"

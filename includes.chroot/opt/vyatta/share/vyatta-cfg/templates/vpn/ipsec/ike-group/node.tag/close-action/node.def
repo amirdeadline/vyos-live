@@ -1,0 +1,8 @@
+type: txt
+help: Action to take if a child SA is unexpectedly closed (default:
+			none)
+val_help: none; Do nothing (default)
+val_help: hold; Attempt to re-negotiate when matching traffic is seen
+val_help: restart; Attempt to re-negotiate the connection immediately
+allowed: echo "none hold restart"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(none|hold|restart)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,6 @@
+type: txt
+help: Authorization type (default: ro)
+val_help: ro; Read-Only (default)
+val_help: rw; Read-Write
+allowed: echo "ro rw"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ro|rw)\'   --value \'$VAR(@)\'"; "Authorization type must be either 'rw' or 'ro'"

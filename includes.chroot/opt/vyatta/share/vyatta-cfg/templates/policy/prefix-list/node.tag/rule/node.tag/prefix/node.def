@@ -1,0 +1,4 @@
+type: txt
+help: Prefix to match
+val_help: ipv4net; Prefix to match against
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

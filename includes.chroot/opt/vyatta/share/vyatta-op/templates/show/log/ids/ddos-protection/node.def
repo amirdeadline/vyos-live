@@ -1,0 +1,2 @@
+help: Show log for DDOS protection
+run: journalctl --no-hostname --boot --unit fastnetmon.service

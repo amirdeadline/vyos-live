@@ -1,0 +1,4 @@
+type: txt
+help: Secure Connectivity Association Key
+val_help: txt; 16-byte (128-bit) hex-string (32 hex-digits) for gcm-aes-128 or 32-byte (256-bit) hex-string (64 hex-digits) for gcm-aes-256
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[A-Fa-f0-9]{32}\' --regex \'[A-Fa-f0-9]{64}\'   --value \'$VAR(@)\'"; "Invalid value"

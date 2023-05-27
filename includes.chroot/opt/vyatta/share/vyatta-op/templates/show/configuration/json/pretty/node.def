@@ -1,0 +1,2 @@
+help: Show running configuration in readable JSON format
+run: ${vyos_op_scripts_dir}/show_configuration_json.py --pretty

@@ -1,0 +1,2 @@
+help: Do not close and reopen interface (TUN/TAP device) on client
+			restarts

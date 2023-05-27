@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Network emulator policy
+val_help: txt; Policy name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:alnum:]][-_[:alnum:]]*\'   --value \'$VAR(@)\'"; "Only alpha-numeric policy name allowed"

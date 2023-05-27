@@ -1,0 +1,3 @@
+help: Monitor last lines of SSTP client log for specific interface
+allowed: /bin/cli-shell-api listActiveNodes interfaces sstpc | sed -e "s/'//g" && echo
+run: journalctl --no-hostname --boot --follow --unit "ppp@$5.service"

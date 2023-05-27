@@ -1,0 +1,4 @@
+type: txt
+help: Refresh timer
+val_help: u32:10-1800; Timer value in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 10-1800\"  --value \'$VAR(@)\'"; "Invalid value"

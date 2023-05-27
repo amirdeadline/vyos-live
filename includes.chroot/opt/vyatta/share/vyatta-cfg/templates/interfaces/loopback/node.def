@@ -1,0 +1,7 @@
+tag:
+type: txt
+priority: 300
+help: Loopback Interface
+val_help: lo; Loopback interface
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'lo\'   --value \'$VAR(@)\'"; "Loopback interface must be named lo"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/interfaces-loopback.py"

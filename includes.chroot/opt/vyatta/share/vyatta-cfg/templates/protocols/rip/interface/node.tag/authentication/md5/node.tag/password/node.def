@@ -1,0 +1,4 @@
+type: txt
+help: Authentication password
+val_help: txt; MD5 Key (16 characters or less)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[^[:space:]]{1,16}\'   --value \'$VAR(@)\'"; "Password must be 16 characters or less"

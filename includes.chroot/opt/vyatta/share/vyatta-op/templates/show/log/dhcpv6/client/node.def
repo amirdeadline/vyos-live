@@ -1,0 +1,2 @@
+help: Show DHCPv6 client logs
+run: journalctl --no-hostname --boot --unit "dhcp6c@*.service"

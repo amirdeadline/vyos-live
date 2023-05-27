@@ -1,0 +1,2 @@
+help: Reset all tunnels for given peer
+run: sudo ${vyos_op_scripts_dir}/sdwan-sla.py clear "$4"

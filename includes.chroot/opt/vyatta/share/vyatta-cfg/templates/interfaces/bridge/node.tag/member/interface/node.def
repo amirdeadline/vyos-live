@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Member interface name
+allowed: sh -c "${vyos_completion_dir}/list_interfaces --bridgeable"

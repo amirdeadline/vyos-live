@@ -1,0 +1,3 @@
+help: Show all IP prefix-lists
+allowed: /bin/cli-shell-api listActiveNodes policy prefix-list | sed -e "s/'//g" && echo
+run: vtysh -c "show ip prefix-list $4"

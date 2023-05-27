@@ -1,0 +1,3 @@
+help: IPv4/IPv6 nexthop address
+allowed: echo "<x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

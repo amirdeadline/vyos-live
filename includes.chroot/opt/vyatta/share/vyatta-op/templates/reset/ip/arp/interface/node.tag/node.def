@@ -1,0 +1,3 @@
+help: Reset ARP cache for interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: sudo ${vyos_op_scripts_dir}/neighbor.py reset --family inet --interface "$5"

@@ -1,0 +1,4 @@
+type: txt
+help: Number of digits in OTP code (default: 6)
+val_help: u32:6-8; Number of digits in OTP code
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 6-8\"  --value \'$VAR(@)\'"; "Number of digits in OTP code must be between 6 and 8"

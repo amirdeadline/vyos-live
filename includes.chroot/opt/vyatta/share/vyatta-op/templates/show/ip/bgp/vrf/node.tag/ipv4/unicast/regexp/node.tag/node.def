@@ -1,0 +1,3 @@
+help: Show BGP routes matching the specified AS path regular
+			expression
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

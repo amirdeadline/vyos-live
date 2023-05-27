@@ -1,0 +1,3 @@
+help: Renew DHCP client lease for specified interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: sudo systemctl restart "dhclient@$4.service"

@@ -1,0 +1,5 @@
+type: txt
+help: MAC address aging interval (default: 300)
+val_help: u32:0; Disable MAC address learning (always flood)
+val_help: u32:10-1000000; MAC address aging time in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-0 --range 10-1000000\"  --value \'$VAR(@)\'"; "Invalid value"

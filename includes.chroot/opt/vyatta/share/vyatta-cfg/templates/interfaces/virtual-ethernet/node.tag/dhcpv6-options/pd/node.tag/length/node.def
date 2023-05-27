@@ -1,0 +1,4 @@
+type: txt
+help: Request IPv6 prefix length from peer (default: 64)
+val_help: u32:32-64; Length of delegated prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 32-64\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,12 @@
+type: txt
+help: Set log-level
+val_help: emerg; Emerg log level
+val_help: alert; Alert log level
+val_help: crit; Critical log level
+val_help: err; Error log level
+val_help: warn; Warning log level
+val_help: notice; Notice log level
+val_help: info; Info log level
+val_help: debug; Debug log level
+allowed: echo "emerg alert crit err warn notice info debug"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(emerg|alert|crit|err|warn|notice|info|debug)\'   --value \'$VAR(@)\'"; "level must be alert, crit, debug, emerg, err, info, notice or warn"

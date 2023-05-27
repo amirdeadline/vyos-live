@@ -1,0 +1,2 @@
+help: Show log for RIP
+run: journalctl --boot /usr/lib/frr/ripd

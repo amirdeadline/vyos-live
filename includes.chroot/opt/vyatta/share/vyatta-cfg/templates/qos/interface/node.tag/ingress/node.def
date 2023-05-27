@@ -1,0 +1,5 @@
+type: txt
+help: Interface ingress traffic policy
+val_help: txt; QoS policy to use
+allowed: /bin/cli-shell-api listNodes qos policy limiter
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:alnum:]][-_[:alnum:]]*\'   --value \'$VAR(@)\'"; "Only alpha-numeric policy name allowed"

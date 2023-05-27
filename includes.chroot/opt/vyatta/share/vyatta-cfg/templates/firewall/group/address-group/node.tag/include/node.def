@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Include another address-group
+allowed: /bin/cli-shell-api listNodes firewall group address-group

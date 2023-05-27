@@ -1,0 +1,7 @@
+type: txt
+help: Policy for logging IPv4 packets with invalid addresses (default:
+			enable)
+val_help: enable; Enable logging of IPv4 packets with invalid addresses (default)
+val_help: disable; Disable logging of Ipv4 packets with invalid addresses
+allowed: echo "enable disable"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(enable|disable)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show Address Resolution Protocol (ARP) information
+run: ${vyos_op_scripts_dir}/neighbor.py show --family inet

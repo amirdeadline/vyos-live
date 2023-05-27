@@ -1,0 +1,21 @@
+# The arpwatch service file is organized similar as openvpn.service and mostly
+# copied from it
+#
+# This service is actually a systemd target,
+# but we are using a service since targets cannot be reloaded.
+#
+# start/restart/reload on this unit will be propergated to the services for
+# individual interfaces (instanciated using the arpwatch@.service template)
+
+[Unit]
+Description=arpwatch service
+Documentation=man:arpwatch(8)
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/true
+WorkingDirectory=/var/lib/arpwatch
+
+[Install]
+WantedBy=multi-user.target

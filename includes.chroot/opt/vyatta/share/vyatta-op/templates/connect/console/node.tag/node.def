@@ -1,0 +1,3 @@
+help: Connect to device attached to serial console server
+allowed: /bin/cli-shell-api listActiveNodes service console-server device | sed -e "s/'//g" && echo && ${vyos_completion_dir}/list_consoles.sh
+run: /usr/bin/console "$3"

@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: IP address used for ARP monitoring
+val_help: ipv4; Specify IPv4 address of ARP requests when interval is enabled
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

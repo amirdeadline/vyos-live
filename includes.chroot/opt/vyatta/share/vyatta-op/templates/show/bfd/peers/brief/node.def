@@ -1,0 +1,2 @@
+help: Show Bidirectional Forwarding Detection (BFD) peers brief
+run: vtysh -c "show bfd peers brief"

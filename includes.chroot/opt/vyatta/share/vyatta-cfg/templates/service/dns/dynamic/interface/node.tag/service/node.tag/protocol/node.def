@@ -1,0 +1,25 @@
+type: txt
+help: ddclient protocol used for DDNS service
+val_help: changeip; ChangeIP protocol
+val_help: cloudflare; Cloudflare protocol
+val_help: dnsmadeeasy; DNS Made Easy protocol
+val_help: dnspark; DNS Park protocol
+val_help: dondominio; DonDominio protocol
+val_help: dslreports1; DslReports protocol
+val_help: dtdns; DtDNS protocol
+val_help: duckdns; DuckDNS protocol
+val_help: dyndns2; DynDNS protocol v2
+val_help: easydns; easyDNS protocol
+val_help: freedns; FreeDNS protocol
+val_help: freemyip; freemyip protocol
+val_help: googledomains; Google domains protocol
+val_help: hammernode1; Hammernode protocol
+val_help: namecheap; Namecheap protocol
+val_help: nfsn; NearlyFreeSpeech DNS protocol
+val_help: noip; No-IP protocol
+val_help: sitelutions; Sitelutions protocol
+val_help: woima; WOIMA protocol
+val_help: yandex; Yandex.DNS protocol
+val_help: zoneedit1; Zoneedit protocol
+allowed: echo "changeip cloudflare dnsmadeeasy dnspark dondominio dslreports1 dtdns duckdns dyndns2 easydns freedns freemyip googledomains hammernode1 namecheap nfsn noip sitelutions woima yandex zoneedit1"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(changeip|cloudflare|dnsmadeeasy|dnspark|dondominio|dslreports1|dtdns|duckdns|dyndns2|easydns|freedns|freemyip|googledomains|hammernode1|namecheap|nfsn|noip|sitelutions|woima|yandex|zoneedit1)\'   --value \'$VAR(@)\'"; "Please choose from the list of allowed protocols"

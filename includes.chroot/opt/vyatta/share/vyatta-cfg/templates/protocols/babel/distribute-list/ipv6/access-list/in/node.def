@@ -1,0 +1,5 @@
+type: txt
+help: Access list to apply to input packets
+val_help: u32; Access list to apply to input packets
+allowed: /bin/cli-shell-api listNodes policy access-list6
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967295\"  --value \'$VAR(@)\'"; "Invalid value"

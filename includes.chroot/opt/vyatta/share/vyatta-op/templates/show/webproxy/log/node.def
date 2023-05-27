@@ -1,0 +1,2 @@
+help: Show contents of WebProxy access log
+run: if [ -e /var/log/squid/access.log ]; then sudo less $_vyatta_less_options --prompt="file %i of %m, page %dt of %D" -- `printf "%s\n" /var/log/squid/access.log* | sort -nr`; else echo "No WebProxy log"; fi

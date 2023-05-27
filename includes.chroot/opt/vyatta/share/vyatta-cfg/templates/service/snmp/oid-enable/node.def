@@ -1,0 +1,9 @@
+multi:
+type: txt
+help: Enable specific OIDs that by default are disable
+val_help: ip-forward; Enable ipForward: .1.3.6.1.2.1.4.24
+val_help: ip-route-table; Enable ipRouteTable: .1.3.6.1.2.1.4.21
+val_help: ip-net-to-media-table; Enable ipNetToMediaTable: .1.3.6.1.2.1.4.22
+val_help: ip-net-to-physical-phys-address; Enable ipNetToPhysicalPhysAddress: .1.3.6.1.2.1.4.35
+allowed: echo "ip-forward ip-route-table ip-net-to-media-table ip-net-to-physical-phys-address"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ip-forward|ip-route-table|ip-net-to-media-table|ip-net-to-physical-phys-address)\'   --value \'$VAR(@)\'"; "OID must be one of the liste options"

@@ -1,0 +1,4 @@
+type: txt
+help: Fully qualified domain name
+val_help: <fqdn>; Fully qualified domain name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid value"

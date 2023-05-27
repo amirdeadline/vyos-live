@@ -1,0 +1,4 @@
+type: txt
+help: Advertise area range as another prefix
+val_help: ipv4net; Advertise area range as another prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

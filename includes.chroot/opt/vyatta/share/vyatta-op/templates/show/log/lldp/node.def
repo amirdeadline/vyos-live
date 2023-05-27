@@ -1,0 +1,2 @@
+help: Show log for Link Layer Discovery Protocol (LLDP)
+run: journalctl --no-hostname --boot --unit lldpd.service

@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Listen interface for mirroring traffic
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

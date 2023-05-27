@@ -1,0 +1,4 @@
+type: txt
+help: Number of maximum client connections
+val_help: u32:1-4096; Number of concurrent clients
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-4096\"  --value \'$VAR(@)\'"; "Invalid value"

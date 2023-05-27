@@ -1,0 +1,2 @@
+help: DHCP server lease
+run: sudo ${vyos_op_scripts_dir}/clear_dhcp_lease.py --ip $4

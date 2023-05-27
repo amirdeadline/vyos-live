@@ -1,0 +1,4 @@
+type: txt
+help: Limit number of logins (rate-limit) per rate-time (default: 30)
+val_help: u32:15-600; Time interval
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 15-600\"  --value \'$VAR(@)\'"; "Rate limit time interval must be between 15 and 600 seconds"

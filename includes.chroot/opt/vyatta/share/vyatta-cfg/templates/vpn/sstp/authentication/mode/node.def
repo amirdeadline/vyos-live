@@ -1,0 +1,7 @@
+type: txt
+help: Authentication mode used by this server (default: local)
+val_help: local; Use local username/password configuration (default)
+val_help: radius; Use RADIUS server for user autentication
+val_help: noauth; Authentication disabled
+allowed: echo "local radius noauth"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(local|radius|noauth)\'   --value \'$VAR(@)\'"; "Invalid value"

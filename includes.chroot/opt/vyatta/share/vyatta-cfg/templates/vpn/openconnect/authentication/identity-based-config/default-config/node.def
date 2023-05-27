@@ -1,0 +1,4 @@
+type: txt
+help: Default configuration if discrete config could not be found
+val_help: filename; Default configuration filename, must be under /config/auth
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/file-path --file --parent-dir /config/auth --strict\"  --value \'$VAR(@)\'"; "Invalid value"

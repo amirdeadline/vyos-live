@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Specify other caches in a hierarchy
+val_help: hostname; Cache peers FQDN

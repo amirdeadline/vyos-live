@@ -1,0 +1,6 @@
+tag:
+type: txt
+priority: 201
+help: Policy route rule set name for IPv4
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-zA-Z0-9][\\w\\-\\.]*\'   --value \'$VAR(@)\'"; "Invalid value"
+end: sudo sh -c "${vyshim} VYOS_TAGNODE_VALUE='$VAR(@)' ${vyos_conf_scripts_dir}/policy-route.py"

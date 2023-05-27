@@ -1,0 +1,23 @@
+multi:
+type: txt
+help: Subsystem logging levels
+val_help: dmn; Main daemon setup/cleanup/signal handling
+val_help: mgr; IKE_SA manager, handling synchronization for IKE_SA access
+val_help: ike; IKE_SA/ISAKMP SA
+val_help: chd; CHILD_SA/IPsec SA
+val_help: job; Jobs queuing/processing and thread pool management
+val_help: cfg; Configuration management and plugins
+val_help: knl; IPsec/Networking kernel interface
+val_help: net; IKE network communication
+val_help: asn; Low-level encoding/decoding (ASN.1, X.509 etc.)
+val_help: enc; Packet encoding/decoding encryption/decryption operations
+val_help: lib; libstrongswan library messages
+val_help: esp; libipsec library messages
+val_help: tls;  libtls library messages
+val_help: tnc; Trusted Network Connect
+val_help: imc; Integrity Measurement Collector
+val_help: imv; Integrity Measurement Verifier
+val_help: pts;  Platform Trust Service
+val_help: any; Any subsystem
+allowed: echo "dmn mgr ike chd job cfg knl net asn enc lib esp tls tnc imc imv pts any"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(dmn|mgr|ike|chd|job|cfg|knl|net|asn|enc|lib|esp|tls|tnc|imc|imv|pts|any)\'   --value \'$VAR(@)\'"; "Invalid value"

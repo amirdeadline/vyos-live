@@ -1,0 +1,2 @@
+help: Debug Link State Update message
+run: vtysh -c "no debug ospf6 ${@:5}"

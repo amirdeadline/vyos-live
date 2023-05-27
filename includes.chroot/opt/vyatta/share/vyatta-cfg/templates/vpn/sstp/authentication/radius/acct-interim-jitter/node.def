@@ -1,0 +1,5 @@
+type: txt
+help: Maximum jitter value in seconds to be applied to accounting
+			information interval
+val_help: u32:1-60; Maximum jitter value in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-60\"  --value \'$VAR(@)\'"; "Jitter value must be between 1 and 60 seconds"

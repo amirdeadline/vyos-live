@@ -1,0 +1,6 @@
+type: txt
+help: NetFlow version to export (default: 9)
+val_help: 5; NetFlow version 5
+val_help: 9; NetFlow version 9 (default)
+val_help: 10; Internet Protocol Flow Information Export (IPFIX)
+allowed: echo "5 9 10"

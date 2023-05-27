@@ -1,0 +1,2 @@
+help: Restart Routing Information Protocol NG (RIPng) routing daemon
+run: sudo ${vyos_op_scripts_dir}/restart_frr.py --action restart --daemon ripngd

@@ -1,0 +1,5 @@
+type: txt
+help: TFTP server name
+val_help: ipv4; TFTP server IPv4 address
+val_help: hostname; TFTP server FQDN
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show log for RIPng
+run: journalctl --boot /usr/lib/frr/ripngd

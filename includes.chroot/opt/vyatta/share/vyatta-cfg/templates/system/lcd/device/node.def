@@ -1,0 +1,6 @@
+type: txt
+help: Physical device used by LCD display
+val_help: ttySXX; TTY device name, regular serial port
+val_help: usbNbXpY; TTY device name, USB based
+allowed: sh -c "ls -1 /dev | grep ttyS" && echo " " && sh -c "if [ -d /dev/serial/by-bus ]; then ls -1 /dev/serial/by-bus; fi"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ttyS[0-9]+|usb[0-9]+b.*)\'   --value \'$VAR(@)\'"; "Invalid value"

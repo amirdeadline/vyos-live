@@ -1,0 +1,4 @@
+type: txt
+help: Client IPv6 pool base address with optional prefix length
+val_help: ipv6net; Client IPv6 pool base address with optional prefix length (defaults: base = server subnet + 0x1000, prefix length = server prefix length)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6 \"  --value \'$VAR(@)\'"; "Invalid value"

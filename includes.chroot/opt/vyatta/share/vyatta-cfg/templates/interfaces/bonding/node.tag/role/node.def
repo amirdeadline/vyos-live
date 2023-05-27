@@ -1,0 +1,5 @@
+type: txt
+help: Set Role for SDWAN System
+val_help: txt; lan, internet, private-underlay
+allowed: echo 'lan internet private-underlay'
+syntax:expression: $VAR(@) in "lan", "internet", "private-underlay"; "Value must be internet, private-underlay or lan"

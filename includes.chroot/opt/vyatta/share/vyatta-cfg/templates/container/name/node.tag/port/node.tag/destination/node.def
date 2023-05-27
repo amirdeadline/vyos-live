@@ -1,0 +1,5 @@
+type: txt
+help: Destination container port
+val_help: u32:1-65535; Destination container port
+val_help: start-end; Destination container port range (e.g. 10025-10030)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/port-range \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,7 @@
+type: txt
+help: Match RPKI validation result
+val_help: invalid; Match invalid entries
+val_help: notfound; Match notfound entries
+val_help: valid; Match valid entries
+allowed: echo "invalid notfound valid"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(invalid|notfound|valid)\'   --value \'$VAR(@)\'"; "Invalid value"

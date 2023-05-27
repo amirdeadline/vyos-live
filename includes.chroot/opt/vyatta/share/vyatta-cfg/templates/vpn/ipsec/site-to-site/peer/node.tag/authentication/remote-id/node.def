@@ -1,0 +1,3 @@
+type: txt
+help: ID for remote authentication (default: %any)
+val_help: txt; ID used for peer authentication

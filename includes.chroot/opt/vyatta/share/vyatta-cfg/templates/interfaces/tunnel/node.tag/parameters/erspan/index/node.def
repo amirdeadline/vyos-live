@@ -1,0 +1,4 @@
+type: txt
+help: ERSPAN version 1 index field
+val_help: u32:0-63; Platform-depedent field for specifying port number and direction
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-63\"  --value \'$VAR(@)\'"; "Invalid value"

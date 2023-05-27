@@ -1,0 +1,7 @@
+type: txt
+help: Interface type (default: auto)
+val_help: auto; Automatically detect interface type (default)
+val_help: wired; Wired interface
+val_help: wireless; Wireless interface
+allowed: echo "auto wired wireless"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(auto|wired|wireless)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Monitor log for OSPF for IPv6
+run: journalctl --follow --no-hostname --boot /usr/lib/frr/ospf6d

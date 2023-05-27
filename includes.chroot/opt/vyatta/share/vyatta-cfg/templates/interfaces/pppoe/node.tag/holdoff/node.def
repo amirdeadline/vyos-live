@@ -1,0 +1,5 @@
+type: txt
+help: Delay before re-dial to the access concentrator when PPP session
+			terminated by peer (in seconds) (default: 30)
+val_help: u32:0-86400; Holdoff time in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-86400\"  --value \'$VAR(@)\'"; "Holdoff must be in range 0 to 86400"

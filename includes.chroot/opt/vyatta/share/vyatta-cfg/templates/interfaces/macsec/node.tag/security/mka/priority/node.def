@@ -1,0 +1,5 @@
+type: txt
+help: Priority of MACsec Key Agreement protocol (MKA) actor (default:
+			255)
+val_help: u32:0-255; MACsec Key Agreement protocol (MKA) priority
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-255\"  --value \'$VAR(@)\'"; "Invalid value"

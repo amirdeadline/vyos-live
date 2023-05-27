@@ -1,0 +1,17 @@
+tag:
+type: txt
+help: Service being used for Dynamic DNS
+val_help: txt; Dynanmic DNS service with a custom name
+val_help: afraid; afraid.org Services
+val_help: changeip; changeip.com Services
+val_help: cloudflare; cloudflare.com Services
+val_help: dnspark; dnspark.com Services
+val_help: dslreports; dslreports.com Services
+val_help: dyndns; dyndns.com Services
+val_help: easydns; easydns.com Services
+val_help: namecheap; namecheap.com Services
+val_help: noip; noip.com Services
+val_help: sitelutions; sitelutions.com Services
+val_help: zoneedit; zoneedit.com Services
+allowed: echo "afraid changeip cloudflare dnspark dslreports dyndns easydns namecheap noip sitelutions zoneedit"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(custom|afraid|changeip|cloudflare|dnspark|dslreports|dyndns|easydns|namecheap|noip|sitelutions|zoneedit|\\w+)\'   --value \'$VAR(@)\'"; "You can use only predefined list of services or word characters (_, a-z, A-Z, 0-9) as service name"

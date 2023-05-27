@@ -1,0 +1,2 @@
+help: Match locally assigned label value
+run: vtysh -c "show mpls ldp binding neighbor $6 local-label $8"

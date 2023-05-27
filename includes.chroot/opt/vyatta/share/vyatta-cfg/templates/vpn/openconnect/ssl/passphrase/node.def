@@ -1,0 +1,3 @@
+type: txt
+help: Private key passphrase
+val_help: txt; Passphrase to decrypt the private key

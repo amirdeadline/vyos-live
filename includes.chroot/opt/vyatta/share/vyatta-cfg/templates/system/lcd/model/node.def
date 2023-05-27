@@ -1,0 +1,10 @@
+type: txt
+help: Model of the display attached to this system
+val_help: cfa-533; Crystalfontz CFA-533
+val_help: cfa-631; Crystalfontz CFA-631
+val_help: cfa-633; Crystalfontz CFA-633
+val_help: cfa-635; Crystalfontz CFA-635
+val_help: hd44780; Hitachi HD44780, Caswell Appliances
+val_help: sdec; Lanner, Watchguard, Nexcom NSA, Sophos UTM appliances
+allowed: echo "cfa-533 cfa-631 cfa-633 cfa-635 hd44780 sdec"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(cfa-533|cfa-631|cfa-633|cfa-635|hd44780|sdec)\'   --value \'$VAR(@)\'"; "Invalid value"

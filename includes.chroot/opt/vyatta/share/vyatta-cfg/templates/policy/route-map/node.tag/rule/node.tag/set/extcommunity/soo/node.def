@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Set Site of Origin value
+val_help: ASN:NN; based on autonomous system number in format <0-65535:0-4294967295>
+val_help: IP:NN; Based on a router-id IP address in format <IP:0-65535>
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/bgp-extended-community \"  --value \'$VAR(@)\'"; "Should be in form: ASN:NN or IPADDR:NN where ASN is autonomous system number"

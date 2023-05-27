@@ -1,0 +1,2 @@
+help: Show scheduled reboot
+run: ${vyos_op_scripts_dir}/powerctrl.py --check

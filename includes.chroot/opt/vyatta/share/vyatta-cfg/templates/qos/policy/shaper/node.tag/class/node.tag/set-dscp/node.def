@@ -1,0 +1,37 @@
+type: txt
+help: Change the Differentiated Services (DiffServ) field in the IP
+			header
+val_help: u32:0-63; Priority order for bandwidth pool
+val_help: default; match DSCP (000000)
+val_help: reliability; match DSCP (000001)
+val_help: throughput; match DSCP (000010)
+val_help: lowdelay; match DSCP (000100)
+val_help: priority; match DSCP (001000)
+val_help: immediate; match DSCP (010000)
+val_help: flash; match DSCP (011000)
+val_help: flash-override; match DSCP (100000)
+val_help: critical; match DSCP (101000)
+val_help: internet; match DSCP (110000)
+val_help: network; match DSCP (111000)
+val_help: AF11; High-throughput data
+val_help: AF12; High-throughput data
+val_help: AF13; High-throughput data
+val_help: AF21; Low-latency data
+val_help: AF22; Low-latency data
+val_help: AF23; Low-latency data
+val_help: AF31; Multimedia streaming
+val_help: AF32; Multimedia streaming
+val_help: AF33; Multimedia streaming
+val_help: AF41; Multimedia conferencing
+val_help: AF42; Multimedia conferencing
+val_help: AF43; Multimedia conferencing
+val_help: CS1; Low-priority data
+val_help: CS2; OAM
+val_help: CS3; Broadcast video
+val_help: CS4; Real-time interactive
+val_help: CS5; Signaling
+val_help: CS6; Network control
+val_help: CS7; None
+val_help: EF; Expedited Forwarding
+allowed: echo "default reliability throughput lowdelay priority immediate flash flash-override critical internet network AF11 AF12 AF13 AF21 AF22 AF23 AF31 AF32 AF33 AF41 AF42 AF43 CS1 CS2 CS3 CS4 CS5 CS6 CS7 EF"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(default|reliability|throughput|lowdelay|priority|immediate|flash|flash-override|critical|internet|network|AF11|AF12|AF13|AF21|AF22|AF23|AF31|AF32|AF33|AF41|AF42|AF43|CS1|CS2|CS3|CS4|CS5|CS6|CS7|EF)\' --exec \"${vyos_validators_dir}/numeric --range 0-63\"  --value \'$VAR(@)\'"; "Priority must be between 0 and 63"

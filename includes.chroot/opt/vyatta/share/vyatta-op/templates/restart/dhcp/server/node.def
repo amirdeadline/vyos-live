@@ -1,0 +1,2 @@
+help: Restart DHCP server
+run: if cli-shell-api existsActive service dhcp-server; then sudo systemctl restart isc-dhcp-server.service; else echo "DHCP server not configured"; fi

@@ -1,0 +1,2 @@
+help: Stop background monitoring
+run: ${vyatta_bindir}/vyatta-monitor-background-stop ${3^^}

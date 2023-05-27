@@ -1,0 +1,3 @@
+help: Show BGP information for specified neighbor
+allowed: vtysh -c "$(IFS=$' '; echo "${COMP_WORDS[@]:0:${#COMP_WORDS[@]}-2} summary")" |  awk '/^[0-9a-f]/ {print $1}'
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

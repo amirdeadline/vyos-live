@@ -1,0 +1,3 @@
+type: txt
+help: Contact information
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'.{1,255}\'   --value \'$VAR(@)\'"; "Contact information is limited to 255 characters or less"

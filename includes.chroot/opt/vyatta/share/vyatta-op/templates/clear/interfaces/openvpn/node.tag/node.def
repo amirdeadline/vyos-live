@@ -1,0 +1,2 @@
+help: Clear interface information for a given OpenVPN interface
+allowed: ${vyos_completion_dir}/list_interfaces --type openvpn

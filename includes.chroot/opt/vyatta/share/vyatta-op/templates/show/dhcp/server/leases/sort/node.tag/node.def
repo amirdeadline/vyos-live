@@ -1,0 +1,3 @@
+help: Show DHCP server leases sorted by the specified key
+allowed: echo "end hostname ip mac pool remaining start state"
+run: ${vyos_op_scripts_dir}/dhcp.py show_server_leases --family inet --sort $6

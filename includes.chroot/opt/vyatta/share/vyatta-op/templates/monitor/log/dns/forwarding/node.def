@@ -1,0 +1,2 @@
+help: Monitor last lines of DNS forwarding
+run: journalctl --no-hostname --follow --boot --unit pdns-recursor.service

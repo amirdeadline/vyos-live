@@ -1,0 +1,2 @@
+help: Show TSM certificates
+run: ${vyos_op_scripts_dir}/snmp_v3_showcerts.sh

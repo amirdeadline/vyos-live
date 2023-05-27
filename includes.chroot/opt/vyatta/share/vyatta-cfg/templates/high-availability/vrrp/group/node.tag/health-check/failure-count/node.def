@@ -1,0 +1,4 @@
+type: txt
+help: Health check failure count required for transition to fault
+			(default: 3)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --positive\"  --value \'$VAR(@)\'"; "Invalid value"

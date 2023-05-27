@@ -1,0 +1,2 @@
+help: Show all IP addresses allowed for the specified interface
+run: sudo wg show "$4" allowed-ips

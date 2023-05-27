@@ -1,0 +1,7 @@
+type: txt
+help: Port
+val_help: txt; Named port (any name in /etc/services, e.g., http)
+val_help: u32:1-65535; Numbered port
+val_help: <start-end>; Numbered port range (e.g. 1001-1005)
+val_help:  ; \n\n  Multiple destination ports can be specified as a comma-separated list.\n  For example: 'telnet,http,123,1001-1005'
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/port-multi \"  --value \'$VAR(@)\'"; "Invalid value"

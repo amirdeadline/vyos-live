@@ -1,0 +1,7 @@
+type: txt
+help: Connection type
+val_help: initiate; Bring the connection up immediately
+val_help: respond; Wait for the peer to initiate the connection
+val_help: none; Load the connection only
+allowed: echo "initiate respond none"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(initiate|respond|none)\'   --value \'$VAR(@)\'"; "Invalid value"

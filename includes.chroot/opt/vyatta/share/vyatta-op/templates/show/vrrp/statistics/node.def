@@ -1,0 +1,2 @@
+help: Show VRRP statistics
+run: sudo ${vyos_op_scripts_dir}/vrrp.py --statistics
